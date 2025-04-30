@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="login&signup.css">
+    <title>login & sign up</title>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="content">
+            <h3>A journey to a world where worries didn`t exist .</h3>
+        </div>
+
+        <div class="logreg-box">
+            <div class="form-box login">
+                <form action="#">
+                    <h2>Welcome Back!</h2>
+                    <div class="input-box">
+                        <input id="mail" type="email" required>
+                        <label for="mail">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <input id="pass" type="password" required>
+                        <label for="pass">Password</label>
+                    </div>
+                    <div class="remember">
+                        <label for="remember">
+                            <input id="remember" type="checkbox">
+                            Remember me
+                        </label>
+                        <a href="#">Forget Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>
+                            Don`t have an account?
+                            <a href="#" class="register-link">Register</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register">
+                <form action="#">
+                    <h2>Feel the magic of childhood again!</h2>
+                    <div class="input-box">
+                        <input id="name" type="text" required>
+                        <label for="name">Username</label>
+                    </div>
+                    <div class="input-box">
+                        <input id="mail2" type="email" required>
+                        <label for="mail2">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <input id="pass2" type="password" required>
+                        <label for="pass2">Password</label>
+                    </div>
+                    <div class="gender">
+                        <label for="female">
+                            <input id="female" type="radio" name="gender" value="female">
+                            Female
+                        </label>
+                        <label for="male">
+                            <input id="male" type="radio" name="gender" value="male">
+                            Male
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Save</button>
+                    <div class="login-register">
+                        <p>
+                            Already have an account?
+                            <a href="#" class="login-link">Log in</a>
+                        </p>
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+        <script src="login&signup.js"></script>
+
+</body>
+
+</html>
