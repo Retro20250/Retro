@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background: url(../login.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    border-style: initial;
+    margin-top: 20px;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    background: url(../login.jpg)no-repeat;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+
+}
+
+.logreg-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+    overflow: hidden;
+
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: bold;
+    font-style: oblique;
+    color: #080227;
+    text-align: center;
+    padding-top: 420px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #d4ced6;
+}
+
+.logreg-box .form-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #080227;
+    overflow: hidden;
+
+}
+
+.logreg-box .form-box.login {
+
+    transform: translateX(0);
+    /* fe mkano msh byt7rk */
+    transition: transform 0.5s ease;
+    /* byt7rk bra7a lmoda 0.5s */
+
+    transition-delay: 0.4s;
+    /* byt2khr shwaya abl ma yt7rk lmoda 0.4s */
+
+}
+
+/* lma el login ykhtfy b3d ma ados 3la register */
+.logreg-box.active .form-box.login {
+
+    transform: translateX(430px);
+    /* byt7rk 430px le el ymen */
+    transition-delay: 0s;
+    /* msh byt2khr */
+}
+
+.logreg-box .form-box.register {
+
+    transform: translateX(430px);
+    /* bra el page */
+    transition: transform 0.6s ease;
+    /* byt7rk bra7a lmoda 0.6s */
+    transition-delay: 0s;
+    /* msh byt2khr */
+
+
+}
+
+/* lma el login ykhtfy b3d ma ados 3la log in */
+.logreg-box.active .form-box.register {
+
+    transform: translateX(0);
+    /* byrou7 makan el log in ely khrg bra */
+    transition-delay: 0.4s;
+    /* byt2khr shwaya abl ma yt7rk lmoda 0.4s */
+
+
+}
+
+
+
+
+.form-box h2 {
+    font-size: 40px;
+    text-align: center;
+    font-style: oblique;
+
+
+}
+
+.form-box .input-box {
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #ffffff;
+    margin: 30px 50px;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    color: #dedce9;
+    font-weight: bold;
+    margin: 15px 10px;
+
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: 0.5s ease;
+
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+    /* el label bytl3 5px le fo2 lma el user yge yktb fe el input box  */
+}
+
+.form-box .remember {
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: 500;
+    font-style: oblique;
+    margin: -15px 35px 15px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.remember label input {
+    accent-color: #0c35a5;
+    margin-right: 3px;
+}
+
+.remember a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 90%;
+    height: 45px;
+    margin-left: 28px;
+    background: #080227;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.8s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.form-box .login-register {
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: #0c35a5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+.form-box .gender {
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: 500;
+    font-style: oblique;
+    margin: -15px 15px 15px 15px;
+    display: flex;
+    padding-left: 25px;
+    gap: 1em;
+}
+
+.gender label input {
+    accent-color: #0c35a5;
+    margin-right: 3px 3px;
+}
