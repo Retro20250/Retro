@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+:root {
+    --pc: #ffaf03;
+    --sc: #1c1c1c;
+    --dc: #121212;
+    --lc: #ffffff;
+    --gh: #E07A5F
+}
+body{
+    background-color: var(--dc);
+    color: var(--lc);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    align-items: center;
+    background-color: #1c1c1c;
+    font-size: 16px;
+    border-bottom:solid var(--pc) 2px ;
+    
+}
+header .lift{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    
+
+}
+header .right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+    
+}
+header .lift div{
+    cursor: pointer;
+    
+
+}
+header .right div{
+
+    cursor: pointer;
+    
+}
+.logo{
+    font-size: 25px;
+    font-weight: 700; 
+       
+}
+.btn{
+    background-color: #ffaf03;
+    border-radius:10px ;
+    padding: 4px 10px; 
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    gap: 20px;
+    padding: 16px 32px;
+    align-items: center;
+    background-color: #1c1c1c;
+    font-size: 16px;
+    
+
+}
+.search-bar {
+    flex-grow: 1;
+  }
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+  }
+
+  .games-cards{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+
+  .game1{
+    display: flex;
+    justify-content:left;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .game1 img{
+    width: 405px;
+    flex: 90%;
+  }
+  .game1:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+
+  .game2{
+    display: flex;
+    justify-content:left;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+
+
+  }
+  .game2 img{
+    width: 200px;
+    flex: 75%;
+  }
+  .game2:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+   .game3{
+    width: 200px;
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game3 img{
+    width: 205px;
+   }
+   .game3:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game4{
+    display: flex;
+    justify-content:left;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+   .game4:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game4 img{
+    width: 256px;
+    flex: 75%;
+  }
+  .game5{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game5 img{
+    width: 173px;
+   }
+   .game5:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+ 
+  .game6{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game6 img{
+    width: 180px;
+   }
+   .game6:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game7{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game7 img{
+    width: 180px;
+   }
+   .game7:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .games-cards2{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 10px;
+    justify-content: left;
+    align-items: flex-start;
+
+  }
+
+  .game8{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game8 img{
+    width: 200px;
+   }
+   .game8:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game9{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game9 img{
+    width: 200px;
+   }
+   .game9:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game10{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game10 img{
+    width: 200px;
+   }
+   .game10:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game11{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game11 img{
+    width: 200px;
+   }
+   .game11:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game12{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game12 img{
+    width: 180px;
+   }
+   .game12:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game13{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game13 img{
+    width: 115px;
+   }
+   .game13:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game14{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game14 img{
+    width: 170px;
+    height: 110px;
+   }
+   .game14:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .games-cards3{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 10px;
+    justify-content: left;
+    align-items: flex-start;
+
+  }
+
+  .game15{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game15 img{
+    width: 200px;
+   }
+   .game15:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game16{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game16 img{
+    width: 200px;
+   }
+   .game16:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game17{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game17 img{
+    width: 200px;
+    height: 152px;
+   }
+   .game17:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game18{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game18 img{
+    width: 230px;
+   }
+   .game18:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game19{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game19 img{
+    width: 230px;
+    height: 147px;
+   }
+   .game19:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game20{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game20 img{
+    width: 200px;
+    height: 123px;
+   }
+   .game20:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game21{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game21 img{
+    width: 200px;
+    height: 146px;
+   }
+   .game21:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game22{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game22 img{
+    width: 218px;
+   }
+   .game22:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game23{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game23 img{
+    width: 220px;
+    height: 145px;
+   }
+   .game23:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game24{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game24 img{
+    width: 220px;
+    height:275px;
+   }
+   .game24:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
