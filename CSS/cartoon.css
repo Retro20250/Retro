@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+:root {
+    --pc: #ffaf03;
+    --sc: #1c1c1c;
+    --dc: #121212;
+    --lc: #ffffff;
+    --gh: #E07A5F
+}
+body{
+    background-color: var(--dc);
+    color: var(--lc);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    align-items: center;
+    background-color: #1c1c1c;
+    font-size: 16px;
+    border-bottom:solid var(--pc) 2px ;
+    
+}
+header .lift{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    
+
+}
+header .right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+    
+}
+header .lift div{
+    cursor: pointer;
+    
+
+}
+header .right div{
+
+    cursor: pointer;
+    
+}
+.logo{
+    font-size: 25px;
+    font-weight: 700; 
+       
+}
+.btn{
+    background-color: #ffaf03;
+    border-radius:10px ;
+    padding: 4px 10px; 
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    gap: 20px;
+    padding: 16px 32px;
+    align-items: center;
+    background-color: #1c1c1c;
+    font-size: 16px;
+    
+
+}
+.search-bar {
+    flex-grow: 1;
+  }
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+  }
+
+  
+
+
+/*.............................................................................................................*/
+
+
+/*el bos elly fe el section bta3 el video w cartoon description*/
+.first-section {
+    position: relative;    /*da reference l ay haga gwah mktob feha absolute*/
+    height: 90vh;          /*height of box 90% mn el height screen, vh=viewport height*/   
+    overflow: hidden;      /*lw haga 5rgt bra 7dodo t5tfy msh htt3rd*/
+  }
+  
+  /*el video nfso*/
+  .video120fps {
+    position: absolute;    /*el video fe mkan mo3yan fe el first-section*/
+    width: 100%;  height: 100%;         /*el video hya5od msa7at el first-section kolha*/  
+    object-fit: cover;                  /*hwa elly by3ml strech ll video 3la el msa7a*/
+    z-index: -1;                        /*send backward*/
+    transition: all 0.5s ease-in-out;   
+  }
+  
+  /* el text content 3la el video*/
+.text-content {
+    position: absolute;
+    bottom: 130px;     /*yseeb msa7a beno w been el bottom 130px*/      
+    left: 120px;       /*yseeb msa7a beno w been el left 120px*/  
+    color: white;
+    z-index: 1;        /*bring forward*/
+    text-align: left;   
+    max-width: 600px;
+    font-family: 'Helvetica Neue', sans-serif
+  }
+
+  .text-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 1rem;   
+  }
+  
+  .text-content p {
+    font-size: 18px;
+    line-height: 1.5;    /*msafa ben kol line wl tany*/
+  }
+
+
+  /*.............................................................................................................*/
+
+ 
+  body {
+    background-color: #2c2c2c;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  .rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .stars {
+    display: flex;
+    flex-direction: row-reverse; 
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .stars i {
+    color: lightgray;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+
+  .stars i:hover,
+  .stars i:hover ~ i {
+    color: gold;
+  }
+
+  .rating-text {
+    font-size: 16px;
+  }
+
+  .rating-text strong {
+    color: #4db8ff;
+  }
+
+  .watchlist-btn {
+    background-color: #ff6600;
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+
+  .watchlist-btn:hover {
+    background-color: #e65c00;
+  }
+
+  .watchlist-btn i {
+    font-size: 18px;
+  }
+
+   /*.............................................................................................................*/
+   
+   h2 {
+    margin-bottom: 20px;
+  }
+
+  .cards-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+  }
+
+  .cartoon-card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    width: 300px;
+    flex-shrink: 0;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+ 
+  .cartoon-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .cartoon-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  
+  
+  .cartoon-card:hover img {
+  transform: scale(1.1);
+  }
+
+  .cartoon-info {
+    padding: 10px;
+  }
+
+  .cartoon-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+
+/*.............................................................................................................*/
+.clip-and-buttons {
+  display: flex;
+  align-items: flex-start; /* يبدأوا من فوق */
+  justify-content: center; /* ممكن تخليها space-between حسب المساحة */
+  gap: 50px; /* مسافة بين الكرتون والزرارين */
+  margin-top: 50px;
+  padding: 0 50px;
+}
+
+
+.custom-button {
+  font-size: 18px;
+  width: 220px;
+  padding: 10px 15px;
+}
+
+
+
+.clip1 {
+  width: 400px;
+  height: 350px;
+  left: 35px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clip1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-color: #ff1493;
+  cursor: pointer;
+}
+
+.clip1 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.clip1:hover video {
+  transform: scale(1.05);
+}
+
+
+.twobuttons-container {
+  position: flex;
+  right: 35px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10;
+  
+}
+
+.custom-button {
+  background-color: #ff69b4; 
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 40px;
+  width: 600px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-button:hover {
+  background-color: #ff1493; 
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
