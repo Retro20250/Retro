@@ -1,0 +1,560 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #1b1b1b;
+  color: #fff;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  align-items: center;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+:root {
+  --pc: #ff6b6b;
+  --sc: #4ecdc4;
+  --dc: #2E2C2F;
+  --lc: #8C5E3C;
+  --gh: #E07A5F;
+}
+
+.container {
+  margin: 0 8%;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: calc(100% - 16%);
+}
+
+.cartoon-section {
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.cartoon-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 75px;
+}
+
+.cartoon-section-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fbf5f5;
+  line-height: 1.2;
+  text-align: left;
+  margin: 0 ;
+}
+
+.cartoon-see-more {
+  color: #fde8ff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #633766;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: #892f89;
+  transition: all 0.3s ease;
+  margin-right: -35px;
+  margin-bottom: -35px;
+}
+
+.cartoon-see-more:hover {
+  color: #fff;
+  background-color: #903a9fcf;
+  border-color: #c39ecb;
+}
+
+.cartoon-image-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+
+}
+
+.cartoon-image-row {
+  display: flex;
+  gap: 20px;
+  transition: opacity 0.5s ease;
+  width: 100%;
+  justify-content: center;
+}
+
+.cartoon-image-card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  background-color: #2c2c2c;
+}
+
+.cartoon-image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartoon-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: filter 0.3s ease;
+}
+
+.cartoon-image-card:hover img {
+  filter: brightness(1.11);
+}
+
+/* download-sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+.download-section {
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.download-section-title {
+  position: absolute;
+  top: -5px;
+  left: 107px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fbf5f5;
+  z-index: 10;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.download-image-controls {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  display: flex;
+  gap: 12px;
+}
+
+.download-nav-button {
+  width: 30px;
+  height: 30px;
+  background-color: #444;
+  color: rgb(193, 164, 164);
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* اللي هينقلني الصفحة التانية */
+.download-nav-button.highlighted {
+  background-color: #eec2d0;
+  color: #333;
+}
+
+.download-nav-button.highlighted:hover {
+  background-color: #bf8192;
+}
+
+.download-image-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  margin-top: 60px;
+  width: 100%;
+
+}
+
+.download-image-row {
+  display: flex;
+  gap: 20px;
+  transition: opacity 0.5s ease;
+  width: 100%;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.download-image-card {
+  position: relative;
+  width: 197px;
+  height: 250px;
+  cursor: default;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #2c2c2c;
+}
+
+.download-image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; 
+}
+
+.download-image-card:hover img {
+  filter: brightness(1.11);
+}
+
+.download-image-card .info {
+  display: none;
+}
+
+
+/* online sectionnnnnnnnnnnnnnnnnnnnnnnnnnn */
+.game-section {
+  max-width: 100%;
+  margin: 50px 8%;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding:0;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.see-more {
+  color: #fde8ff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #b73fc2;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: all 0.3s;
+  margin-right: -58px;
+  margin-bottom: -30px;
+  background-color: #ca44d6;
+}
+
+.see-more:hover {
+  color: #fff;
+  background-color: #9f4190b3;
+  border-color: #f3c6e9;
+}
+
+.game-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* العناصر تبقى ليها نفس الارتفاع */
+  gap: 20px;
+}
+
+
+.game-card {
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 310px; 
+}
+
+.game-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; 
+}
+
+.game-card:hover {
+  transform: scale(1.02);
+  border: 1px solid #d864d4;
+  box-shadow: 0 0 10px #00f0ff44;
+}
+
+/* الكروت الكبيرة يمين وشمال */
+.game-card.large {
+  flex: 0 0 30%; /*  كل واحدة 30% من المساحة */
+  height: 310px; /* الصورة الكبيرة */
+}
+
+.game-card.large img {
+  height: 100%;
+  object-fit: fill;
+}
+
+/* الي في النص */
+.middle-grid {
+  flex: 0 0 40%; /* ياخدوا 40% من المساحة */
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* يبقوا عمودين قد بعض */
+  grid-template-rows: 155px 155px;   /* نص طول الصورة الكبيرة */
+  gap: 10px;
+}
+
+.middle-grid .game-card {
+  height: 155px; /* طول الصور الصغيرة نصف طول الصور الكبيرة */
+}
+
+.middle-grid .game-card img {
+  height: 100%;
+  object-fit: fill; 
+}
+
+/* product sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+.products-section {
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.section4-title {
+  position: absolute;
+  top: -25px;
+  left: 160px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fbf5f5;
+  z-index: 10;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.products-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 310px; 
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image {
+  width: 100%;
+  height: 290px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2c2c2c; 
+}
+
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; 
+}
+
+.product-info {
+  background-color: #1b1b1b;
+  padding: 15px 15px;
+  text-align: left;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fbf5f5;
+  margin: 0; 
+}
+
+.product-card:hover {
+  box-shadow: 
+    0 12px 24px rgba(255, 255, 255, 0.2), 
+    0 6px 12px rgba(255, 255, 255, 0.15);
+  transform: translateY(-8px);   /* الكارد يطلع لفوق شوية اما اهوفر */
+  transition: all 0.3s ease;
+}
+
+
+/* message sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+.info-section {
+  padding: 40px 0;
+  background-image: linear-gradient(to right, #b0b0b0,#2f2f2f );  /* gredient (mixed colors}from left to right*/
+  color:#ffaf03;
+  text-align: center;
+  margin: -25px 60px 60px;
+
+}
+
+.info-main-title {
+  font-family: 'Merriweather', serif;  /* el serif hna alternative to the first ; */
+  font-weight: 300; 
+  font-size: 32px; 
+  text-transform: uppercase; 
+  text-align: center;
+  color: #ffaf03;
+  margin-bottom: 40px;
+}
+
+.info-columns {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;  /*لو الشاشة صغرت ينزلوا تحت بعض */
+}
+
+.info-box {
+  padding: 20px;
+  border-radius: 10px;
+  width: 285px;
+  text-align: left;
+}
+
+.info-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color:#ffaf03;
+}
+
+
+/* footer sectionnnnnnn */
+.footer {
+  background-color: #1b1b1b;
+  padding: 20px 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-us {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: serif;
+  text-transform: uppercase;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: -85px;
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: black;   
+  color: white;             
+  border: 1.5px solid #444; 
+  text-decoration: none;
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+  filter: brightness(120%);  
+  box-shadow: 0 4px 10px rgba(200, 200, 200, 0.6);
+}
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: #555;
+  margin: 20px 0;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.footer-links-bottom {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.footer-links-bottom a {
+  margin-top: 100px;
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+  margin-top: 120px;
+}
+
+.footer-links-bottom a:hover {
+  color: #fff;
+}
