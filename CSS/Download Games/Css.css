@@ -38,20 +38,20 @@ header {
 
 
 #dwn {
-    width: 40px;
+    
     border-radius: 5px;
-    padding: 5px;
+    padding: 1px 10px;
     margin-left: 70px;
-    margin-top: 40px;
     background-color: #ffaf03;
     text-decoration: none;
     color: white;
+    display: inline-block; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 #dwn:hover {
     background-color: #8f6304;
-    transition: .5s;
-
+    transform: scale(1.1); 
 }
 
 .parent {
