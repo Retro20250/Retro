@@ -196,10 +196,22 @@
             <img src="../online games images/hill climb racing.webp" alt="Hill climb race"/>
         </a>
     </div>
-
-    
-
-
-    
-
 </section>
+
+<audio id="click-sound" src="c:\Users\SIGMA\OneDrive\Desktop\Projects\coding\GitHub\Retro\JS\click sound.wav"> </audio>
+
+<script>
+  const clickSound = document.getElementById("click-sound");
+
+  document.querySelectorAll("img").forEach(img => {
+    img.addEventListener("click", () => {
+      clickSound.currentTime = 0; // يعيد الصوت من أوله
+      clickSound.play();
+    });
+  });
+</script>
+
+
+
+
+</body>
