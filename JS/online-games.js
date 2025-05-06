@@ -1,4 +1,4 @@
-const clickSound = document.getElementById("click-sound");
+const clickSound = document.getElementById("click-sound");//ده بيعمل ساوند للكليك على اللعبة 
 
   document.querySelectorAll("img").forEach(img => {
     img.addEventListener("click", () => {
@@ -7,7 +7,7 @@ const clickSound = document.getElementById("click-sound");
     });
   });
 
-  const scrollElements = document.querySelectorAll(".show-on-scroll");
+  const scrollElements = document.querySelectorAll(".show-on-scroll");// ده للسكرول و كده
   
   function elementInView(el, offset = 0) {
     const elementTop = el.getBoundingClientRect().top;
@@ -35,7 +35,7 @@ const clickSound = document.getElementById("click-sound");
   // تفعيل أول ما الصفحة تفتح
   handleScrollAnimation();
 
-  const bgMusic = document.getElementById("bg-music");
+  const bgMusic = document.getElementById("bg-music");// تشغيل الميوزيك في الزرار و كده 
   let isPlaying = false;
 
   function toggleMusic() {
