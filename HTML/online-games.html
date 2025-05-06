@@ -201,73 +201,12 @@
 
 <audio id="click-sound" src="c:\Users\SIGMA\OneDrive\Desktop\Projects\coding\GitHub\Retro\JS\click sound.wav"> </audio>
 
-<script> //السكريبت ده عشان يعمل صوت الكليك على اللعبة
-  const clickSound = document.getElementById("click-sound");
-
-  document.querySelectorAll("img").forEach(img => {
-    img.addEventListener("click", () => {
-      clickSound.currentTime = 0; // يعيد الصوت من أوله
-      clickSound.play();
-    });
-  });
-</script>
-
-<script> //ده عشان اللعب تظهر مع الاسكرول و كل صورة محطوطلها كلاس سكرول برضو 
-    const scrollElements = document.querySelectorAll(".show-on-scroll");
-  
-    function elementInView(el, offset = 0) {
-      const elementTop = el.getBoundingClientRect().top;
-      return (
-        elementTop <= (window.innerHeight || document.documentElement.clientHeight) - offset
-      );
-    }
-  
-    function displayScrollElement(el) {
-      el.classList.add("visible");
-    }
-  
-    function handleScrollAnimation() {
-      scrollElements.forEach((el) => {
-        if (elementInView(el, 100)) {
-          displayScrollElement(el);
-        }
-      });
-    }
-  
-    window.addEventListener("scroll", () => {
-      handleScrollAnimation();
-    });
-  
-    // تفعيل أول ما الصفحة تفتح
-    handleScrollAnimation();
-  </script>
 
  <!-- زرار للميوزيك و كده -->
 <audio id="bg-music" src="c:\Users\SIGMA\OneDrive\Desktop\Projects\coding\GitHub\Retro\JS\background music.mp3" loop></audio> 
 <button id="music-btn" onclick="toggleMusic()">🎵</button> 
 
-<script> //ده عشان يوقف و يشغل الميوزيك لما ندوس على الزرار
-  const bgMusic = document.getElementById("bg-music");
-  let isPlaying = false;
-
-  function toggleMusic() {
-    if (isPlaying) {
-      bgMusic.pause();
-    } else {
-      bgMusic.play();
-    }
-    isPlaying = !isPlaying;
-  }
-
-  // تشغيل الموسيقى بعد أول كليك في الصفحة
-  function startMusicOnce() {
-    bgMusic.play();
-    isPlaying = true;
-    window.removeEventListener("click", startMusicOnce);
-  }
-
-  window.addEventListener("click", startMusicOnce);
-</script>
+<script src="../JS/online-games.js"></script>
 
 
 
