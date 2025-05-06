@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../css/login&signup.css">
     <title>login & sign up</title>
 </head>
@@ -21,10 +22,13 @@
                 <form action="#">
                     <h2>Welcome Back!</h2>
                     <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
                         <input id="mail" type="email" required>
                         <label for="mail">Email</label>
                     </div>
                     <div class="input-box">
+                        <span class="icon"><i class="far fa-eye-slash toggle-password" data-target="pass"></i></span>
+                        <!-- data-target hwa bykhzn information zyada le el input 3lshan n3rf nstkhdha fe el java -->
                         <input id="pass" type="password" required>
                         <label for="pass">Password</label>
                     </div>
@@ -48,14 +52,18 @@
                 <form action="#">
                     <h2>Feel the magic of childhood again!</h2>
                     <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
                         <input id="name" type="text" required>
                         <label for="name">Username</label>
                     </div>
                     <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
                         <input id="mail2" type="email" required>
                         <label for="mail2">Email</label>
                     </div>
                     <div class="input-box">
+                        <span class="icon"><i class="far fa-eye-slash toggle-password" data-target="pass2"></i></span>
+                        <!-- data-target hwa bykhzn information zyada le el input 3lshan n3rf nstkhdha fe el java -->
                         <input id="pass2" type="password" required>
                         <label for="pass2">Password</label>
                     </div>
