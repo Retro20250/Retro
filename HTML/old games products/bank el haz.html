@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nigga</title>
+    <link rel="stylesheet" href="products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="lift">
+            <div class="logo">Y2K</div>
+            <div class="n1">ice cream</div>
+            <div class="n1">cinema</div>
+            <div class="n1">dude</div>
+        </div>
+        <div class="right">
+            <a class="btn">sign in</a>
+            <a class="btn">potato</a>
+        </div>
+    </header>
+    <nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search store" />
+        </div>
+        <div>Discover</div>
+        <div>Browse</div>
+        <div>News</div>
+
+    </nav>
+    <main class="container-wrapper">
+        <div class="container">
+            <div class="image" style="background-image: url(bank.jpg)"></div>
+            <div class="product">
+                <h2>BANK EL HAZ</h2>
+                <p id="p1">An Egyptian board game inspired by Monopoly, where players buy properties,
+                    build hotels, and compete to earn the most profit.</p>
+                <p id="p3">It was made in 1980.</p>
+                <p id="p4">The price is <span id="price">10 EGP</span></p>
+                <div class="action">
+                    <div class="quantity-wrapper">
+                        <button class="quantity-btn" onclick="decrease()">-</button>
+                        <span id="quantity">1</span>
+                        <button class="quantity-btn" onclick="increase()">+</button>
+                    </div>
+                    <button type="submit" class="btn2">Get it</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <section class="product-section" data-id="2">
+        <h2 class="product-section-title"> <br>For other products </h2>
+
+        <div class="product-image-controls">
+            <button class="product-nav-button product-left" onclick="showPrevImages(2)"
+                onmouseover="highlightButton(this)" onmouseout="resetButton(this)">&lt;</button>
+            <button class="product-nav-button product-right highlighted" onclick="showNextImages(2)"
+                onmouseover="highlightButton(this)" onmouseout="resetButton(this)">&gt;</button>
+        </div>
+        <div class="product-image-slider">
+            <div class="product-image-row" id="product-row1-2">
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="glass ball.html"><img src="game6.jpg" alt="game6"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="fishing.html"><img src="game11.jpg" alt="game3"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="sniper.html"><img src="game9.jpg" alt="game8"></a>
+                    </div>
+                </div>
+
+
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="water ring.html"> <img src="game3.jpg" alt="game4"></a>
+                    </div>
+                </div>
+
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="bubbles.html"><img src="game2.jpg" alt="game5"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-image-row hidden" id="product-row2-2">
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="make-up game.html"> <img src="game1.jpg" alt="game11">
+                        </a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="rubber.html"> <img src="game8.jpg" alt="game2"></a>
+                    </div>
+                </div>
+
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="mesh ball.html"><img src="game7.jpg" alt="game7"></a>
+                    </div>
+                </div>
+
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="jumping ball.html"><img src="game12.jpg" alt="game9"></a>
+                    </div>
+                </div>
+
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="barbiee.html"><img src="game4.jpg" alt="game11"></a>
+                    </div>
+                </div>
+            </div>
+            <script src="products.js"></script>
+</body>
+
+</html>

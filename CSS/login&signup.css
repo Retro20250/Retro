@@ -90,6 +90,8 @@ h3 {
 
 }
 
+
+
 .logreg-box .form-box.login {
 
     transform: translateX(0);
@@ -174,6 +176,15 @@ h3 {
     left: 0;
     transform: translateY(-50%);
     transition: 0.5s ease;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
 
 }
 
