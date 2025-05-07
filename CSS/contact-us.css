@@ -1,0 +1,139 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    --pc: #ff6b6b;
+    --sc: #4ecdc4;
+    --dc: #2E2C2F;
+    --lc: #8C5E3C;
+    --gh: #E07A5F;
+  }
+
+  body {
+    background-color: #fdfdfd;
+    color: var(--dc);
+    padding-top:0px;
+  }
+
+  header {
+    background-color: var(--dc);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 999;
+    position: fixed;
+    padding: 10px 100px;
+    align-items: center;
+    margin-bottom: 10px; ;
+  }
+
+  header .logo {
+    text-decoration: none;
+    color: var(--pc);
+    font-weight: 800;
+    font-size: 1.8em;
+    padding-left: 30px;
+  }
+
+  header .nav a {
+    font-weight: 500;
+    font-size: 1.1em;
+    color: var(--pc);
+    text-decoration: none;
+    margin: 10px;
+  }
+
+  header .nav a:hover {
+    color: var(--sc);
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 20px;
+  }
+
+  h2 {
+    color: var(--pc);
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    color: var(--dc);
+  }
+
+  form input, form select, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  form .row {
+    display: flex;
+    gap: 20px;
+  }
+
+  form .row input {
+    flex: 1;
+  }
+
+  form button {
+    background-color: var(--pc);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  form button:hover {
+    background-color: var(--gh);
+  }
+
+  form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.95em;
+  }
+
+  form a {
+    color: var(--sc);
+    text-decoration: none;
+  }
+
+  form a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-info {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid var(--pc);
+    border-radius: 5px;
+  }
+
+  .contact-info h3 {
+    color: var(--dc);
+    margin-bottom: 10px;
+  }
+
+  .contact-info a {
+    color: var(--gh);
+    text-decoration: none;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
