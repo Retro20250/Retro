@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nigga</title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="lift">
+            <div class="logo">Y2K</div>
+            <div class="n1">ice cream</div>
+            <div class="n1">cinema</div>
+            <div class="n1">dude</div>
+        </div>
+        <div class="right">
+            <a class="btn">sign in</a>
+            <a class="btn">potato</a>
+        </div>
+    </header>
+    <nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search store" />
+        </div>
+        <div>Discover</div>
+        <div>Browse</div>
+        <div>News</div>
+
+    </nav>
+    <main class="container-wrapper">
+        <div class="container">
+            <div class="image" style="background-image: url('snack12.jpg');"></div>
+            <div class="product">
+                <h2>CAPPY JUICE</h2>
+                <p id="p1">A natural fruit drink offered by Coca-Cola, available in a variety of flavors such as orange,
+                    apple, mango, peach, and pineapple.</p>
+                <p id="p3">It was made in 2013.</p>
+                <p id="p4">The price is <span id="price">2 EGP</span></p>
+                <div class="action">
+                    <div class="quantity-wrapper">
+                        <button class="quantity-btn" onclick="decrease()">-</button>
+                        <span id="quantity">1</span>
+                        <button class="quantity-btn" onclick="increase()">+</button>
+                    </div>
+                    <button class="submit">
+                        <div class="btn2">Get it</div>
+                        <div class="wave"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <section class="product-section" data-id="2">
+        <h2 class="product-section-title"> <br>For other products </h2>
+
+        <div class="product-image-controls">
+            <button class="product-nav-button product-left" onclick="showPrevImages(2)"
+                onmouseover="highlightButton(this)" onmouseout="resetButton(this)">&lt;</button>
+            <button class="product-nav-button product-right highlighted" onclick="showNextImages(2)"
+                onmouseover="highlightButton(this)" onmouseout="resetButton(this)">&gt;</button>
+        </div>
+        <div class="product-image-slider">
+            <div class="product-image-row" id="product-row1-2">
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="chixo kantine.html"> <img src="snack10.jpg" alt="snack1"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="crunch kantine.html"><img src="snack6.jpg" alt="snack2"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="gum kantine.html"><img src="gum.jpg" alt="snack3"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="lolita.html"><img src="snack8.jpg" alt="snack4"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="yes juice kantine.html"><img src="snack9.jpg" alt="snack5"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-image-row hidden" id="product-row2-2">
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="corona kantine.html"><img src="corona.jpg" alt="snack6"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="big baby kantine.html"> <img src="snack11.jpg" alt="snack7">
+                        </a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="forkoh loz kantine.html"> <img src="snack4.jpg" alt="snack8"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="shanbo kantine.html"><img src="snack2.jpg" alt="snack9"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="lion kantine.html"><img src="snack5.jpg" alt="snack10"></a>
+                    </div>
+                </div>
+            </div>
+            <script src="products.js"></script>
+</body>
+
+</html>
