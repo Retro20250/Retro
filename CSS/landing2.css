@@ -6,12 +6,14 @@
   }
   html{
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
     
 
   }
   section{
     scroll-snap-align: start;
     height: 100vh;
+    position: relative
   }
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   body{
@@ -20,10 +22,10 @@
       background-color: #010101;
       color: #eee;
       overflow-y: scroll; /* تخلي التمرير شغال */
-      overflow-x: hidden;
+      /* overflow-x: hidden; */
   }
   body::-webkit-scrollbar {
-    display: none; /* Chrome & Safari */
+    /* display: none; Chrome & Safari */
   }
 
   
@@ -247,10 +249,7 @@
       }
   }
 
-  .two{
-    background-color: chocolate;
-  }
-
+  
 
   /* 000000000000000000000000 */
   /* 000000000000000000000000 */
@@ -358,3 +357,98 @@
     transform-origin: bottom left;
   }
   
+.three{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: #d697db;
+    align-items: center;
+}
+.THREE-COLOM{
+
+    height: 60%;
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    left: 20%;
+
+}
+.colom{
+    width: 43%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-right: yellow solid 2px;
+}
+.colom h1{
+    padding: 10px;
+    font-weight:  200 ;
+}
+.content2{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border-radius: 10px;
+    height: 80px;
+transition: ease 0.5s;
+margin-bottom: -6px;
+    
+}
+.content2:hover{
+    transform: scale(1.1);
+    color: #ffaf03;
+    background-color: #1c1c1c;
+}
+.content2 img{
+    width: 50px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.content2 .kalam{
+  gap: 3px;
+  display: flex;
+  flex-direction: column;
+}
+.desc{
+  font-size: 8px;
+}
+
+.two{
+    height: 100vh;
+    background-color: chocolate;
+    position: relative;
+}
+
+
+
+
+
+
+.two {
+    height: 100vh; /* تأكد من أن القسم يأخذ ارتفاع الشاشة بالكامل */
+    background-color: chocolate;
+    position: relative;
+    z-index: 1; /* تأكد من أن القسم في طبقة صحيحة */
+    overflow: hidden; /* منع أي عناصر من الخروج عن حدود القسم */
+}
+
+.three {
+    height: 100vh; /* تأكد من أن القسم يأخذ ارتفاع الشاشة بالكامل */
+    background-color: #f5f5f5; /* لون خلفية مختلف للتوضيح */
+    position: relative;
+    z-index: 0; /* تأكد من أن القسم في طبقة صحيحة */
+    margin-top: 0; /* إزالة أي تداخل */
+    overflow: hidden; /* منع أي عناصر من الخروج عن حدود القسم */
+}
+
+
+
+
+

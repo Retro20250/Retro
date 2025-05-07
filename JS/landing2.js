@@ -6,27 +6,31 @@ let thumbnails = document.querySelectorAll('.thumbnail .item');
 // config param
 let countItem = items.length;
 let itemActive = 0;
+
 // event next click
-next.onclick = function(){
+next.onclick = function () {
     itemActive = itemActive + 1;
-    if(itemActive >= countItem){
+    if (itemActive >= countItem) {
         itemActive = 0;
     }
     showSlider();
-}
-//event prev click
-prev.onclick = function(){
+};
+
+// event prev click
+prev.onclick = function () {
     itemActive = itemActive - 1;
-    if(itemActive < 0){
+    if (itemActive < 0) {
         itemActive = countItem - 1;
     }
     showSlider();
-}
+};
+
 // auto run slider
 let refreshInterval = setInterval(() => {
     next.click();
-}, 5000)
-function showSlider(){
+}, 5000);
+
+function showSlider() {
     let itemActiveOld = document.querySelector('.slider .list .item.active');
     let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
     itemActiveOld.classList.remove('active');
@@ -47,7 +51,8 @@ function showSlider(){
         }, 5000);
     }
 }
-function setPositionThumbnail () {
+
+function setPositionThumbnail() {
     let thumbnailActive = document.querySelector('.thumbnail .item.active');
     let rect = thumbnailActive.getBoundingClientRect();
     if (rect.left < 0 || rect.right > window.innerWidth) {
@@ -60,14 +65,26 @@ thumbnails.forEach((thumbnail, index) => {
     thumbnail.addEventListener('click', () => {
         itemActive = index;
         showSlider();
-    })
-})
-
+    });
+});
 
 let cards = document.querySelectorAll(".image-card");
-
 let stackArea = document.querySelector(".stack-area");
 
+function rotateCards() {
+    let angle = 0;
+    cards.forEach((card, index) => {
+        if (card.classList.contains("away")) {
+            card.style.transform = `translateY(-120vh) rotate(-48deg)`;
+        } else {
+            card.style.transform = `rotate(${angle}deg)`;
+            angle = angle - 10;
+            card.style.zIndex = cards.length - index;
+        }
+    });
+}
+
+// تحريك الكروت بناءً على السكروول
 function rotateCards() {
   let angle = 0;
   cards.forEach((card, index) => {
@@ -75,7 +92,7 @@ function rotateCards() {
       card.style.transform = `translateY(-120vh) rotate(-48deg)`;
     } else {
       card.style.transform = `rotate(${angle}deg)`;
-      angle = angle - 10;
+      angle -= 10;
       card.style.zIndex = cards.length - index;
     }
   });
@@ -85,27 +102,49 @@ rotateCards();
 
 window.addEventListener("scroll", () => {
   let distance = window.innerHeight * 0.5;
-
   let topVal = stackArea.getBoundingClientRect().top;
+  let index = Math.floor(-1 * (topVal / distance + 1));
 
-  let index = -1 * (topVal / distance +1);
-
-  index = Math.floor(index);
-
-  for (i = 0; i < cards.length; i++) {
+  for (let i = 0; i < cards.length; i++) {
     if (i <= index) {
       cards[i].classList.add("away");
     } else {
       cards[i].classList.remove("away");
     }
   }
+
   rotateCards();
 });
 
 
+// إظهار شريط البحث عند الضغط على الأيقونة
 const searchBox = document.querySelector(".search");
 const icon = document.querySelector(".search-icon");
 
-icon.addEventListener("click", () => {
-  searchBox.classList.toggle("show");
+if (icon) {
+  icon.addEventListener("click", () => {
+    searchBox.classList.toggle("show");
+  });
+}
+
+
+// التنقل التلقائي بين السكاشن
+let sectionTwo = document.querySelector(".two");
+let sectionThree = document.querySelector(".three");
+
+let hasScrolledToThree = false;
+
+window.addEventListener("scroll", () => {
+  if (
+    sectionTwo &&
+    sectionTwo.getBoundingClientRect().bottom <= 0 &&
+    !hasScrolledToThree
+  ) {
+    hasScrolledToThree = true;
+    sectionThree.scrollIntoView({ behavior: "smooth" });
+  }
+
+  if (sectionTwo && sectionTwo.getBoundingClientRect().bottom > 0) {
+    hasScrolledToThree = false;
+  }
 });
