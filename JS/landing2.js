@@ -68,6 +68,13 @@ thumbnails.forEach((thumbnail, index) => {
     });
 });
 
+
+
+/* 000000000000000000000000000000000000000 */
+/* 000000000000000000000000000000000000000 */
+/* 000000000000000000000000000000000000000 */
+
+
 let cards = document.querySelectorAll(".image-card");
 let stackArea = document.querySelector(".stack-area");
 
@@ -148,3 +155,5 @@ window.addEventListener("scroll", () => {
     hasScrolledToThree = false;
   }
 });
+
+
