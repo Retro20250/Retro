@@ -19,8 +19,11 @@
       margin: 0;
       background-color: #010101;
       color: #eee;
-   
-
+      overflow-y: scroll; /* تخلي التمرير شغال */
+      overflow-x: hidden;
+  }
+  body::-webkit-scrollbar {
+    display: none; /* Chrome & Safari */
   }
 
   
@@ -38,6 +41,11 @@
       align-items: center;
       position: relative;
       z-index: 100;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
   }
   header .logo{
       font-weight: bold;
@@ -50,6 +58,7 @@
       justify-content: center;
       gap: 20px;
       font-weight: 500;
+
   }
   /* css slider */
   .slider{
@@ -220,6 +229,7 @@
     position: relative;
     background:black;
     display: flex;
+    margin-top: -50;
   }
   
   /* الجزء الشماللللللللللللللللل*/
