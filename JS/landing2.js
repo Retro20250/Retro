@@ -84,39 +84,67 @@ function rotateCards() {
     });
 }
 
+// تحريك الكروت بناءً على السكروول
+function rotateCards() {
+  let angle = 0;
+  cards.forEach((card, index) => {
+    if (card.classList.contains("away")) {
+      card.style.transform = `translateY(-120vh) rotate(-48deg)`;
+    } else {
+      card.style.transform = `rotate(${angle}deg)`;
+      angle -= 10;
+      card.style.zIndex = cards.length - index;
+    }
+  });
+}
+
 rotateCards();
 
 window.addEventListener("scroll", () => {
-    let distance = window.innerHeight * 0.5;
-    let topVal = stackArea.getBoundingClientRect().top;
-    let index = -1 * (topVal / distance + 1);
-    index = Math.floor(index);
+  let distance = window.innerHeight * 0.5;
+  let topVal = stackArea.getBoundingClientRect().top;
+  let index = Math.floor(-1 * (topVal / distance + 1));
 
-    for (let i = 0; i < cards.length; i++) {
-        if (i <= index) {
-            cards[i].classList.add("away");
-        } else {
-            cards[i].classList.remove("away");
-        }
+  for (let i = 0; i < cards.length; i++) {
+    if (i <= index) {
+      cards[i].classList.add("away");
+    } else {
+      cards[i].classList.remove("away");
     }
-    rotateCards();
+  }
+
+  rotateCards();
 });
 
-// Handle smooth scrolling between sections
+
+// إظهار شريط البحث عند الضغط على الأيقونة
+const searchBox = document.querySelector(".search");
+const icon = document.querySelector(".search-icon");
+
+if (icon) {
+  icon.addEventListener("click", () => {
+    searchBox.classList.toggle("show");
+  });
+}
+
+
+// التنقل التلقائي بين السكاشن
 let sectionTwo = document.querySelector(".two");
 let sectionThree = document.querySelector(".three");
 
-let hasScrolledToThree = false; // Prevent multiple scrolls
+let hasScrolledToThree = false;
 
 window.addEventListener("scroll", () => {
-    // Check if sectionTwo is fully out of view
-    if (sectionTwo.getBoundingClientRect().bottom <= 0 && !hasScrolledToThree) {
-        hasScrolledToThree = true; // Prevent repeated scrolling
-        sectionThree.scrollIntoView({ behavior: "smooth" });
-    }
+  if (
+    sectionTwo &&
+    sectionTwo.getBoundingClientRect().bottom <= 0 &&
+    !hasScrolledToThree
+  ) {
+    hasScrolledToThree = true;
+    sectionThree.scrollIntoView({ behavior: "smooth" });
+  }
 
-    // Reset state if user scrolls back to sectionTwo
-    if (sectionTwo.getBoundingClientRect().bottom > 0) {
-        hasScrolledToThree = false;
-    }
+  if (sectionTwo && sectionTwo.getBoundingClientRect().bottom > 0) {
+    hasScrolledToThree = false;
+  }
 });
