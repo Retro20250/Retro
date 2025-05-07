@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+  <div class="stack-area">
+    <div class="left">
+      <div class="title">Golden picks</div>
+      <div class="sub-title">
+        Step back into the golden days when life was simpler, and everything seemed to be a little more affordable. Our collection of nostalgic products brings you a taste of the past, full of memories, warmth, and the kind of charm that only the good old days could offer.
+        <br />
+        <button>See More Details</button>
+      </div>
+    </div>
+    <div class="right">
+      <div class="image-card">
+        <img src="images/صورة واتساب بتاريخ 2025-04-29 في 14.50.37_f4281577.jpg" alt="Image 1">
+      </div>
+      <div class="image-card">
+        <img src="images/صورة واتساب بتاريخ 2025-04-29 في 14.50.09_a124f2e1.jpg" alt="Image 2">
+      </div>
+      <div class="image-card">
+        <img src="images/صورة واتساب بتاريخ 2025-04-29 في 14.51.01_bc784a15.jpg" alt="Image 3">
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<script>
+  let cards = document.querySelectorAll(".image-card");
+
+  let stackArea = document.querySelector(".stack-area");
+
+  function rotateCards() {
+    let angle = 0;
+    cards.forEach((card, index) => {
+      if (card.classList.contains("away")) {
+        card.style.transform = `translateY(-120vh) rotate(-48deg)`;
+      } else {
+        card.style.transform = `rotate(${angle}deg)`;
+        angle = angle - 10;
+        card.style.zIndex = cards.length - index;
+      }
+    });
+  }
+
+  rotateCards();
+
+  window.addEventListener("scroll", () => {
+    let distance = window.innerHeight * 0.5;
+
+    let topVal = stackArea.getBoundingClientRect().top;
+
+    let index = -1 * (topVal / distance + 1);
+
+    index = Math.floor(index);
+
+    for (i = 0; i < cards.length; i++) {
+      if (i <= index) {
+        cards[i].classList.add("away");
+      } else {
+        cards[i].classList.remove("away");
+      }
+    }
+    rotateCards();
+  });
+</script>
+
+ </body>
+</html>
+
