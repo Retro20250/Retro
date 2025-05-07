@@ -22,10 +22,10 @@
       background-color: #010101;
       color: #eee;
       overflow-y: scroll; /* تخلي التمرير شغال */
-      /* overflow-x: hidden; */
+      overflow-x: hidden;
   }
   body::-webkit-scrollbar {
-    /* display: none; Chrome & Safari */
+    display: none; Chrome & Safari
   }
 
   
@@ -362,8 +362,14 @@
     display: flex;
     position: relative;
     justify-content: center;
-    background-color: #d697db;
+    background-color: #eb7680;
     align-items: center;
+}
+.arti-l video{
+  position: relative;
+  height: 100vh;
+  display: flex
+;
 }
 .arti-r{
 
@@ -423,3 +429,93 @@ margin-bottom: -6px;
 .two{
   height: 250vh;
 }
+
+
+
+
+
+
+/* online sectionnnnnnnnnnnnnnnnnnnnnnnnnnn */
+.game-section {
+  max-width: 100%;
+  margin: 50px 0; 
+  padding: 40px 50px; 
+  text-align: center;
+  position: relative;
+  margin-bottom: 70px;
+  background-color: aquamarine;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+.game-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* العناصر تبقى ليها نفس الارتفاع */
+  gap: 20px;
+}
+
+.game-card {
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 350px; 
+  display: flex;
+}
+.game-card .name {
+  font-size: 80px;
+  font-weight: 700;
+}
+.game-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.game-card:hover {
+  transform: scale(1.02);
+  border: 1px solid #d864d4;
+  box-shadow: 0 0 10px #00f0ff44;
+}
+
+/* الكروت الكبيرة يمين وشمال */
+.game-card.large {
+  flex: 0 0 30%; /* كل واحدة 30% من المساحة */
+  height: 350px;
+}
+
+.game-card.large img {
+  height: 100%;
+  object-fit: fill;
+}
+
+/* الي في النص */
+.middle-grid {
+  flex: 0 0 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 115px); 
+  gap: 10px;
+}
+
+.middle-grid .game-card {
+  height: 115px;
+}
+
+.middle-grid .game-card img {
+  height: 100%;
+  object-fit: fill;
+}
+
