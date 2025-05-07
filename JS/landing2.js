@@ -88,7 +88,7 @@ window.addEventListener("scroll", () => {
 
   let topVal = stackArea.getBoundingClientRect().top;
 
-  let index = -1 * (topVal / distance + 1);
+  let index = -1 * (topVal / distance +1);
 
   index = Math.floor(index);
 
@@ -100,4 +100,12 @@ window.addEventListener("scroll", () => {
     }
   }
   rotateCards();
+});
+
+
+const searchBox = document.querySelector(".search");
+const icon = document.querySelector(".search-icon");
+
+icon.addEventListener("click", () => {
+  searchBox.classList.toggle("show");
 });
