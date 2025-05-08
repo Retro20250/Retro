@@ -89,7 +89,7 @@ nav{
   .games-cards{
     flex-wrap: wrap;
     display: flex;
-    margin: 10px;
+    margin: 5px;
     justify-content: center;
     align-items: flex-start;
 
@@ -231,10 +231,9 @@ nav{
   .games-cards2{
     flex-wrap: wrap;
     display: flex;
-    margin: 10px;
-    justify-content: left;
+    margin: 5px;
+    justify-content: center;
     align-items: flex-start;
-
   }
 
   .game8{
@@ -341,7 +340,7 @@ nav{
 
   .game14{
     display: flex;
-    margin-right: 8px;
+    margin-right: 5px;
     box-sizing: border-box;
     overflow: hidden;
     justify-content: left;
@@ -360,8 +359,9 @@ nav{
   .games-cards3{
     flex-wrap: wrap;
     display: flex;
-    margin: 10px;
-    justify-content: left;
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+    justify-content: center;
     align-items: flex-start;
 
   }
@@ -567,13 +567,9 @@ nav{
     background-color: #ffd166;
     transform: scale(1.1);
   }
-  .container-fixed {
-    width: 1345px;
-    margin: 0 auto;
-  }
-  
-    
  
+  
+  
  
  
  
