@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+
+:root {
+  --pc: #ffaf03;
+  --sc: #1c1c1c;
+  --dc: #121212;
+  --lc: #ffffff;
+  --gh: #E07A5F;
+}
+
+body {
+  background-color: var(--dc);
+  color: var(--lc);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+
+
+
+}
+
+
+header {
+
+  justify-content: space-between;
+  padding: 16px 32px;
+  align-items: center;
+  background-color: #1c1c1c;
+  font-size: 16px;
+  border-bottom: solid var(--pc) 2px;
+
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 70vh;
+  display: flex;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border-radius: 15px;
+
+}
+
+.l-sec {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.l-sec img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.r-sec {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  padding: 10px;
+  height: 95%;
+  width: 30%;
+  background-color: #1c1c1c;
+}
+
+.big-btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.sm-btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+
+}
+
+.big-btn a {
+
+  background-color: #ffaf03;
+  color: white;
+  height: 30px;
+  text-decoration: none;
+  border-radius: 7px;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.sm-btn a {
+
+  background-color: #ffaf03;
+  color: white;
+  height: 30px;
+  text-decoration: none;
+  border-radius: 7px;
+  text-align: center;
+  width: 50%;
+  text-align: center;
+  padding-top: 7px;
+}
+
+a:hover {
+  background-color: #8f6304;
+  transform: scale(1.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ffaf03;
+}
+
+#about {
+
+  margin: 15px;
+  font-size: larger;
+  line-height: 30px;
+}
+
+.info {
+
+  margin: 5px 15px;
+  font-size: larger;
+  line-height: 30px;
+}
+
+/* Hoooooooooooommmmmmmmmmmmmmmmmmmeeeeeeee*/
+
+
+
+
+.game-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  margin: 30px;
+
+}
+
+.game-card {
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+
+.game-card .name {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.game-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.game-card:hover {
+  transform: scale(1.02);
+  border: 1px solid #d864d4;
+  box-shadow: 0 0 10px #00f0ff44;
+}
+
+/* اول واحد عالشمال  */
+.left-column {
+  flex: 0 0 24%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.left-column .small-left {
+  height: 180px;
+}
+
+.left-column .mini-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.left-column .mini-grid .game-card {
+  height: 170px;
+}
+
+/* دول اللي في النص  */
+.middle-grid {
+  flex: 0 0 27%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* عشان العرض بتاعهم يبقى متساوي  */
+  grid-template-rows: repeat(3, 95px);
+  gap: 45px;
+}
+
+.middle-grid .game-card  {
+  height: 135px;
+  
+}
+
+/* تاني واحد عاليمين  */
+.right-column {
+  flex: 0 0 27%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right-column .medium {
+  height: 200px;
+}
+
+.right-column .mini-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.right-column .mini-grid .game-card {
+  height: 130px;
+}
+
+/* اول واحد عاليمين */
+.right-extra {
+  flex: 0 0 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right-extra .game-card {
+  height: 130px;
+}
+
+/* اخليهم كلهم نفس الطول  */
+.left-column,
+.middle-grid,
+.right-column,
+.right-extra {
+  height: 550px;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nigga</title>
+    <link rel="stylesheet" href="products.css">
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="lift">
+            <div class="logo">Y2K</div>
+            <div class="n1">ice cream</div>
+            <div class="n1">cinema</div>
+            <div class="n1">dude</div>
+        </div>
+        <div class="right">
+            <a class="btn">sign in</a>
+            <a class="btn">potato</a>
+        </div>
+    </header>
+    <nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search store" />
+        </div>
+        <div>Discover</div>
+        <div>Browse</div>
+        <div>News</div>
+
+    </nav>
+    <main class="container-wrapper">
+        <div class="container">
+            <div class="image" style="background-image: url('tool6.jpg');"></div>
+            <div class="product">
+                <h2>STICKERS</h2>
+                <p id="p1">Cards of stickers in all shapes and cartons.</p>
+                <p id="p3">It was made in 2009.</p>
+                <p id="p4">The price of the card is <span id="price">2.5 EGP</span></p>
+                <div class="action">
+                    <div class="quantity-wrapper">
+                        <button class="quantity-btn" onclick="decrease()">-</button>
+                        <div class="value">
+                            <span class="number">1</span>
+                            <span class="text">Quantity</span>
+                        </div>
+                        <button class="quantity-btn" onclick="increase()">+</button>
+                    </div>
+                    <button class="submit">
+                        <div class="btn2">Get it</div>
+                        <div class="wave"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <section class="product-section" data-id="2">
+        <h2 class="product-section-title"> <br>For other products </h2>
+
+        <div class="product-image-controls">
+            <button class="product-nav-button product-left" onclick="showPrevImages(2)"
+                onmouseover="highlightButton(this)" onmouseout="resetButton(this)">&lt;</button>
+            <button class="product-nav-button product-right highlighted" onclick="showNextImages(2)"
+                onmouseover="highlightButton(this)" onmouseout="resetButton(this)">&gt;</button>
+        </div>
+        <div class="product-image-slider">
+            <div class="product-image-row" id="product-row1-2">
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="ruler.html"> <img src="tool5.jpg" alt="tool1">
+                        </a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="pen2.html"><img src="tool4.jpg" alt="tool2"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="eraser.html"><img src="tool1.jpg" alt="tool3"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="pen1.html"><img src="tool2.jpg" alt="tool4"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="chalk library.html"><img src="tool3.jpg" alt="tool5"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-image-row hidden" id="product-row2-2">
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="majid library.html"> <img src="book4.jpg" alt="tool6"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="depthsea library.html"> <img src="book1.jpg" alt="tool7"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="disney library.html"><img src="book2.jpg" alt="tool8"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="mickey library.html"><img src="book3.jpg" alt="tool9"></a>
+                    </div>
+                </div>
+                <div class="product-image-card">
+                    <div class="product-image-container">
+                        <a href="bag.html"><img src="bag.jpg" alt="tool10"></a>
+                    </div>
+                </div>
+            </div>
+            <script src="products.js"></script>
+</body>
+
+</html>

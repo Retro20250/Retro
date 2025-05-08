@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #111;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    /*el components elly gwa el class de squares kda*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*lma yla2y msa7a byzwd column equally lw mfeesh 5las la 3shan auto,
+       hy3ml kol column min 200 px */
+    gap: 15px;
+    /*gap between cards*/
+}
+
+.grid-item {
+    position: relative;
+    /*3shan n7ot el absolute fo2o*/
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    /*my5lesh ay haga outside el card tban*/
+    transition: transform 0.3s ease;
+    /*tkbeer el card by7sal tdregy fe w2t 0.3 sec*/
+    height: 300px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    /*tt7t fo2 el card*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*bottom,right,left hya laz2a fehom no space*/
+    background: rgba(0, 0, 0, 0.6);
+    /*black background with opacity .6*/
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    opacity: 0;
+    /*mn 8er ma a point msh hyban el klam*/
+    transition: opacity 0.3s ease;
+    font-size: 16px;
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    /*el card lma a point 3leh ykbr*/
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    /* el element bykon shfaf khales fe el awel (msh mwgod) */
+    transform: scale(0.8);
+    /* el element byzghr bnsba 80%  */
+    transition: all 0.6s ease-out;
+    /* any change in opacity or transform hshsl bshkl tdregy le moda 0.6s
+    ease-out-> el hrka tbd2 bsor3a w b3den tb2a bte2a
+     */
+}
+
+/* lma el element ydkhol el viewport*/
+.animate-on-scroll.visible {
+    opacity: 1;
+    /* el element yb2a zaher kolo mn khlal class (visible) */
+    transform: scale(1);
+    /* el element yrg3 le hagmo el tabe3y bnsba 100% w da ely by3ml el zoom-in */
+}
