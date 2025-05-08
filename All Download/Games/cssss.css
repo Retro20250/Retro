@@ -87,7 +87,7 @@ header {
   flex-direction: column;
 }
 
-.sm-btn {
+.copy-btn {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -106,7 +106,7 @@ header {
   padding-top: 7px;
 }
 
-.sm-btn a {
+.copy-btn a {
 
   background-color: #ffaf03;
   color: white;
@@ -114,7 +114,7 @@ header {
   text-decoration: none;
   border-radius: 7px;
   text-align: center;
-  width: 50%;
+  width: 100%;
   text-align: center;
   padding-top: 7px;
 }
