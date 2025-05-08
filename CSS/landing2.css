@@ -173,6 +173,7 @@
   .slider .list .item.active p:nth-child(3){
       animation-duration: 1.3s;
   }
+  /***************************************************************************/
   .arrows{
     position: absolute;
     top: 71%;
@@ -200,6 +201,7 @@
       background-color: #eee;
       color: black;
   }
+  /***************************************************************************/
   .thumbnail{
       position: absolute;
       bottom: 50px;

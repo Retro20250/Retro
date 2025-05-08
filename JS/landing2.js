@@ -9,47 +9,36 @@ let itemActive = 0;
 
 // event next click
 next.onclick = function () {
-    itemActive = itemActive + 1;
-    if (itemActive >= countItem) {
-        itemActive = 0;
-    }
+    itemActive++;
+    if (itemActive >= countItem) itemActive = 0;
     showSlider();
 };
 
 // event prev click
 prev.onclick = function () {
-    itemActive = itemActive - 1;
-    if (itemActive < 0) {
-        itemActive = countItem - 1;
-    }
+    itemActive--;
+    if (itemActive < 0) itemActive = countItem - 1;
     showSlider();
 };
 
-// auto run slider
+// auto run slider forever
 let refreshInterval = setInterval(() => {
     next.click();
 }, 5000);
 
 function showSlider() {
-    let itemActiveOld = document.querySelector('.slider .list .item.active');
-    let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
-    itemActiveOld.classList.remove('active');
-    thumbnailActiveOld.classList.remove('active');
+    document.querySelector('.slider .list .item.active')?.classList.remove('active');
+    document.querySelector('.thumbnail .item.active')?.classList.remove('active');
 
     items[itemActive].classList.add('active');
     thumbnails[itemActive].classList.add('active');
     setPositionThumbnail();
 
+    // Restart the interval without condition
     clearInterval(refreshInterval);
-    if (itemActive < countItem - 1) {
-        refreshInterval = setInterval(() => {
-            if (itemActive + 1 >= countItem) {
-                document.querySelector(".two").scrollIntoView({ behavior: "smooth" });
-            } else {
-                next.click();
-            }
-        }, 5000);
-    }
+    refreshInterval = setInterval(() => {
+        next.click();
+    }, 5000);
 }
 
 function setPositionThumbnail() {
@@ -66,6 +55,16 @@ thumbnails.forEach((thumbnail, index) => {
         itemActive = index;
         showSlider();
     });
+});
+document.addEventListener('keydown', function (event) {
+    // لو الضغط كان على السهم لليمين (Right Arrow)
+    if (event.key === 'ArrowRight') {
+        next.click();  // يعمل click على زرار "التالي"
+    }
+    // لو الضغط كان على السهم لليسار (Left Arrow)
+    else if (event.key === 'ArrowLeft') {
+        prev.click();  // يعمل click على زرار "السابق"
+    }
 });
 
 
