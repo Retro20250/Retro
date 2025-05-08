@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     width: 100%;
     height: 100vh;
@@ -74,3 +75,135 @@ section{
     font-size: 20px;
     color: #333;
   } 
+=======
+/* ====== Reset أساسي ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    background-color: #1f1717;
+  }
+  
+ 
+  .horizontal-scroll {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .slider-buttons {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+   }
+  
+
+  .slider-buttons button {
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    background: #f9d9f9;
+    opacity: 0.8;
+    color: rgb(98, 40, 94);
+    border: none;
+    border-radius: 24px;
+    transition: background 0.3s ease;
+  }
+  
+  .slider-buttons button:hover {
+    background: #760e63;
+  }
+  
+
+  .slider-wrapper {
+    display: flex;
+    height: 100%;
+    transition: transform 1.2s ;
+
+  }
+  
+  .slide {
+    min-width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.98);
+    transition: opacity 0.6s ease, transform 0.9s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+ 
+  
+ .image-text img,
+ .image-text .text {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease-out, transform 1.7s ease-out;
+}
+
+ .slide.active .image-text img,
+ .slide.active .image-text .text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+  .image-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 40px;
+    gap: 100px;
+  }
+  
+  .image-text img {
+    height: 70vh;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    margin-left: -500px;  
+    margin-right: 10px; 
+    
+  }
+  
+  .text {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #eeadea;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  
+  
+  
+  .text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #f29ae8;
+  }
+  
+>>>>>>> d2f8af103c41bb8df59dd35fdacae82b175faea7

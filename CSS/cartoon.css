@@ -3,15 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-
 }
+
 :root {
     --pc: #ffaf03;
     --sc: #1c1c1c;
     --dc: #121212;
     --lc: #ffffff;
-    --gh: #E07A5F
+    --gh: #E07A5F;
 }
+
 body{
     background-color: var(--dc);
     color: var(--lc);
@@ -19,102 +20,93 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+
 header{
     display: flex;
     justify-content: space-between;
     padding: 16px 32px;
     align-items: center;
-    background-color: #1c1c1c;
+    background-color: var(--sc);
     font-size: 16px;
-    border-bottom:solid var(--pc) 2px ;
-    
+    border-bottom: solid var(--pc) 2px;
 }
+
 header .lift{
     display: flex;
     gap: 32px;
     align-items: center;
-    
-
 }
+
 header .right{
     display: flex;
     gap: 20px;
     align-items: center;
-    
-    
 }
+
 header .lift div{
     cursor: pointer;
-    
-
 }
+
 header .right div{
-
     cursor: pointer;
-    
 }
+
 .logo{
     font-size: 25px;
-    font-weight: 700; 
-       
+    font-weight: 700;
 }
+
 .btn{
-    background-color: #ffaf03;
-    border-radius:10px ;
-    padding: 4px 10px; 
+    background-color: var(--pc);
+    border-radius: 10px;
+    padding: 4px 10px;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--lc);
     cursor: pointer;
+    transition: opacity 0.3s;
 }
+
+.btn:hover {
+    opacity: 0.8;
+}
+
 nav{
     display: flex;
     gap: 20px;
     padding: 16px 32px;
     align-items: center;
-    background-color: #1c1c1c;
-    font-size: 16px;
-    
-
+    background-color: var(--sc);
 }
-.search-bar {
-    flex-grow: 1;
-  }
-  .search-bar input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-  }
 
-  
-
-
-/*.............................................................................................................*/
-
-
-/*el bos elly fe el section bta3 el video w cartoon description*/
 .first-section {
-    position: relative;    /*da reference l ay haga gwah mktob feha absolute*/
-    height: 90vh;          /*height of box 90% mn el height screen, vh=viewport height*/   
-    overflow: hidden;      /*lw haga 5rgt bra 7dodo t5tfy msh htt3rd*/
+    position: relative;    
+    height: 90vh;          
+    overflow: hidden;      
   }
   
-  /*el video nfso*/
+ 
   .video120fps {
-    position: absolute;    /*el video fe mkan mo3yan fe el first-section*/
-    width: 100%;  height: 100%;         /*el video hya5od msa7at el first-section kolha*/  
-    object-fit: cover;                  /*hwa elly by3ml strech ll video 3la el msa7a*/
-    z-index: -1;                        /*send backward*/
-    transition: all 0.5s ease-in-out;   
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+    border-radius: 15px;
+    margin-top: 50px;
+    filter: brightness(0.7);
   }
+
+
+  
   
   /* el text content 3la el video*/
 .text-content {
     position: absolute;
-    bottom: 130px;     /*yseeb msa7a beno w been el bottom 130px*/      
-    left: 120px;       /*yseeb msa7a beno w been el left 120px*/  
+    bottom: 130px;         
+    left: 120px;       
     color: white;
-    z-index: 1;        /*bring forward*/
+    z-index: 1;        
     text-align: left;   
     max-width: 600px;
     font-family: 'Helvetica Neue', sans-serif
@@ -128,18 +120,14 @@ nav{
   
   .text-content p {
     font-size: 18px;
-    line-height: 1.5;    /*msafa ben kol line wl tany*/
-  }
+    line-height: 1.5;    
 
-
-  /*.............................................................................................................*/
-
- 
-  body {
+}
+body {
     background-color: #2c2c2c;
     color: white;
     font-family: Arial, sans-serif;
-    padding: 20px;
+    
   }
 
   .rating-section {
@@ -148,24 +136,30 @@ nav{
     gap: 10px;
     margin-bottom: 20px;
   }
-
+  
   .stars {
     display: flex;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
     gap: 5px;
     cursor: pointer;
   }
-
+  
   .stars i {
     color: lightgray;
     font-size: 24px;
     transition: color 0.3s;
   }
-
+  
   .stars i:hover,
   .stars i:hover ~ i {
     color: gold;
   }
+  
+  .stars i.selected,
+  .stars i.selected ~ i {
+    color: gold;
+  }
+  
 
   .rating-text {
     font-size: 16px;
@@ -180,7 +174,7 @@ nav{
     color: black;
     border: none;
     padding: 12px 20px;
-    border-radius: 3px;
+    border-radius: 15px;
     font-size: 12px;
     font-weight: bold;
     cursor: pointer;
@@ -196,12 +190,9 @@ nav{
   }
 
   .watchlist-btn i {
-    font-size: 18px;
-  }
-
-   /*.............................................................................................................*/
-   
-   h2 {
+    font-size: 18px;
+}
+h2 {
     margin-bottom: 20px;
   }
 
@@ -209,6 +200,8 @@ nav{
     display: flex;
     gap: 20px;
     overflow-x: auto;
+    scrollbar-width: none;
+    justify-content: center;
   }
 
   .cartoon-card {
@@ -245,86 +238,379 @@ nav{
   .cartoon-title {
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 5px;
-  }
+    margin-bottom:5px;
+}
 
+/*..............................................................*/
 
-/*.............................................................................................................*/
-.clip-and-buttons {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+}
+
+.all-block {
+  background: linear-gradient(-45deg, #0d1b2a, #1b263b, #415a77, #778da9);
+  background-size: 400% 400%;
+  animation: moving-background 15s ease infinite;
+  border-radius: 15px;
+  margin: 60px 8% 20px 8%;
+  min-height: 85vh;
+  padding: 40px;
   display: flex;
-  align-items: flex-start; /* يبدأوا من فوق */
-  justify-content: center; /* ممكن تخليها space-between حسب المساحة */
-  gap: 50px; /* مسافة بين الكرتون والزرارين */
-  margin-top: 50px;
-  padding: 0 50px;
+  gap: 50px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-
-.custom-button {
-  font-size: 18px;
-  width: 220px;
-  padding: 10px 15px;
+@keyframes moving-background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
-
 
 .clip1 {
-  width: 400px;
-  height: 350px;
-  left: 35px;
+  width: 30%;
+  height: 440px;
   overflow: hidden;
-  border-radius: 10px;
-  border: 3px solid #ffffff;
+  border-radius: 15px;
+  border: 3px solid #415a77;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.clip1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: transform 0.3s ease;
+
+}
+
 .clip1:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  border-color: #ff1493;
+  transform: scale(1.05);
   cursor: pointer;
 }
 
-.clip1 video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+.info-and-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1;
+  flex-wrap: wrap;
 }
 
-.clip1:hover video {
-  transform: scale(1.05);
+.info-list {
+  list-style: disc;
+  color: white;
+  font-size: 17px;
+  padding-left: 15px;
+  margin-top: 40px;
+  max-width: 350px;
 }
 
+.info-list li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
 
 .twobuttons-container {
-  position: flex;
-  right: 35px;
-  bottom: 10px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  z-index: 10;
-  
+  gap: 20px;
+  max-width: 420px;
+  margin-top: 60px;
+  padding-right: 40px;
+}
+
+.details {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
 
 .custom-button {
-  background-color: #ff69b4; 
+  background-color: #ff6600;
   color: white;
-  padding: 12px 20px;
+  padding: 10px 12px;
   text-decoration: none;
-  font-size: 40px;
-  width: 600px;
+  font-size: 20px;
+  width: 100%;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 19px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, transform 0.2s ease;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .custom-button:hover {
-  background-color: #ff1493; 
+  background-color: #415a77;
   transform: scale(1.05);
   cursor: pointer;
 }
 
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.characters-wrapper {
+  margin-top: -30px;
+  margin-bottom: -30px;
+  text-align: center;
+  width: 100%;
+}
+
+.characters-section {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.character-card {
+  width: 150px;
+  background-color: #1b263b;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+  transform: scale(1.08);
+}
+
+.character-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  height: 80% ;
+}
+
+.character-card p {
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.information {
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.trivia-box {
+  background-color: #1b263b;
+  border-left: 8px solid #ff6600;
+  border-radius: 5px;
+  padding: 10px;
+  width: 76.9%;
+  margin: 40px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.trivia-box h3 {
+  color: #ffcc00;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.trivia-list {
+  list-style: none;
+  padding-left: 0;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.trivia-list li {
+  margin-bottom: 9px;
+  line-height: 1.6;
+}
+
+/*..............................................................*/
+ h2{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+ }
+
+
+
+
+ .cartoon-section {
+  
+  text-align: center;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.cartoon-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 50px;
+}
+
+.cartoon-section-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #EFEEEA;
+  line-height: 1.2;
+  text-align: left;
+  padding-left: 145px;
+  margin: 0 ;
+}
+
+.cartoon-see-more {
+  color: #fde8ff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #633766;
+  padding: 12px 12px;
+  border-radius: 20px;
+  background-color: #892f89;
+  transition: all 0.3s ease;
+  margin-bottom: -35px;
+  position: absolute;
+  left: 90%;
+  top: 105%;
+
+}
+
+.cartoon-see-more:hover {
+  color: #fff;
+  background-color: #903a9fcf;
+  border-color: #c39ecb;
+}
+
+.cartoon-image-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+
+}
+
+.cartoon-image-row {
+  display: flex;
+  gap: 20px;
+  transition: opacity 0.5s ease;
+  width: 100%;
+  justify-content: center;
+}
+
+.cartoon-image-card {
+  position: relative;
+  width: 210px;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  background-color: #000000;
+  flex-direction: column;
+}
+
+.cartoon-image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.black-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 2;
+}
+.image-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+.cartoon-image-card:hover .black-layer {
+    opacity: 1;
+}
+.info-cartoon {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .cartoon-image-card:hover .info-cartoon {
+    opacity: 1;
+  }
+  
+.info-cartoon p{
+  text-align: left;
+  margin: 7px 0;
+}
+.info-cartoon .channel{
+  font-size: 15px;
+  color:#a6a6a6;
+  font-weight: 900;
+}
+.info-cartoon .name{
+font-weight: 800;
+  font-size: 21px;
+}
+.info-cartoon .des{
+ 
+  font-size: 14px;
+}
+
+.cartoon-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: filter 0.3s ease;
+}
+
+.cartoon-image-card:hover img {
+  filter: brightness(1.11);
+}
 
