@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --pc: #ffaf03;
+  --sc: #1c1c1c;
+  --dc: #121212;
+  --lc: #ffffff;
+  --gh: #E07A5F
+}
+body{
+  background-color: var(--dc);
+  color: var(--lc);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+  align-items: center;
+  background-color: #1c1c1c;
+  font-size: 16px;
+  border-bottom:solid var(--pc) 2px ;
+
+}
+header .lift{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+
+
+}
+header .right{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+
+}
+header .lift div{
+  cursor: pointer;
+
+
+}
+header .right div{
+
+  cursor: pointer;
+
+}
+.logo{
+  font-size: 25px;
+  font-weight: 700; 
+
+}
+.btn{
+  background-color: #ffaf03;
+  border-radius:10px ;
+  padding: 4px 10px; 
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+nav{
+  display: flex;
+  gap: 20px;
+  padding: 16px 32px;
+  align-items: center;
+  background-color: #1c1c1c;
+  font-size: 16px;
+
+
+}
+.search-bar {
+  flex-grow: 1;
+}
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+section{
+  padding: 50px 50px;
+}
+.main{
+  align-items:center;
+}
+.main h2{
+  font-size: 2em;
+  font-weight: 500;
+  color: #ffaf03;
+}
+.main h3{
+  color: #ffffff;
+  font-size: 3em;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.card{
+  background-color: #00000069;
+  margin: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 5px 20px rgba(69, 68, 68, 0.322);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  transition: transform 0.3s ease , box-shadow 0.3s ease;
+}
+.button{
+  font-size: 1.1em;
+  padding: 0.6em 1.2em;
+  font-weight: bold;
+  background-color: #ffaf03;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  align-self: flex-end;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #ca8000;
+  color: #000;
+  cursor: pointer;
+}
+.card:hover{
+  transform: translateX(0) scale(1.07);
+  transition: 0.7s ease;
+}
+.info h3{
+  font-size: 4em;
+}
+.info p{
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  padding: 30px;
+}
+.hidden {
+  opacity: 0;
+  transform: translateX(-100px) scale(1);
+  transition: all 0.6s ease;
+}
+.show {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
