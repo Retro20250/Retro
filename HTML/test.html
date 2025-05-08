@@ -1,133 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nigga</title>
-    <link rel="stylesheet" href="../CSS/test.css">
-
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cartoon Nostalgia</title>
+  <title>Auto Moving Horizontal Sliders</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4e4c1;
+      font-family: sans-serif;
+      height: 100vh; /* منع التمرير العمودي */
+      overflow: hidden; /* منع التمرير العمودي */
+    }
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    .scroll-container {
+      position: absolute;
+      top: 20%;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
 
+    .scroll-container2 {
+      position: absolute;
+      top: 60%;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .horizontal-wrapper {
+      display: flex;
+      transition: transform 0.1s linear;
+      will-change: transform;
+    }
+
+    .slider-item {
+      flex: 0 0 auto;
+      width: 200px;
+      height: 150px;
+      background-color: white;
+      border-radius: 10px;
+      margin: 0 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      line-height: 150px;
+      font-size: 20px;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Lundev</div>
-        <ul class="menu">
-            <li>potato</li>
-            <li>nigaa</li>
-            <li>ziad</li>
-        </ul>
-        <div class="search">
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-            </svg>
+
+<section>
+    <div class="scroll-container">
+        <div class="horizontal-wrapper">
+          <div class="slider-item">Box 1</div>
+          <div class="slider-item">Box 2</div>
+          <div class="slider-item">Box 3</div>
+          <div class="slider-item">Box 4</div>
+          <div class="slider-item">Box 5</div>
+          <div class="slider-item">Box 6</div>
+          <div class="slider-item">Box 7</div>
+          <div class="slider-item">Box 8</div>
+          <div class="slider-item">Box 9</div>
         </div>
-    </header>
-        <div class="slider">
-          <!-- list Items -->
-          <div class="list">
-              <div class="item active">
-                  <img src="../cartoon posters/00c1a48e55d06937ef25d50c2fd2242b.jpg">
-                  <div class="content">
-                      <p>design</p>
-                      <h2>Slider 01</h2>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                      </p>
-                  </div>
-              </div>
-              <div class="item">
-                  <img src="../cartoon posters/01d6d3460ac2a6bea63e0731e9c3110e.jpg">
-                  <div class="content">
-                      <p>design</p>
-                      <h2>Slider 02</h2>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                      </p>
-                  </div>
-              </div>
-              <div class="item">
-                  <img src="../cartoon posters/0ee0418ef9ef52c3139eb2df29fc42ff.jpg">
-                  <div class="content">
-                      <p>design</p>
-                      <h2>Slider 03</h2>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                      </p>
-                  </div>
-              </div>
-              <div class="item">
-                  <img src="../cartoon posters/2a4710508abbb807772d7e6054d47250.jpg">
-                  <div class="content">
-                      <p>design</p>
-                      <h2>Slider 04</h2>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                      </p>
-                  </div>
-              </div>
-              <div class="item">
-                  <img src="../cartoon posters/a75df81127ef8b233878873b8d436655.jpg">
-                  <div class="content">
-                      <p>design</p>
-                      <h2>Slider 05</h2>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                      </p>
-                  </div>
-              </div>
-          </div>
-          <!-- button arrows -->
-          <div class="arrows">
-              <button id="prev"></button>
-              <button id="next">></button>
-          </div>
-          <!-- thumbnail -->
-          <div class="thumbnail">
-              <div class="item active">
-                  <img src="../cartoon posters/8bdc0ac242fcf3e393b02f0501a630b3.jpg">
-                  <div class="content">
-                      Name Slider
-                  </div>
-              </div>
-              <div class="item">
-                  <img src="../cartoon posters/a255dc80f8c6bfbe9a4237b4ca9c130a.jpg">
-                  <div class="content">
-                      Name Slider
-                  </div>
-              </div>
-              <div class="item">
-                  <img src="../cartoon posters/c6176db38a1ab8a97eef51b5e79f83f4.jpg">
-                  <div class="content">
-                      Name Slider
-                  </div>
-              </div>
-              <div class="item">
-                  <img src="../cartoon posters/photo_5800759053494896461_x.jpg">
-                  <div class="content">
-                      Name Slider
-                  </div>
-              </div>
-              <div class="item">
-                  <img src="../cartoon posters/0ee0418ef9ef52c3139eb2df29fc42ff.jpg">
-                  <div class="content">
-                      Name Slider
-                  </div>
-              </div>
-          </div>
-      </div>
+    </div>
+    <div class="scroll-container2">
+        <div class="horizontal-wrapper">
+          <div class="slider-item">Box 1</div>
+          <div class="slider-item">Box 2</div>
+          <div class="slider-item">Box 3</div>
+          <div class="slider-item">Box 4</div>
+          <div class="slider-item">Box 5</div>
+          <div class="slider-item">Box 6</div>
+          <div class="slider-item">Box 7</div>
+          <div class="slider-item">Box 8</div>
+          <div class="slider-item">Box 9</div>
+        </div>
+    </div>
+</section>
+
+<script>
+  let scrollPosition1 = 0;
+  let scrollPosition2 = 0;
+
+  // تحريك الصف الأول تلقائيًا
+  setInterval(() => {
+    scrollPosition1 += 2; // زيادة الموضع بمقدار 2 بكسل
+    const slider1 = document.querySelector(".scroll-container .horizontal-wrapper");
+    slider1.style.transform = `translateX(${-scrollPosition1}px)`;
+
+    // إعادة التمرير إلى البداية إذا انتهى
+    const sliderWidth1 = slider1.scrollWidth;
+    if (scrollPosition1 >= sliderWidth1) {
+      scrollPosition1 = 0;
+    }
+  }, 20); // تحديث كل 20 مللي ثانية
+
+  // تحريك الصف الثاني تلقائيًا في الاتجاه المعاكس
+  setInterval(() => {
+    scrollPosition2 += 2; // زيادة الموضع بمقدار 2 بكسل
+    const slider2 = document.querySelector(".scroll-container2 .horizontal-wrapper");
+    slider2.style.transform = `translateX(${scrollPosition2}px)`;
+
+    // إعادة التمرير إلى البداية إذا انتهى
+    const sliderWidth2 = slider2.scrollWidth;
+    if (scrollPosition2 >= sliderWidth2) {
+      scrollPosition2 = 0;
+    }
+  }, 20); // تحديث كل 20 مللي ثانية
+</script>
+
 </body>
-<script src="../JS/test.js"></script>
 </html>

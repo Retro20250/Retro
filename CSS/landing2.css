@@ -434,7 +434,88 @@ margin-bottom: -6px;
   height: 250vh;
 }
 
+  /* 000000000000000000000000 */
+  /* 000000000000000000000000 */
+  /* 000000000000000000000000 */
+  /* 000000000000000000000000 */
+  /* 000000000000000000000000 */
+  /* 000000000000000000000000 */
 
+.four{
+background-color: #496b5a;
+
+}
+.four img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    overflow: hidden;
+}
+.four .top{
+  width: 66%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  overflow: hidden;
+  z-index: 80;
+  right: 34%;
+}
+
+
+  .scroll-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    top: 40%;
+    z-index: 50;
+  }
+  
+  .horizontal-wrapper {
+    display: flex;
+    animation: scroll-left 15s linear infinite; /* الحركة اللانهائية */
+  }
+  
+  
+  .slider-item {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 150px;
+    font-size: 20px;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+    display: flex
+;
+  }
+
+  .slider-item img{
+    object-fit: fill;
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+
+  }
+  
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-60%); 
+    }
+  }
+  
 
 
 
@@ -521,5 +602,17 @@ margin-bottom: -6px;
 .middle-grid .game-card img {
   height: 100%;
   object-fit: fill;
+}
+
+
+.see-more {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #d864d4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
