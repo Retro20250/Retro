@@ -1,14 +1,15 @@
-let quantity = 1;
+let number = 1;
 
 function increase() { //lma el user ydos 3la (+) el ra2m yzed
-    quantity++;
-    document.getElementById('quantity').textContent = quantity;
+    number++;
+    document.querySelector('.number').textContent = number;
+    // querySelector -> da le el class ely fe el html
 }
 
 function decrease() {
-    if (quantity > 1) { // 3lshan el ra2m my2lsh le el zero
-        quantity--; //lma el user ydos 3la (-) el ra2m y2l
-        document.getElementById('quantity').textContent = quantity;
+    if (number > 1) { // 3lshan el ra2m my2lsh le el zero
+        number--; //lma el user ydos 3la (-) el ra2m y2l
+        document.querySelector('.number').textContent = number;
     }
 }
 
