@@ -380,16 +380,20 @@
     padding: 20px;
     box-sizing: border-box;
     position: relative;
-    left: 20%;
+    left: -5%;
+    transform: translateX(100px);
+ 
+    opacity: 0;
+    animation: showContent .7s .10s ease-in-out 1 forwards;
 
 }
 .colom{
-    width: 43%;
-    background-color: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-right: yellow solid 2px;
+  width: 43%;
+  background-color: #496b5a;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 17px 20px 4px rgba(0, 0, 0, 0.1);
+  border-right: #f2b21a solid 12px;
 }
 .colom h1{
     padding: 10px;
