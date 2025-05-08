@@ -567,6 +567,11 @@ nav{
     background-color: #ffd166;
     transform: scale(1.1);
   }
+  .container-fixed {
+    width: 1345px;
+    margin: 0 auto;
+  }
+  
     
  
  
