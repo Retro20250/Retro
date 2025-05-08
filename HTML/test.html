@@ -1,133 +1,1202 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartoon Home</title>
+    <link rel="stylesheet" href="../css/cartoon(home).css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 
+:root {
+    --pc: #ffaf03;
+    --sc: #1c1c1c;
+    --dc: #121212;
+    --lc: #ffffff;
+    --gh: #E07A5F;
+}
+
+body{
+    background-color: var(--dc);
+    color: var(--lc);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    align-items: center;
+    background-color: var(--sc);
+    font-size: 16px;
+    border-bottom: solid var(--pc) 2px;
+}
+
+header .lift{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+header .right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header .lift div{
+    cursor: pointer;
+}
+
+header .right div{
+    cursor: pointer;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.btn{
+    background-color: var(--pc);
+    border-radius: 10px;
+    padding: 4px 10px;
+    text-decoration: none;
+    color: var(--lc);
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    padding: 16px 32px;
+    align-items: center;
+    background-color: var(--sc);
+}
+
+
+body {
+    margin: 0;    
+    padding: 0; 
+    background-color: #111;
+    font-family: Arial, sans-serif;
+  }
+
+  .grid-container {
+    display: grid;  /*el components elly gwa el class de squares kda*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+     /*lma yla2y msa7a byzwd column equally lw mfeesh 5las la 3shan auto,
+       hy3ml kol column min 200 px */
+       padding: 20px;
+    gap: 10px;  /*gap between cards*/
+  }
+
+  .girls, .boys , .neutral{
+    position: relative;  /*3shan n7ot el absolute fo2o*/
+    background-color: #37342e;
+    border-radius: 10px;  
+    overflow: hidden;  /*my5lesh ay haga outside el card tban*/
+    transition: transform 0.3s ease;  /*tkbeer el card by7sal tdregy fe w2t 0.3 sec*/
+    aspect-ratio: 2/3;  /*ratio between length and width*/
+    height: 300px;
+  }
+
+  .girls img, .boys img, .neutral img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; 
+    transform: scale(1.1);
+  }
+
+  .overlay {
+    position: absolute; /*tt7t fo2 el card*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*bottom,right,left hya laz2a fehom no space*/
+    background: rgba(0, 0, 0, 0.6);  /*black background with opacity .6*/
+    color: #fff; 
+    padding: 8px;
+    text-align: center;
+    opacity: 0; /*mn 8er ma a point msh hyban el klam*/
+    transition: opacity 0.3s ease;
+    font-size: 16px;
+  }
+
+  .girls:hover .overlay, .boys:hover .overlay , .neutral:hover .overlay {
+    opacity: 1;
+  }
+
+  .girls:hover , .boys:hover , .neutral:hover {
+    transform: scale(1.05); /*el card lma a point 3leh ykbr*/
+  }
+
+.menu-bar {
+  display: flex;
+  justify-content: center;
+  background-color: #37342e; 
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto 20px auto;
+  width: 98%;
+}
+.menu-bar a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  flex: 1;
+  font-size: 16px;
+  border-right: 1px solid #fff;
+}
+.menu-bar a:last-child {
+  border-right: none;
+}
+
+.menu-bar-girls:hover {
+  background-color: #FF90BB; /* Color for hover effect lma ashawer bs*/
+  transition: background-color 0.3s ease;
+}
+.menu-bar-boys:hover{
+  background-color: #3c84cd; 
+  transition: background-color 0.3s ease;
+}
+.menu-bar-neutral:hover{
+    background-color: #8576b4; 
+  transition: background-color 0.3s ease;
+}
+
+#all:hover{
+  background-color: #ffaf03; 
+transition: background-color 0.3s ease;
+}
+
+#all.active {
+  background-color: #ffaf03; /* Color active category lma ados 3leh */
+}
+.menu-bar-neutral.active {
+  background-color: #8576b4; 
+}
+.menu-bar-girls.active {
+  background-color: #FF90BB; 
+}
+.menu-bar-boys.active {
+  background-color: #0A5EB0; 
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="lift">
+        <div class="logo">Y2K</div>
+        <div class="n1">ice cream</div>
+        <div class="n1">cinema</div>
+        <div class="n1">dude</div>
+      </div>
+      <div class="right">
+        <a class="btn">sign in</a>
+        <a class="btn">potato</a>
+      </div>
+    </header>
+    <nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search store" />
+      </div>
+      <div>Discover</div>
+      <div>Browse</div>
+      <div>News</div>
+    </nav>
+    <div class="menu-bar">
+      <a href="#" id="all" class="active" onclick="filterItems('all')">All</a>
+      <a href="#" id="boys" class="menu-bar-boys" onclick="filterItems('boys')"> Boys  ♂</a>
+      <a href="#" id="girls" class="menu-bar-girls"  onclick="filterItems('girls')"> Girls  ♀</a>
+      <a href="#" id="neutral" class="menu-bar-neutral" onclick="filterItems('neutral')">Neutral  ⚥</a>
+  </div>
+    <div id="items-list">
+      <div class="grid-container">
+
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img src="../cartoon posters/07c1453d34a1875f01eb7ec02936f5ed.jpg" alt="Cartoon 1" />
+          </a>
+          <div class="overlay">Scooby-Doo</div>
+        </div>
+
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img src="../cartoon posters/photo_5800759053494896494_y.jpg" alt="Cartoon 2" />
+          </a>
+          <div class="overlay">SpongeBob</div>
+        </div>
+        
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/0f3d2003aa16db1df4282dddc17d8f7d.jpg"
+              alt="Cartoon 3"
+            />
+          </a>
+          <div class="overlay">Totally Spies</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/1d8ac4e7965199d5ff4157ddf07a408a.jpg"
+              alt="Cartoon 4"
+            />
+          </a>
+          <div class="overlay">Shimmer and Shine</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/304f7e6c2594371e06bdd5b20c30bf04.jpg"
+              alt="Cartoon 5"
+            />
+          </a>
+          <div class="overlay">Tom & Jerry</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/37ed19ba036152cd1ada6be73a46e156.jpg"
+              alt="Cartoon 6"
+            />
+          </a>
+          <div class="overlay">Martin Mystery</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/54dffb1dd91dc86385dcc6335326609b.jpg"
+              alt="Cartoon 7"
+            />
+          </a>
+          <div class="overlay">Littlest Pet Shop</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/59f32bc9fa5ce9c64287d504b0d62259.jpg"
+              alt="Cartoon 8"
+            />
+          </a>
+          <div class="overlay">Ben 10</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/a255dc80f8c6bfbe9a4237b4ca9c130a.jpg"
+              alt="Cartoon 9"
+            />
+          </a>
+          <div class="overlay">The Fairly OddParents</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/a819a9de1aa81d07ee98aa76c56231ca.jpg"
+              alt="Cartoon 10"
+            />
+          </a>
+          <div class="overlay">Teenage robot</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/bd43cf4a06dc0ccd0ceb4ddb2f807792.jpg"
+              alt="Cartoon 11"
+            />
+          </a>
+          <div class="overlay">Barbie</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/bf74f5ca4396ff08098caa925ec8ba9a.jpg"
+              alt="Cartoon 12"
+            />
+          </a>
+          <div class="overlay">Barney</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/c6176db38a1ab8a97eef51b5e79f83f4.jpg"
+              alt="Cartoon 13"
+            />
+          </a>
+          <div class="overlay">Sofia the First</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/c9f012b1b3eda6003171968e6fcf5f8e.jpg"
+              alt="Cartoon 14"
+            />
+          </a>
+          <div class="overlay">My Little Pony</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/ca9555015d2bdbbd5ce3bedf1369faa9.jpg"
+              alt="Cartoon 15"
+            />
+          </a>
+          <div class="overlay">Dexter's Laboratory</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/cb65f27911a1960e84c86694d9dbf78c.jpg"
+              alt="Cartoon 16"
+            />
+          </a>
+          <div class="overlay">Kim Possible</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/cf9ce6c92c0c2d4273019c600af5f12f.jpg"
+              alt="Cartoon 17"
+            />
+          </a>
+          <div class="overlay">Care Bears</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/d5d7c66aa5e9ba1d03805b7837a85b0a.jpg"
+              alt="Cartoon 18"
+            />
+          </a>
+          <div class="overlay">Sesame Street</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/dd42c0d100643d648a0e866250a4c94b.jpg"
+              alt="Cartoon 19"
+            />
+          </a>
+          <div class="overlay">The Powerpuff Girls</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/e62ca3435a86e57bb088a3eb282d5072.jpg"
+              alt="Cartoon 20"
+            />
+          </a>
+          <div class="overlay">Curious George</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/ec7e21628ccc7d8dd1a826aafb093e02.jpg"
+              alt="Cartoon 21"
+            />
+          </a>
+          <div class="overlay">The Smurfs</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/f3ed3ada95cffd40ceb92b64da2f68f9.jpg"
+              alt="Cartoon 22"
+            />
+          </a>
+          <div class="overlay">Team UmiZoomi</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/fd0a670fbe4eefa0cc221ad1c840df04.jpg"
+              alt="Cartoon 23"
+            />
+          </a>
+          <div class="overlay">Handy Manny</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/00c1a48e55d06937ef25d50c2fd2242b.jpg"
+              alt="Cartoon 24"
+            />
+          </a>
+          <div class="overlay">Avatar</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/01870abcaca84041a6cb990b2614ee36.jpg"
+              alt="Cartoon 25"
+            />
+          </a>
+          <div class="overlay">Courage the cowardly dog</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/01d6d3460ac2a6bea63e0731e9c3110e.jpg"
+              alt="Cartoon 26"
+            />
+          </a>
+          <div class="overlay">Regular Show</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/029487b7b3fe590ec5dc4ec7e96f8fbc.jpg"
+              alt="Cartoon 27"
+            />
+          </a>
+          <div class="overlay">Maya and the Bee</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/0946804b9429db40dfcb867d75ee80ee.jpg"
+              alt="Cartoon 28"
+            />
+          </a>
+          <div class="overlay">Phineas and Ferb</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/0ee0418ef9ef52c3139eb2df29fc42ff.jpg"
+              alt="Cartoon 29"
+            />
+          </a>
+          <div class="overlay">Slugterra</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/1683ff1c606f8d35bb7716d7083cc546.jpg"
+              alt="Cartoon 30"
+            />
+          </a>
+          <div class="overlay">Monsters VS Aliens</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/2687e19419666a6d64c804be21548912.jpg"
+              alt="Cartoon 31"
+            />
+          </a>
+          <div class="overlay">Mucha Lucha</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/2754b5d69277c5186ffb2102ef3f0fd3.jpg"
+              alt="Cartoon 32"
+            />
+          </a>
+          <div class="overlay">OK KO</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/2a4710508abbb807772d7e6054d47250.jpg"
+              alt="Cartoon 33"
+            />
+          </a>
+          <div class="overlay">The Loud House</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896463_y.jpg"
+              alt="Cartoon 34"
+            />
+          </a>
+          <div class="overlay">Paw Paatrol</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/35074d204f35d0d4fb1bf1036859d464.jpg"
+              alt="Cartoon 35"
+            />
+          </a>
+          <div class="overlay">Catscratch</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896476_y.jpg"
+              alt="Cartoon 36"
+            />
+          </a>
+          <div class="overlay">Angelo Rules</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/857d147edef4a83bf483f14a2b5cfe83.jpg"
+              alt="Cartoon 37"
+            />
+          </a>
+          <div class="overlay">BO on the go</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/8bdc0ac242fcf3e393b02f0501a630b3.jpg"
+              alt="Cartoon 38"
+            />
+          </a>
+          <div class="overlay">Jelly Jam</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/8dd11e6c95e08a348d452e294641c77c.jpg"
+              alt="Cartoon 39"
+            />
+          </a>
+          <div class="overlay">Steven Universe</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/8f280d2abd2c5d3a591405d0f7b58587.jpg"
+              alt="Cartoon 40"
+            />
+          </a>
+          <div class="overlay">Jimmy Neutron</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/95fed95dbe0426cf075aa0bb564da177.jpg"
+              alt="Cartoon 41"
+            />
+          </a>
+          <div class="overlay">Lilo & Stitch</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/a75df81127ef8b233878873b8d436655.jpg"
+              alt="Cartoon 42"
+            />
+          </a>
+          <div class="overlay">Unikitty</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/ad1faa46dd6911ddc8a49b640f291556.jpg"
+              alt="Cartoon 43"
+            />
+          </a>
+          <div class="overlay">Chalk zone</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/ae641fc2d9b576ff3b6136194665240a.jpg"
+              alt="Cartoon 44"
+            />
+          </a>
+          <div class="overlay">FlapJack</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/b1a55b63683393c55a51a69bced969c3.jpg"
+              alt="Cartoon 45"
+            />
+          </a>
+          <div class="overlay">Franklin and friends</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/c4ae9a626b762b86db7ab34a7f9563d6.jpg"
+              alt="Cartoon 46"
+            />
+          </a>
+          <div class="overlay">Chima</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/e43eea4b7ec0d122b7c7506d481ffd0b.jpg"
+              alt="Cartoon 47"
+            />
+          </a>
+          <div class="overlay">Oscar's Oasis</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/f0db47b1a5d5125771ca88a0eecdb63a.jpg"
+              alt="Cartoon 48"
+            />
+          </a>
+          <div class="overlay">Beyblade</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img src="../cartoon posters/image.jpg" alt="Cartoon 49" />
+          </a>
+          <div class="overlay">Clarence</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896459_y.jpg"
+              alt="Cartoon 50"
+            />
+          </a>
+          <div class="overlay">Funboy & ChumChum</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896460_x.jpg"
+              alt="Cartoon 51"
+            />
+          </a>
+          <div class="overlay">Tuff Puppy</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896461_x.jpg"
+              alt="Cartoon 52"
+            />
+          </a>
+          <div class="overlay">CatDog</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896462_y.jpg"
+              alt="Cartoon 53"
+            />
+          </a>
+          <div class="overlay">Dinasour Train</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896465_y.jpg"
+              alt="Cartoon 54"
+            />
+          </a>
+          <div class="overlay">Pound Puppies</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896491_y.jpg"
+              alt="Cartoon 55"
+            />
+          </a>
+          <div class="overlay">Rob the Robot</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896467_x.jpg"
+              alt="Cartoon 56"
+            />
+          </a>
+          <div class="overlay">Strawberry Shortcake</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896468_y.jpg"
+              alt="Cartoon 57"
+            />
+          </a>
+          <div class="overlay">Pink Panther</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896469_y.jpg"
+              alt="Cartoon 58"
+            />
+          </a>
+          <div class="overlay">Extreme Football</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896470_x.jpg"
+              alt="Cartoon 59"
+            />
+          </a>
+          <div class="overlay">Kate & Mim-Mim</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896471_y.jpg"
+              alt="Cartoon 60"
+            />
+          </a>
+          <div class="overlay">Dora the Explorer</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896472_y.jpg"
+              alt="Cartoon 61"
+            />
+          </a>
+          <div class="overlay">Doc McStuffins</div>
+        </div>
+        <div class="girls">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896473_y.jpg"
+              alt="Cartoon 62"
+            />
+          </a>
+          <div class="overlay">Everything's Rosie</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896474_x.jpg"
+              alt="Cartoon 63"
+            />
+          </a>
+          <div class="overlay">Penguins Madagascar</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896475_y.jpg"
+              alt="Cartoon 64"
+            />
+          </a>
+          <div class="overlay">Ninjago</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896477_x.jpg"
+              alt="Cartoon 65"
+            />
+          </a>
+          <div class="overlay">Teletubbies</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896478_x.jpg"
+              alt="Cartoon 66"
+            />
+          </a>
+          <div class="overlay">Winnie the Pooh</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896479_y.jpg"
+              alt="Cartoon 67"
+            />
+          </a>
+          <div class="overlay">Wonder Pets</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896480_y.jpg"
+              alt="Cartoon 68"
+            />
+          </a>
+          <div class="overlay">Baby Looney Tunes</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896483_y.jpg"
+              alt="Cartoon 69"
+            />
+          </a>
+          <div class="overlay">Mr Bean</div>
+        </div>
+        <div class="boys">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896481_y.jpg"
+              alt="Cartoon 70"
+            />
+          </a>
+          <div class="overlay">Garfield and Friends</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896484_y.jpg"
+              alt="Cartoon 71"
+            />
+          </a>
+          <div class="overlay">Uncle Grandpa</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896485_y.jpg"
+              alt="Cartoon 72"
+            />
+          </a>
+          <div class="overlay">Apple & Onion</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896486_y.jpg"
+              alt="Cartoon 73"
+            />
+          </a>
+          <div class="overlay">We Bare Bears</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896487_x.jpg"
+              alt="Cartoon 74"
+            />
+          </a>
+          <div class="overlay">Gumball</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896488_y.jpg"
+              alt="Cartoon 75"
+            />
+          </a>
+          <div class="overlay">Adventure Time</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896489_y.jpg"
+              alt="Cartoon 76"
+            />
+          </a>
+          <div class="overlay">Teen Titans Go</div>
+        </div>
+        <div class="neutral">
+          <a href="cartoon.html">
+            <img
+              src="../cartoon posters/photo_5800759053494896490_y.jpg"
+              alt="Cartoon 77"
+            />
+          </a>
+          <div class="overlay">Shaun The Sheep</div>
+        </div>
+      </div>
+    </div>
+
+  <script>
+    function filterItems(category) {
+      const allItems = document.querySelectorAll('.grid-container > div');
+      allItems.forEach(item => {
+        // Show all if "all" is selected, otherwise match class
+        if (category === 'all' || item.classList.contains(category)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+  
+      // Update active link
+      const menuLinks = document.querySelectorAll('.menu-bar a');
+      menuLinks.forEach(link => link.classList.remove('active'));
+      document.getElementById(category).classList.add('active');
+    }
+  </script>
+  
+  </body>
+</html>
+=======
+
+>>>>>>> d2f8af103c41bb8df59dd35fdacae82b175faea7
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nigga</title>
-    <link rel="stylesheet" href="../CSS/test.css">
-
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cartoon Nostalgia</title>
+  <title>Auto Moving Horizontal Sliders</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4e4c1;
+      font-family: sans-serif;
+      height: 100vh; /* منع التمرير العمودي */
+      overflow: hidden; /* منع التمرير العمودي */
+    }
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    .scroll-container {
+      position: absolute;
+      top: 20%;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
 
+    .scroll-container2 {
+      position: absolute;
+      top: 60%;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .horizontal-wrapper {
+      display: flex;
+      transition: transform 0.1s linear;
+      will-change: transform;
+    }
+
+    .slider-item {
+      flex: 0 0 auto;
+      width: 200px;
+      height: 150px;
+      background-color: white;
+      border-radius: 10px;
+      margin: 0 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      line-height: 150px;
+      font-size: 20px;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Lundev</div>
-        <ul class="menu">
-            <li>potato</li>
-            <li>nigaa</li>
-            <li>ziad</li>
-        </ul>
-        <div class="search">
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-            </svg>
+<<<<<<< HEAD
+
+<section>
+    <div class="scroll-container">
+        <div class="horizontal-wrapper">
+          <div class="slider-item">Box 1</div>
+          <div class="slider-item">Box 2</div>
+          <div class="slider-item">Box 3</div>
+          <div class="slider-item">Box 4</div>
+          <div class="slider-item">Box 5</div>
+          <div class="slider-item">Box 6</div>
+          <div class="slider-item">Box 7</div>
+          <div class="slider-item">Box 8</div>
+          <div class="slider-item">Box 9</div>
         </div>
-    </header>
-        <div class="slider">
-          <!-- list Items -->
-          <div class="list">
-              <div class="item active">
-                  <img src="../cartoon posters/00c1a48e55d06937ef25d50c2fd2242b.jpg">
-                  <div class="content">
-                      <p>design</p>
-                      <h2>Slider 01</h2>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                      </p>
-                  </div>
+    </div>
+    <div class="scroll-container2">
+        <div class="horizontal-wrapper">
+          <div class="slider-item">Box 1</div>
+          <div class="slider-item">Box 2</div>
+          <div class="slider-item">Box 3</div>
+          <div class="slider-item">Box 4</div>
+          <div class="slider-item">Box 5</div>
+          <div class="slider-item">Box 6</div>
+          <div class="slider-item">Box 7</div>
+          <div class="slider-item">Box 8</div>
+          <div class="slider-item">Box 9</div>
+        </div>
+    </div>
+</section>
+
+<script>
+  let scrollPosition1 = 0;
+  let scrollPosition2 = 0;
+
+  // تحريك الصف الأول تلقائيًا
+  setInterval(() => {
+    scrollPosition1 += 2; // زيادة الموضع بمقدار 2 بكسل
+    const slider1 = document.querySelector(".scroll-container .horizontal-wrapper");
+    slider1.style.transform = `translateX(${-scrollPosition1}px)`;
+
+    // إعادة التمرير إلى البداية إذا انتهى
+    const sliderWidth1 = slider1.scrollWidth;
+    if (scrollPosition1 >= sliderWidth1) {
+      scrollPosition1 = 0;
+    }
+  }, 20); // تحديث كل 20 مللي ثانية
+
+  // تحريك الصف الثاني تلقائيًا في الاتجاه المعاكس
+  setInterval(() => {
+    scrollPosition2 += 2; // زيادة الموضع بمقدار 2 بكسل
+    const slider2 = document.querySelector(".scroll-container2 .horizontal-wrapper");
+    slider2.style.transform = `translateX(${scrollPosition2}px)`;
+
+    // إعادة التمرير إلى البداية إذا انتهى
+    const sliderWidth2 = slider2.scrollWidth;
+    if (scrollPosition2 >= sliderWidth2) {
+      scrollPosition2 = 0;
+    }
+  }, 20); // تحديث كل 20 مللي ثانية
+</script>
+
+</body>
+</html>
+=======
+    <section class="horizontal-scroll">
+        <div class="slider-buttons">
+          <button id="prevBtn">‹</button>
+          <button id="nextBtn">›</button>
+        </div>
+      
+        <div class="slider-wrapper">
+            <div class="slide active">
+              <div class="image-text">
+                <img src="../test-photos/صورة واتساب بتاريخ 2025-04-29 في 14.50.09_a124f2e1.jpg" alt="صورة 1" />
+                <div class="text">
+                  <h2>title</h2>
+                  <p>description bla nla nlanln</p>
+                </div>
               </div>
-              <div class="item">
-                  <img src="../cartoon posters/01d6d3460ac2a6bea63e0731e9c3110e.jpg">
-                  <div class="content">
-                      <p>design</p>
-                      <h2>Slider 02</h2>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                      </p>
+            </div>
+            
+            <div class="slider-wrapper">
+                <div class="slide active">
+                  <div class="image-text">
+                    <img src="../test-photos/صورة واتساب بتاريخ 2025-04-29 في 14.50.09_a124f2e1.jpg" alt="صورة 1" />
+                    <div class="text">
+                      <h2>title</h2>
+                      <p>description bla nla nlanln</p>
+                    </div>
                   </div>
+                </div>
+
+          <div class="slider-wrapper">
+            <div class="slide active">
+              <div class="image-text">
+                <img src="../test-photos/صورة واتساب بتاريخ 2025-04-29 في 14.50.09_a124f2e1.jpg" alt="صورة 1" />
+                <div class="text">
+                  <h2>title</h2>
+                  <p>description bla nla nlanln</p>
+                </div>
               </div>
-              <div class="item">
-                  <img src="../cartoon posters/0ee0418ef9ef52c3139eb2df29fc42ff.jpg">
-                  <div class="content">
-                      <p>design</p>
-                      <h2>Slider 03</h2>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                      </p>
+            </div>
+        
+            <div class="slider-wrapper">
+                <div class="slide active">
+                  <div class="image-text">
+                    <img src="../test-photos/صورة واتساب بتاريخ 2025-04-29 في 14.50.09_a124f2e1.jpg" alt="صورة 1" />
+                    <div class="text">
+                      <h2>title</h2>
+                      <p>description bla nla nlanln</p>
+                    </div>
                   </div>
-              </div>
-              <div class="item">
-                  <img src="../cartoon posters/2a4710508abbb807772d7e6054d47250.jpg">
-                  <div class="content">
-                      <p>design</p>
-                      <h2>Slider 04</h2>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                      </p>
-                  </div>
-              </div>
-              <div class="item">
-                  <img src="../cartoon posters/a75df81127ef8b233878873b8d436655.jpg">
-                  <div class="content">
-                      <p>design</p>
-                      <h2>Slider 05</h2>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                      </p>
-                  </div>
-              </div>
-          </div>
-          <!-- button arrows -->
-          <div class="arrows">
-              <button id="prev"></button>
-              <button id="next">></button>
-          </div>
-          <!-- thumbnail -->
-          <div class="thumbnail">
-              <div class="item active">
-                  <img src="../cartoon posters/8bdc0ac242fcf3e393b02f0501a630b3.jpg">
-                  <div class="content">
-                      Name Slider
-                  </div>
-              </div>
-              <div class="item">
-                  <img src="../cartoon posters/a255dc80f8c6bfbe9a4237b4ca9c130a.jpg">
-                  <div class="content">
-                      Name Slider
-                  </div>
-              </div>
-              <div class="item">
-                  <img src="../cartoon posters/c6176db38a1ab8a97eef51b5e79f83f4.jpg">
-                  <div class="content">
-                      Name Slider
-                  </div>
-              </div>
-              <div class="item">
-                  <img src="../cartoon posters/photo_5800759053494896461_x.jpg">
-                  <div class="content">
-                      Name Slider
-                  </div>
-              </div>
-              <div class="item">
-                  <img src="../cartoon posters/0ee0418ef9ef52c3139eb2df29fc42ff.jpg">
-                  <div class="content">
-                      Name Slider
-                  </div>
-              </div>
-          </div>
-      </div>
+                </div>
+
+                <div class="slider-wrapper">
+                    <div class="slide active">
+                      <div class="image-text">
+                        <img src="../test-photos/صورة واتساب بتاريخ 2025-04-29 في 14.50.09_a124f2e1.jpg" alt="صورة 1" />
+                        <div class="text">
+                          <h2>title</h2>
+                          <p>description bla nla nlanln</p>
+                        </div>
+                      </div>
+                    </div>
+          <!-- المزيد من الصور والكلام حسب الحاجة -->
+        </div>
+      </section>
+      
 </body>
 <script src="../JS/test.js"></script>
 </html>
+<<<<<<< HEAD
+>>>>>>> 245e9cdaad9c7f28aa0f6be18372dfdb21cedf06
+=======
+
+
+
+<script>
+    const slides = document.querySelectorAll('.slide');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+let currentSlide = 0;
+
+// تحديث السلايد الحالي
+function updateSlides() {
+  slides.forEach((slide, index) => {
+    slide.classList.toggle('active', index === currentSlide);
+  });
+  document.querySelector('.slider-wrapper').style.transform = `translateX(-${100 * currentSlide}vw)`;
+}
+
+// زرار التالي
+nextBtn.addEventListener('click', () => {
+  if (currentSlide < slides.length - 1) {
+    currentSlide++;
+    updateSlides();
+  }
+});
+
+// زرار السابق
+prevBtn.addEventListener('click', () => {
+  if (currentSlide > 0) {
+    currentSlide--;
+    updateSlides();
+  }
+});
+
+// بداية الصفحة: أول Slide يبقى ظاهر
+document.addEventListener('DOMContentLoaded', updateSlides);
+
+// دعم السحب (Swipe) على الموبايل
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.addEventListener('touchstart', (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+document.addEventListener('touchend', (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  if (touchEndX < touchStartX - 50 && currentSlide < slides.length - 1) {
+    currentSlide++;
+    updateSlides();
+  } else if (touchEndX > touchStartX + 50 && currentSlide > 0) {
+    currentSlide--;
+    updateSlides();
+  }
+}
+
+</script>
+  
+>>>>>>> b68a2325323c129409382c6a91c525033f8a5abf
+>>>>>>> d2f8af103c41bb8df59dd35fdacae82b175faea7
