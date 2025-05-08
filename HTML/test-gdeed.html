@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Nostalgia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/test-gdeed.css">
+</head>
+
+<body>
+    <section class="horizontal-scroll">
+        <div class="slider-buttons">
+            <button id="prevBtn">‹</button>
+            <button id="nextBtn">›</button>
+        </div>
+    
+        <div class="slider-wrapper" id="sliderWrapper">
+            <div class="slide">
+                <div class="image-text">
+                    <a href="#">
+                        <img src="../landing-images/download (1).jpeg" alt="صورة 1" />
+                    </a>
+                    <div class="text">
+                        <h2>Title 1</h2>
+                        <p>Description 1</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <div class="image-text">
+                    <a href="#">
+                        <img src="../landing-images/download (3).jpeg" alt="صورة 2" />
+                    </a>
+                    <div class="text">
+                        <h2>Title 2</h2>
+                        <p>Description 2</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <div class="image-text">
+                    <a href="#">
+                        <img src="../landing-images/download (3).jpeg" alt="صورة 3" />
+                    </a>
+                    <div class="text">
+                        <h2>Title 7</h2>
+                        <p>Description 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+              <div class="image-text">
+                  <a href="#">
+                      <img src="../landing-images/download (3).jpeg" alt="صورة 3" />
+                  </a>
+                  <div class="text">
+                      <h2>Title 7</h2>
+                      <p>Description 3</p>
+                  </div>
+              </div>
+          </div>
+          <div class="slide">
+            <div class="image-text">
+                <a href="#">
+                    <img src="../landing-images/download (3).jpeg" alt="صورة 3" />
+                </a>
+                <div class="text">
+                    <h2>Title 7</h2>
+                    <p>Description 3</p>
+                </div>
+            </div>
+        </div>
+    
+           
+        </div>
+    </section>
+    <script>
+      const slides = document.querySelectorAll(".slide");
+      const sliderWrapper = document.getElementById("sliderWrapper");
+      const nextBtn = document.getElementById("nextBtn");
+      const prevBtn = document.getElementById("prevBtn");
+      let currentIndex = 0;
+    
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove('active');
+          if (i === index) {
+            slide.classList.add('active');
+          }
+        });
+        sliderWrapper.style.transform = `translateX(-${index * 100}vw)`;
+      }
+    
+      showSlide(currentIndex);
+    
+      // Auto loop
+      let interval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }, 4000);
+    
+      // Manual navigation with buttons
+      nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      });
+    
+      prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+      });
+    
+      // Click on sides of the slide to navigate
+      sliderWrapper.addEventListener('click', (e) => {
+        const screenMiddle = window.innerWidth / 2;
+        const clickX = e.clientX;
+    
+        if (clickX > screenMiddle) {
+          // Clicked on right side
+          currentIndex = (currentIndex + 1) % slides.length;
+        } else {
+          // Clicked on left side
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        }
+    
+        showSlide(currentIndex);
+      });
+    </script>    
+    
+</body>
+</html>
+
+
+
+      
