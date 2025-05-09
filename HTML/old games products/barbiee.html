@@ -22,28 +22,22 @@
   </head>
 
   <body>
-    <header>
-      <div class="lift">
-        <div class="logo">Y2K</div>
-        <div class="n1">Ice Cream</div>
-        <div class="n1">Cinema</div>
-        <div class="n1">Dude</div>
-      </div>
-      <div class="right">
-        <a class="btn">Sign In</a>
-        <a class="btn">Cart</a>
-      </div>
-    </header>
+<header>
+    <div class="logo">Y2K</div>
+    <ul class="menu">
+      <li><a href="../HTML/login&signup.html" class="login-link">Log in</a></li>
+      <li><a href="../HTML/login&signup.html" class="register-link">Sign up</a></li>
+      <li><a href="ظظظظ">Contact us</a></li>
+    </ul>
+    <div class="search">
+      <svg class="search-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+      </svg>
+      <input type="text" class="search-input" placeholder="Search...">
+    </div>
 
-    <nav>
-      <div class="search-bar">
-        <input type="text" placeholder="Search store" />
-      </div>
-      <div>Discover</div>
-      <div>Browse</div>
-      <div>News</div>
-    </nav>
-
+  </header>
     <main class="container-wrapper">
       <div class="container">
         <div class="image" style="background-image: url('snack12.jpg')"></div>
@@ -58,12 +52,12 @@
 
           <div class="action">
             <div class="quantity-wrapper">
-              <button class="quantity-btn" onclick="decrease()">-</button>
+              <button class="quantity-btn">-</button>
               <div class="value">
                 <span class="number">1</span>
                 <span class="text">Quantity</span>
               </div>
-              <button class="quantity-btn" onclick="increase()">+</button>
+              <button class="quantity-btn">+</button>
             </div>
 
             <button class="submit">
@@ -79,25 +73,6 @@
 
     <section class="product-section" data-id="2">
       <h2 class="product-section-title">More Products</h2>
-
-      <div class="product-image-controls">
-        <button
-          class="product-nav-button product-left"
-          onclick="showPrevImages(2)"
-          onmouseover="highlightButton(this)"
-          onmouseout="resetButton(this)"
-        >
-          &lt;
-        </button>
-        <button
-          class="product-nav-button product-right highlighted"
-          onclick="showNextImages(2)"
-          onmouseover="highlightButton(this)"
-          onmouseout="resetButton(this)"
-        >
-          &gt;
-        </button>
-      </div>
 
       <div class="product-image-slider">
         <div class="product-image-row" id="product-row1-2">
