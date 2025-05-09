@@ -571,6 +571,128 @@ nav{
     justify-content: center;
     align-items: flex-start;
   }
+  .game26{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game26 img{
+    width: 180px;
+    height:200px;
+   }
+   .game26:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game27{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game27 img{
+    width: 115px;
+    height: 200px;
+   }
+   .game27:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game28{
+    display: flex;
+    margin-right: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game28 img{
+    width: 170px;
+    height: 200px;
+   }
+   .game28:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+  }
+  .game29{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game29 img{
+    width: 200px;
+    height: 280px;
+   }
+   .game29:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  
+  .game30{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game30 img{
+    width: 200px;
+    height: 120px;
+   }
+   .game30:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game31{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game31 img{
+    width: 200px;
+    height: 280px;
+   }
+   .game31:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game32{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game32 img{
+    width: 220px;
+    height: 130px;
+   }
+   .game32:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
 
   
 
