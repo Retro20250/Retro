@@ -5,22 +5,22 @@ let prev = document.getElementById('prev');
 
 
 let countItem = item.length;
-let itemActive = 0;
+let itemact = 0;
 
 next.onclick = function(){
-    itemActive = itemActive + 1;
-    if(itemActive>=countItem){
-       itemActive = 0; 
+    itemact = itemact + 1;
+    if(itemact>=countItem){
+       itemact = 0; 
     }
     showSlider();
 }
 function showSlider(){
-    let itemActiveOld = document.querySelector('.slider .list .item.active');
+    let itemactOld = document.querySelector('.slider .list .item.active');
     let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
-    itemActiveOld.classList.remove('active');
+    itemactOld.classList.remove('active');
     thumbnailActiveOld.classList.remove('active');
 
 
-    item[itemActive].classList.add('active')
+    item[itemact].classList.add('active')
 
 }
