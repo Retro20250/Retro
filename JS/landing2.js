@@ -1,67 +1,57 @@
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
-let thumbnails = document.querySelectorAll('.thumbnail .item');
+let thum = document.querySelectorAll('.thumbnail .item');
 let countItem = items.length;
-let itemActive = 0;
-let refreshInterval;
+let itemactive = 0;
+let clicklwahdo;
 
-// دالة لتشغيل المؤقت
-function startAutoSlide() {
-  refreshInterval = setInterval(() => {
+function startauto() {
+  clicklwahdo = setInterval(() => {
     next.click();
-  }, 3000);
+  }, 4000);
 }
 
-// تشغيل المؤقت عند تحميل الصفحة
-startAutoSlide();
+startauto();
 
 next.onclick = function () {
-  itemActive++;
-  if (itemActive >= countItem) itemActive = 0;
+  itemactive++;
+  if (itemactive >= countItem) itemactive = 0;
   showSlider();
 };
 
 prev.onclick = function () {
-  itemActive--;
-  if (itemActive < 0) itemActive = countItem - 1;
+  itemactive--;
+  if (itemactive < 0) itemactive = countItem - 1;
   showSlider();
 };
 
 function showSlider() {
-  document.querySelector('.slider .list .item.active')?.classList.remove('active');
-  document.querySelector('.thumbnail .item.active')?.classList.remove('active');
-  items[itemActive].classList.add('active');
-  thumbnails[itemActive].classList.add('active');
-  setPositionThumbnail();
+  const activeSlide = document.querySelector('.slider .list .item.active');
+  const activeThumb = document.querySelector('.thumbnail .item.active');
+  if (activeSlide) activeSlide.classList.remove('active');
+  if (activeThumb) activeThumb.classList.remove('active');
+  items[itemactive].classList.add('active');
+  thum[itemactive].classList.add('active');
 
-  // إعادة تشغيل المؤقت
-  clearInterval(refreshInterval);
-  startAutoSlide();
+  clearInterval(clicklwahdo);
+  startauto();
 }
 
-function setPositionThumbnail() {
-  let thumbnailActive = document.querySelector('.thumbnail .item.active');
-  let rect = thumbnailActive.getBoundingClientRect();
-  if (rect.left < 0 || rect.right > window.innerWidth) {
-    thumbnailActive.scrollIntoView({ behavior: 'smooth', inline: 'nearest' });
-  }
-}
-
-thumbnails.forEach((thumbnail, index) => {
+thum.forEach((thumbnail, index) => {
   thumbnail.addEventListener('click', () => {
-    itemActive = index;
+    itemactive = index;
     showSlider();
   });
 });
 
-document.addEventListener('keydown', function (event) {
-  if (event.key === 'ArrowRight') {
-    next.click();
-  } else if (event.key === 'ArrowLeft') {
-    prev.click();
-  }
-});
+
+/* 000000000000000000000000000000000000000 */
+/* 000000000000000000000000000000000000000 */
+/* 000000000000000000000000000000000000000 */
+
+
+
 
 
 /* 000000000000000000000000000000000000000 */
@@ -69,32 +59,10 @@ document.addEventListener('keydown', function (event) {
 /* 000000000000000000000000000000000000000 */
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  const horizontalWrapper = document.querySelector('.horizontal-wrapper');
-
-  // إيقاف الحركة عند الوقوف على الكارت
-  horizontalWrapper.addEventListener('mouseenter', () => {
-    horizontalWrapper.style.animationPlayState = 'paused';
-  });
-
-  // استئناف الحركة عند مغادرة الكارت
-  horizontalWrapper.addEventListener('mouseleave', () => {
-    horizontalWrapper.style.animationPlayState = 'running';
-  });
-});
 
 /* 2222222222222222222222*/
 
 
-
-/* 000000000000000000000000000000000000000 */
-/* 000000000000000000000000000000000000000 */
-/* 000000000000000000000000000000000000000 */
-
-
-
-
-// بنختار كل الكروت اللي ليها كلاس "image-card"
 
 let cards = document.querySelectorAll(".image-card");
 let stackArea = document.querySelector(".stack-area");
@@ -111,20 +79,6 @@ function rotateCards() {
         }
     });
 }
-
-function rotateCards() {
-  let angle = 0;
-  cards.forEach((card, index) => {
-    if (card.classList.contains("away")) {
-      card.style.transform = `translateY(-120vh) rotate(-48deg)`;
-    } else {
-      card.style.transform = `rotate(${angle}deg)`;
-      angle -= 10;
-      card.style.zIndex = cards.length - index;
-    }
-  });
-}
-
 
 rotateCards();
 
@@ -149,7 +103,22 @@ window.addEventListener("scroll", () => {
 /*0000000000000000000 */
 /*0000000000000000000 */
 
-/* dwonloooooooooooo */
+/*cartoooon */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const horizontalWrapper = document.querySelector('.horizontal-wrapper');
+
+  // إيقاف الحركة عند الوقوف على الكارت
+  horizontalWrapper.addEventListener('mouseenter', () => {
+    horizontalWrapper.style.animationPlayState = 'paused';
+  });
+
+  // استئناف الحركة عند مغادرة الكارت
+  horizontalWrapper.addEventListener('mouseleave', () => {
+    horizontalWrapper.style.animationPlayState = 'running';
+  });
+});
+
 
 
 /* 000000000000000000000000000000000000000 */
