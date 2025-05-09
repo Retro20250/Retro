@@ -91,6 +91,8 @@ document.addEventListener('keydown', function (event) {
 /* 000000000000000000000000000000000000000 */
 /* 000000000000000000000000000000000000000 */
 
+
+
 // بنختار كل الكروت اللي ليها كلاس "image-card"
 let cards = document.querySelectorAll(".image-card");
 // بنختار مكان عرض الكروت، اللي هو المنطقة اللي هتكون فيها الكروت
@@ -117,20 +119,6 @@ function rotateCards() {
 
 
 
-
-// تحريك الكروت بناءً على السكروول
-function rotateCards() {
-  let angle = 0;
-  cards.forEach((card, index) => {
-    if (card.classList.contains("away")) {
-      card.style.transform = `translateY(-120vh) rotate(-48deg)`;
-    } else {
-      card.style.transform = `rotate(${angle}deg)`;
-      angle -= 10;
-      card.style.zIndex = cards.length - index;
-    }
-  });
-}
 
 rotateCards();
 
