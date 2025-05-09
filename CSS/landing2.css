@@ -32,7 +32,7 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
-  Chrome & Safari
+  
 }
 
 
@@ -446,7 +446,23 @@ header .menu {
   height: 80px;
   transition: ease 0.5s;
   margin-bottom: -6px;
+}
 
+<<<<<<< HEAD
+=======
+.content2 {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border-radius: 10px;
+    height: 80px;
+    transition: ease 0.5s;
+    margin-bottom: -6px;
+    color: white; 
+    text-decoration: none; 
+
+>>>>>>> 08c1cf3e6f8a1c586cd27723420f73cd253bcfbe
 }
 
 .content2:hover {
