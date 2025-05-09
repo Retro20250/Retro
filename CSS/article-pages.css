@@ -29,23 +29,19 @@ header{
   font-size: 16px;
   border-bottom: solid var(--dc) 2px;
 }
-
 header .lift{
   display: flex;
   gap: 32px;
   align-items: center;
 }
-
 header .right{
   display: flex;
   gap: 20px;
   align-items: center;
 }
-
 header .lift div{
   cursor: pointer;
 }
-
 header .right div{
   cursor: pointer;
 }
@@ -102,7 +98,7 @@ nav{
 .top-section {
   display: flex;
   gap: 15px;
-  align-items: flex-start;
+  
 }
 .image {
   flex: 1;
@@ -111,10 +107,10 @@ nav{
   width: 100%;
   display: block;
   border-radius: 8px;
-  object-fit:cover;
-  height: 80vh;
-}
 
+  height: 80vh;
+  margin-bottom: 10px;
+}
 .info {
   width: 40vh;
   background-color: #1e1e1e;
@@ -123,7 +119,6 @@ nav{
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
   color: #ddd;
 }
-
 .info h3 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -132,13 +127,11 @@ nav{
   border-bottom: 1px solid #444;
   padding-bottom: 5px;
 }
-
 .info ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .info li {
   padding: 8px;
   border-bottom: 1px solid #333;
@@ -150,6 +143,7 @@ nav{
   gap: 20px;
   display: flex;
   flex-direction: column;
+  float: right;
 }
 .r-sec a{
   background-color: #FC8B2D;
@@ -159,7 +153,7 @@ nav{
 }
 p{
   font-size: 1.5em;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
 }
 .one-in-row {
   display: flex;
