@@ -233,6 +233,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+/*0000000000000000000 */
+/*0000000000000000000 */
+/*0000000000000000000 */
+/*0000000000000000000 */
+
+
+
+
+
+
+  const wrapper = document.getElementById("sliderWrapper");
+const scrollAmount = window.innerWidth;
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+  wrapper.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+});
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+  wrapper.scrollBy({ left: scrollAmount, behavior: "smooth" });
+});
+
+// إضافة فئة "visible" للصور عند تحميل السلايدر
+const slides = document.querySelectorAll(".slide img");
+slides.forEach((img, index) => {
+  setTimeout(() => {
+    img.classList.add("visible"); // إظهار الصورة تدريجيًا
+  }, index * 1000); // تأخير ظهور كل صورة حسب ترتيبها
+});
 
 
 
