@@ -3,25 +3,25 @@ let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 let thumbnails = document.querySelectorAll('.thumbnail .item');
 
-// config param
+
 let countItem = items.length;
 let itemActive = 0;
 
-// event next click
+
 next.onclick = function () {
     itemActive++;
     if (itemActive >= countItem) itemActive = 0;
     showSlider();
 };
 
-// event prev click
+
 prev.onclick = function () {
     itemActive--;
     if (itemActive < 0) itemActive = countItem - 1;
     showSlider();
 };
 
-// auto run slider forever
+
 let refreshInterval = setInterval(() => {
     next.click();
 }, 5000);
@@ -32,41 +32,21 @@ function showSlider() {
 
     items[itemActive].classList.add('active');
     thumbnails[itemActive].classList.add('active');
-    setPositionThumbnail();
 
-    // Restart the interval without condition
+
+   
     clearInterval(refreshInterval);
     refreshInterval = setInterval(() => {
         next.click();
     }, 5000);
 }
 
-function setPositionThumbnail() {
-    let thumbnailActive = document.querySelector('.thumbnail .item.active');
-    let rect = thumbnailActive.getBoundingClientRect();
-    if (rect.left < 0 || rect.right > window.innerWidth) {
-        thumbnailActive.scrollIntoView({ behavior: 'smooth', inline: 'nearest' });
-    }
-}
-
-// click thumbnail
 thumbnails.forEach((thumbnail, index) => {
     thumbnail.addEventListener('click', () => {
         itemActive = index;
         showSlider();
     });
 });
-document.addEventListener('keydown', function (event) {
-    // لو الضغط كان على السهم لليمين (Right Arrow)
-    if (event.key === 'ArrowRight') {
-        next.click();  // يعمل click على زرار "التالي"
-    }
-    // لو الضغط كان على السهم لليسار (Left Arrow)
-    else if (event.key === 'ArrowLeft') {
-        prev.click();  // يعمل click على زرار "السابق"
-    }
-});
-
 
 
 /* 000000000000000000000000000000000000000 */
@@ -109,7 +89,7 @@ rotateCards();
 window.addEventListener("scroll", () => {
   let distance = window.innerHeight * 0.5;
   let topVal = stackArea.getBoundingClientRect().top;
-  let index = Math.floor(-1 * (topVal / distance + 1));
+  let index = Math.floor(-1 * (topVal / distance + 1 ));
 
   for (let i = 0; i < cards.length; i++) {
     if (i <= index) {
@@ -161,4 +141,53 @@ window.addEventListener("scroll", () => {
 /*0000000000000000000 */
 /*0000000000000000000 */
 
+document.addEventListener('DOMContentLoaded', function() {
+  const menuIcon = document.getElementById('menuIcon');
+  const menuBar = document.getElementById('menuBar');
+  let isOpen = false;
 
+  // Toggle menu on icon click
+  menuIcon.addEventListener('click', function(e) {
+    e.stopPropagation();
+    isOpen = !isOpen;
+    this.classList.toggle('active');
+    menuBar.classList.toggle('active');
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+    if (isOpen && !menuBar.contains(e.target) && !menuIcon.contains(e.target)) {
+      menuIcon.classList.remove('active');
+      menuBar.classList.remove('active');
+      isOpen = false;
+    }
+  });
+
+  // Add ripple effect to menu items
+  const menuLinks = document.querySelectorAll('.menu-link');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      // Remove existing ripples
+      const ripples = this.querySelectorAll('.ripple');
+      ripples.forEach(ripple => ripple.remove());
+      
+      // Create new ripple
+      const ripple = document.createElement('span');
+      ripple.classList.add('ripple');
+      
+      // Position ripple
+      const rect = this.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      ripple.style.left = `${x}px`;
+      ripple.style.top = `${y}px`;
+      
+      this.appendChild(ripple);
+      
+      // Remove ripple after animation
+      setTimeout(() => {
+        ripple.remove();
+      }, 500);
+    });
+  });
+});
