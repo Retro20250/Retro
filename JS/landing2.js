@@ -62,7 +62,7 @@ thum.forEach((thumbnail, index) => {
 
 /* 2222222222222222222222*/
 
-// بنختار كل الكروت اللي ليها كلاس "image-card"
+
 
 let cards = document.querySelectorAll(".image-card");
 let stackArea = document.querySelector(".stack-area");
@@ -79,20 +79,6 @@ function rotateCards() {
         }
     });
 }
-
-function rotateCards() {
-  let angle = 0;
-  cards.forEach((card, index) => {
-    if (card.classList.contains("away")) {
-      card.style.transform = `translateY(-120vh) rotate(-48deg)`;
-    } else {
-      card.style.transform = `rotate(${angle}deg)`;
-      angle -= 10;
-      card.style.zIndex = cards.length - index;
-    }
-  });
-}
-
 
 rotateCards();
 
