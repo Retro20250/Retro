@@ -7,7 +7,7 @@
     <title>Cartoon Nostalgia</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../CSS/master.css">
+    <link rel="stylesheet" href="../CSS/tagroba.css">
 </head>
 
 <body>
@@ -100,6 +100,14 @@ slides.forEach((img, index) => {
   setTimeout(() => {
     img.classList.add("visible"); // إظهار الصورة تدريجيًا
   }, index * 1000); // تأخير ظهور كل صورة حسب ترتيبها
+});
+
+wrapper.addEventListener("wheel", function(e) {
+  e.preventDefault(); // امنعي السكرول الطبيعي
+  wrapper.scrollBy({
+    left: e.deltaY, // استخدمي حركة العجلة في الاتجاه الأفقي
+    behavior: "smooth"
+  });
 });
 
 </script>
