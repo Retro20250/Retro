@@ -1,15 +1,34 @@
 body {
-    margin: 0;
     padding: 20px;
-    background-color: #111;
-    font-family: Arial, sans-serif;
+    font-family: Poppins;
+    margin: 0;
+    background-color: #010101;
+    color: #eee;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+
+}
+
+:root {
+    --pc: #ffaf03;
+    --sc: #1c1c1c;
+    --dc: #121212;
+    --lc: #ffffff;
+    --gh: #E07A5F
 }
 
 h1 {
     font-size: 3em;
     text-align: center;
     margin-bottom: 20px;
-    color: #fff;
+    color: var(--lc);
+    text-shadow: 0 0 5px var(--pc), 0 0 30px var(--pc);
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .grid-container {
@@ -33,6 +52,12 @@ h1 {
     /*tkbeer el card by7sal tdregy fe w2t 0.3 sec*/
     height: 300px;
 }
+
+.grid-item:hover {
+    box-shadow: 0 10px 10px #ffaf03;
+    border-color: #ffaf03;
+}
+
 
 .grid-item img {
     width: 100%;
@@ -64,11 +89,6 @@ h1 {
     opacity: 1;
 }
 
-.grid-item:hover {
-    transform: scale(1.05);
-    /*el card lma a point 3leh ykbr*/
-}
-
 .animate-on-scroll {
     opacity: 0;
     /* el element bykon shfaf khales fe el awel (msh mwgod) */
@@ -86,4 +106,9 @@ h1 {
     /* el element yb2a zaher kolo mn khlal class (visible) */
     transform: scale(1);
     /* el element yrg3 le hagmo el tabe3y bnsba 100% w da ely by3ml el zoom-in */
+}
+
+.animate-on-scroll:hover {
+    transform: translateY(-8px);
+
 }
