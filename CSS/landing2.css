@@ -371,19 +371,65 @@ header .menu {
   background-color: #eb7680;
   align-items: center;
 }
+.see-more-wrapper {
+  width: 100%; /* علشان ينزل تحت العمودين */
+  display: flex;
+  justify-content: center; /* الزر في النص */
+   margin-top: 30px;
+}
+
+
+.see-more {
+  padding: 10px 20px;
+  background-color: #d864d4;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative; /* بقت relative مش absolute */
+  overflow: hidden;
+  border: none;
+}
+
+.btn4 {
+  font-size: 15px;
+  font-family: poppins;
+  z-index: 1;
+  position: relative;
+}
+
+.see-more:hover {
+  transform: scale(1.1);
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: url(../HTML/wave.svg);
+  background-size: 200% 100%;
+  top: 100%;
+  left: 0;
+  animation: wave 2s linear infinite;
+  transition: 0.5s;
+}
+
+button:hover .wave {
+  top: 50%;
+}
+
 
 .arti-l video {
   position: relative;
   height: 100vh;
   display: flex;
 }
-
 .arti-r {
-
-  height: 60%;
+  height: auto;
   width: 80%;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 1px; /* المسافة بين العمودين */
   padding: 20px;
   box-sizing: border-box;
   position: relative;
@@ -392,11 +438,12 @@ header .menu {
 
   opacity: 0;
   animation: showContent .7s .10s ease-in-out 1 forwards;
-
+  justify-content: space-between;
 }
 
+
 .colom {
-  width: 43%;
+  width: 45%;
   background-color: #496b5a;
   border-radius: 10px;
   padding: 15px;
@@ -531,14 +578,16 @@ header .menu {
     justify-content: center;
     display: flex;
     cursor: pointer;
+    background-color: #fff;
 }
 
 .slider-item img {
-  object-fit: fill;
-  width: 240px;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 10px;
+    object-fit: fill;
+    width: 240px;
+    height: 72%;
+    overflow: hidden;
+    border-radius: 10px;
+    top: 0px;
 
 }
 .slider .dis-slid{
@@ -546,7 +595,10 @@ header .menu {
 }
 
 
+.slider-item p{
+  background-color: #000;
 
+}
 
 
 
@@ -751,9 +803,6 @@ button:hover .wave {
 }
 
 
-
-
-
 .five {
   height: 100vh;
   display: flex;
@@ -949,7 +998,56 @@ button:hover .wave {
 .slider-buttons button:hover {
   background-color: rgba(247, 196, 255, 0.8); 
   transform: scale(1.1); 
-  transition: transform 0.8s ease, background-color 0.4s ease; 
+  transition: transform 0.8s ease, background-color 0.4s ease; }
+
+
+
+  
+/* message sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+
+.info-section {
+  padding: 40px 0;
+  background-image: linear-gradient(to right, #a7a4a4,#2f2f2f);
+  color: #ffaf03;
+  text-align: center;
+  width: 100vw;
+}
+
+.info-main-title {
+  font-family: 'Merriweather', serif;  /* el serif hna alternative to the first ; */
+  font-weight: 300; 
+  font-size: 32px; 
+  text-transform: uppercase; 
+  text-align: center;
+  color: #ffaf03;
+  margin-top: 200px;
+  margin-bottom: 50px;  
+}
+
+.info-columns {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;  /*لو الشاشة صغرت ينزلوا تحت بعض */
+}
+
+.info-box {
+  padding: 20px;
+  border-radius: 10px;
+  width: 285px;
+  text-align: left;
+}
+
+.info-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color:#ffaf03;
 }
 
 
@@ -957,6 +1055,9 @@ button:hover .wave {
 
 /* footer sectionnnnnnn */
 .footer {
+  background-color: #1b1b1b;
+  padding: 20px 40px;
+  width: 100vw;
     background-color: #1b1b1b;
     padding: 20px 40px;
     width: 100vw;
@@ -1072,5 +1173,7 @@ button:hover .wave {
 }
 
 .footer-links-bottom a:hover {
-  color: #fff;
+  color: #fff;
+   color: #fff;
+
 }
