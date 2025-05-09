@@ -7,8 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 // m3naha dlw2ty el element fe el user`s screen? lw yes hnbd2 hrka
                 entry.target.classList.add('visible');
                 // add visible class fe 3lshan el css yf3l el animation
+            } else {
+                entry.target.classList.remove('visible');
+                //remove visible class lma el element ykhrg bra el screen , w byrg3 y3ml el animation tany
             }
         });
+
     }, {
         threshold: 0.1
     });
