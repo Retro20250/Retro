@@ -8,44 +8,43 @@
 </head>
 <body>
   <header class="hero">
-    <h1>Best experience <br><span>always wins</span></h1>
-    <p>#1 Online Marketplace for Electronic & Technology in Manhattan, CA</p>
+    <h1>Relive the Golden Days<br><span>of Your Childhood</span></h1>
+   <p>Your #1 Destination for Nostalgia, Classic Games, and Timeless Memories</p>
     <img src="https://cdn.pixabay.com/photo/2017/05/30/12/47/boxes-2354583_1280.jpg" alt="Boxes" class="hero-img">
   </header>
 
   <section class="stats">
-    <p><strong>$12.5M</strong><br />Total Revenue from 2001 - 2023</p>
-    <p><strong>12K+</strong><br />Orders Delivered Successfully Every Day</p>
-    <p><strong>725+</strong><br />Stores and Offices Worldwide</p>
+    <p><strong>25+</strong><br />Years of Reviving Nostalgia</p>
+    <p><strong>1M+</strong><br />Happy Customers Worldwide</p>
+    <p><strong>500+</strong><br />Iconic Cartoon Characters and Retro Toys</p>
   </section>
 
   <section class="about">
     <div class="image" style="background-image: url('images/sky.jpg');"></div>
     <div class="text">
-      <h2>We connect millions of buyers and sellers</h2>
-      <p>We empower people & create economic opportunity for all.</p>
-      <button>Our Showreel</button>
+      <h2>We Bring Back The Magic Of The Past </h2>
+      <p>We Relive your childhood with classic games, cartoons, and timeless memories.</p>
+      <button>Explore the Nostalgia</button>
     </div>
   </section>
 
-  <section class="features">
-    <div class="feature">
-      <h3>100% Authentic Products</h3>
-      <p>We distribute 100% authorized products with guarantee.</p>
-    </div>
-    <div class="feature">
-      <h3>Fast Delivery</h3>
-      <p>Fast shipping with many delivery options and 100% on-time delivery.</p>
-    </div>
-    <div class="feature">
-      <h3>Affordable Price</h3>
-      <p>We offer affordable prices and special promotions.</p>
-    </div>
+  <div class="feature">
+  <h3>Authentic Retro Products</h3>
+  <p>We bring you 100% original and certified retro items.</p>
+</div>
+<div class="feature">
+  <h3>Fast & Reliable Delivery</h3>
+  <p>Experience quick shipping and guaranteed satisfaction.</p>
+</div>
+<div class="feature">
+  <h3>Affordable Nostalgia</h3>
+  <p>Relive your memories without breaking the bank.</p>
+</div>
   </section>
 
   <section class="mission">
-    <h2>Our Mission and Vision</h2>
-    <p>Empowering businesses and connecting people worldwide through technology and innovation.</p>
+   <h2>Our Mission and Vision</h2>
+<p>To connect generations by reviving the magic of the past through innovation and passion.</p>
     <div class="mission-image"></div>
   </section>
 
@@ -61,28 +60,72 @@
   </section>
 
   <section class="team">
-    <h2>Leadership</h2>
-    <div class="team-members">
-      <div class="member">
-        <img src="images/img.jpg" alt="Mekky">
-      </div>
-      <div class="member">
-        <img src="images/img.jpg" alt="Mekky">
+    <h2>Meet the Team Behind the Magic</h2>
 
-      </div>
-      <div class="member">
-        <img src="images/img.jpg" alt="Mekky">
-        <p>Mekky<br><span>CEO</span></p>
-      </div>
-      <div class="member">
-        <img src="images/img.jpg" alt="Mekky">
-        <p>Mekky<br><span>CEO</span></p>
-      </div>
-      <div class="member">
-        <img src="images/img.jpg" alt="Mekky">
-        <p>Mekky<br><span>Strategist Director</span></p>
-      </div>
-    </div>
+    <div class="team-members">
+              <div class="member">
+           <img src="images/dina.jpg" alt="dina" class="member-img" onclick="openModal('images/dina.jpg')">
+          
+        </div>
+              <div class="member">
+          
+            <img src="images/ziadtarek.jpg" alt="ziadtarek" class="member-img" onclick="openModal('images/ziadtarek.jpg')">
+          
+        </div>
+
+             <div class="member">
+         
+          <img src="images/razan.jpg" alt="razan" class="member-img" onclick="openModal('images/razan.jpg')">
+          
+        </div>
+
+             <div class="member">
+         
+            <img src="images/mekky.jpg.jpg" alt="Mekky" class="member-img" onclick="openModal('images/mekky.jpg.jpg')">
+          
+        </div>
+
+        <div class="member">
+          
+          <img src="images/lojy.jpg" alt="lojy" class="member-img" onclick="openModal('images/lojy.jpg')">
+          
+        </div>
+
+               <div class="member">
+         
+            <img src="images/mariam.jpg" alt="mariam" class="member-img" onclick="openModal('images/mariam.jpg')">
+          
+        </div>
+
+                <div class="member">
+            <img src="images/hasnaa.jpg" alt="Hasnaa" class="member-img" onclick="openModal('images/hasnaa.jpg')">
+          
+        </div>
+
+        <div class="member">
+            <img src="images/sarah.jpg" alt="Sarah" class="member-img" onclick="openModal('images/sarah.jpg')">
+        </div>
+        <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
   </section>
 </body>
 </html>
+
+<script>
+    // فتح النافذة المنبثقة
+    function openModal(imageSrc) {
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+        modal.style.display = "block";
+        modalImage.src = imageSrc;
+    }
+
+    // إغلاق النافذة المنبثقة
+    function closeModal() {
+        const modal = document.getElementById("imageModal");
+        modal.style.display = "none";
+    }
+</script>
