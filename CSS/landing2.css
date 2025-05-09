@@ -32,7 +32,7 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
-  Chrome & Safari
+  
 }
 
 
@@ -436,7 +436,6 @@ header .menu {
   padding: 10px;
   font-weight: 200;
 }
-<<<<<<< Updated upstream
 
 .content2 {
   padding: 10px;
@@ -447,8 +446,8 @@ header .menu {
   height: 80px;
   transition: ease 0.5s;
   margin-bottom: -6px;
+}
 
-=======
 .content2 {
     padding: 10px;
     display: flex;
@@ -460,8 +459,7 @@ header .menu {
     margin-bottom: -6px;
     color: white; 
     text-decoration: none; 
-    
->>>>>>> Stashed changes
+
 }
 
 .content2:hover {
