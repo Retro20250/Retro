@@ -1,91 +1,98 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            min-height: 100vh;
+            font-family: Poppins;
+            color: #eee;
+            overflow-y: scroll;
+            overflow-x: hidden;
 
-:root {
-    --pc: #ffaf03;
-    --sc: #1c1c1c;
-    --dc: #121212;
-    --lc: #ffffff;
-    --gh: #E07A5F;
-}
+        }
 
-body{
-    background-color: var(--dc);
-    color: var(--lc);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 32px;
-    align-items: center;
-    background-color: var(--sc);
-    font-size: 16px;
-    border-bottom: solid var(--pc) 2px;
-}
+        body::-webkit-scrollbar {
+            display: none;
+        }
 
-header .lift{
-    display: flex;
-    gap: 32px;
-    align-items: center;
-}
+        svg {
+            width: 25px;
+        }
 
-header .right{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
+        header {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            padding: 20px 40px;
+        }
 
-header .lift div{
-    cursor: pointer;
-}
+        header .logo {
+            font-weight: bold;
+        }
 
-header .right div{
-    cursor: pointer;
-}
+        header .menu {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-weight: 500;
+        }
 
-a {
-    text-decoration: none;
-}
+        .menu a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.5s ease;
+        }
 
-.logo {
-    font-size: 25px;
-    font-weight: 700;
-    border-radius: 10px;
-    padding: 4px 10px;
-    color: var(--lc);
-    cursor: pointer;
-    transition: opacity 0.3s;
-}
+        .search {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-.btn{
-    background-color: var(--pc);
-    border-radius: 10px;
-    padding: 4px 10px;
-    text-decoration: none;
-    color: var(--lc);
-    cursor: pointer;
-    transition: opacity 0.3s;
-}
+        .search-icon {
+            padding-right: 50px;
+            width: 20px;
+            height: 20px;
+            color: white;
+            cursor: pointer;
+        }
 
-.btn:hover {
-    opacity: 0.8;
-}
+        .search-input {
+            width: 0;
+            opacity: 0;
+            padding: 5px 10px;
+            font-size: 14px;
+            border: 1px solid #514d4d;
+            border-radius: 20px;
+            transition: width 0.3s ease, opacity 0.5s ease;
+            background-color: rgb(42, 40, 40);
+            color: rgb(120, 118, 118);
+        }
 
-nav{
-    display: flex;
-    gap: 20px;
-    padding: 16px 32px;
-    align-items: center;
-    background-color: var(--sc);
-}
+        .search.show .search-input {
+            width: 180px;
+            opacity: 1;
+        }
+
 
 .first-section {
     position: relative;    
@@ -178,7 +185,7 @@ body {
   }
 
   .watchlist-btn {
-    background-color: #ff6600;
+    background-color: #7E5CAD;
     color: black;
     border: none;
     padding: 12px 20px;
@@ -194,7 +201,7 @@ body {
   }
 
   .watchlist-btn:hover {
-    background-color: #e65c00;
+    background-color: #ac90d4;
   }
 
   .watchlist-btn i {
@@ -259,7 +266,7 @@ body {
 }
 
 .all-block {
-  background: linear-gradient(-45deg, #0d1b2a, #1b263b, #415a77, #778da9);
+  background: #31234a;
   background-size: 400% 400%;
   animation: moving-background 15s ease infinite;
   border-radius: 15px;
@@ -346,7 +353,7 @@ body {
 }
 
 .custom-button {
-  background-color: #ff6600;
+  background-color: #7E5CAD;
   color: white;
   padding: 10px 12px;
   text-decoration: none;
@@ -364,7 +371,7 @@ body {
 
 
 .custom-button:hover {
-  background-color: #415a77;
+  background-color: #ac90d4;
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -396,7 +403,7 @@ body {
 
 .character-card {
   width: 150px;
-  background-color: #1b263b;
+  background-color: #282623;
   border-radius: 10px;
   text-align: center;
   padding: 10px;
@@ -428,8 +435,8 @@ body {
 }
 
 .trivia-box {
-  background-color: #1b263b;
-  border-left: 8px solid #ff6600;
+  background-color: #282623;
+  border-left: 8px solid #ac90d4;
   border-radius: 5px;
   padding: 10px;
   width: 76.9%;
@@ -438,7 +445,7 @@ body {
 }
 
 .trivia-box h3 {
-  color: #ffcc00;
+  color: #b69dd8;
   font-size: 28px;
   margin-bottom: 15px;
   text-align: center;
@@ -462,8 +469,6 @@ body {
   justify-content: center;
   margin: 20px 0;
  }
-
-
 
 
  .cartoon-section {
