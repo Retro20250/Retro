@@ -22,7 +22,7 @@ prev.onclick = function () {
 };
 let refreshInterval = setInterval(() => {
     next.click(); 
-}, 5000);
+}, 3000);
 
 function showSlider() {
     document.querySelector('.slider .list .item.active')?.classList.remove('active');
@@ -31,9 +31,7 @@ function showSlider() {
     thumbnails[itemActive].classList.add('active');
     setPositionThumbnail();
     clearInterval(refreshInterval);
-    refreshInterval = setInterval(() => {
-        next.click();
-    }, 5000);
+
 }
 function setPositionThumbnail() {
     let thumbnailActive = document.querySelector('.thumbnail .item.active');
@@ -63,6 +61,19 @@ document.addEventListener('keydown', function (event) {
 /* 000000000000000000000000000000000000000 */
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const horizontalWrapper = document.querySelector('.horizontal-wrapper');
+
+  // إيقاف الحركة عند الوقوف على الكارت
+  horizontalWrapper.addEventListener('mouseenter', () => {
+    horizontalWrapper.style.animationPlayState = 'paused';
+  });
+
+  // استئناف الحركة عند مغادرة الكارت
+  horizontalWrapper.addEventListener('mouseleave', () => {
+    horizontalWrapper.style.animationPlayState = 'running';
+  });
+});
 
 /* 2222222222222222222222*/
 
@@ -131,8 +142,7 @@ window.addEventListener("scroll", () => {
 /* 000000000000000000000000000000000000000 */
 
 
-
-  const wrapper = document.getElementById("sliderWrapper");
+const wrapper = document.getElementById("sliderWrapper");
 const scrollAmount = window.innerWidth;
 
 document.getElementById("prevBtn").addEventListener("click", () => {
@@ -151,91 +161,18 @@ slides.forEach((img, index) => {
   }, index * 1000); // تأخير ظهور كل صورة حسب ترتيبها
 });
 
+wrapper.addEventListener("wheel", function (e) {
+  const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth; // أقصى قيمة للتمرير الأفقي
 
-/*0000000000000000000000000000000000000000 */
-/*0000000000000000000000000000000000000000 */
-/*0000000000000000000000000000000000000000 */
-/*0000000000000000000000000000000000000000 */
-
-
-
-
-const scrollContainer = document.querySelector('.scroll-container');
-const horizontalWrapper = document.querySelector('.horizontal-wrapper');
-const sliderItems = document.querySelectorAll('.slider-item');
-
-//  (كلون العناصر عشان يبقى في تواصل)
-function setupInfiniteScroll() {
-  //  (عشان السكرول يبقى ناعم وبدون قفزات)
-  const originalItems = document.querySelectorAll('.slider-item');
-  originalItems.forEach(item => {
-    const clone = item.cloneNode(true);
-    horizontalWrapper.appendChild(clone);
-  });
-}
-setupInfiniteScroll();
-
-// تحكم في توقف وتشغيل الحركة
-let isScrolling = true;
-let scrollAnimation;
-
-// 4. نوقف الحركة لما الماوس يجي فوق أي صورة
-horizontalWrapper.addEventListener('mouseenter', () => {
-  // بنوقف الحركة
-  isScrolling = false;
-  horizontalWrapper.style.animationPlayState = 'paused';
-});
-
-// 5. نشغل الحركة تاني لما الماوس يمشي
-horizontalWrapper.addEventListener('mouseleave', () => {
-  // بنشغل الحركة تاني
-  isScrolling = true;
-  horizontalWrapper.style.animationPlayState = 'running';
-});
-
-// 6. نضيف إمكانية النقر على الصور للانتقال لمحتوى مرتبط
-sliderItems.forEach((item, index) => {
-  item.style.cursor = 'pointer'; // نخلي شكل الماوس يدل على إنه ينفع تدوس
-  
-  item.addEventListener('click', () => {
-    // الانتقال لمحتوى معين حسب الصورة المختارة
-    // ممكن تغير الأماكن دي حسب المطلوب
-    const destinations = [
-      '.two', // القسم الأول
-      '.three', // القسم الثاني
-      '.game-section', // قسم الألعاب
-      '#section-four', // قسم مخصص
-      '.colom:first-child', // الكولوم الأول
-      '.online-r', // قسم الألعاب
-      '.game-card.large:first-child', // كارت الألعاب الكبير الأول
-      '.game-card.large:last-child' // كارت الألعاب الكبير الثاني
-    ];
-    
-    // نحسب الإندكس بحيث ميعديش عدد الوجهات المتاحة
-    const destinationIndex = index % destinations.length;
-    const destination = document.querySelector(destinations[destinationIndex]);
-    
-    if (destination) {
-      destination.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
-
-// 7. تعديل في السي إس إس عشان نخلي الحركة سلسة أكتر
-// نزيد الـ keyframes من 60% ل 100% عشان اللوب ميبانش فيه قفزة
-const styleSheet = document.createElement('style');
-styleSheet.textContent = `
-  @keyframes scroll-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-200px * ${sliderItems.length / 2})); }
+  // إذا كان هناك تمرير أفقي مطلوب، امنع السلوك الافتراضي
+  if (
+    (e.deltaY > 0 && wrapper.scrollLeft < maxScrollLeft) || // التمرير لليمين
+    (e.deltaY < 0 && wrapper.scrollLeft > 0) // التمرير لليسار
+  ) {
+    e.preventDefault(); // امنع التمرير العمودي
+    wrapper.scrollBy({
+      left: e.deltaY, // استخدمي حركة العجلة في الاتجاه الأفقي
+      behavior: "smooth",
+    });
   }
-  
-  .horizontal-wrapper {
-    animation: scroll-left 30s linear infinite;
-  }
-`;
-document.head.appendChild(styleSheet);
-
-
-
-
+});

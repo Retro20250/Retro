@@ -448,8 +448,6 @@ header .menu {
   margin-bottom: -6px;
 }
 
-<<<<<<< HEAD
-=======
 .content2 {
     padding: 10px;
     display: flex;
@@ -462,7 +460,7 @@ header .menu {
     color: white; 
     text-decoration: none; 
 
->>>>>>> 08c1cf3e6f8a1c586cd27723420f73cd253bcfbe
+
 }
 
 .content2:hover {
@@ -513,12 +511,14 @@ header .menu {
 }
 
 .four .top {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  overflow: hidden;
-  z-index: 80;
+    width: 635px;
+    height: 622px;
+    object-fit: cover;
+    position: absolute;
+    overflow: hidden;
+    z-index: 80;
+    top: 11%;
+    right: -7%;
 
 }
 
@@ -528,17 +528,25 @@ header .menu {
   width: 100%;
   height: 200px;
   overflow: hidden;
-  margin-bottom: 20px;
   top: 40%;
   z-index: 50;
 }
 
 .horizontal-wrapper {
   display: flex;
-  animation: scroll-left 15s linear infinite;
-  /* الحركة اللانهائية */
+  animation: scroll-left 30s linear infinite;
+  
 }
 
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* تحريك السلايدر بالكامل */
+  }
+}
 
 .slider-item {
   flex: 0 0 auto;
@@ -555,6 +563,7 @@ header .menu {
   align-items: center;
   justify-content: center;
   display: flex;
+  cursor: pointer;
 }
 
 .slider-item img {
@@ -566,16 +575,6 @@ header .menu {
 
 }
 
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-60%);
-  }
-}
 
 
 
@@ -772,7 +771,7 @@ button:hover .wave {
   overflow: hidden;
   transition: 0.3s;
   top: 77%;
-  right: 21%;
+  right: 59%;
   z-index: 55;
 }
 
@@ -917,4 +916,115 @@ button:hover .wave {
   background-color: rgba(247, 196, 255, 0.8); 
   transform: scale(1.1); 
   transition: transform 0.8s ease, background-color 0.4s ease; 
+}
+
+
+
+
+
+
+.horizontal-scroll {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #deb6b6;
+}
+
+.slider-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  /* أخفي البار بتاع السكرول */
+  scrollbar-width: none;           /* Firefox */
+}
+.slider-wrapper::-webkit-scrollbar {
+  display: none;                   /* Chrome + Safari */
+}
+
+.slide {
+  flex: 0 0 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #1f112a;
+}
+
+.image-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  width: 90%;
+  height: 80%;
+}
+
+.image-text img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* جعل ظهور الصور تدريجي */
+}
+
+.image-text img.visible {
+  opacity: 1;
+}
+
+
+.text {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+.text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f1d1f3;
+}
+
+.text p {
+  font-size: 1.4rem;
+  color:  #f1d1f3;
+  line-height: 1.6;
+}
+
+/* أزرار السلايدر */
+.slider-buttons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+
+}
+
+.slider-buttons button {
+  background-color: rgba(253, 192, 249, 0.932);
+  color: rgb(26, 22, 31);
+  border: none;
+  font-size: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 33px;
+  height: 35px;
+}
+
+
+.slider-buttons button:hover {
+  background-color: rgba(247, 196, 255, 0.8); 
+  transform: scale(1.1); 
+  transition: transform 0.8s ease, background-color 0.4s ease; 
 }
