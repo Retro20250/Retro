@@ -220,7 +220,7 @@ h3 {
     text-decoration: underline;
 }
 
-.btn {
+/* .submit {
     width: 90%;
     height: 45px;
     margin-left: 28px;
@@ -233,10 +233,64 @@ h3 {
     color: #fff;
     font-weight: bold;
     transition: 0.8s;
+    overflow: hidden;
+} */
+.submit {
+    width: 100%;
+    height: 60px;
+    background: var(--pc);
+    background: #080227;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 6px 12px #0c35a5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn:hover {
-    transform: scale(1.1);
+.submit:hover {
+    transform: translateY(-4px);
+}
+
+.btn {
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    z-index: 1;
+    position: relative;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: url(../HTML/wave.svg);
+    background-size: 200% 100%;
+    top: 100%;
+    left: 0;
+    animation: wave 2s linear infinite;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
+@keyframes wave {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: 200%;
+    }
+}
+
+.submit:hover .wave {
+    top: 50%;
 }
 
 .form-box .login-register {
