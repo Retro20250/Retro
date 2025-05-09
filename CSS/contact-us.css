@@ -15,53 +15,93 @@
   }
 
   body {
-    background-color: #fdfdfd;
-    color: var(--dc);
-    padding-top:0px;
-  }
+  font-family: Poppins;
+  margin: 0;
+  background-color: #010101;
+  color: #eee;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-image: url(../materials/ffffffff.jpeg);
+  
+  background-size: cover;
+  height: 200vh;
+}
 
-  header {
-    background-color: var(--dc);
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    z-index: 999;
-    position: fixed;
-    padding: 10px 100px;
-    align-items: center;
-    margin-bottom: 10px; ;
-  }
+body::-webkit-scrollbar {
+  display: none;
+  
+}
 
-  header .logo {
-    text-decoration: none;
-    color: var(--pc);
-    font-weight: 800;
-    font-size: 1.8em;
-    padding-left: 30px;
-  }
 
-  header .nav a {
-    font-weight: 500;
-    font-size: 1.1em;
-    color: var(--pc);
-    text-decoration: none;
-    margin: 10px;
-  }
+svg {
+  width: 25px;
+}
 
-  header .nav a:hover {
-    color: var(--sc);
-  }
+header {
+ width: 1200px;
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px 40px;
+}
+
+header .logo {
+  font-weight: bold;
+}
+
+header .menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.menu a:hover {
+  color: #000000;
+}
+
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+  cursor: pointer;
+}
+
 
   .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 80px 20px;
+    background-color: #2b2b3c;
+    border-radius: 50px;
+    position: relative;
+    top: 8%;
+    
   }
 
   h2 {
-    color: var(--pc);
+     color:white ;
     font-size: 28px;
     margin-bottom: 10px;
+    TEXT-ALIGN: center;
+   
   }
 
   p {
@@ -87,14 +127,15 @@
   }
 
   form button {
-    background-color: var(--pc);
-    color: white;
+
     border: none;
     padding: 12px 25px;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
+    background: linear-gradient(45deg, #1c3366, #b55aea);
+color: #ffffff;
   }
 
   form button:hover {
@@ -120,7 +161,7 @@
     margin-top: 40px;
     background-color: #f9f9f9;
     padding: 20px;
-    border-left: 5px solid var(--pc);
+    border-left: 5px solid #1c3366 ;
     border-radius: 5px;
   }
 

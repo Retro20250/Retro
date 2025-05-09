@@ -154,12 +154,16 @@ h1 {
 }
 
 h2 {
-    font-size: 2.8em;
+    font-size: 3em;
     text-align: center;
     margin-bottom: 20px;
-    color: var(--pc);
-    letter-spacing: 1px;
-    font-weight: 700;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #ffaf03, 0 0 10px #ffaf03;
 }
 
 #p1,
@@ -360,7 +364,7 @@ hr {
 }
 
 .product-section-title {
-    position: absolute;
+    /* position: absolute;
     top: 15px;
     left: 130px;
     font-size: 2em;
@@ -369,7 +373,18 @@ hr {
     z-index: 10;
     line-height: 1.2;
     text-align: left;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
+    color: #fff;
+    top: 15px;
+    left: 130px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #ffaf03, 0 0 10px #ffaf03;
 }
 
 .product-image-controls {
