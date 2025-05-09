@@ -10,43 +10,25 @@ let prev = document.getElementById('prev');
 // جايبة الصور الصغيرة اللي تحت (التامنيلز)
 let thumbnails = document.querySelectorAll('.thumbnail .item');
 
-<<<<<<< HEAD
 
-=======
-// عدد الصور كلها
->>>>>>> 08c1cf3e6f8a1c586cd27723420f73cd253bcfbe
 let countItem = items.length;
 
 // بنبدأ من أول صورة
 let itemActive = 0;
 
-<<<<<<< HEAD
 
-=======
-// لما نضغط على الزرار بتاع "التالي"
->>>>>>> 08c1cf3e6f8a1c586cd27723420f73cd253bcfbe
 next.onclick = function () {
     itemActive++; // نزود واحد علشان نروح للصورة اللي بعدها
     if (itemActive >= countItem) itemActive = 0; // لو وصلنا للآخر نرجع لأول صورة
     showSlider(); // نعرض الصورة الجديدة
 };
 
-<<<<<<< HEAD
-
-=======
-// لما نضغط على الزرار بتاع "السابق"
->>>>>>> 08c1cf3e6f8a1c586cd27723420f73cd253bcfbe
 prev.onclick = function () {
     itemActive--; // ننقص واحد علشان نرجع للصورة اللي قبل
     if (itemActive < 0) itemActive = countItem - 1; // لو رجعنا قبل أول صورة، نروح لآخر واحدة
     showSlider(); // نعرض الصورة الجديدة
 };
 
-<<<<<<< HEAD
-
-=======
-// السلايدر يشتغل لوحده كل 5 ثواني
->>>>>>> 08c1cf3e6f8a1c586cd27723420f73cd253bcfbe
 let refreshInterval = setInterval(() => {
     next.click(); // كأننا ضغطنا على زرار "التالي"
 }, 5000);
@@ -61,25 +43,22 @@ function showSlider() {
     // نضيف active للصورة الجديدة
     items[itemActive].classList.add('active');
     thumbnails[itemActive].classList.add('active');
-<<<<<<< HEAD
 
 
-   
-=======
 
     // نخلي التامنيل اللي تحت يبان لو كان بره الشاشة
     setPositionThumbnail();
 
     // نعيد تشغيل العداد من أول علشان السلايدر يكمل بعد ما نضغط يدوي
->>>>>>> 08c1cf3e6f8a1c586cd27723420f73cd253bcfbe
+
     clearInterval(refreshInterval);
     refreshInterval = setInterval(() => {
         next.click();
     }, 5000);
 }
 
-<<<<<<< HEAD
-=======
+
+
 // دي الفانكشن اللي بتخلي التامنيل ييجي في النص لو مش باين
 function setPositionThumbnail() {
     let thumbnailActive = document.querySelector('.thumbnail .item.active'); // جايبين التامنيل اللي عليه الدور
@@ -94,15 +73,15 @@ function setPositionThumbnail() {
 
 
 // click thumbnail
->>>>>>> 08c1cf3e6f8a1c586cd27723420f73cd253bcfbe
+
 thumbnails.forEach((thumbnail, index) => {
     thumbnail.addEventListener('click', () => {
         itemActive = index;      // نغير رقم الصورة اللي معروضة
         showSlider();            // نحدّث العرض على حسب الصورة المختارة
     });
 });
-<<<<<<< HEAD
-=======
+
+
 
 // لو المستخدم ضغط سهم يمين أو شمال من الكيبورد
 document.addEventListener('keydown', function (event) {
@@ -113,7 +92,7 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
->>>>>>> 08c1cf3e6f8a1c586cd27723420f73cd253bcfbe
+
 
 /* 000000000000000000000000000000000000000 */
 /* 000000000000000000000000000000000000000 */
@@ -255,89 +234,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  const scrollContainer = document.querySelector('.scroll-container');
-const horizontalWrapper = document.querySelector('.horizontal-wrapper');
-const sliderItems = document.querySelectorAll('.slider-item');
-
-//  (كلون العناصر عشان يبقى في تواصل)
-function setupInfiniteScroll() {
-  //  (عشان السكرول يبقى ناعم وبدون قفزات)
-  const originalItems = document.querySelectorAll('.slider-item');
-  originalItems.forEach(item => {
-    const clone = item.cloneNode(true);
-    horizontalWrapper.appendChild(clone);
-  });
-}
-setupInfiniteScroll();
-
-// تحكم في توقف وتشغيل الحركة
-let isScrolling = true;
-let scrollAnimation;
-
-// 4. نوقف الحركة لما الماوس يجي فوق أي صورة
-horizontalWrapper.addEventListener('mouseenter', () => {
-  // بنوقف الحركة
-  isScrolling = false;
-  horizontalWrapper.style.animationPlayState = 'paused';
-});
-
-// 5. نشغل الحركة تاني لما الماوس يمشي
-horizontalWrapper.addEventListener('mouseleave', () => {
-  // بنشغل الحركة تاني
-  isScrolling = true;
-  horizontalWrapper.style.animationPlayState = 'running';
-});
-
-// 6. نضيف إمكانية النقر على الصور للانتقال لمحتوى مرتبط
-sliderItems.forEach((item, index) => {
-  item.style.cursor = 'pointer'; // نخلي شكل الماوس يدل على إنه ينفع تدوس
-  
-  item.addEventListener('click', () => {
-    // الانتقال لمحتوى معين حسب الصورة المختارة
-    // ممكن تغير الأماكن دي حسب المطلوب
-    const destinations = [
-      '.two', // القسم الأول
-      '.three', // القسم الثاني
-      '.game-section', // قسم الألعاب
-      '#section-four', // قسم مخصص
-      '.colom:first-child', // الكولوم الأول
-      '.online-r', // قسم الألعاب
-      '.game-card.large:first-child', // كارت الألعاب الكبير الأول
-      '.game-card.large:last-child' // كارت الألعاب الكبير الثاني
-    ];
-    
-    // نحسب الإندكس بحيث ميعديش عدد الوجهات المتاحة
-    const destinationIndex = index % destinations.length;
-    const destination = document.querySelector(destinations[destinationIndex]);
-    
-    if (destination) {
-      destination.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
-
-// 7. تعديل في السي إس إس عشان نخلي الحركة سلسة أكتر
-// نزيد الـ keyframes من 60% ل 100% عشان اللوب ميبانش فيه قفزة
-const styleSheet = document.createElement('style');
-styleSheet.textContent = `
-  @keyframes scroll-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-200px * ${sliderItems.length / 2})); }
-  }
-  
-  .horizontal-wrapper {
-    animation: scroll-left 30s linear infinite;
-  }
-`;
-document.head.appendChild(styleSheet);
-
-});
 
 
 
