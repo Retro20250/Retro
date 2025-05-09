@@ -108,12 +108,12 @@ window.addEventListener("scroll", () => {
 document.addEventListener('DOMContentLoaded', () => {
   const horizontalWrapper = document.querySelector('.horizontal-wrapper');
 
-  // إيقاف الحركة عند الوقوف على الكارت
+
   horizontalWrapper.addEventListener('mouseenter', () => {
     horizontalWrapper.style.animationPlayState = 'paused';
   });
 
-  // استئناف الحركة عند مغادرة الكارت
+
   horizontalWrapper.addEventListener('mouseleave', () => {
     horizontalWrapper.style.animationPlayState = 'running';
   });
