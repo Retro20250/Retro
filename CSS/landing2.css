@@ -1062,7 +1062,7 @@ button:hover .wave {
     padding: 20px 40px;
     width: 100vw;
     position: relative;
-    top: 57%;
+    top: 60%;
 }
 
 .footer img{
@@ -1071,7 +1071,7 @@ button:hover .wave {
     object-fit: cover;
     position: absolute;
     overflow: hidden;
-    bottom: -3%;
+    bottom: -6%;
     right: 0px;
 }
 
