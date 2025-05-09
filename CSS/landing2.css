@@ -531,14 +531,16 @@ header .menu {
     justify-content: center;
     display: flex;
     cursor: pointer;
+    background-color: #fff;
 }
 
 .slider-item img {
-  object-fit: fill;
-  width: 240px;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 10px;
+    object-fit: fill;
+    width: 240px;
+    height: 72%;
+    overflow: hidden;
+    border-radius: 10px;
+    top: 0px;
 
 }
 .slider .dis-slid{
@@ -546,7 +548,10 @@ header .menu {
 }
 
 
+.slider-item p{
+  background-color: #000;
 
+}
 
 
 
