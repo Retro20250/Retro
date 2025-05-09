@@ -29,7 +29,7 @@ const clickSound = document.getElementById("click-sound");//ده بيعمل سا
     document.querySelectorAll('.show-on-scroll').forEach(el => {
         observer.observe(el);
     });
-    //bn7dd kol el elements ely lehom class (animate-on-scroll) 3lshan yra2bhom wahda wahda
+    //bn7dd kol el elements ely lehom class (show-on-scroll) 3lshan yra2bhom wahda wahda
 });
 
   window.addEventListener("scroll", () => {
@@ -39,23 +39,4 @@ const clickSound = document.getElementById("click-sound");//ده بيعمل سا
   // تفعيل أول ما الصفحة تفتح
   handleScrollAnimation();
 
-  const bgMusic = document.getElementById("bg-music");// تشغيل الميوزيك في الزرار و كده 
-  let isPlaying = false;
-
-  function toggleMusic() {
-    if (isPlaying) {
-      bgMusic.pause();
-    } else {
-      bgMusic.play();
-    }
-    isPlaying = !isPlaying;
-  }
-
-  // تشغيل الموسيقى بعد أول كليك في الصفحة
-  function startMusicOnce() {
-    bgMusic.play();
-    isPlaying = true;
-    window.removeEventListener("click", startMusicOnce);
-  }
-
-  window.addEventListener("click", startMusicOnce);
+ 
