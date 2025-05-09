@@ -14,7 +14,7 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: #c73434;
+  background-color: #deb6b6;
 }
 
 .slider-wrapper {
@@ -51,7 +51,7 @@ body {
   width: 90%;
   height: 80%;
 }
-/* تأثير على الصور لجعلها تظهر بشكل سموس */
+
 .image-text img {
   width: 400px;
   height: 500px;
@@ -62,7 +62,7 @@ body {
   transition: opacity 1s ease-in-out; /* جعل ظهور الصور تدريجي */
 }
 
-/* عند الظهور، خلي الصورة تبقى مرئية */
+
 .image-text img.visible {
   opacity: 1;
 }
