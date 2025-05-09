@@ -1,29 +1,18 @@
 body {
+    font-family: Poppins;
     margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #000000, #1a1a2e);
+    background-color: #010101;
     color: #eee;
-    font-family: "Poppins", "Arial", sans-serif;
+    overflow-y: scroll;
+    /* تخلي التمرير شغال */
     overflow-x: hidden;
-    position: relative;
 }
 
 body::-webkit-scrollbar {
-    width: 8px;
+    display: none;
+
 }
 
-body::-webkit-scrollbar-track {
-    background: #0d0d0d;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: #444;
-    border-radius: 4px;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-    background: #666;
-}
 
 svg {
     width: 25px;
@@ -84,7 +73,98 @@ header .menu {
     --gh: #E07A5F
 }
 
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--lc);
+    text-shadow: 0 0 5px var(--pc), 0 0 30px var(--pc);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
 
+.grid-container {
+    display: grid;
+    /*el components elly gwa el class de squares kda*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*lma yla2y msa7a byzwd column equally lw mfeesh 5las la 3shan auto,
+       hy3ml kol column min 200 px */
+    gap: 15px;
+    /*gap between cards*/
+}
+
+.grid-item {
+    position: relative;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 300px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 8px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 16px;
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000000, #1a1a2e);
+    color: #eee;
+    font-family: "Poppins", "Arial", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #0d0d0d;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+
+.glow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
 
 .glow-circle {
     position: absolute;
@@ -145,6 +225,8 @@ header .menu {
 }
 
 
+
+
 .category-section {
     margin: 40px 0;
     padding: 20px 0;
@@ -169,6 +251,7 @@ h1::before {
     position: absolute;
     width: 100px;
     height: 4px;
+    background: #ff3366;
     bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
