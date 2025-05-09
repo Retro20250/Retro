@@ -83,6 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
 /* 000000000000000000000000000000000000000 */
 /* 000000000000000000000000000000000000000 */
 
+<<<<<<< HEAD
+=======
+
+
+// بنختار كل الكروت اللي ليها كلاس "image-card"
+>>>>>>> 7e76d822177229f4dc269a5ce32d19d095c80dcc
 let cards = document.querySelectorAll(".image-card");
 let stackArea = document.querySelector(".stack-area");
 
@@ -98,6 +104,7 @@ function rotateCards() {
         }
     });
 }
+<<<<<<< HEAD
 function rotateCards() {
   let angle = 0;
   cards.forEach((card, index) => {
@@ -110,6 +117,11 @@ function rotateCards() {
     }
   });
 }
+=======
+
+
+
+>>>>>>> 7e76d822177229f4dc269a5ce32d19d095c80dcc
 
 rotateCards();
 
