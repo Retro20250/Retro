@@ -1,59 +1,67 @@
-/*   اول سيكشن */
-/* 000000000000000000000000000000000000000 */
-/* 000000000000000000000000000000000000000 */
-
-
-
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 let thumbnails = document.querySelectorAll('.thumbnail .item');
 let countItem = items.length;
 let itemActive = 0;
+let refreshInterval;
+
+// دالة لتشغيل المؤقت
+function startAutoSlide() {
+  refreshInterval = setInterval(() => {
+    next.click();
+  }, 3000);
+}
+
+// تشغيل المؤقت عند تحميل الصفحة
+startAutoSlide();
+
 next.onclick = function () {
-    itemActive++; 
-    if (itemActive >= countItem) itemActive = 0; 
-    showSlider();
+  itemActive++;
+  if (itemActive >= countItem) itemActive = 0;
+  showSlider();
 };
+
 prev.onclick = function () {
-    itemActive--; 
-    if (itemActive < 0) itemActive = countItem - 1; 
-    showSlider();
+  itemActive--;
+  if (itemActive < 0) itemActive = countItem - 1;
+  showSlider();
 };
-let refreshInterval = setInterval(() => {
-    next.click(); 
-}, 3000);
 
 function showSlider() {
-    document.querySelector('.slider .list .item.active')?.classList.remove('active');
-    document.querySelector('.thumbnail .item.active')?.classList.remove('active');
-    items[itemActive].classList.add('active');
-    thumbnails[itemActive].classList.add('active');
-    setPositionThumbnail();
-    clearInterval(refreshInterval);
+  document.querySelector('.slider .list .item.active')?.classList.remove('active');
+  document.querySelector('.thumbnail .item.active')?.classList.remove('active');
+  items[itemActive].classList.add('active');
+  thumbnails[itemActive].classList.add('active');
+  setPositionThumbnail();
 
+  // إعادة تشغيل المؤقت
+  clearInterval(refreshInterval);
+  startAutoSlide();
 }
+
 function setPositionThumbnail() {
-    let thumbnailActive = document.querySelector('.thumbnail .item.active');
-    let rect = thumbnailActive.getBoundingClientRect(); 
-    if (rect.left < 0 || rect.right > window.innerWidth) {
-        thumbnailActive.scrollIntoView({ behavior: 'smooth', inline: 'nearest' });
-    }}
+  let thumbnailActive = document.querySelector('.thumbnail .item.active');
+  let rect = thumbnailActive.getBoundingClientRect();
+  if (rect.left < 0 || rect.right > window.innerWidth) {
+    thumbnailActive.scrollIntoView({ behavior: 'smooth', inline: 'nearest' });
+  }
+}
+
 thumbnails.forEach((thumbnail, index) => {
-    thumbnail.addEventListener('click', () => {
-        itemActive = index;    
-        showSlider();            
-    });
+  thumbnail.addEventListener('click', () => {
+    itemActive = index;
+    showSlider();
+  });
 });
 
 document.addEventListener('keydown', function (event) {
-    if (event.key === 'ArrowRight') {
-        next.click(); 
-    } else if (event.key === 'ArrowLeft') {
-        prev.click();  
-    }
+  if (event.key === 'ArrowRight') {
+    next.click();
+  } else if (event.key === 'ArrowLeft') {
+    prev.click();
+  }
 });
-
 
 
 /* 000000000000000000000000000000000000000 */
@@ -83,12 +91,11 @@ document.addEventListener('DOMContentLoaded', () => {
 /* 000000000000000000000000000000000000000 */
 /* 000000000000000000000000000000000000000 */
 
-<<<<<<< HEAD
-=======
+
 
 
 // بنختار كل الكروت اللي ليها كلاس "image-card"
->>>>>>> 7e76d822177229f4dc269a5ce32d19d095c80dcc
+
 let cards = document.querySelectorAll(".image-card");
 let stackArea = document.querySelector(".stack-area");
 
@@ -104,7 +111,7 @@ function rotateCards() {
         }
     });
 }
-<<<<<<< HEAD
+
 function rotateCards() {
   let angle = 0;
   cards.forEach((card, index) => {
@@ -117,11 +124,7 @@ function rotateCards() {
     }
   });
 }
-=======
 
-
-
->>>>>>> 7e76d822177229f4dc269a5ce32d19d095c80dcc
 
 rotateCards();
 
