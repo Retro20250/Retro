@@ -549,30 +549,28 @@ header .menu {
 }
 
 .slider-item {
-  flex: 0 0 auto;
-  width: 200px;
-  height: 150px;
-  background-color: white;
-  border-radius: 10px;
-  margin: 0 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  line-height: 150px;
-  font-size: 20px;
-  color: #333;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  cursor: pointer;
+    flex: 0 0 auto;
+    width: 240px;
+    height: 175px;
+    border-radius: 10px;
+    margin: 0 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
 }
 
 .slider-item img {
   object-fit: fill;
-  width: 200px;
+  width: 240px;
   height: 100%;
   overflow: hidden;
   border-radius: 10px;
 
+}
+.slider .dis-slid{
+  background-color: white;
 }
 
 
@@ -888,48 +886,8 @@ button:hover .wave {
   line-height: 1.6;
 }
 
-/* أزرار السلايدر */
-.slider-buttons {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 10;
-  display: flex;
-  gap: 20px;
-  text-align: center;
-
-}
-
-.slider-buttons button {
-  background-color: rgba(253, 192, 249, 0.932);
-  color: rgb(26, 22, 31);
-  border: none;
-  font-size: 2rem;
-  border-radius: 50%;
-  cursor: pointer;
-  width: 33px;
-  height: 35px;
-}
 
 
-.slider-buttons button:hover {
-  background-color: rgba(247, 196, 255, 0.8); 
-  transform: scale(1.1); 
-  transition: transform 0.8s ease, background-color 0.4s ease; 
-}
-
-
-
-
-
-
-.horizontal-scroll {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  background-color: #deb6b6;
-}
 
 .slider-wrapper {
   display: flex;
@@ -941,9 +899,6 @@ button:hover .wave {
 
   /* أخفي البار بتاع السكرول */
   scrollbar-width: none;           /* Firefox */
-}
-.slider-wrapper::-webkit-scrollbar {
-  display: none;                   /* Chrome + Safari */
 }
 
 .slide {
@@ -974,10 +929,6 @@ button:hover .wave {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   opacity: 0;
   transition: opacity 1s ease-in-out; /* جعل ظهور الصور تدريجي */
-}
-
-.image-text img.visible {
-  opacity: 1;
 }
 
 

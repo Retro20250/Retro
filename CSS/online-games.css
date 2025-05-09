@@ -537,6 +537,43 @@ nav{
     transition: 0.7s ease;
 
   }
+
+  .game-cards4{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+  .game25{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 10px;
+   }
+   .game25 img{
+    width: 150px;
+    height: 145px;
+   }
+   .game25:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .games-cards5{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  
+
   .show-on-scroll {
     opacity: 0;
     transform: translateY(50px);
