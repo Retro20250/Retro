@@ -536,7 +536,7 @@ button:hover .wave {
     position: absolute;
     overflow: hidden;
     z-index: 80;
-    top: 11%;
+    top: 10%;
     right: -7%;
 
 }
@@ -992,6 +992,7 @@ button:hover .wave {
   cursor: pointer;
   width: 33px;
   height: 35px;
+  display: none;
 }
 
 
