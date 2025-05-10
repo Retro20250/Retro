@@ -714,14 +714,6 @@ header .menu {
 
 
 
-
-
-
-
-
-
-
-
 /* online sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
 .game-online {
   position: relative;
@@ -1156,6 +1148,7 @@ button:hover .wave {
 .six{
   background-image: url(../materials/ffffffff.jpeg);
   background-size: cover;
+  height: 150vh;
 }
 
 
@@ -1168,7 +1161,7 @@ button:hover .wave {
     padding: 20px 40px;
     width: 100vw;
     position: relative;
-    top: 60%;
+    top: 73%;
 }
 
 .footer img{

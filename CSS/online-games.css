@@ -21,11 +21,6 @@ body::-webkit-scrollbar {
   
 }
 
-
-svg {
-  width: 25px;
-}
-
 header {
  width: 1500px;
   max-width: 100%;
@@ -38,12 +33,12 @@ header {
   right: 0;
   z-index: 1000;
   padding: 20px 40px;
-  background-color: rgb(35, 56, 40);
+
 }
 
 header i {
   position: absolute;
-  left: 1%;
+  left: 2%;
   font-size: 22px;
   color: #ffaf03;
 }
