@@ -103,23 +103,6 @@ window.addEventListener("scroll", () => {
 /*0000000000000000000 */
 /*0000000000000000000 */
 
-/*cartoooon */
-
-document.addEventListener('DOMContentLoaded', () => {
-  const horizontalWrapper = document.querySelector('.horizontal-wrapper');
-
-
-  horizontalWrapper.addEventListener('mouseenter', () => {
-    horizontalWrapper.style.animationPlayState = 'paused';
-  });
-
-
-  horizontalWrapper.addEventListener('mouseleave', () => {
-    horizontalWrapper.style.animationPlayState = 'running';
-  });
-});
-
-
 
 /* 000000000000000000000000000000000000000 */
 /* 000000000000000000000000000000000000000 */
