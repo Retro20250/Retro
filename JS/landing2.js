@@ -113,6 +113,7 @@ function rotateCards() {
 
 rotateCards();
 
+
 window.addEventListener("scroll", () => {
   let distance = window.innerHeight * 0.5;
   let topVal = stackArea.getBoundingClientRect().top;
