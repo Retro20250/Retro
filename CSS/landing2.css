@@ -727,8 +727,7 @@ header .menu {
   box-shadow: 6px 6px 0 #000000;
 }
 
-/* <<<<<<< HEAD=======>>>>>>>45e4e07718e61b8a673193c4ebabca4275b7a5e7 */
-/* m3rfsh eh da wallahy bs ghalbn da kan el moshkla */
+
 .wave {
   position: absolute;
   width: 100%;
@@ -754,7 +753,7 @@ header .menu {
 button:hover .wave {
   top: 50%;
   top: 50%;
-  /* >>>>>>>45e4e07718e61b8a673193c4ebabca4275b7a5e7 */
+
 }
 
 
@@ -839,7 +838,7 @@ button:hover .wave {
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background-color: #1f112a;
+
 }
 
 .image{
@@ -889,7 +888,7 @@ button:hover .wave {
    max-width: 580px;  /* أو القيمة المناسبة */
   word-wrap: break-word;
   white-space: normal;
-  overflow: hidden;  /* تمنع النص من الخروج عن الحاوية */}
+  overflow: hidden;  }
 
 
 
@@ -930,16 +929,8 @@ button:hover .wave {
   scrollbar-width: none;           /* Firefox */
 }
 
-.slide {
-  flex: 0 0 100%;
-  height: 100%;
-  scroll-snap-align: start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  background-color: #1f112a;
-}
+
+
 
 .image-text {
   display: flex;
@@ -978,6 +969,10 @@ button:hover .wave {
   color:  #f1d1f3;
   line-height: 1.6;
 }
+
+
+
+
 
 /* أزرار السلايدر */
 .slider-buttons {
