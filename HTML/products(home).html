@@ -8,16 +8,33 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
         href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
         rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet" />
-    <title>Y2K Nostalgia - Products Home</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Products Home</title>
 </head>
 
 <body>
@@ -28,7 +45,11 @@
         <div class="glow-circle glow-circle-3"></div>
     </div>
     <header>
+
         <i class="fa-brands fa-space-awesome"></i>
+
+
+
         <div class="logo">Y2K</div>
         <ul class="menu">
             <li><a href="../HTML/login&signup.html" class="login-link">Log in</a></li>
@@ -51,24 +72,10 @@
         </div>
 
     </header>
+
     <!-- 00000000000000000 -->
     <!-- 00000000000000000 -->
     <!-- 00000000000000000 -->
-
-    <div class="menu-container">
-        <button class="menu-button" onclick="toggleMenu()">
-            <i class='bx bx-menu'></i>
-        </button>
-
-        <!-- Dropdown menu -->
-        <div class="dropdown-content" id="dropdown">
-            <a href="cartoon(home).html"><i class='bx bx-ghost'></i> Cartoons</a>
-            <a href="articles.html"><i class='bx bx-book-bookmark'></i> Articles</a>
-            <a href="products(home).html"><i class='bx bxs-shopping-bag'></i> Products</a>
-            <a href="online-games.html"><i class='bx bx-joystick'></i> Online Games</a>
-
-        </div>
-    </div>
 
     <div class="category-section">
         <h1>Old Games</h1>
@@ -280,9 +287,20 @@
     <section class="six">
         <div class="footer">
             <div class="footer-content">
-                <div class="contact-us">contact us </div>
+                <div class="footer-top-row">
+                    <div class="contact-us">Contact Us</div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
                 <div class="footer-line"></div>
                 <img src="../materials/اخر يسط.png" alt="">
+
 
 
                 <div class="footer-column">
@@ -323,18 +341,16 @@
                     <a href="#">Contact Support</a>
                 </div>
 
-
-                <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                </div>
             </div>
         </div>
     </section>
     <script>
+        const menuButton = document.querySelector('.menu-button');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        menuButton.addEventListener('click', () => {
+            dropdownContent.classList.toggle('show'); // إضافة أو إزالة الكلاس "show"
+        });
         // Basic hover effects for grid items
         document.addEventListener("DOMContentLoaded", () => {
             // Add hover effects dynamically

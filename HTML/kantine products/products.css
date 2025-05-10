@@ -24,25 +24,10 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 8px;
+    display: none;
+
 }
 
-body::-webkit-scrollbar-track {
-    background: #0d0d0d;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: #444;
-    border-radius: 4px;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-    background: #666;
-}
-
-svg {
-    width: 25px;
-}
 
 header {
     width: 1200px;
@@ -92,12 +77,7 @@ header .menu {
 }
 
 
-.search-icon {
-    width: 20px;
-    height: 20px;
-    color: white;
-    cursor: pointer;
-}
+
 
 
 .container-wrapper {
