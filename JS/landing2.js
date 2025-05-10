@@ -35,10 +35,10 @@ let prev = document.getElementById('prev');
 let thum = document.querySelectorAll('.thumbnail .item');
 let countItem = items.length;
 let itemactive = 0;
-
+let clicklwahdo;
 
 function startauto() {
- let clickl = setInterval(() => {
+  clicklwahdo = setInterval(() => {
     next.click();
   }, 4000);
 }
@@ -47,26 +47,25 @@ startauto();
 
 next.onclick = function () {
   itemactive++;
-  if (itemactive >= countItem){
-    itemactive = 0;
-  } 
+  if (itemactive >= countItem) itemactive = 0;
   showSlider();
 };
 
-
-
-
-
+prev.onclick = function () {
+  itemactive--;
+  if (itemactive < 0) itemactive = countItem - 1;
+  showSlider();
+};
 
 function showSlider() {
-  const activeSlide = document.querySelector(' .list .item.active');
+  const activeSlide = document.querySelector('.slider .list .item.active');
   const activeThumb = document.querySelector('.thumbnail .item.active');
   if (activeSlide) activeSlide.classList.remove('active');
   if (activeThumb) activeThumb.classList.remove('active');
   items[itemactive].classList.add('active');
   thum[itemactive].classList.add('active');
 
-  clearInterval(clickl);
+  clearInterval(clicklwahdo);
   startauto();
 }
 
