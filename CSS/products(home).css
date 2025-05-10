@@ -1,16 +1,79 @@
 body {
-    padding: 20px;
-    font-family: Poppins;
     margin: 0;
-    background-color: #010101;
+    padding: 0;
+    background: linear-gradient(135deg, #000000, #1a1a2e);
     color: #eee;
-    overflow-y: scroll;
+    font-family: "Poppins", "Arial", sans-serif;
     overflow-x: hidden;
+    position: relative;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+    width: 8px;
+}
 
+body::-webkit-scrollbar-track {
+    background: #0d0d0d;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+svg {
+    width: 25px;
+}
+
+header {
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px 40px;
+}
+
+header .logo {
+    font-weight: bold;
+}
+
+header .menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 500;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.menu a:hover {
+    color: #000000;
+}
+
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+    cursor: pointer;
 }
 
 :root {
@@ -21,94 +84,216 @@ body::-webkit-scrollbar {
     --gh: #E07A5F
 }
 
-h1 {
-    font-size: 3em;
-    text-align: center;
-    margin-bottom: 20px;
-    color: var(--lc);
-    text-shadow: 0 0 5px var(--pc), 0 0 30px var(--pc);
-    letter-spacing: 2px;
-    font-weight: bold;
+
+
+.glow-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.2;
 }
 
+.glow-circle-1 {
+    top: 10%;
+    left: 15%;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(45deg, #ff3366, #ff9966);
+    animation: float 30s infinite alternate ease-in-out;
+}
+
+.glow-circle-2 {
+    bottom: 10%;
+    right: 15%;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(45deg, #33ccff, #3366ff);
+    animation: float 25s infinite alternate-reverse ease-in-out;
+}
+
+.glow-circle-3 {
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(45deg, #cc33ff, #3366ff);
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    animation: pulse 15s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(50px, 30px) rotate(10deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0.05;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.15;
+    }
+}
+
+
+.category-section {
+    margin: 40px 0;
+    padding: 20px 0;
+}
+
+
+h1 {
+    font-size: 3.2em;
+    text-align: center;
+    margin: 30px 0 15px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.section-description {
+    text-align: center;
+    color: #aaa;
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-weight: 300;
+}
+
+
 .grid-container {
+    position: relative;
     display: grid;
-    /*el components elly gwa el class de squares kda*/
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /*lma yla2y msa7a byzwd column equally lw mfeesh 5las la 3shan auto,
-       hy3ml kol column min 200 px */
-    gap: 15px;
-    /*gap between cards*/
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px 50px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .grid-item {
     position: relative;
-    /*3shan n7ot el absolute fo2o*/
     background-color: #1c1c1c;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
-    /*my5lesh ay haga outside el card tban*/
-    transition: transform 0.3s ease;
-    /*tkbeer el card by7sal tdregy fe w2t 0.3 sec*/
+    transition: all 0.4s ease;
     height: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-
-.grid-item:hover {
-    box-shadow: 0 10px 10px #ffaf03;
-    border-color: #ffaf03;
-}
-
 
 .grid-item img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
-    transform: scale(1.1);
+    transition: transform 0.6s ease, filter 0.4s ease;
 }
 
+.grid-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.grid-item:hover img {
+    transform: scale(1.15);
+    filter: brightness(0.7);
+}
+
+/* Overlay Styles */
 .overlay {
     position: absolute;
-    /*tt7t fo2 el card*/
     bottom: 0;
     left: 0;
     right: 0;
-    /*bottom,right,left hya laz2a fehom no space*/
-    background: rgba(0, 0, 0, 0.6);
-    /*black background with opacity .6*/
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
     color: #fff;
-    padding: 8px;
+    padding: 20px 15px;
     text-align: center;
     opacity: 0;
-    /*mn 8er ma a point msh hyban el klam*/
-    transition: opacity 0.3s ease;
-    font-size: 16px;
+    transition: opacity 0.4s ease;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transform: translateY(20px);
 }
 
 .grid-item:hover .overlay {
     opacity: 1;
+    transform: translateY(0);
 }
 
-.animate-on-scroll {
+
+.grid-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg,
+            rgba(255, 51, 102, 0.3),
+            rgba(51, 153, 255, 0.3));
     opacity: 0;
-    /* el element bykon shfaf khales fe el awel (msh mwgod) */
-    transform: scale(0.8);
-    /* el element byzghr bnsba 80%  */
-    transition: all 0.6s ease-out;
-    /* any change in opacity or transform hshsl bshkl tdregy le moda 0.6s
-    ease-out-> el hrka tbd2 bsor3a w b3den tb2a bte2a
-     */
+    z-index: 1;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
 }
 
-/* lma el element ydkhol el viewport*/
-.animate-on-scroll.visible {
-    opacity: 1;
-    /* el element yb2a zaher kolo mn khlal class (visible) */
-    transform: scale(1);
-    /* el element yrg3 le hagmo el tabe3y bnsba 100% w da ely by3ml el zoom-in */
+.grid-item:hover::before {
+    opacity: 0.6;
 }
 
-.animate-on-scroll:hover {
-    transform: translateY(-8px);
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        padding: 10px 20px;
+    }
 
+    h1 {
+        font-size: 2.5em;
+        margin: 40px 0 25px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .grid-item {
+        height: 200px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
 }

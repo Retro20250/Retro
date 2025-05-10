@@ -292,24 +292,6 @@ header .menu {
   color: aliceblue;
 }
 
-.sub-title button {
-  font-family: poppins;
-  font-size: 14px;
-  padding: 15px 30px;
-  background: white;
-  color: black;
-  border-radius: 8mm;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.sub-title button:hover {
-  background: #d697db;
-  transform: scale(1.06);
-}
 
 /* الجزء اليمينننننننننننننننننننننن*/
 
@@ -351,6 +333,26 @@ header .menu {
 }
 
 
+.submint {
+  width: 300px;
+  height: 60px;
+  background: #ffaf03;
+  border: 0.5mm solid #000000;
+  border-radius: 5mm;
+  box-shadow: 3px 3px 0 #000000;
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  transition: 0.3s;
+  top: 77%;
+  right: 33%;
+  z-index: 55;
+}
+
+
+.submint:hover {
+  box-shadow: 6px 6px 0 #000000;
+}
 
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
@@ -371,51 +373,28 @@ header .menu {
   background-color: #eb7680;
   align-items: center;
 }
-.see-more-wrapper {
-  width: 100%; /* علشان ينزل تحت العمودين */
-  display: flex;
-  justify-content: center; /* الزر في النص */
-   margin-top: 30px;
-}
 
 
-.see-more {
-  padding: 10px 20px;
-  background-color: #d864d4;
-  color: #fff;
-  border-radius: 5px;
+
+.submitt {
+  width: 300px;
+  height: 60px;
+  background: #ffaf03;
+  border: 0.5mm solid #000000;
+  border-radius: 5mm;
+  box-shadow: 3px 3px 0 #000000;
   cursor: pointer;
-  transition: 0.5s;
-  position: relative; /* بقت relative مش absolute */
-  overflow: hidden;
-  border: none;
-}
-
-.btn4 {
-  font-size: 15px;
-  font-family: poppins;
-  z-index: 1;
-  position: relative;
-}
-
-.see-more:hover {
-  transform: scale(1.1);
-}
-
-.wave {
   position: absolute;
-  width: 100%;
-  height: 50%;
-  background: url(../HTML/wave.svg);
-  background-size: 200% 100%;
-  top: 100%;
-  left: 0;
-  animation: wave 2s linear infinite;
-  transition: 0.5s;
+  overflow: hidden;
+  transition: 0.3s;
+  top: 106%;
+  right: 33%;
+  z-index: 55;
 }
 
-button:hover .wave {
-  top: 50%;
+
+.submitt:hover {
+  box-shadow: 6px 6px 0 #000000;
 }
 
 
@@ -449,6 +428,7 @@ button:hover .wave {
   padding: 15px;
   box-shadow: 17px 20px 4px rgba(0, 0, 0, 0.1);
   border-right: #f2b21a solid 12px;
+   height: 420px;
 }
 
 .colom h1 {
@@ -536,7 +516,7 @@ button:hover .wave {
     position: absolute;
     overflow: hidden;
     z-index: 80;
-    top: 11%;
+    top: 10%;
     right: -7%;
 
 }
@@ -584,7 +564,7 @@ button:hover .wave {
 .slider-item img {
     object-fit: fill;
     width: 240px;
-    height: 72%;
+    height: 100%;
     overflow: hidden;
     border-radius: 10px;
     top: 0px;
@@ -726,31 +706,28 @@ button:hover .wave {
   object-fit: fill;
 }
 
-.see-more {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #d864d4;
-  color: #fff;
-  border-radius: 5px;
+.submitttt {
+  width: 300px;
+  height: 60px;
+  background: #ffaf03;
+  border: 0.5mm solid #000000;
+  border-radius: 5mm;
+  box-shadow: 3px 3px 0 #000000;
   cursor: pointer;
-  transition: 0.5s;
   position: absolute;
   overflow: hidden;
+  transition: 0.3s;
+  top: 103%;
+  right: 19%;
+  z-index: 55;
 }
 
-.btn3 {
-  font-size: 15px;
-  font-family: poppins;
-  z-index: 1;
-  position: relative;
+
+.submitttt:hover {
+  box-shadow: 6px 6px 0 #000000;
 }
 
-.see-more:hover {
-  transform: scale(1.1);
-}
 
-/* <<<<<<< HEAD=======>>>>>>>45e4e07718e61b8a673193c4ebabca4275b7a5e7 */
-/* m3rfsh eh da wallahy bs ghalbn da kan el moshkla */
 .wave {
   position: absolute;
   width: 100%;
@@ -776,7 +753,7 @@ button:hover .wave {
 button:hover .wave {
   top: 50%;
   top: 50%;
-  /* >>>>>>>45e4e07718e61b8a673193c4ebabca4275b7a5e7 */
+
 }
 
 
@@ -861,19 +838,19 @@ button:hover .wave {
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background-color: #1f112a;
+
 }
 
-.image-text {
+.image{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 40px;
-  width: 90%;
+  gap: 20px;
+  width: 160%;
   height: 80%;
 }
 
-.image-text img {
+.image img {
   width: 400px;
   height: 500px;
   object-fit: cover;
@@ -884,7 +861,7 @@ button:hover .wave {
 }
 
 
-.image-text img.visible {
+.image img.visible {
   opacity: 1;
 }
 
@@ -893,7 +870,9 @@ button:hover .wave {
   flex: 1;
   text-align: left;
   padding: 20px;
+
 }
+
 
 .text h2 {
   font-size: 3rem;
@@ -902,9 +881,37 @@ button:hover .wave {
 }
 
 .text p {
+ 
   font-size: 1.4rem;
   color:  #f1d1f3;
   line-height: 1.6;
+   max-width: 580px;  /* أو القيمة المناسبة */
+  word-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;  }
+
+
+
+.submittttt {
+  width: 300px;
+  height: 60px;
+  background: #ffaf03;
+  border: 0.5mm solid #000000;
+  border-radius: 5mm;
+  box-shadow: 3px 3px 0 #000000;
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  transition: 0.3s;
+  top: 68%;
+  right: 49%;
+  z-index: 55;
+
+}
+
+
+.submittttt:hover {
+  box-shadow: 6px 6px 0 #000000;
 }
 
 
@@ -922,16 +929,8 @@ button:hover .wave {
   scrollbar-width: none;           /* Firefox */
 }
 
-.slide {
-  flex: 0 0 100%;
-  height: 100%;
-  scroll-snap-align: start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  background-color: #1f112a;
-}
+
+
 
 .image-text {
   display: flex;
@@ -970,6 +969,10 @@ button:hover .wave {
   color:  #f1d1f3;
   line-height: 1.6;
 }
+
+
+
+
 
 /* أزرار السلايدر */
 .slider-buttons {
@@ -992,6 +995,7 @@ button:hover .wave {
   cursor: pointer;
   width: 33px;
   height: 35px;
+  display: none;
 }
 
 
@@ -1062,7 +1066,7 @@ button:hover .wave {
     padding: 20px 40px;
     width: 100vw;
     position: relative;
-    top: 57%;
+    top: 60%;
 }
 
 .footer img{
@@ -1071,7 +1075,7 @@ button:hover .wave {
     object-fit: cover;
     position: absolute;
     overflow: hidden;
-    bottom: -3%;
+    bottom: -6%;
     right: 0px;
 }
 
@@ -1173,7 +1177,9 @@ button:hover .wave {
 }
 
 .footer-links-bottom a:hover {
+
   color: #fff;
-   color: #fff;
+
+  color: #fff;
 
 }

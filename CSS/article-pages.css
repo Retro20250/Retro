@@ -81,7 +81,10 @@ nav{
   color: var(--lc);
 }
 .head-ar{
-  padding: 20px;
+padding: 20px 0 0 20px;
+}
+.head-ar h1{
+  font-size: 50px;
 }
 .head-ar a{
   display: flex;
@@ -98,6 +101,8 @@ nav{
 .top-section {
   display: flex;
   gap: 15px;
+  margin-bottom: 50px;
+
   
 }
 .image {
@@ -107,9 +112,9 @@ nav{
   width: 100%;
   display: block;
   border-radius: 8px;
-
   height: 80vh;
   margin-bottom: 10px;
+  height: 108vh;
 }
 .info {
   width: 40vh;
@@ -140,11 +145,12 @@ nav{
   color: #9ecbff;
 }
 .r-sec{
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  float: right;
+    gap: 18.5px;
+    display: flex;
+    flex-direction: column;
+    float: right;
 }
+
 .r-sec a{
   background-color: #FC8B2D;
   padding: 20px;
