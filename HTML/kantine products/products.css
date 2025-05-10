@@ -375,6 +375,32 @@ hr {
     gap: 15px;
 }
 
+.product-nav-button {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 175, 3, 0.2);
+    color: var(--pc);
+    border: 1px solid var(--pc);
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-nav-button:hover {
+    background-color: rgba(255, 175, 3, 0.3);
+    transform: scale(1.1);
+}
+
+.product-nav-button.highlighted {
+    background-color: var(--pc);
+    color: #000;
+}
+
 
 .product-image-slider {
     display: flex;
