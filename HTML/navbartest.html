@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Home | Y2K</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('cartoonwallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--text-light);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        /* Menu button container - now with fixed positioning */
+        .menu-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .menu-button {
+            background: var(--primary-color);
+            color: var(--text-light);
+            width: 60px;
+            height: 60px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: var(--transition);
+            position: fixed; /* Added fixed positioning */
+            bottom: 30px; /* Position from bottom */
+            right: 30px; /* Position from right */
+        }
+
+        .menu-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .menu-button i {
+            font-size: 28px;
+        }
+
+        /* Dropdown menu */
+        .dropdown-content {
+            display: none;
+            position: fixed; /* Changed to fixed positioning */
+            bottom: 100px; /* Position above the fixed button */
+            right: 30px; /* Align with button */
+            background: var(--menu-bg);
+            border-radius: 15px 0 15px 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            z-index: 999;
+            overflow: hidden;
+            transform-origin: bottom right;
+            transform: scale(0.5) translateY(20px);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                        opacity 0.2s ease;
+            opacity: 0;
+            min-width: 240px;
+            backdrop-filter: blur(10px);
+        }
+
+        .dropdown-content.show {
+            display: block;
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }
+
+        .dropdown-content a {
+            color: var(--text-light);
+            padding: 15px 20px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: var(--transition);
+            font-size: 16px;
+        }
+
+        .dropdown-content a i {
+            font-size: 20px;
+            width: 24px;
+            text-align: center;
+        }
+
+        .dropdown-content a:hover {
+            background: rgba(255, 255, 255, 0.05);
+            padding-left: 25px;
+            border-left: #7E5CAD solid 3px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .menu-button {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+            }
+            
+            .dropdown-content {
+                bottom: 80px;
+                right: 20px;
+                min-width: 200px;
+            }
+            
+            .dropdown-content a {
+                padding: 12px 15px;
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dropdown-content {
+                right: 10px;
+                min-width: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu button container -->
+    <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+            <i class='bx bx-menu'></i>
+        </button>
+        
+        <!-- Dropdown menu -->
+        <div class="dropdown-content" id="dropdown">
+            <a href="cartoon(home).html"><i class='bx bx-ghost'></i> Cartoons</a>
+            <a href="articles.html"><i class='bx bx-book-bookmark'></i> Articles</a>
+            <a href="products(home).html"><i class='bx bxs-shopping-bag'></i> Products</a>
+            <a href="online-games.html"><i class='bx bx-joystick'></i> Online Games</a>
+            <a href="../All Download/Home/Home.html"><i class='bx bx-download'></i> Download Games</a>
+            <a href="About.html"><i class='bx bx-help-circle'></i> About Us</a>
+        </div>
+    </div>
+
+    <script>
+        // Menu functionality with smooth animations
+        function toggleMenu() {
+            const menu = document.getElementById("dropdown");
+            const isShowing = menu.classList.contains("show");
+            
+            if (!isShowing) {
+                // Show menu with smooth animation
+                menu.style.display = "block";
+                // Force reflow to ensure animation plays
+                void menu.offsetWidth;
+                menu.classList.add("show");
+            } else {
+                // Hide menu with smooth animation
+                menu.classList.remove("show");
+                
+                // Wait for animation to complete before hiding
+                menu.addEventListener('transitionend', function handler() {
+                    if (!menu.classList.contains("show")) {
+                        menu.style.display = "none";
+                    }
+                    menu.removeEventListener('transitionend', handler);
+                }, { once: true });
+            }
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const dropdown = document.getElementById("dropdown");
+            const menuButton = document.querySelector('.menu-button');
+            
+            if (dropdown.classList.contains("show") && 
+                !menuButton.contains(e.target) && 
+                !dropdown.contains(e.target)) {
+                
+                dropdown.classList.remove("show");
+                
+                dropdown.addEventListener('transitionend', function handler() {
+                    if (!dropdown.classList.contains("show")) {
+                        dropdown.style.display = "none";
+                    }
+                    dropdown.removeEventListener('transitionend', handler);
+                }, { once: true });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -55,8 +55,16 @@ header {
   padding: 20px 40px;
 }
 
+header i {
+  position: absolute;
+  left: 1%;
+  font-size: 22px;
+  color: #ffaf03;
+}
+
 header .logo {
   font-weight: bold;
+  font-size: 25px;
 }
 
 header .menu {
@@ -100,12 +108,17 @@ header .menu {
   overflow: hidden;
   opacity: 0;
   transition: .5s;
+
 }
 
 .slider .list .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.on{
+  margin-bottom: 20px;
 }
 
 .slider .list .item::after {
@@ -240,17 +253,12 @@ header .menu {
 }
 
 
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
 
-
-
-
-
+/* 000000000000000000000000 */
+/* 000000000000000000000000 */
+/* 000000000000000000000000 */
+/* 000000000000000000000000 */
+/* productsssssssssssssssssssssssssssssssssssss */
 
 .stack-area {
   width: 100%;
@@ -292,24 +300,6 @@ header .menu {
   color: aliceblue;
 }
 
-.sub-title button {
-  font-family: poppins;
-  font-size: 14px;
-  padding: 15px 30px;
-  background: white;
-  color: black;
-  border-radius: 8mm;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.sub-title button:hover {
-  background: #d697db;
-  transform: scale(1.06);
-}
 
 /* الجزء اليمينننننننننننننننننننننن*/
 
@@ -351,17 +341,35 @@ header .menu {
 }
 
 
+.submint {
+  width: 300px;
+  height: 60px;
+  background: #ffaf03;
+  border: 0.5mm solid #000000;
+  border-radius: 5mm;
+  box-shadow: 3px 3px 0 #000000;
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  transition: 0.3s;
+  top: 77%;
+
+  right: 38%;
+
+  right: 37%;
+  z-index: 55;
+}
+
+
+.submint:hover {
+  box-shadow: 6px 6px 0 #000000;
+}
 
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-
-
-
-
+/* articlllllllllllllllllllllllllllllllllllllllllllles */
 
 .three {
   height: 100vh;
@@ -371,51 +379,28 @@ header .menu {
   background-color: #eb7680;
   align-items: center;
 }
-.see-more-wrapper {
-  width: 100%; /* علشان ينزل تحت العمودين */
-  display: flex;
-  justify-content: center; /* الزر في النص */
-   margin-top: 30px;
-}
 
 
-.see-more {
-  padding: 10px 20px;
-  background-color: #d864d4;
-  color: #fff;
-  border-radius: 5px;
+
+.submitt {
+  width: 300px;
+  height: 60px;
+  background: #ffaf03;
+  border: 0.5mm solid #000000;
+  border-radius: 5mm;
+  box-shadow: 3px 3px 0 #000000;
   cursor: pointer;
-  transition: 0.5s;
-  position: relative; /* بقت relative مش absolute */
-  overflow: hidden;
-  border: none;
-}
-
-.btn4 {
-  font-size: 15px;
-  font-family: poppins;
-  z-index: 1;
-  position: relative;
-}
-
-.see-more:hover {
-  transform: scale(1.1);
-}
-
-.wave {
   position: absolute;
-  width: 100%;
-  height: 50%;
-  background: url(../HTML/wave.svg);
-  background-size: 200% 100%;
-  top: 100%;
-  left: 0;
-  animation: wave 2s linear infinite;
-  transition: 0.5s;
+  overflow: hidden;
+  transition: 0.3s;
+  top: 106%;
+  right: 33%;
+  z-index: 55;
 }
 
-button:hover .wave {
-  top: 50%;
+
+.submitt:hover {
+  box-shadow: 6px 6px 0 #000000;
 }
 
 
@@ -457,29 +442,20 @@ button:hover .wave {
   font-weight: 200;
 }
 
-.content2 {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  border-radius: 10px;
-  height: 80px;
-  transition: ease 0.5s;
-  margin-bottom: -6px;
-}
+
 
 .content2 {
-    padding: 10px;
-    display: flex;
+      padding: 10px;
+    display: flex
+;
     align-items: center;
     gap: 13px;
     border-radius: 10px;
-    height: 80px;
+    height: 90px;
     transition: ease 0.5s;
     margin-bottom: -6px;
-    color: white; 
-    text-decoration: none; 
-
+    color: white;
+    text-decoration: none;
 
 }
 
@@ -514,8 +490,7 @@ button:hover .wave {
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
+/* cartoooooooooooooooooooooooooooooooooooooooooooon */
 
 .four {
   background-color: #496b5a;
@@ -603,7 +578,7 @@ button:hover .wave {
 
 
 
-/* online sectionnnnnnnnnnnnnnnnnnnnnnnnnnn */
+/* online sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
 .game-online {
   position: relative;
   align-items: center;
@@ -727,31 +702,28 @@ button:hover .wave {
   object-fit: fill;
 }
 
-.see-more {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #d864d4;
-  color: #fff;
-  border-radius: 5px;
+.submitttt {
+  width: 300px;
+  height: 60px;
+  background: #ffaf03;
+  border: 0.5mm solid #000000;
+  border-radius: 5mm;
+  box-shadow: 3px 3px 0 #000000;
   cursor: pointer;
-  transition: 0.5s;
   position: absolute;
   overflow: hidden;
+  transition: 0.3s;
+  top: 103%;
+  right: 19%;
+  z-index: 55;
 }
 
-.btn3 {
-  font-size: 15px;
-  font-family: poppins;
-  z-index: 1;
-  position: relative;
+
+.submitttt:hover {
+  box-shadow: 6px 6px 0 #000000;
 }
 
-.see-more:hover {
-  transform: scale(1.1);
-}
 
-/* <<<<<<< HEAD=======>>>>>>>45e4e07718e61b8a673193c4ebabca4275b7a5e7 */
-/* m3rfsh eh da wallahy bs ghalbn da kan el moshkla */
 .wave {
   position: absolute;
   width: 100%;
@@ -777,7 +749,7 @@ button:hover .wave {
 button:hover .wave {
   top: 50%;
   top: 50%;
-  /* >>>>>>>45e4e07718e61b8a673193c4ebabca4275b7a5e7 */
+
 }
 
 
@@ -832,9 +804,7 @@ button:hover .wave {
 /*00000000000000000000000000*/
 /*00000000000000000000000000*/
 /*00000000000000000000000000*/
-/*00000000000000000000000000*/
-
-
+/* downloadddddddddddddddddddddddddddddddddddddddddddddddddddd */
 
 
 
@@ -846,8 +816,7 @@ button:hover .wave {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-
-  /* أخفي البار بتاع السكرول */
+ /* أخفي البار بتاع السكرول */
   scrollbar-width: none;           /* Firefox */
 }
 .slider-wrapper::-webkit-scrollbar {
@@ -862,30 +831,35 @@ button:hover .wave {
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background-color: #1f112a;
+
 }
 
-.image{
+.image-text{
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
   width: 160%;
   height: 80%;
-}
-
-.image img {
-  width: 400px;
-  height: 500px;
-  object-fit: cover;
+  background: #496b5a;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  opacity: 0;
-  transition: opacity 1s ease-in-out; /* جعل ظهور الصور تدريجي */
+  overflow: hidden;
 }
 
 
-.image img.visible {
+.image-text img {
+ width: 400px;
+    height: 497px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+    top: 4px;}
+
+
+.image-text img.visible {
   opacity: 1;
 }
 
@@ -912,49 +886,29 @@ button:hover .wave {
    max-width: 580px;  /* أو القيمة المناسبة */
   word-wrap: break-word;
   white-space: normal;
-  overflow: hidden;  /* تمنع النص من الخروج عن الحاوية */}
+  overflow: hidden;  }
 
 
 
-.see-more {
-  padding: 10px 20px;
-  background-color: #d864d4;
-  color: #fff;
-  border-radius: 5px;
+.submittttt {
+  width: 300px;
+  height: 60px;
+  background: #ffaf03;
+  border: 0.5mm solid #000000;
+  border-radius: 5mm;
+  box-shadow: 3px 3px 0 #000000;
   cursor: pointer;
-  transition: 0.5s;
-  position: relative; /* بقت relative مش absolute */
-  overflow: hidden;
-  border: none;
-}
-
-.btn5 {
-  font-size: 15px;
-  font-family: poppins;
-  z-index: 1;
-  position: relative;
-}
-
-.see-more:hover {
-  transform: scale(1.1);
-}
-
-.wave {
   position: absolute;
-  width: 100%;
-  height: 50%;
-  background: url(../HTML/wave.svg);
-  background-size: 200% 100%;
-  top: 100%;
-  left: 0;
-  animation: wave 2s linear infinite;
-  transition: 0.5s;
-}
+  overflow: hidden;
+  transition: 0.3s;
+  top: 68%;
+  right: 44%;
+  z-index: 55;
 
-button:hover .wave {
-  top: 50%;
 }
-
+.submittttt:hover {
+  box-shadow: 6px 6px 0 #000000;
+}
 
 
 .slider-wrapper {
@@ -969,54 +923,8 @@ button:hover .wave {
   scrollbar-width: none;           /* Firefox */
 }
 
-.slide {
-  flex: 0 0 100%;
-  height: 100%;
-  scroll-snap-align: start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  background-color: #1f112a;
-}
-
-.image-text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
-  width: 90%;
-  height: 80%;
-}
-
-.image-text img {
-  width: 400px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  opacity: 0;
-  transition: opacity 1s ease-in-out; /* جعل ظهور الصور تدريجي */
-}
 
 
-.text {
-  flex: 1;
-  text-align: left;
-  padding: 20px;
-}
-
-.text h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: #f1d1f3;
-}
-
-.text p {
-  font-size: 1.4rem;
-  color:  #f1d1f3;
-  line-height: 1.6;
-}
 
 /* أزرار السلايدر */
 .slider-buttons {
@@ -1027,6 +935,7 @@ button:hover .wave {
   display: flex;
   gap: 20px;
   text-align: center;
+  display: none;
 
 }
 
@@ -1227,3 +1136,125 @@ button:hover .wave {
   color: #fff;
 
 }
+
+
+
+
+
+
+
+
+
+
+      /* Menu button container - now with fixed positioning */
+        .menu-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .menu-button {
+            background: var(--primary-color);
+            color: var(--text-light);
+            width: 60px;
+            height: 60px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: var(--transition);
+            position: fixed; /* Added fixed positioning */
+            bottom: 30px; /* Position from bottom */
+            right: 30px; /* Position from right */
+        }
+
+        .menu-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .menu-button i {
+            font-size: 28px;
+        }
+
+        /* Dropdown menu */
+        .dropdown-content {
+    display: none;
+    position: fixed;
+    bottom: 92px;
+    right: 60px;
+    background: var(--menu-bg);
+    border-radius: 15px 0 15px 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    overflow: hidden;
+    transform-origin: bottom right;
+    transform: scale(0.5) translateY(20px);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s ease;
+    opacity: 0;
+    width: 150px;
+    height: 200px;
+    backdrop-filter: blur(10px);
+        }
+
+        .dropdown-content.show {
+            display: block;
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }
+
+        .dropdown-content a {
+            color: var(--text-light);
+    padding: 10px 15px;
+    text-decoration: none;
+    display: flex
+;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition);
+    font-size: 16px;
+        }
+
+        .dropdown-content a i {
+            font-size: 20px;
+            width: 24px;
+            text-align: center;
+        }
+
+        .dropdown-content a:hover {
+            background: rgba(255, 255, 255, 0.05);
+            padding-left: 25px;
+            border-left: #7E5CAD solid 3px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .menu-button {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+            }
+            
+            .dropdown-content {
+                bottom: 80px;
+                right: 20px;
+                min-width: 200px;
+            }
+            
+            .dropdown-content a {
+                padding: 12px 15px;
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dropdown-content {
+                right: 10px;
+                min-width: 180px;
+            }
+        }
