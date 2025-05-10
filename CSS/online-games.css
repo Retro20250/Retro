@@ -5,13 +5,7 @@
     font-family: sans-serif;
 
 }
-:root {
-    --pc: #ffaf03;
-    --sc: #1c1c1c;
-    --dc: #121212;
-    --lc: #ffffff;
-    --gh: #E07A5F
-}
+
 body {
   font-family: Poppins;
   margin: 0;
