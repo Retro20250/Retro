@@ -846,8 +846,8 @@ button:hover .wave {
   overflow: hidden;
 }
 
-<<<<<<< HEAD
-.image img {
+
+.image-text img {
  width: 400px;
     height: 497px;
     object-fit: cover;
@@ -856,18 +856,7 @@ button:hover .wave {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     position: relative;
-    top: 4px;
-=======
-.image-text img {
-  width: 400px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  opacity: 0;
-  transition: opacity 1s ease-in-out; /* جعل ظهور الصور تدريجي */
->>>>>>> f9598c8d82bc350db151707bf1a0de380b6ce2c4
-}
+    top: 4px;}
 
 
 .image-text img.visible {
@@ -936,44 +925,6 @@ button:hover .wave {
 
 
 
-
-.image-text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
-  width: 90%;
-  height: 80%;
-}
-
-.image-text img {
-  width: 400px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  opacity: 0;
-  transition: opacity 1s ease-in-out; /* جعل ظهور الصور تدريجي */
-}
-
-
-.text {
-  flex: 1;
-  text-align: left;
-  padding: 20px;
-}
-
-.text h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: #f1d1f3;
-}
-
-.text p {
-  font-size: 1.4rem;
-  color:  #f1d1f3;
-  line-height: 1.6;
-}
 
 /* أزرار السلايدر */
 .slider-buttons {
