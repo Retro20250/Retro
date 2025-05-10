@@ -1,13 +1,44 @@
+const menuButton = document.querySelector('.menu-button');
+const dropdownContent = document.querySelector('.dropdown-content');
+
+menuButton.addEventListener('click', () => {
+    dropdownContent.classList.toggle('show'); // إضافة أو إزالة الكلاس "show"
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 let thum = document.querySelectorAll('.thumbnail .item');
 let countItem = items.length;
 let itemactive = 0;
-let clicklwahdo;
+
 
 function startauto() {
-  clicklwahdo = setInterval(() => {
+ let clickl = setInterval(() => {
     next.click();
   }, 4000);
 }
@@ -16,25 +47,26 @@ startauto();
 
 next.onclick = function () {
   itemactive++;
-  if (itemactive >= countItem) itemactive = 0;
+  if (itemactive >= countItem){
+    itemactive = 0;
+  } 
   showSlider();
 };
 
-prev.onclick = function () {
-  itemactive--;
-  if (itemactive < 0) itemactive = countItem - 1;
-  showSlider();
-};
+
+
+
+
 
 function showSlider() {
-  const activeSlide = document.querySelector('.slider .list .item.active');
+  const activeSlide = document.querySelector(' .list .item.active');
   const activeThumb = document.querySelector('.thumbnail .item.active');
   if (activeSlide) activeSlide.classList.remove('active');
   if (activeThumb) activeThumb.classList.remove('active');
   items[itemactive].classList.add('active');
   thum[itemactive].classList.add('active');
 
-  clearInterval(clicklwahdo);
+  clearInterval(clickl);
   startauto();
 }
 
@@ -155,49 +187,3 @@ wrapper.addEventListener("wheel", function (e) {
 
 
 
-
-
- // Menu functionality with smooth animations
-        function toggleMenu() {
-            const menu = document.getElementById("dropdown");
-            const isShowing = menu.classList.contains("show");
-            
-            if (!isShowing) {
-                // Show menu with smooth animation
-                menu.style.display = "block";
-                // Force reflow to ensure animation plays
-                void menu.offsetWidth;
-                menu.classList.add("show");
-            } else {
-                // Hide menu with smooth animation
-                menu.classList.remove("show");
-                
-                // Wait for animation to complete before hiding
-                menu.addEventListener('transitionend', function handler() {
-                    if (!menu.classList.contains("show")) {
-                        menu.style.display = "none";
-                    }
-                    menu.removeEventListener('transitionend', handler);
-                }, { once: true });
-            }
-        }
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
-            const dropdown = document.getElementById("dropdown");
-            const menuButton = document.querySelector('.menu-button');
-            
-            if (dropdown.classList.contains("show") && 
-                !menuButton.contains(e.target) && 
-                !dropdown.contains(e.target)) {
-                
-                dropdown.classList.remove("show");
-                
-                dropdown.addEventListener('transitionend', function handler() {
-                    if (!dropdown.classList.contains("show")) {
-                        dropdown.style.display = "none";
-                    }
-                    dropdown.removeEventListener('transitionend', handler);
-                }, { once: true });
-            }
-        });
