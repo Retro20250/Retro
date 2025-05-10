@@ -12,6 +12,10 @@ html {
 
 }
 
+i{
+  z-index: 9999;
+}
+
 section {
   scroll-snap-align: start;
   height: 100vh;
@@ -1013,6 +1017,7 @@ button:hover .wave {
 
 }
 
+
 .image-text{
   display: flex;
   flex-direction: row;
@@ -1020,6 +1025,7 @@ button:hover .wave {
   gap: 20px;
   width: 160%;
   height: 80%;
+  margin-right: 20%;
   background: #496b5a;
   border-radius: 20px;
   overflow: hidden;
@@ -1081,7 +1087,7 @@ button:hover .wave {
   overflow: hidden;
   transition: 0.3s;
   top: 68%;
-  right: 44%;
+  right: 49.5%;
   z-index: 55;
 
 }
