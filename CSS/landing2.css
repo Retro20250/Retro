@@ -744,7 +744,6 @@ button:hover .wave {
   z-index: 1;
   position: relative;
 }
-
 .see-more:hover {
   transform: scale(1.1);
 }
