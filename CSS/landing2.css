@@ -1031,6 +1031,14 @@ button:hover .wave {
     bottom: -6%;
     right: 0px;
 }
+.footer-top-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 
 .footer-content {
   display: flex;
@@ -1063,6 +1071,8 @@ button:hover .wave {
   border: 1.5px solid #444; 
   text-decoration: none;
   transition: filter 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 50px;
+  margin-bottom: -30px;
 }
 
 .social-icon:hover {
