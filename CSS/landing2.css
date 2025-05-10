@@ -716,8 +716,7 @@ header .menu {
   box-shadow: 6px 6px 0 #000000;
 }
 
-/* <<<<<<< HEAD=======>>>>>>>45e4e07718e61b8a673193c4ebabca4275b7a5e7 */
-/* m3rfsh eh da wallahy bs ghalbn da kan el moshkla */
+
 .wave {
   position: absolute;
   width: 100%;
@@ -743,7 +742,7 @@ header .menu {
 button:hover .wave {
   top: 50%;
   top: 50%;
-  /* >>>>>>>45e4e07718e61b8a673193c4ebabca4275b7a5e7 */
+
 }
 
 
@@ -825,7 +824,7 @@ button:hover .wave {
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background-color: #1f112a;
+
 }
 
 .image-text{
@@ -875,7 +874,7 @@ button:hover .wave {
    max-width: 580px;  /* أو القيمة المناسبة */
   word-wrap: break-word;
   white-space: normal;
-  overflow: hidden;  /* تمنع النص من الخروج عن الحاوية */}
+  overflow: hidden;  }
 
 
 
@@ -899,6 +898,59 @@ button:hover .wave {
   box-shadow: 6px 6px 0 #000000;
 }
 
+
+.slider-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  /* أخفي البار بتاع السكرول */
+  scrollbar-width: none;           /* Firefox */
+}
+
+
+
+
+.image-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  width: 90%;
+  height: 80%;
+}
+
+.image-text img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* جعل ظهور الصور تدريجي */
+}
+
+
+.text {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+.text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f1d1f3;
+}
+
+.text p {
+  font-size: 1.4rem;
+  color:  #f1d1f3;
+  line-height: 1.6;
+}
 
 /* أزرار السلايدر */
 .slider-buttons {
