@@ -500,19 +500,6 @@ header .menu {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .four {
   background-color: #496b5a;
 
@@ -569,7 +556,7 @@ header .menu {
 .slider-item {
     flex: 0 0 auto;
     width: 280px;
-    height: 250px; /* زيادة الارتفاع لإضافة النص */
+    height: 330px; /* زيادة الارتفاع لإضافة النص */
     border-radius: 10px;
     margin: 0 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -581,26 +568,38 @@ header .menu {
     background-color: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    text-align: left; 
 }
 
 .slider-item img {
      object-fit: fill;
     width: 100%;
-    height: 73%;
+    height: 75%;
     border-radius: 10px 10px 0 0;
-    position: absolute;
-    bottom: 67px
+   bottom: 67px;
+   top:0;
+}
+
+.slider-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 257px; /* مسافة بسيطة بين العنوان والوصف */
+  color: #1f1616; /* غيريها حسب الخلفية */
+  text-align: left;
+  padding-bottom: 3px;
+  padding-right:135px;
 }
 
 .slider-item p {
-    background-color: #000;
-    color: #fff;
+  background-color: #fff;
+    color: #110e0e;
     font-size: 14px;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
     margin: 0;
-    height: 30%; /* تخصيص 30% من الكرت للنص */
+    height: 40%; /* تخصيص 30% من الكرت للنص */
     border-radius: 0 0 10px 10px; /* زوايا مستديرة للنص فقط */
+    width:100%;
 }
 
 /* تأثير التكبير عند التفاعل */
