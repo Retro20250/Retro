@@ -144,8 +144,7 @@ svg {
 }
 
 header {
- width: 1500px;
-  max-width: 100%;
+width: 100%;
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between; 
@@ -208,13 +207,14 @@ header .menu {
   }
 
   h1{
-    justify-content: center;
+      justify-content: center;
     font-weight: 800;
-    display: flex;
-    color:  rgb(96, 124, 103);
-    margin-bottom: 30px;
+    display: flex
+;
+    color: rgb(96, 124, 103);
+    margin-bottom: 85px;
     font-family: "Roboto", sans-serif;
-
+    margin-top: 92px
 
 
   }
