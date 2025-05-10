@@ -431,15 +431,12 @@ header .menu {
   height: auto;
   width: 80%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1px; /* المسافة بين العمودين */
+
+
   padding: 20px;
   box-sizing: border-box;
   position: relative;
   left: -5%;
-  transform: translateX(100px);
-
-  opacity: 0;
   animation: showContent .7s .10s ease-in-out 1 forwards;
   justify-content: space-between;
 }
