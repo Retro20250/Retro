@@ -55,8 +55,16 @@ header {
   padding: 20px 40px;
 }
 
+header i {
+  position: absolute;
+  left: 1%;
+  font-size: 22px;
+  color: #ffaf03;
+}
+
 header .logo {
   font-weight: bold;
+  font-size: 25px;
 }
 
 header .menu {
@@ -80,12 +88,112 @@ header .menu {
 }
 
 
-.search-icon {
-  width: 20px;
-  height: 20px;
-  color: white;
-  cursor: pointer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* زر القائمة */
+.menu-container {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.menu-button {
+    background: transparent; 
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.menu-button i {
+    font-size: 20px;
+}
+
+/* القائمة المنسدلة */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: -34px;
+    background: rgba(0, 0, 0, 0.5); /* خلفية شفافة */
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    overflow: hidden;
+    transform-origin: top right;
+    transform: scale(0.5) translateY(-20px);
+    transition: transform 0.3s ease, opacity 0.2s ease;
+    opacity: 0;
+    width: 142px;
+    height: 148px;
+
+}
+
+.dropdown-content.show {
+    display: block;
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+        color: #fff;
+    padding: 10px 0 5px 30px;
+    text-decoration: none;
+    display: flex
+;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* css slider */
 .slider {
@@ -100,12 +208,17 @@ header .menu {
   overflow: hidden;
   opacity: 0;
   transition: .5s;
+
 }
 
 .slider .list .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.on{
+  margin-bottom: 20px;
 }
 
 .slider .list .item::after {
@@ -240,17 +353,12 @@ header .menu {
 }
 
 
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
 
-
-
-
-
+/* 000000000000000000000000 */
+/* 000000000000000000000000 */
+/* 000000000000000000000000 */
+/* 000000000000000000000000 */
+/* productsssssssssssssssssssssssssssssssssssss */
 
 .stack-area {
   width: 100%;
@@ -292,24 +400,6 @@ header .menu {
   color: aliceblue;
 }
 
-.sub-title button {
-  font-family: poppins;
-  font-size: 14px;
-  padding: 15px 30px;
-  background: white;
-  color: black;
-  border-radius: 8mm;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.sub-title button:hover {
-  background: #d697db;
-  transform: scale(1.06);
-}
 
 /* الجزء اليمينننننننننننننننننننننن*/
 
@@ -351,17 +441,35 @@ header .menu {
 }
 
 
+.submint {
+  width: 300px;
+  height: 60px;
+  background: #ffaf03;
+  border: 0.5mm solid #000000;
+  border-radius: 5mm;
+  box-shadow: 3px 3px 0 #000000;
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  transition: 0.3s;
+  top: 77%;
+
+  right: 38%;
+
+  right: 37%;
+  z-index: 55;
+}
+
+
+.submint:hover {
+  box-shadow: 6px 6px 0 #000000;
+}
 
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-
-
-
-
+/* articlllllllllllllllllllllllllllllllllllllllllllles */
 
 .three {
   height: 100vh;
@@ -371,51 +479,28 @@ header .menu {
   background-color: #eb7680;
   align-items: center;
 }
-.see-more-wrapper {
-  width: 100%; /* علشان ينزل تحت العمودين */
-  display: flex;
-  justify-content: center; /* الزر في النص */
-   margin-top: 30px;
-}
 
 
-.see-more {
-  padding: 10px 20px;
-  background-color: #d864d4;
-  color: #fff;
-  border-radius: 5px;
+
+.submitt {
+  width: 300px;
+  height: 60px;
+  background: #ffaf03;
+  border: 0.5mm solid #000000;
+  border-radius: 5mm;
+  box-shadow: 3px 3px 0 #000000;
   cursor: pointer;
-  transition: 0.5s;
-  position: relative; /* بقت relative مش absolute */
-  overflow: hidden;
-  border: none;
-}
-
-.btn4 {
-  font-size: 15px;
-  font-family: poppins;
-  z-index: 1;
-  position: relative;
-}
-
-.see-more:hover {
-  transform: scale(1.1);
-}
-
-.wave {
   position: absolute;
-  width: 100%;
-  height: 50%;
-  background: url(../HTML/wave.svg);
-  background-size: 200% 100%;
-  top: 100%;
-  left: 0;
-  animation: wave 2s linear infinite;
-  transition: 0.5s;
+  overflow: hidden;
+  transition: 0.3s;
+  top: 106%;
+  right: 33%;
+  z-index: 55;
 }
 
-button:hover .wave {
-  top: 50%;
+
+.submitt:hover {
+  box-shadow: 6px 6px 0 #000000;
 }
 
 
@@ -457,29 +542,20 @@ button:hover .wave {
   font-weight: 200;
 }
 
-.content2 {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  border-radius: 10px;
-  height: 80px;
-  transition: ease 0.5s;
-  margin-bottom: -6px;
-}
+
 
 .content2 {
-    padding: 10px;
-    display: flex;
+      padding: 10px;
+    display: flex
+;
     align-items: center;
     gap: 13px;
     border-radius: 10px;
-    height: 80px;
+    height: 90px;
     transition: ease 0.5s;
     margin-bottom: -6px;
-    color: white; 
-    text-decoration: none; 
-
+    color: white;
+    text-decoration: none;
 
 }
 
@@ -514,8 +590,15 @@ button:hover .wave {
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
+/* cartoooooooooooooooooooooooooooooooooooooooooooon */
+
+
+
+
+
+
+
+
 
 .four {
   background-color: #496b5a;
@@ -544,66 +627,136 @@ button:hover .wave {
 
 
 .scroll-container {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  top: 40%;
-  z-index: 50;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    /* overflow: hidden; */
+    top: 21%;
+    z-index: 50;
+    align-items: center;
+    justify-content: center;
+    display: flex
+;
 }
 
 .horizontal-wrapper {
-  display: flex;
-  animation: scroll-left 30s linear infinite;
-  
+    display: flex;
+    animation: scroll-left 30s linear infinite;
+    gap: 20px;
+    overflow: hidden;
+    width: max-content ;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
 }
 
 
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%); /* تحريك السلايدر بالكامل */
-  }
-}
 
+/* تصميم الكروت */
 .slider-item {
     flex: 0 0 auto;
-    width: 240px;
-    height: 175px;
+    width: 280px;
+    height: 330px; /* زيادة الارتفاع لإضافة النص */
     border-radius: 10px;
     margin: 0 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column; /* ترتيب الصورة والنص عموديًا */
     cursor: pointer;
     background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    text-align: left; 
 }
 
 .slider-item img {
-    object-fit: fill;
-    width: 240px;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    top: 0px;
-
-}
-.slider .dis-slid{
-  background-color: white;
+     object-fit: fill;
+    width: 100%;
+    height: 75%;
+    border-radius: 10px 10px 0 0;
+   bottom: 67px;
+   top:0;
 }
 
+.slider-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 257px; /* مسافة بسيطة بين العنوان والوصف */
+  color: #1f1616; /* غيريها حسب الخلفية */
+  text-align: left;
+  padding-bottom: 3px;
+  padding-right:135px;
+}
 
-.slider-item p{
-  background-color: #000;
+.slider-item p {
+  background-color: #fff;
+    color: #110e0e;
+    font-size: 14px;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+    height: 40%; /* تخصيص 30% من الكرت للنص */
+    border-radius: 0 0 10px 10px; /* زوايا مستديرة للنص فقط */
+    width:100%;
+}
 
+/* تأثير التكبير عند التفاعل */
+.slider-item:hover {
+    transform: scale(1.1); /* تكبير الكرت */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* إضافة ظل */
+}
+.slider-item img :hover {
+    transform: scale(1.1); /* تكبير الكرت */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* إضافة ظل */
+}
+
+.horizontal-wrapper {
+    display: flex;
+    gap: 20px;
+    animation: scroll-left 40s linear infinite;
+    align-items: center;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 
 
-/* online sectionnnnnnnnnnnnnnnnnnnnnnnnnnn */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* online sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
 .game-online {
   position: relative;
   align-items: center;
@@ -727,31 +880,28 @@ button:hover .wave {
   object-fit: fill;
 }
 
-.see-more {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #d864d4;
-  color: #fff;
-  border-radius: 5px;
+.submitttt {
+  width: 300px;
+  height: 60px;
+  background: #ffaf03;
+  border: 0.5mm solid #000000;
+  border-radius: 5mm;
+  box-shadow: 3px 3px 0 #000000;
   cursor: pointer;
-  transition: 0.5s;
   position: absolute;
   overflow: hidden;
+  transition: 0.3s;
+  top: 103%;
+  right: 19%;
+  z-index: 55;
 }
 
-.btn3 {
-  font-size: 15px;
-  font-family: poppins;
-  z-index: 1;
-  position: relative;
+
+.submitttt:hover {
+  box-shadow: 6px 6px 0 #000000;
 }
 
-.see-more:hover {
-  transform: scale(1.1);
-}
 
-/* <<<<<<< HEAD=======>>>>>>>45e4e07718e61b8a673193c4ebabca4275b7a5e7 */
-/* m3rfsh eh da wallahy bs ghalbn da kan el moshkla */
 .wave {
   position: absolute;
   width: 100%;
@@ -777,7 +927,7 @@ button:hover .wave {
 button:hover .wave {
   top: 50%;
   top: 50%;
-  /* >>>>>>>45e4e07718e61b8a673193c4ebabca4275b7a5e7 */
+
 }
 
 
@@ -832,9 +982,7 @@ button:hover .wave {
 /*00000000000000000000000000*/
 /*00000000000000000000000000*/
 /*00000000000000000000000000*/
-/*00000000000000000000000000*/
-
-
+/* downloadddddddddddddddddddddddddddddddddddddddddddddddddddd */
 
 
 
@@ -846,8 +994,7 @@ button:hover .wave {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-
-  /* أخفي البار بتاع السكرول */
+ /* أخفي البار بتاع السكرول */
   scrollbar-width: none;           /* Firefox */
 }
 .slider-wrapper::-webkit-scrollbar {
@@ -862,30 +1009,35 @@ button:hover .wave {
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background-color: #1f112a;
+
 }
 
-.image{
+.image-text{
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
   width: 160%;
   height: 80%;
-}
-
-.image img {
-  width: 400px;
-  height: 500px;
-  object-fit: cover;
+  background: #496b5a;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  opacity: 0;
-  transition: opacity 1s ease-in-out; /* جعل ظهور الصور تدريجي */
+  overflow: hidden;
 }
 
 
-.image img.visible {
+.image-text img {
+ width: 400px;
+    height: 497px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+    top: 4px;}
+
+
+.image-text img.visible {
   opacity: 1;
 }
 
@@ -912,49 +1064,29 @@ button:hover .wave {
    max-width: 580px;  /* أو القيمة المناسبة */
   word-wrap: break-word;
   white-space: normal;
-  overflow: hidden;  /* تمنع النص من الخروج عن الحاوية */}
+  overflow: hidden;  }
 
 
 
-.see-more {
-  padding: 10px 20px;
-  background-color: #d864d4;
-  color: #fff;
-  border-radius: 5px;
+.submittttt {
+  width: 300px;
+  height: 60px;
+  background: #ffaf03;
+  border: 0.5mm solid #000000;
+  border-radius: 5mm;
+  box-shadow: 3px 3px 0 #000000;
   cursor: pointer;
-  transition: 0.5s;
-  position: relative; /* بقت relative مش absolute */
-  overflow: hidden;
-  border: none;
-}
-
-.btn5 {
-  font-size: 15px;
-  font-family: poppins;
-  z-index: 1;
-  position: relative;
-}
-
-.see-more:hover {
-  transform: scale(1.1);
-}
-
-.wave {
   position: absolute;
-  width: 100%;
-  height: 50%;
-  background: url(../HTML/wave.svg);
-  background-size: 200% 100%;
-  top: 100%;
-  left: 0;
-  animation: wave 2s linear infinite;
-  transition: 0.5s;
-}
+  overflow: hidden;
+  transition: 0.3s;
+  top: 68%;
+  right: 44%;
+  z-index: 55;
 
-button:hover .wave {
-  top: 50%;
 }
-
+.submittttt:hover {
+  box-shadow: 6px 6px 0 #000000;
+}
 
 
 .slider-wrapper {
@@ -969,54 +1101,8 @@ button:hover .wave {
   scrollbar-width: none;           /* Firefox */
 }
 
-.slide {
-  flex: 0 0 100%;
-  height: 100%;
-  scroll-snap-align: start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  background-color: #1f112a;
-}
-
-.image-text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
-  width: 90%;
-  height: 80%;
-}
-
-.image-text img {
-  width: 400px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  opacity: 0;
-  transition: opacity 1s ease-in-out; /* جعل ظهور الصور تدريجي */
-}
 
 
-.text {
-  flex: 1;
-  text-align: left;
-  padding: 20px;
-}
-
-.text h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: #f1d1f3;
-}
-
-.text p {
-  font-size: 1.4rem;
-  color:  #f1d1f3;
-  line-height: 1.6;
-}
 
 /* أزرار السلايدر */
 .slider-buttons {
@@ -1027,6 +1113,7 @@ button:hover .wave {
   display: flex;
   gap: 20px;
   text-align: center;
+  display: none;
 
 }
 
@@ -1122,6 +1209,14 @@ button:hover .wave {
     bottom: -6%;
     right: 0px;
 }
+.footer-top-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 
 .footer-content {
   display: flex;
@@ -1154,6 +1249,8 @@ button:hover .wave {
   border: 1.5px solid #444; 
   text-decoration: none;
   transition: filter 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 50px;
+  margin-bottom: -30px;
 }
 
 .social-icon:hover {
@@ -1227,3 +1324,12 @@ button:hover .wave {
   color: #fff;
 
 }
+
+
+
+
+
+
+
+
+

@@ -13,41 +13,12 @@ function decrease() {
     }
 }
 
-const sectionStates = {
-    1: 1,
-    2: 1
-};
-function showNextImages(sectionId) {
-    document.getElementById(`product-row1-${sectionId}`).classList.add("hidden");
-    document.getElementById(`product-row2-${sectionId}`).classList.remove("hidden");
-    sectionStates[sectionId] = 2;
-    updateButtonHighlight(sectionId);
-}
 
-function showPrevImages(sectionId) {
-    document.getElementById(`product-row2-${sectionId}`).classList.add("hidden");
-    document.getElementById(`product-row1-${sectionId}`).classList.remove("hidden");
-    sectionStates[sectionId] = 1;
-    updateButtonHighlight(sectionId);
-}
 
-function updateButtonHighlight(sectionId) {
-    const section = document.querySelector(`.product-section[data-id="${sectionId}"]`);
-    const leftBtn = section.querySelector('.product-left');
-    const rightBtn = section.querySelector('.product-right');
+const menuButton = document.querySelector('.menu-button');
+const dropdownContent = document.querySelector('.dropdown-content');
 
-    if (sectionStates[sectionId] === 1) {
-        rightBtn.classList.add("highlighted");
-        leftBtn.classList.remove("highlighted");
-    } else {
-        leftBtn.classList.add("highlighted");
-        rightBtn.classList.remove("highlighted");
-    }
-}
-
-window.onload = function () {
-    for (let id in sectionStates) {
-        updateButtonHighlight(id);
-    }
-};
+menuButton.addEventListener('click', () => {
+  dropdownContent.classList.toggle('show'); // إضافة أو إزالة الكلاس "show"
+});
 

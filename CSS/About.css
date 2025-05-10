@@ -28,13 +28,7 @@
   .hero span {
     color: green;
   }
-  
-  .hero-img {
-    margin-top: 15px;
-    width: 100%;
-    max-width: 800px;
-    border-radius: 10px;
-  }
+
   
   .stats {
     display: flex;
@@ -105,13 +99,8 @@
     border-radius: 10px;
   }
   
-  .mission-image {
-    height: 200px;
-    background-image: url('images/sky.jpg');
-    background-size: cover;
-    background-position: center;
-    margin-top: 15px;
-    border-radius: 10px;
+  .mission-image  img{
+  
   }
   
   .history {

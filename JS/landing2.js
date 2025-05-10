@@ -1,3 +1,34 @@
+const menuButton = document.querySelector('.menu-button');
+const dropdownContent = document.querySelector('.dropdown-content');
+
+menuButton.addEventListener('click', () => {
+    dropdownContent.classList.toggle('show'); // إضافة أو إزالة الكلاس "show"
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
@@ -103,23 +134,6 @@ window.addEventListener("scroll", () => {
 /*0000000000000000000 */
 /*0000000000000000000 */
 
-/*cartoooon */
-
-document.addEventListener('DOMContentLoaded', () => {
-  const horizontalWrapper = document.querySelector('.horizontal-wrapper');
-
-
-  horizontalWrapper.addEventListener('mouseenter', () => {
-    horizontalWrapper.style.animationPlayState = 'paused';
-  });
-
-
-  horizontalWrapper.addEventListener('mouseleave', () => {
-    horizontalWrapper.style.animationPlayState = 'running';
-  });
-});
-
-
 
 /* 000000000000000000000000000000000000000 */
 /* 000000000000000000000000000000000000000 */
@@ -160,3 +174,15 @@ wrapper.addEventListener("wheel", function (e) {
     });
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
