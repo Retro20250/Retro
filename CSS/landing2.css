@@ -722,20 +722,9 @@ header .menu {
   z-index: 55;
 }
 
-<<<<<<< HEAD
-.btn3 {
-  font-size: 15px;
-  font-family: poppins;
-  z-index: 1;
-  position: relative;
-}
-.see-more:hover {
-  transform: scale(1.1);
-=======
 
 .submitttt:hover {
   box-shadow: 6px 6px 0 #000000;
->>>>>>> 9aa204023de0fa9802d8fc374e58ad3c732d3216
 }
 
 /* <<<<<<< HEAD=======>>>>>>>45e4e07718e61b8a673193c4ebabca4275b7a5e7 */
