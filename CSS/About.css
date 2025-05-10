@@ -225,13 +225,12 @@ header .menu {
 .member:hover {
     transform: scale(1.1); 
 }
-
-<<<<<<< HEAD
 .member-img {
     width: 100%; 
     height: 100%; 
     object-fit: cover; 
-=======
+}
+
 .member img {
     width: 100%;
     height: auto;
@@ -239,9 +238,9 @@ header .menu {
     cursor: pointer;
 }
 
-/* تصميم النافذة المنبثقة */
+
 .modal {
-    display: none; /* مخفية افتراضيًا */
+    display: none; 
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -249,7 +248,7 @@ header .menu {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8); /* خلفية شفافة */
+    background-color: rgba(0, 0, 0, 0.8); 
 }
 
 .modal-content {
@@ -276,12 +275,6 @@ header .menu {
     text-decoration: none;
     cursor: pointer;
 }
-
->>>>>>> 66f079a8616013e69ae7db523dabbe7a300ae800
-  
-}
-  
-
 
 
 
