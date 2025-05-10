@@ -1,258 +1,314 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('cartoonwallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            min-height: 100vh;
+            font-family: Poppins;
+            color: #eee;
+            overflow-y: scroll;
+            overflow-x: hidden;
 
-:root {
-    --pc: #ffaf03;
-    --sc: #1c1c1c;
-    --dc: #121212;
-    --lc: #ffffff;
-    --gh: #E07A5F;
-}
+        }
 
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-image: url('cartoonwallpaper.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll; /* Makes the background move with the content */
-  position: relative;
-  color: white;
-}
+        body::-webkit-scrollbar {
+            display: none;
+        }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust darkness here (0.5 = 50% black) */
-  z-index: -1; /* Keeps it behind content */
-}
+        svg {
+            width: 25px;
+        }
 
+        header {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            padding: 20px 40px;
+        }
 
+        header .logo {
+            font-weight: bold;
+            padding-left: 20px;
+        }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 32px;
-    align-items: center;
-    background-color: transparent;
-    font-size: 16px;
-    border-bottom: solid var(--pc) 2px;
-}
+        header .menu {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-weight: 500;
+        }
 
-header .lift{
-    display: flex;
-    gap: 32px;
-    align-items: center;
-}
+        .menu a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.5s ease;
+        }
 
-header .right{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
+        .search {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-header .lift div{
-    cursor: pointer;
-}
+        .search-icon {
+            padding-right: 50px;
+            width: 20px;
+            height: 20px;
+            color: white;
+            cursor: pointer;
+        }
 
-header .right div{
-    cursor: pointer;
-}
+        .search-input {
+            width: 0;
+            opacity: 0;
+            padding: 5px 10px;
+            font-size: 14px;
+            border: 1px solid #514d4d;
+            border-radius: 20px;
+            transition: width 0.3s ease, opacity 0.5s ease;
+            background-color: rgb(42, 40, 40);
+            color: rgb(120, 118, 118);
+        }
 
-.logo{
-    font-size: 25px;
-    font-weight: 700;
-}
+        .search.show .search-input {
+            width: 180px;
+            opacity: 1;
+        }
 
-.btn{
-    background-color: var(--pc);
-    border-radius: 10px;
-    padding: 4px 10px;
-    text-decoration: none;
-    color: var(--lc);
-    cursor: pointer;
-    transition: opacity 0.3s;
-}
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            padding: 50px 200px;
+            gap: 20px;
+            align-items: center;
+        }
 
-.btn:hover {
-    opacity: 0.8;
-}
+        .girls, .boys, .neutral {
+            position: relative;
+            background-color: #37342e;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            aspect-ratio: 2/3;
+            height: 300px;
+        }
 
-nav{
-    display: flex;
-    gap: 20px;
-    padding: 16px 32px;
-    align-items: center;
-    background-color: transparent;
-}
+        .girls:hover, .boys:hover, .neutral:hover {
+            transform: scale(1.05);
+        }
 
+        .girls img, .boys img, .neutral img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
 
+        .girls:hover img, .boys:hover img, .neutral:hover img {
+            transform: scale(1.1);
+        }
 
-  .grid-container {
-    display: grid;  /*el components elly gwa el class de squares kda*/
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
-     /*lma yla2y msa7a byzwd column equally lw mfeesh 5las la 3shan auto,
-       hy3ml kol column min 200 px */
-       padding: 50px 200px;
-    gap: 20px;  /*gap between cards*/
-     align-items: center;
-  }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 16px;
+            font-weight: bold;
+        }
 
+        .girls:hover .overlay, 
+        .boys:hover .overlay, 
+        .neutral:hover .overlay {
+            opacity: 1;
+        }
 
+        .category-bar-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
 
-  .girls, .boys , .neutral{
-    position: relative;  /*3shan n7ot el absolute fo2o*/
-    background-color: #37342e;
-    border-radius: 10px;  
-    overflow: hidden;  /*my5lesh ay haga outside el card tban*/
-    transition: transform 0.3s ease;  /*tkbeer el card by7sal tdregy fe w2t 0.3 sec*/
-    aspect-ratio: 2/3;  /*ratio between length and width*/
-    height: 300px;
-   
-  }
+        .category-bar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 80%;
+            max-width: 1000px;
+        }
 
-  .girls img, .boys img, .neutral img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover; 
-    transform: scale(1.1);
-  }
+       
+        .category-button,
+        .category-button-boy,
+        .category-button-girl {
+            position: relative;
+            width: 370px;
+            height: 60px;
+            background: #282623;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: 0.3s;
+            box-shadow: 0 6px 12px rgba(255, 175, 3, 0.3);
+            color: #000;
+            font-size: 22px;
+            font-weight: bold;
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-  .overlay {
-    position: absolute; /*tt7t fo2 el card*/
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /*bottom,right,left hya laz2a fehom no space*/
-    background: rgba(0, 0, 0, 0.6);  /*black background with opacity .6*/
-    color: #fff; 
-    padding: 8px;
-    text-align: center;
-    opacity: 0; /*mn 8er ma a point msh hyban el klam*/
-    transition: opacity 0.3s ease;
-    font-size: 16px;
-  }
+        .btn2 {
+            font-size: 22px;
+            font-weight: bold;
+            font-family: "Poppins", sans-serif;
+            z-index: 1;
+            position: relative;
+            color: #fff;
+            letter-spacing: 1px;
+        }
 
-  .girls:hover .overlay, .boys:hover .overlay , .neutral:hover .overlay {
-    opacity: 1;
-  }
+        /* Wave elements - initially hidden */
+        .waveblue,
+        .wavewhite,
+        .wavepink {
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            left: 0;
+            background-size: 200% 100%;
+            animation: wave 2s linear infinite;
+            transition: 0.7s;
+            opacity: 0.7;
+            top: 100%;
+        }
 
-  .girls:hover , .boys:hover , .neutral:hover {
-    transform: scale(1.05); /*el card lma a point 3leh ykbr*/
-  }
+        /* Position each wave below the button initially */
+        .waveblue {
+            background: url(waveblue.png);
+        }
 
+        .wavewhite {
+            background: url(wave.png);
+        }
 
+        .wavepink {
+            background: url(wavepink.png);
+        }
 
+        /* Hover effects */
+        .category-button:hover,
+        .category-button-boy:hover,
+        .category-button-girl:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 15px rgba(255, 175, 3, 0.5);
+        }
 
-  .category-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 80%; 
-    max-width: 1000px;
-  }
+        /* Show and position the waves on hover */
+        .category-button:hover .wavewhite,
+        .category-button-boy:hover .waveblue,
+        .category-button-girl:hover .wavepink {
+            top: 50%;
+        }
 
-  .category {
-    flex: 1;
-    height: 60px;
-    background-color: #ffaf03;
-    color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    border-radius: 16px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-  }
-  
+        /* Wave animation */
+        @keyframes wave {
+            0% {
+                background-position-x: 0;
+            }
+            100% {
+                background-position-x: 200%;
+            }
+        }
 
-  .category span {
-    z-index: 2;
-    position: relative;
-    transition: color 0.3s;
-  }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.6s ease-out;
+        }
 
-  .category:hover {
-    transform: scale(1.05);
-  }
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
 
-  .category::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: 0.4s;
-    z-index: 1;
-    animation: floatBG 5s ease-in-out infinite;
-  }
+        /* Responsive adjustments */
+        @media (max-width: 1200px) {
+            .grid-container {
+                padding: 50px 100px;
+            }
+        }
 
-  .category:hover::before {
-    opacity: 1;
-  }
+        @media (max-width: 768px) {
+            .grid-container {
+                padding: 30px 50px;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+            
+            .category-bar {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px;
+            }
+            
+            .category-button,
+            .category-button-boy,
+            .category-button-girl {
+                width: 280px;
+                height: 50px;
+                font-size: 18px;
+            }
+        }
 
-  .category.all::before {
-    background-image: url('../Screenshot 2025-05-06 215906.png');
-  }
-
-  .category.boys::before {
-    background-image: url('../Screenshot 2025-05-06 220101.png');
-  }
-
-  .category.girls::before {
-    background-image: url('../Screenshot 2025-05-06 220145.png');
-  }
-
-  .category:hover span {
-    color: transparent;
-  }
-
-  /* لمعة بتمر */
-  .category span::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    z-index: 2;
-  }
-  .category-bar-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .category-bar .category {
-    text-decoration: none;
-  }
-  
-  .category-bar .category span {
-    text-decoration: none;
-  }
-  
-
-  @keyframes floatBG {
-    0% { background-position: center; }
-    50% { background-position: center 20px; }
-    100% { background-position: center; }
-  }
+        @media (max-width: 480px) {
+            .grid-container {
+                padding: 20px;
+            }
+            
+            .girls, .boys, .neutral {
+                height: 250px;
+            }
+            
+            .category-button,
+            .category-button-boy,
+            .category-button-girl {
+                width: 220px;
+                height: 45px;
+                font-size: 16px;
+            }
+        }
