@@ -59,6 +59,12 @@ header .logo {
   font-size: 25px;
   padding-left: 100px;
 }
+.logo a {
+  text-decoration: none; 
+  color: inherit; 
+  font-weight: bold; 
+  font-size: inherit; 
+}
 header .menu {
   display: flex; 
   gap: 20px; 
