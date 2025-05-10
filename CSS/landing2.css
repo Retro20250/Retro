@@ -88,12 +88,112 @@ header .menu {
 }
 
 
-.search-icon {
-  width: 20px;
-  height: 20px;
-  color: white;
-  cursor: pointer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* زر القائمة */
+.menu-container {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.menu-button {
+    background: transparent; 
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.menu-button i {
+    font-size: 20px;
+}
+
+/* القائمة المنسدلة */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: -34px;
+    background: rgba(0, 0, 0, 0.5); /* خلفية شفافة */
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    overflow: hidden;
+    transform-origin: top right;
+    transform: scale(0.5) translateY(-20px);
+    transition: transform 0.3s ease, opacity 0.2s ease;
+    opacity: 0;
+    width: 142px;
+    height: 148px;
+
+}
+
+.dropdown-content.show {
+    display: block;
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+        color: #fff;
+    padding: 10px 0 5px 30px;
+    text-decoration: none;
+    display: flex
+;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* css slider */
 .slider {
@@ -1233,116 +1333,3 @@ button:hover .wave {
 
 
 
-
-      /* Menu button container - now with fixed positioning */
-        .menu-container {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 1000;
-        }
-
-        .menu-button {
-            background: var(--primary-color);
-            color: var(--text-light);
-            width: 60px;
-            height: 60px;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            transition: var(--transition);
-            position: fixed; /* Added fixed positioning */
-            bottom: 30px; /* Position from bottom */
-            right: 30px; /* Position from right */
-        }
-
-        .menu-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        .menu-button i {
-            font-size: 28px;
-        }
-
-        /* Dropdown menu */
-        .dropdown-content {
-    display: none;
-    position: fixed;
-    bottom: 92px;
-    right: 60px;
-    background: var(--menu-bg);
-    border-radius: 15px 0 15px 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    z-index: 999;
-    overflow: hidden;
-    transform-origin: bottom right;
-    transform: scale(0.5) translateY(20px);
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s ease;
-    opacity: 0;
-    width: 150px;
-    height: 200px;
-    backdrop-filter: blur(10px);
-        }
-
-        .dropdown-content.show {
-            display: block;
-            transform: scale(1) translateY(0);
-            opacity: 1;
-        }
-
-        .dropdown-content a {
-            color: var(--text-light);
-    padding: 10px 15px;
-    text-decoration: none;
-    display: flex
-;
-    align-items: center;
-    gap: 10px;
-    transition: var(--transition);
-    font-size: 16px;
-        }
-
-        .dropdown-content a i {
-            font-size: 20px;
-            width: 24px;
-            text-align: center;
-        }
-
-        .dropdown-content a:hover {
-            background: rgba(255, 255, 255, 0.05);
-            padding-left: 25px;
-            border-left: #7E5CAD solid 3px;
-        }
-
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            .menu-button {
-                bottom: 20px;
-                right: 20px;
-                width: 50px;
-                height: 50px;
-            }
-            
-            .dropdown-content {
-                bottom: 80px;
-                right: 20px;
-                min-width: 200px;
-            }
-            
-            .dropdown-content a {
-                padding: 12px 15px;
-                font-size: 15px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .dropdown-content {
-                right: 10px;
-                min-width: 180px;
-            }
-        }
