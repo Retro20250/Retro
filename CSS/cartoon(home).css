@@ -136,7 +136,7 @@ header .menu {
   position: fixed;
   bottom: 92px;
   right: 60px;
-  background: var(--menu-bg);
+  background: transparent;
   border-radius: 15px 0 15px 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   z-index: 999;
