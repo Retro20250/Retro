@@ -108,57 +108,71 @@ Let’s rewind time together 💛</p>
 
     <div class="team-members">
               <div class="member">
-           <img src="images/dina.jpg" class="member-img">
+           <img src="images/dina.jpg" alt="dina" class="member-img" onclick="openModal('images/dina.jpg')">
           
         </div>
               <div class="member">
           
-            <img src="images/ziadtarek.jpg" class="member-img">
+        <img src="images/ziadtarek.jpg" alt="ziadtarek" class="member-img" onclick="openModal('images/ziadtarek.jpg')">
           
         </div>
 
              <div class="member">
          
-          <img src="images/razan.jpg"  class="member-img" >
+          <img src="images/razan.jpg" alt="razan" class="member-img" onclick="openModal('images/razan.jpg')">
           
         </div>
 
              <div class="member">
          
-<<<<<<< HEAD
-            <img src="images/mekky.jpg.jpg" class="member-img" >
-=======
-            <img src="images/mekky.jpg" alt="Mekky" class="member-img" onclick="openModal('images/mekky.jpg')">
->>>>>>> 66f079a8616013e69ae7db523dabbe7a300ae800
+           <img src="images/mekky.jpg" alt="Mekky" class="member-img" onclick="openModal('images/mekky.jpg')">
+            
           
         </div>
 
         <div class="member">
           
-          <img src="images/lojy.jpg"  class="member-img" >
+          <img src="images/lojy.jpg" alt="lojy" class="member-img" onclick="openModal('images/lojy.jpg')">
           
         </div>
 
                <div class="member">
          
-            <img src="images/mariam.jpg"  class="member-img">
+            <img src="images/mariam.jpg" alt="mariam" class="member-img" onclick="openModal('images/mariam.jpg')">
           
         </div>
 
                 <div class="member">
-            <img src="images/hasnaa.jpg"  class="member-img" >
+            <img src="images/hasnaa.jpg" alt="Hasnaa" class="member-img" onclick="openModal('images/hasnaa.jpg')">
           
         </div>
 
         <div class="member">
-            <img src="images/sarah.jpg" class="member-img">
+            <img src="images/sarah.jpg" alt="Sarah" class="member-img" onclick="openModal('images/sarah.jpg')">
         </div>
-
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
 </div>
+      </div>  
 
   </section>
   </section>
+
+
 
 
 </body>
 </html>
+<script>
+    function openModal(imageSrc) {
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+     modal.style.display = "block";
+     modalImage.src = imageSrc;
+    }
+    function closeModal() {
+        const modal = document.getElementById("imageModal");
+        modal.style.display = "none";
+    }
+</script>
