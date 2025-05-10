@@ -174,7 +174,6 @@ wrapper.addEventListener("wheel", function (e) {
 
 
 
-
  // Menu functionality with smooth animations
         function toggleMenu() {
             const menu = document.getElementById("dropdown");
