@@ -545,7 +545,7 @@ header .menu {
     position: relative;
     width: 100%;
     height: 50%;
-    /* overflow: hidden; */
+
     top: 21%;
     z-index: 50;
     align-items: center;
@@ -567,18 +567,18 @@ header .menu {
 
 
 
-/* تصميم الكروت */
+
 .slider-item {
     flex: 0 0 auto;
     width: 280px;
-    height: 330px; /* زيادة الارتفاع لإضافة النص */
+    height: 330px; 
     border-radius: 10px;
     margin: 0 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-direction: column; /* ترتيب الصورة والنص عموديًا */
+    flex-direction: column;
     cursor: pointer;
     background-color: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -598,8 +598,8 @@ header .menu {
 .slider-item h3 {
   font-size: 20px;
   font-weight: bold;
-  margin-top: 250px; /* مسافة بسيطة بين العنوان والوصف */
-  color: #1f1616; /* غيريها حسب الخلفية */
+  margin-top: 250px; 
+  color: #1f1616; 
   text-align: left;
   padding-bottom: 3px;
   padding-right:135px;
@@ -612,42 +612,26 @@ header .menu {
     text-align: center;
     padding: 0px;
     margin: 0;
-    height: 40%; /* تخصيص 30% من الكرت للنص */
-    border-radius: 0 0 10px 10px; /* زوايا مستديرة للنص فقط */
+    height: 40%; 
+    border-radius: 0 0 10px 10px;
     width:100%;
 }
 
-/* تأثير التكبير عند التفاعل */
+
 .slider-item:hover {
-    transform: scale(1.1); /* تكبير الكرت */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* إضافة ظل */
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
 }
 .slider-item img :hover {
-    transform: scale(1.1); /* تكبير الكرت */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* إضافة ظل */
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
 }
-
 .horizontal-wrapper {
     display: flex;
     gap: 20px;
     animation: scroll-left 40s linear infinite;
     align-items: center;
 }
-
-@keyframes scroll-left {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-
-
-
-
-
 
 
 
@@ -937,6 +921,7 @@ button:hover .wave {
   background: #496b5a;
   border-radius: 20px;
   overflow: hidden;
+    margin-right: 8%;
 }
 
 
@@ -995,8 +980,9 @@ button:hover .wave {
   overflow: hidden;
   transition: 0.3s;
   top: 68%;
-  right: 44%;
+  right: 49.5%;
   z-index: 55;
+
 
 }
 .submittttt:hover {
