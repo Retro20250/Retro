@@ -13,20 +13,29 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">Y2K</div>
-        <ul class="menu">
-            <li><a href="../HTML/login&signup.html" class="login-link">Log in</a></li>
-            <li><a href="../HTML/login&signup.html" class="register-link">Sign up</a></li>
-            <li><a href="#">Contact us</a></li>
-        </ul>
-        <div class="search">
-            <svg class="search-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-            </svg>
-            <input type="text" class="search-input" placeholder="Search...">
+     <header>
+         <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+            <i class='bx bx-menu'></i>
+        </button>
+        
+        <!-- Dropdown menu -->
+        <div class="dropdown-content" id="dropdown">
+            <a href="cartoon(home).html"><i class='bx bx-ghost'></i> Cartoons</a>
+            <a href="articles.html"><i class='bx bx-book-bookmark'></i> Articles</a>
+            <a href="products(home).html"><i class='bx bxs-shopping-bag'></i> Products</a>
+            <a href="online-games.html"><i class='bx bx-joystick'></i> Online Games</a>
+
         </div>
-    </header>
+    </div>
+        <div class="logo">Y2K</div>
+    <ul class="menu">
+      <li><a href="../HTML/login&signup.html" class="login-link">Log in</a></li>
+      <li><a href="../HTML/login&signup.html" class="register-link">Sign </a></li>
+      <li><a href="ظظظظ">Contact us</a></li>
+    </ul>
+
+  </header>
 
     <div class="category-bar-wrapper">
         <div class="category-bar">
@@ -47,7 +56,7 @@
 
     <div id="items-list">
         <div class="grid-container">
-            <!-- Item 1 -->
+
             <div class="animate-on-scroll">
                 <div class="neutral">
                     <a href="../HTML/cartoon pages/scoobydoo.html">
@@ -57,56 +66,7 @@
                 </div>
             </div>
             
-            <!-- Item 2 -->
-            <div class="animate-on-scroll">
-                <div class="neutral">
-                    <img src="../cartoon posters/spongebob.jpg" alt="SpongeBob SquarePants">
-                    <div class="overlay">SpongeBob</div>
-                </div>
-            </div>
-            
-            <!-- Item 3 -->
-            <div class="animate-on-scroll">
-                <div class="girls">
-                    <img src="../cartoon posters/0f3d2003aa16db1df4282dddc17d8f7d.jpg" alt="Totally Spies">
-                    <div class="overlay">Totally Spies</div>
-                </div>
-            </div>
-            
-            <!-- Item 4 -->
-            <div class="animate-on-scroll">
-                <div class="girls">
-                    <img src="../cartoon posters/1d8ac4e7965199d5ff4157ddf07a408a.jpg" alt="Shimmer and Shine">
-                    <div class="overlay">Shimmer and Shine</div>
-                </div>
-            </div>
-            
-            <!-- Item 5 -->
-            <div class="animate-on-scroll">
-                <div class="neutral">
-                    <img src="../cartoon posters/toom.jpg" alt="Tom & Jerry">
-                    <div class="overlay">Tom & Jerry</div>
-                </div>
-            </div>
-            
-            <!-- Item 6 -->
-            <div class="animate-on-scroll">
-                <div class="boys">
-                    <img src="../cartoon posters/37ed19ba036152cd1ada6be73a46e156.jpg" alt="Martin Mystery">
-                    <div class="overlay">Martin Mystery</div>
-                </div>
-            </div>
-            
-            <!-- Item 7 -->
-            <div class="animate-on-scroll">
-                <div class="girls">
-                    <img src="../cartoon posters/54dffb1dd91dc86385dcc6335326609b.jpg" alt="Littlest Pet Shop">
-                    <div class="overlay">Littlest Pet Shop</div>
-                </div>
-            </div>
-            
-            <!-- Item 8 -->
-            <div class="animate-on-scroll">
+              <div class="animate-on-scroll">
                 <div class="boys">
                     <a href="../HTML/cartoon pages/ben10.html">
                         <img src="../cartoon posters/bnten.jpg" alt="Ben 10">
@@ -114,39 +74,8 @@
                     <div class="overlay">Ben 10</div>
                 </div>
             </div>
-            
-            <!-- Item 9 -->
-            <div class="animate-on-scroll">
-                <div class="neutral">
-                    <img src="../cartoon posters/a255dc80f8c6bfbe9a4237b4ca9c130a.jpg" alt="The Fairly OddParents">
-                    <div class="overlay">The Fairly OddParents</div>
-                </div>
-            </div>
-            
-            <!-- Item 10 -->
-            <div class="animate-on-scroll">
-                <div class="girls">
-                    <img src="../cartoon posters/a819a9de1aa81d07ee98aa76c56231ca.jpg" alt="My Life as a Teenage Robot">
-                    <div class="overlay">Teenage robot</div>
-                </div>
-            </div>
-            
-            <!-- Items 11-20 -->
-            <div class="animate-on-scroll">
-                <div class="girls">
-                    <img src="../cartoon posters/barbiee.jpg" alt="Barbie">
-                    <div class="overlay">Barbie</div>
-                </div>
-            </div>
-            
-            <div class="animate-on-scroll">
-                <div class="girls">
-                    <img src="../cartoon posters/bf74f5ca4396ff08098caa925ec8ba9a.jpg" alt="Barney">
-                    <div class="overlay">Barney</div>
-                </div>
-            </div>
-            
-            <div class="animate-on-scroll">
+
+             <div class="animate-on-scroll">
                 <div class="girls">
                     <a href="../HTML/cartoon pages/sofia.html">
                         <img src="../cartoon posters/c6176db38a1ab8a97eef51b5e79f83f4.jpg" alt="Sofia the First">
@@ -170,6 +99,166 @@
                         <img src="../cartoon posters/ca9555015d2bdbbd5ce3bedf1369faa9.jpg" alt="Dexter's Laboratory">
                     </a>
                     <div class="overlay">Dexter's Laboratory</div>
+                </div>
+            </div>
+
+             <div class="animate-on-scroll">
+                <div class="boys">
+                    <a href="../HTML/cartoon pages/avatar.html">
+                        <img src="../cartoon posters/WhatsApp Image 2025-05-07 at 22.26.49.jpeg" alt="Avatar: Legend of Korra">
+                    </a>
+                    <div class="overlay">Avatar: Legend of Korra</div>
+                </div>
+            </div>
+
+             <div class="animate-on-scroll">
+                <div class="neutral">
+                    <a href="../HTML/cartoon pages/loudhouse.html">
+                        <img src="../cartoon posters/2a4710508abbb807772d7e6054d47250.jpg" alt="The Loud House">
+                    </a>
+                    <div class="overlay">The Loud House</div>
+                </div>
+            </div>
+
+            <div class="animate-on-scroll">
+                <div class="boys">
+                    <a href="../HTML/cartoon pages/ninjago.html">
+                        <img src="../cartoon posters/photo_5800759053494896475_y.jpg" alt="LEGO Ninjago">
+                    </a>
+                    <div class="overlay">Ninjago</div>
+                </div>
+            </div>
+
+            <div class="animate-on-scroll">
+                <div class="boys">
+                    <a href="../HTML/cartoon pages/hxh.html">
+                        <img src="../cartoon posters/photo_5830370138581485762_x.jpg" alt="Hunter x Hunter">
+                    </a>
+                    <div class="overlay">Hunter X Hunter</div>
+                </div>
+            </div>
+
+             <div class="animate-on-scroll">
+                <div class="neutral">
+                    <a href="../HTML/cartoon pages/angelo.html">
+                        <img src="../cartoon posters/yahyaaaaa.jpg" alt="Angelo Rules">
+                    </a>
+                    <div class="overlay">Angelo Rules</div>
+                </div>
+            </div>
+            
+            <div class="animate-on-scroll">
+                <div class="neutral">
+                    <a href="../HTML/cartoon pages/clarence.html">
+                        <img src="../cartoon posters/image.jpg" alt="Clarence">
+                    </a>
+                    <div class="overlay">Clarence</div>
+                </div>
+            </div>
+
+            <div class="animate-on-scroll">
+                <div class="neutral">
+                    <a href="../HTML/cartoon pages/adventuretime.html">
+                        <img src="../cartoon posters/photo_5800759053494896488_y.jpg" alt="Adventure Time">
+                    </a>
+                    <div class="overlay">Adventure Time</div>
+                </div>
+            </div>
+            
+            <div class="animate-on-scroll">
+                <div class="neutral">
+                    <a href="../HTML/cartoon pages/teentitans.html">
+                        <img src="../cartoon posters/photo_5800759053494896489_y.jpg" alt="Teen Titans Go">
+                    </a>
+                    <div class="overlay">Teen Titans Go</div>
+                </div>
+            </div>
+
+             <div class="animate-on-scroll">
+                <div class="neutral">
+                    <a href="../HTML/cartoon pages/mr.bean.html">
+                        <img src="../cartoon posters/mrrrrrrrr.jpg" alt="Mr. Bean">
+                    </a>
+                    <div class="overlay">Mr Bean</div>
+                </div>
+            </div>
+
+            <div class="animate-on-scroll">
+                <div class="neutral">
+                    <img src="../cartoon posters/spongebob.jpg" alt="SpongeBob SquarePants">
+                    <div class="overlay">SpongeBob</div>
+                </div>
+            </div>
+            
+            
+            <div class="animate-on-scroll">
+                <div class="girls">
+                    <img src="../cartoon posters/0f3d2003aa16db1df4282dddc17d8f7d.jpg" alt="Totally Spies">
+                    <div class="overlay">Totally Spies</div>
+                </div>
+            </div>
+            
+            
+            <div class="animate-on-scroll">
+                <div class="girls">
+                    <img src="../cartoon posters/1d8ac4e7965199d5ff4157ddf07a408a.jpg" alt="Shimmer and Shine">
+                    <div class="overlay">Shimmer and Shine</div>
+                </div>
+            </div>
+            
+            
+            <div class="animate-on-scroll">
+                <div class="neutral">
+                    <img src="../cartoon posters/toom.jpg" alt="Tom & Jerry">
+                    <div class="overlay">Tom & Jerry</div>
+                </div>
+            </div>
+            
+            
+            <div class="animate-on-scroll">
+                <div class="boys">
+                    <img src="../cartoon posters/37ed19ba036152cd1ada6be73a46e156.jpg" alt="Martin Mystery">
+                    <div class="overlay">Martin Mystery</div>
+                </div>
+            </div>
+            
+            
+            <div class="animate-on-scroll">
+                <div class="girls">
+                    <img src="../cartoon posters/54dffb1dd91dc86385dcc6335326609b.jpg" alt="Littlest Pet Shop">
+                    <div class="overlay">Littlest Pet Shop</div>
+                </div>
+            </div>
+        
+            
+            
+            <div class="animate-on-scroll">
+                <div class="neutral">
+                    <img src="../cartoon posters/a255dc80f8c6bfbe9a4237b4ca9c130a.jpg" alt="The Fairly OddParents">
+                    <div class="overlay">The Fairly OddParents</div>
+                </div>
+            </div>
+            
+            
+            <div class="animate-on-scroll">
+                <div class="girls">
+                    <img src="../cartoon posters/a819a9de1aa81d07ee98aa76c56231ca.jpg" alt="My Life as a Teenage Robot">
+                    <div class="overlay">Teenage robot</div>
+                </div>
+            </div>
+            
+            
+            <div class="animate-on-scroll">
+                <div class="girls">
+                    <img src="../cartoon posters/barbiee.jpg" alt="Barbie">
+                    <div class="overlay">Barbie</div>
+                </div>
+            </div>
+            
+            <div class="animate-on-scroll">
+                <div class="girls">
+                    <img src="../cartoon posters/bf74f5ca4396ff08098caa925ec8ba9a.jpg" alt="Barney">
+                    <div class="overlay">Barney</div>
                 </div>
             </div>
             
@@ -230,14 +319,6 @@
                 </div>
             </div>
             
-            <div class="animate-on-scroll">
-                <div class="boys">
-                    <a href="../HTML/cartoon pages/avatar.html">
-                        <img src="../cartoon posters/WhatsApp Image 2025-05-07 at 22.26.49.jpeg" alt="Avatar: Legend of Korra">
-                    </a>
-                    <div class="overlay">Avatar: Legend of Korra</div>
-                </div>
-            </div>
             
             <div class="animate-on-scroll">
                 <div class="boys">
@@ -281,7 +362,7 @@
                 </div>
             </div>
             
-            <!-- Items 31-40 -->
+            
             <div class="animate-on-scroll">
                 <div class="boys">
                     <img src="../cartoon posters/2687e19419666a6d64c804be21548912.jpg" alt="Mucha Lucha">
@@ -296,14 +377,6 @@
                 </div>
             </div>
             
-            <div class="animate-on-scroll">
-                <div class="neutral">
-                    <a href="../HTML/cartoon pages/loudhouse.html">
-                        <img src="../cartoon posters/2a4710508abbb807772d7e6054d47250.jpg" alt="The Loud House">
-                    </a>
-                    <div class="overlay">The Loud House</div>
-                </div>
-            </div>
             
             <div class="animate-on-scroll">
                 <div class="neutral">
@@ -319,14 +392,6 @@
                 </div>
             </div>
             
-            <div class="animate-on-scroll">
-                <div class="neutral">
-                    <a href="../HTML/cartoon pages/angelo.html">
-                        <img src="../cartoon posters/yahyaaaaa.jpg" alt="Angelo Rules">
-                    </a>
-                    <div class="overlay">Angelo Rules</div>
-                </div>
-            </div>
             
             <div class="animate-on-scroll">
                 <div class="girls">
@@ -414,15 +479,6 @@
             </div>
             
             <div class="animate-on-scroll">
-                <div class="neutral">
-                    <a href="../HTML/cartoon pages/clarence.html">
-                        <img src="../cartoon posters/image.jpg" alt="Clarence">
-                    </a>
-                    <div class="overlay">Clarence</div>
-                </div>
-            </div>
-            
-            <div class="animate-on-scroll">
                 <div class="boys">
                     <img src="../cartoon posters/photo_5800759053494896459_y.jpg" alt="Fanboy & Chum Chum">
                     <div class="overlay">Funboy & ChumChum</div>
@@ -441,15 +497,6 @@
                 <div class="neutral">
                     <img src="../cartoon posters/photo_5800759053494896461_x.jpg" alt="CatDog">
                     <div class="overlay">CatDog</div>
-                </div>
-            </div>
-            
-            <div class="animate-on-scroll">
-                <div class="boys">
-                    <a href="../HTML/cartoon pages/hxh.html">
-                        <img src="../cartoon posters/photo_5830370138581485762_x.jpg" alt="Hunter x Hunter">
-                    </a>
-                    <div class="overlay">Hunter X Hunter</div>
                 </div>
             </div>
             
@@ -525,15 +572,6 @@
             </div>
             
             <div class="animate-on-scroll">
-                <div class="boys">
-                    <a href="../HTML/cartoon pages/ninjago.html">
-                        <img src="../cartoon posters/photo_5800759053494896475_y.jpg" alt="LEGO Ninjago">
-                    </a>
-                    <div class="overlay">Ninjago</div>
-                </div>
-            </div>
-            
-            <div class="animate-on-scroll">
                 <div class="neutral">
                     <img src="../cartoon posters/photo_5800759053494896477_x.jpg" alt="Teletubbies">
                     <div class="overlay">Teletubbies</div>
@@ -558,15 +596,6 @@
                 <div class="neutral">
                     <img src="../cartoon posters/photo_5800759053494896480_y.jpg" alt="Baby Looney Tunes">
                     <div class="overlay">Baby Looney Tunes</div>
-                </div>
-            </div>
-            
-            <div class="animate-on-scroll">
-                <div class="neutral">
-                    <a href="../HTML/cartoon pages/mr.bean.html">
-                        <img src="../cartoon posters/mrrrrrrrr.jpg" alt="Mr. Bean">
-                    </a>
-                    <div class="overlay">Mr Bean</div>
                 </div>
             </div>
             
@@ -603,24 +632,6 @@
                 <div class="neutral">
                     <img src="../cartoon posters/gambol.jpg" alt="The Amazing World of Gumball">
                     <div class="overlay">Gumball</div>
-                </div>
-            </div>
-            
-            <div class="animate-on-scroll">
-                <div class="neutral">
-                    <a href="../HTML/cartoon pages/adventuretime.html">
-                        <img src="../cartoon posters/photo_5800759053494896488_y.jpg" alt="Adventure Time">
-                    </a>
-                    <div class="overlay">Adventure Time</div>
-                </div>
-            </div>
-            
-            <div class="animate-on-scroll">
-                <div class="neutral">
-                    <a href="../HTML/cartoon pages/teentitans.html">
-                        <img src="../cartoon posters/photo_5800759053494896489_y.jpg" alt="Teen Titans Go">
-                    </a>
-                    <div class="overlay">Teen Titans Go</div>
                 </div>
             </div>
             
@@ -672,5 +683,6 @@
             });
         });
     </script>
+    <script src="../JS/cartoon.js"></script>
 </body>
 </html>

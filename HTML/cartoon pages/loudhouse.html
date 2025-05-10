@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nigga</title>
-    <link rel="stylesheet" href="/CSS/cartoon.css">
+    <link rel="stylesheet" href="../../CSS/cartoon.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,19 +13,26 @@
 <body>
 
     <header>
-    <div class="logo">Y2K</div>
+         <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+            <i class='bx bx-menu'></i>
+        </button>
+        
+        <!-- Dropdown menu -->
+        <div class="dropdown-content" id="dropdown">
+            <a href="cartoon(home).html"><i class='bx bx-ghost'></i> Cartoons</a>
+            <a href="articles.html"><i class='bx bx-book-bookmark'></i> Articles</a>
+            <a href="products(home).html"><i class='bx bxs-shopping-bag'></i> Products</a>
+            <a href="online-games.html"><i class='bx bx-joystick'></i> Online Games</a>
+
+        </div>
+    </div>
+        <div class="logo">Y2K</div>
     <ul class="menu">
       <li><a href="../HTML/login&signup.html" class="login-link">Log in</a></li>
-      <li><a href="../HTML/login&signup.html" class="register-link">Sign up</a></li>
+      <li><a href="../HTML/login&signup.html" class="register-link">Sign </a></li>
       <li><a href="ظظظظ">Contact us</a></li>
     </ul>
-    <div class="search">
-      <svg class="search-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-      </svg>
-      <input type="text" class="search-input" placeholder="Search...">
-    </div>
 
   </header>
 
@@ -320,38 +327,7 @@
 
    
     
-      <script>
-
-        const stars = document.querySelectorAll('.stars i');
-      
-        stars.forEach(star => {
-          star.addEventListener('click', () => {
-            const value = parseInt(star.getAttribute('data-value'));
-      
-            // Clear previous selection
-            stars.forEach(s => s.classList.remove('selected'));
-      
-            // Highlight selected stars
-            stars.forEach(s => {
-              if (parseInt(s.getAttribute('data-value')) <= value) {
-                s.classList.add('selected');
-              }
-            });
-          });
-        });
-        const watchlistBtn = document.getElementById('watchlistBtn');
-  let added = false;
-
-  watchlistBtn.addEventListener('click', function () {
-    added = !added;
-
-    if (added) {
-      this.innerHTML = `<i class="fa-solid fa-bookmark"></i>added to your watchlist`;
-    } else {
-      this.innerHTML = `<i class="fa-regular fa-bookmark"></i> ADD TO WATCHLIST`;
-    }
-  });
-      </script>
+     <script src="../../JS/cartoon.js"></script>
          
 
 
