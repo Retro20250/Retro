@@ -353,7 +353,11 @@ header .menu {
   overflow: hidden;
   transition: 0.3s;
   top: 77%;
+<<<<<<< HEAD
   right: 38%;
+=======
+  right: 37%;
+>>>>>>> 49be63e6bb1579681a85cc018c90f94d666a6d28
   z-index: 55;
 }
 
@@ -910,7 +914,7 @@ button:hover .wave {
   overflow: hidden;
   transition: 0.3s;
   top: 68%;
-  right: 49%;
+  right: 44%;
   z-index: 55;
 
 }
