@@ -15,9 +15,10 @@
 body {
   font-family: Poppins;
   margin: 0;
-  background-color: #2b2b2b;
+  background-color:#2b2b2b;
   color: #eee;
   overflow-y: scroll;
+  /* تخلي التمرير شغال */
   overflow-x: hidden;
 }
 
@@ -38,7 +39,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
+  
   top: 0;
   left: 0;
   right: 0;
@@ -79,124 +80,82 @@ header .menu {
 }
 
 
-.search-icon {
-  width: 20px;
-  height: 20px;
-  color: white;
-  cursor: pointer;
+
+/* زر القائمة */
+.menu-container {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.menu-container {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 1000;
-        }
+.menu-button {
+  background: transparent;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-        .menu-button {
-            background: var(--primary-color);
-            color: var(--text-light);
-            width: 60px;
-            height: 60px;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            transition: var(--transition);
-            position: fixed; /* Added fixed positioning */
-            bottom: 30px; /* Position from bottom */
-            right: 30px; /* Position from right */
-        }
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        .menu-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-        }
+.menu-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
 
-        .menu-button i {
-            font-size: 28px;
-        }
+.menu-button i {
+  font-size: 20px;
+}
 
-        /* Dropdown menu */
-        .dropdown-content {
-    display: none;
-    position: fixed;
-    bottom: 92px;
-    right: 60px;
-    background: var(--menu-bg);
-    border-radius: 15px 0 15px 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    z-index: 999;
-    overflow: hidden;
-    transform-origin: bottom right;
-    transform: scale(0.5) translateY(20px);
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s ease;
-    opacity: 0;
-    width: 150px;
-    height: 200px;
-    backdrop-filter: blur(10px);
-        }
+/* القائمة المنسدلة */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: -34px;
+  background: rgba(0, 0, 0, 0.5);
+  /* خلفية شفافة */
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  overflow: hidden;
+  transform-origin: top right;
+  transform: scale(0.5) translateY(-20px);
+  transition: transform 0.3s ease, opacity 0.2s ease;
+  opacity: 0;
+  width: 142px;
+  height: 148px;
 
-        .dropdown-content.show {
-            display: block;
-            transform: scale(1) translateY(0);
-            opacity: 1;
-        }
+}
 
-        .dropdown-content a {
-            color: var(--text-light);
-    padding: 10px 15px;
-    text-decoration: none;
-    display: flex
-;
-    align-items: center;
-    gap: 10px;
-    transition: var(--transition);
-    font-size: 16px;
-        }
+.dropdown-content.show {
+  display: block;
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
 
-        .dropdown-content a i {
-            font-size: 20px;
-            width: 24px;
-            text-align: center;
-        }
+.dropdown-content a {
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 10px 0 5px 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
 
-        .dropdown-content a:hover {
-            background: rgba(255, 255, 255, 0.05);
-            padding-left: 25px;
-            border-left: #7E5CAD solid 3px;
-        }
-
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            .menu-button {
-                bottom: 20px;
-                right: 20px;
-                width: 50px;
-                height: 50px;
-            }
-            
-            .dropdown-content {
-                bottom: 80px;
-                right: 20px;
-                min-width: 200px;
-            }
-            
-            .dropdown-content a {
-                padding: 12px 15px;
-                font-size: 15px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .dropdown-content {
-                right: 10px;
-                min-width: 180px;
-            }
-        }
+/*gameeeeeeeeeeeeeeeee*/
 h1 {
   padding-top: 20px;
   padding-left: 100px;
@@ -243,8 +202,9 @@ h1 {
   padding: 10px;
   height: 95%;
   width: 30%;
-  background-color:#3e3e3e;
+  background-color: #3e3e3e;
 }
+
 .r-secc {
   display: flex;
   flex-direction: column;
@@ -252,7 +212,7 @@ h1 {
   padding: 10px;
   height: 83%;
   width: 30%;
-  background-color:#3e3e3e;
+  background-color: #3e3e3e;
 }
 
 .big-btn {
@@ -310,8 +270,8 @@ hr {
 }
 
 #about {
- padding-left: 100px;
- padding-right: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
   margin: 15px;
   font-size: larger;
   line-height: 30px;
@@ -349,9 +309,9 @@ h2 {
   z-index: 1;
   position: relative;
   color: #fff;
- font-weight: bold;
- 
- 
+  font-weight: bold;
+
+
 }
 
 /* Wave */
@@ -363,7 +323,7 @@ h2 {
   background: url(../../HTML/wave.svg);
   background-size: 200% 100%;
   animation: wave 2s linear infinite;
-  
+
   transition: 0.7s;
   opacity: 0.7;
   top: 100%;
@@ -386,12 +346,13 @@ h2 {
     background-position-x: 200%;
   }
 }
-/*fooooooter*/
+
+/* footer sectionnnnnnn */
 .footer {
   background-color: #1b1b1b;
   padding: 20px 40px;
   width: 100vw;
-  background-color: #131313;
+  background-color: #1b1b1b;
   padding: 20px 40px;
   width: 100vw;
   position: relative;
@@ -407,6 +368,15 @@ h2 {
   bottom: -6%;
   right: 0px;
 }
+
+.footer-top-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 
 .footer-content {
   display: flex;
@@ -426,6 +396,7 @@ h2 {
   display: flex;
   gap: 20px;
   margin-top: -85px;
+  margin-right: 80px;
 }
 
 .social-icon {
@@ -440,6 +411,8 @@ h2 {
   border: 1.5px solid #444;
   text-decoration: none;
   transition: filter 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 50px;
+  margin-bottom: -30px;
 }
 
 .social-icon:hover {
@@ -451,7 +424,8 @@ h2 {
   width: 100%;
   height: 1px;
   background-color: #555;
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-sections {
@@ -460,6 +434,7 @@ h2 {
   gap: 70px;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  margin-right: 590px;
 }
 
 .footer-column h3 {
@@ -495,6 +470,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 40px;
+margin-right: 55px;
 }
 
 .footer-links-bottom a {
@@ -504,6 +480,7 @@ h2 {
   font-size: 14px;
   transition: color 0.3s;
   margin-top: 120px;
+
 }
 
 .footer-links-bottom a:hover {
@@ -513,3 +490,4 @@ h2 {
   color: #fff;
 
 }
+

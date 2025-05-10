@@ -30,4 +30,3 @@ const dropdownContent = document.querySelector('.dropdown-content');
 menuButton.addEventListener('click', () => {
     dropdownContent.classList.toggle('show'); // إضافة أو إزالة الكلاس "show"
 });
-

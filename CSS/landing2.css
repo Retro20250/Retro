@@ -88,96 +88,20 @@ header .menu {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* زر القائمة */
-.menu-container {
-    position: relative;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu-button {
-    background: transparent; 
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.menu-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-}
-
-.menu-button i {
-    font-size: 20px;
-}
-
-/* القائمة المنسدلة */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: -34px;
-    background: rgba(0, 0, 0, 0.5); /* خلفية شفافة */
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    z-index: 999;
-    overflow: hidden;
-    transform-origin: top right;
-    transform: scale(0.5) translateY(-20px);
-    transition: transform 0.3s ease, opacity 0.2s ease;
-    opacity: 0;
-    width: 142px;
-    height: 148px;
-
-}
-
-.dropdown-content.show {
-    display: block;
-    transform: scale(1) translateY(0);
-    opacity: 1;
-}
-
-.dropdown-content a {
-    color: #fff;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-        color: #fff;
-    padding: 10px 0 5px 30px;
-    text-decoration: none;
-    display: flex
-;
-    align-items: center;
+.search-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+  cursor: pointer;
 }
 
 
+/* 00000000000000000000000000000000000 */
+/* 00000000000000000000000000000000000 */
+/* 00000000000000000000000000000000000 */
+/* 00000000000000000000000000000000000 */
+/* 00000000000000000000000000000000000 */
+/* 00000000000000000000000000000000000 */
 
 
 
@@ -186,16 +110,6 @@ header .menu {
 
 
 
-
-
-
-
-
-
-
-
-
-/* css slider */
 .slider {
   height: 100vh;
   margin-top: -50px;
@@ -204,8 +118,8 @@ header .menu {
 
 .slider .list .item {
   position: absolute;
-  inset: 0 0 0 0;
   overflow: hidden;
+  
   opacity: 0;
   transition: .5s;
 
@@ -228,14 +142,16 @@ header .menu {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-image: linear-gradient(to top, #000 12%, transparent);
+  background-image: linear-gradient(to top, #000 12%, transparent);   /*000000000*/
 }
 
 .slider .list .item .content {
   position: absolute;
   left: 10%;
   top: 20%;
+
   width: 500px;
+
   max-width: 80%;
   z-index: 1;
 }
@@ -255,21 +171,24 @@ header .menu {
   z-index: 10;
 }
 
-@keyframes showContent {
+
+
+ .list .item.active .sec-name,
+ .list .item.active h2,
+  .list .item.active .desc-main {
+  transform: translateY(30px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showcont .5s .7s ease-in-out 1 forwards;
+}
+
+
+@keyframes showcont {
   to {
     transform: translateY(0);
     filter: blur(0);
     opacity: 1;
   }
-}
-
-.slider .list .item.active .sec-name,
-.slider .list .item.active h2,
-.slider .list .item.active .desc-main {
-  transform: translateY(30px);
-  filter: blur(20px);
-  opacity: 0;
-  animation: showContent .5s .7s ease-in-out 1 forwards;
 }
 
 .slider .list .item.active h2 {
@@ -420,10 +339,9 @@ header .menu {
   height: 350px;
   border-radius: 25px;
   position: absolute;
-  top: calc(50% - 175px);
+  top: calc(50% - 175px);  /*  نص النص ياكبير*/
   left: calc(50% - 175px);
-  transition: 0.5s ease-in-out;
-  overflow: hidden;
+   overflow: hidden;
 
 }
 
@@ -683,7 +601,7 @@ header .menu {
 .slider-item h3 {
   font-size: 20px;
   font-weight: bold;
-  margin-top: 257px; /* مسافة بسيطة بين العنوان والوصف */
+  margin-top: 250px; /* مسافة بسيطة بين العنوان والوصف */
   color: #1f1616; /* غيريها حسب الخلفية */
   text-align: left;
   padding-bottom: 3px;
@@ -1333,3 +1251,116 @@ button:hover .wave {
 
 
 
+
+      /* Menu button container - now with fixed positioning */
+        .menu-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .menu-button {
+            background: var(--primary-color);
+            color: var(--text-light);
+            width: 60px;
+            height: 60px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: var(--transition);
+            position: fixed; /* Added fixed positioning */
+            bottom: 30px; /* Position from bottom */
+            right: 30px; /* Position from right */
+        }
+
+        .menu-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .menu-button i {
+            font-size: 28px;
+        }
+
+        /* Dropdown menu */
+        .dropdown-content {
+    display: none;
+    position: fixed;
+    bottom: 92px;
+    right: 60px;
+    background: var(--menu-bg);
+    border-radius: 15px 0 15px 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    overflow: hidden;
+    transform-origin: bottom right;
+    transform: scale(0.5) translateY(20px);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s ease;
+    opacity: 0;
+    width: 150px;
+    height: 200px;
+    backdrop-filter: blur(10px);
+        }
+
+        .dropdown-content.show {
+            display: block;
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }
+
+        .dropdown-content a {
+            color: var(--text-light);
+    padding: 10px 15px;
+    text-decoration: none;
+    display: flex
+;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition);
+    font-size: 16px;
+        }
+
+        .dropdown-content a i {
+            font-size: 20px;
+            width: 24px;
+            text-align: center;
+        }
+
+        .dropdown-content a:hover {
+            background: rgba(255, 255, 255, 0.05);
+            padding-left: 25px;
+            border-left: #7E5CAD solid 3px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .menu-button {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+            }
+            
+            .dropdown-content {
+                bottom: 80px;
+                right: 20px;
+                min-width: 200px;
+            }
+            
+            .dropdown-content a {
+                padding: 12px 15px;
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dropdown-content {
+                right: 10px;
+                min-width: 180px;
+            }
+        }
