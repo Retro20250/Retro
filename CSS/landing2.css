@@ -1068,7 +1068,10 @@ button:hover .wave {
   color:#ffaf03;
 }
 
-
+.six{
+  background-image: url(../materials/ffffffff.jpeg);
+  background-size: cover;
+}
 
 
 /* footer sectionnnnnnn */
