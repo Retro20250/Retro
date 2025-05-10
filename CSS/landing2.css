@@ -253,17 +253,12 @@ header .menu {
 }
 
 
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
 
-
-
-
-
+/* 000000000000000000000000 */
+/* 000000000000000000000000 */
+/* 000000000000000000000000 */
+/* 000000000000000000000000 */
+/* productsssssssssssssssssssssssssssssssssssss */
 
 .stack-area {
   width: 100%;
@@ -371,12 +366,7 @@ header .menu {
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
-
-
-
-
+/* articlllllllllllllllllllllllllllllllllllllllllllles */
 
 .three {
   height: 100vh;
@@ -497,8 +487,7 @@ header .menu {
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
 /* 000000000000000000000000 */
-/* 000000000000000000000000 */
-/* 000000000000000000000000 */
+/* cartoooooooooooooooooooooooooooooooooooooooooooon */
 
 .four {
   background-color: #496b5a;
@@ -586,7 +575,7 @@ header .menu {
 
 
 
-/* online sectionnnnnnnnnnnnnnnnnnnnnnnnnnn */
+/* online sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
 .game-online {
   position: relative;
   align-items: center;
@@ -812,9 +801,7 @@ button:hover .wave {
 /*00000000000000000000000000*/
 /*00000000000000000000000000*/
 /*00000000000000000000000000*/
-/*00000000000000000000000000*/
-
-
+/* downloadddddddddddddddddddddddddddddddddddddddddddddddddddd */
 
 
 
@@ -826,8 +813,7 @@ button:hover .wave {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-
-  /* أخفي البار بتاع السكرول */
+ /* أخفي البار بتاع السكرول */
   scrollbar-width: none;           /* Firefox */
 }
 .slider-wrapper::-webkit-scrollbar {
@@ -845,7 +831,7 @@ button:hover .wave {
 
 }
 
-.image{
+.image-text{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -857,6 +843,7 @@ button:hover .wave {
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 .image img {
  width: 400px;
     height: 497px;
@@ -867,10 +854,20 @@ button:hover .wave {
     transition: opacity 1s ease-in-out;
     position: relative;
     top: 4px;
+=======
+.image-text img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* جعل ظهور الصور تدريجي */
+>>>>>>> f9598c8d82bc350db151707bf1a0de380b6ce2c4
 }
 
 
-.image img.visible {
+.image-text img.visible {
   opacity: 1;
 }
 
@@ -917,13 +914,9 @@ button:hover .wave {
   z-index: 55;
 
 }
-
-
 .submittttt:hover {
   box-shadow: 6px 6px 0 #000000;
 }
-
-
 
 
 .slider-wrapper {
@@ -979,10 +972,6 @@ button:hover .wave {
   line-height: 1.6;
 }
 
-
-
-
-
 /* أزرار السلايدر */
 .slider-buttons {
   position: absolute;
@@ -992,6 +981,7 @@ button:hover .wave {
   display: flex;
   gap: 20px;
   text-align: center;
+  display: none;
 
 }
 
