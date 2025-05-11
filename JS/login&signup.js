@@ -1,34 +1,4 @@
-const toggleIcons = document.querySelectorAll(".toggle-password");
-// bnkhtar kol el icons ely esmha (toggle-password) bnkhznha fe (toggleIcons)
 
-toggleIcons.forEach(icon => { //bymr 3la kol wahda mnhom
-    icon.addEventListener("click", function () {
-        // after the user click the eye 
-
-        const inputId = this.getAttribute("data-target");
-        //bngeb esm el data target ely feha el icons fe el html
-
-        const passwordInput = document.getElementById(inputId);
-        //bnstkhdm el input bta3 el pass 3lshan n3rf nwsel le el id
-
-        const isPassword = passwordInput.type === "password";
-        //click if input type is password
-
-
-        passwordInput.type = isPassword ? "text" : "password";
-        //lw isPassword=="true" nkhly el passwordInput.type="text"
-        //lw isPassword=="false" nkhly el passwordInput.type="password"
-        //y3ni lw hwa password n7olo text w el 3ks
-
-        this.classList.toggle("fa-eye-slash");
-        this.classList.toggle("fa-eye");
-        /*
-        this -> when the user click the icon ,
-         lw el icon m2fola (fa-eye-slash) w el user 3ml click 3leha,bttshal w tb2a mfto7a (fa-eye).
-         lw el icon mafto7a (fa-eye) w el user 3ml click 3leha , bttshal w tb2a m2fola (fa-eye-slash).
-         */
-    });
-});
 const logregBox = document.querySelector('.logreg-box');
 //bykhzn el logreg-box ely fe el html fe logregBox 3amel zy int x=8 kda 
 
@@ -45,40 +15,5 @@ registerLink.addEventListener('click', () => {
 loginLink.addEventListener('click', () => {
     logregBox.classList.remove('active');
 });
-
-// lma ados log in & register yzhr el landing
-document.getElementById("login-btn").addEventListener("click", function () {
-    //bydwr 3la el element ely el id bta3o login-btn
-    const email = document.getElementById("mail").value;
-    const password = document.getElementById("pass").value;
-    //by2r2 el values ely el user ktabha fe el mail , pass
-
-    if (email && password) {
-        // byt2kt el user ktab el atnen w la la 
-        window.location.href = "landing2.html";
-        //lw ktab el pass w el email byzhr el landing
-    } else {
-        alert("Please fill in all fields");
-        //lw mktbsh el atnen aw ktb wahda w el tanya la byzhr el gomla de
-    }
-});
-
-//nfs el log in bzbt
-document.getElementById("register-btn").addEventListener("click", function () {
-    const username = document.getElementById("name").value;
-    const email = document.getElementById("mail2").value;
-    const password = document.getElementById("pass2").value;
-    const genderFemale = document.getElementById("female").checked;
-    const genderMale = document.getElementById("male").checked;
-
-    if (username && email && password && (genderFemale || genderMale)) {
-        window.location.href = "landing2.html";
-    } else {
-        alert("Please fill in all fields");
-    }
-});
-
-
-
 
 
