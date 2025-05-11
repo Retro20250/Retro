@@ -144,30 +144,18 @@ window.addEventListener("scroll", () => {
 const wrapper = document.getElementById("sliderWrapper");
 const scrollAmount = window.innerWidth;
 
-document.getElementById("prevBtn").addEventListener("click", () => {
-  wrapper.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-});
-
-document.getElementById("nextBtn").addEventListener("click", () => {
-  wrapper.scrollBy({ left: scrollAmount, behavior: "smooth" });
-});
-
-
-const slides = document.querySelectorAll(".slide img");
-slides.forEach((img, index) => {
-  setTimeout(() => {
-    img.classList.add("visible");
-  }, index * 1000); 
-});
 
 wrapper.addEventListener("wheel", function (e) {
   const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth; 
 
 
   if (
-    (e.deltaY > 0 && wrapper.scrollLeft < maxScrollLeft) || 
-    (e.deltaY < 0 && wrapper.scrollLeft > 0) 
-  ) {
+    (e.deltaY > 0 && wrapper.scrollLeft < maxScrollLeft) || (e.deltaY < 0 && wrapper.scrollLeft > 0) 
+  )
+   {
+
+
+  
     e.preventDefault();
     wrapper.scrollBy({
       left: e.deltaY, 

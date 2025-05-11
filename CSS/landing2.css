@@ -735,6 +735,8 @@ header .menu {
 
 }
 
+
+
 .image-text{
   display: flex;
   flex-direction: row;
@@ -755,15 +757,11 @@ header .menu {
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
     position: relative;
-    top: 4px;}
+    top: 4px;
+  }
 
 
-.image-text img.visible {
-  opacity: 1;
-}
 
 
 .text {
