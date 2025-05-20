@@ -1,10 +1,10 @@
 body {
-  font-family: Poppins;
+  font-family: sans-serif;
   margin: 0;
   background-color: #010101;
   color: #eee;
   overflow-y: scroll;
-  /* تخلي التمرير شغال */
+
   overflow-x: hidden;
 }
 
@@ -19,22 +19,23 @@ svg {
 }
 
 header {
-  margin: auto;
+width: 1200px;
   display: flex;
+  margin: auto;
   justify-content: space-between; 
   align-items: center; 
-  position: fixed;
+
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   padding: 10px 40px;
-  background-color: #eb7680;
+
 }
 
 header i {
   position: absolute;
-  left: 1%;
+  left: 12%;
   font-size: 22px;
   color: #ffaf03;
 }

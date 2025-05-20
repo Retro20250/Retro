@@ -2,16 +2,12 @@ const menuButton = document.querySelector('.menu-button');
 const dropdownContent = document.querySelector('.dropdown-content');
 
 menuButton.addEventListener('click', () => {
-    dropdownContent.classList.toggle('show'); // إضافة أو إزالة الكلاس "show"
-});
-
-
-
-
-
-
-
-
+  if (dropdownContent.classList.contains('show')) {
+    dropdownContent.classList.remove('show');
+  } else {
+    dropdownContent.classList.add('show');
+  }
+}); /* في برضو toglo ممكن تستخدمها */ 
 
 
 
@@ -144,33 +140,21 @@ window.addEventListener("scroll", () => {
 const wrapper = document.getElementById("sliderWrapper");
 const scrollAmount = window.innerWidth;
 
-document.getElementById("prevBtn").addEventListener("click", () => {
-  wrapper.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-});
-
-document.getElementById("nextBtn").addEventListener("click", () => {
-  wrapper.scrollBy({ left: scrollAmount, behavior: "smooth" });
-});
-
-// إضافة فئة "visible" للصور عند تحميل السلايدر
-const slides = document.querySelectorAll(".slide img");
-slides.forEach((img, index) => {
-  setTimeout(() => {
-    img.classList.add("visible"); // إظهار الصورة تدريجيًا
-  }, index * 1000); // تأخير ظهور كل صورة حسب ترتيبها
-});
 
 wrapper.addEventListener("wheel", function (e) {
-  const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth; // أقصى قيمة للتمرير الأفقي
+  const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth; 
 
-  // إذا كان هناك تمرير أفقي مطلوب، امنع السلوك الافتراضي
+
   if (
-    (e.deltaY > 0 && wrapper.scrollLeft < maxScrollLeft) || // التمرير لليمين
-    (e.deltaY < 0 && wrapper.scrollLeft > 0) // التمرير لليسار
-  ) {
-    e.preventDefault(); // امنع التمرير العمودي
+    (e.deltaY > 0 && wrapper.scrollLeft < maxScrollLeft) || (e.deltaY < 0 && wrapper.scrollLeft > 0) 
+  )
+   {
+
+
+  
+    e.preventDefault();
     wrapper.scrollBy({
-      left: e.deltaY, // استخدمي حركة العجلة في الاتجاه الأفقي
+      left: e.deltaY, 
       behavior: "smooth",
     });
   }
