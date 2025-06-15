@@ -2,31 +2,13 @@ const menuButton = document.querySelector('.menu-button');
 const dropdownContent = document.querySelector('.dropdown-content');
 
 menuButton.addEventListener('click', () => {
-<<<<<<< HEAD
-    dropdownContent.classList.toggle('show'); // إضافة أو إزالة الكلاس "show"
-});
-=======
   if (dropdownContent.classList.contains('show')) {
     dropdownContent.classList.remove('show');
   } else {
     dropdownContent.classList.add('show');
   }
-}); /* في برضو toglo ممكن تستخدمها */ 
+}); /* في برضو toglo ممكن تستخدمها */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> 0befae3925e04d8f5f18be78fcfe7082de46c926
 
 
 
