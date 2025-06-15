@@ -713,41 +713,35 @@
   </section> 
 
     <script>
-        function filterItems(category) {
-            const allItems = document.querySelectorAll('.grid-container > div');
-            
-            allItems.forEach(item => {
-                const itemContent = item.querySelector('div');
-                if (category === 'all' || itemContent.classList.contains(category)) {
-                    item.style.display = 'block';
+        function filterItems(category) { // Function to filter items based on category
+            const allItems = document.querySelectorAll('.grid-container > div'); // btgeeb kol el items elly fe class grid-container
+            allItems.forEach(item => { // btlf 3la wa7d wa7 fe el allitems
+                const itemContent = item.querySelector('div'); // bndwar 3la awl div fe el item (ymkn ykon feh class bta3 el category)
+                if (category === 'all' || itemContent.classList.contains(category)) { // lw e5tar all AW el itemContent feh class bta3 el category
+                    item.style.display = 'block'; // b3d kda yban el item
                 } else {
-                    item.style.display = 'none';
+                    item.style.display = 'none'; // lw la ykhfy el item
                 }
             });
-
-            // Update active button
-            document.querySelectorAll('.category-bar button').forEach(button => {
-                button.classList.remove('active');
+            document.querySelectorAll('.category-bar button').forEach(button => { // btlf 3la el buttons elly fe el category-bar
+                button.classList.remove('active'); // bysheel el class active mn kol el buttons
             });
-            document.getElementById(category).classList.add('active');
+            document.getElementById(category).classList.add('active'); // b3d kda y5li el button elly e5tarnah active
         }
-
-        // Initialize with all items showing
-        document.addEventListener('DOMContentLoaded', function() {
-            filterItems('all');
+        document.addEventListener('DOMContentLoaded', function() {  // awl ma el saf7a t7ml, y3ml el function filterItems
+            filterItems('all'); // y3ml filter 3la kol el items 
             
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
+            const observer = new IntersectionObserver((entries) => {  // create observer 3shan yshoof el items elly m3ana fe el saf7a
+                entries.forEach(entry => { //bylf 3la kol item el observer shayfo
+                    if (entry.isIntersecting) { // lw el item fe el saf7a
+                        entry.target.classList.add('visible'); // y5li el item visible
                     }
                 });
             }, {
-                threshold: 0.1
+                threshold: 0.1 // el threshold hna y3ni lw 10% mn el item fe el saf7a, y5li el item visible
             });
-
-            document.querySelectorAll('.animate-on-scroll').forEach(el => {
-                observer.observe(el);
+            document.querySelectorAll('.animate-on-scroll').forEach(el => { // btlf 3la el items elly fe el saf7a elly 3ndhom class animate-on-scroll
+                observer.observe(el); // n2ool ll observer yraqb awl ma yshoof el item y5leh visible
             });
         });
     </script>

@@ -680,7 +680,7 @@ h2 {
   position: absolute;
   left: 0;
   color: #fff;
-  width:100% -; /* علشان padding 10px يمين وشمال */
+  width:100% ; /* علشان padding 10px يمين وشمال */
   z-index: 3;
   word-wrap: break-word;
   white-space: normal;
