@@ -23,7 +23,7 @@ section {
 body {
   font-family: Poppins;
   margin: 0;
-  background-color: #010101;
+background: linear-gradient(135deg, #182241 0%, #202e58 40%, #8497dc 100%);
   color: #eee;
   overflow-y: scroll;
   /* تخلي التمرير شغال */
@@ -349,7 +349,7 @@ header .menu {
   width: 100%;
   height: 300vh;
   position: relative;
-  background: linear-gradient(180deg, #250233, #2d073f 40%, #3a004f 80%);
+  background: linear-gradient(180deg, #16021e, #351644 40%, #663877 80%);
   display: flex;
   margin-top: -50;
 }
@@ -736,6 +736,7 @@ header .menu {
   align-items: center;
   justify-content: center;
   padding: 40px;
+  overflow: visible;
 
 }
 
@@ -745,13 +746,11 @@ header .menu {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
-  width: 160%;
-  height: 80%;
-  background: #496b5a;
-  border-radius: 20px;
-  overflow: hidden;
-    margin-right: 8%;
+
+  width: 170%;
+  height:0px ;
+background: linear-gradient(135deg, #0d1839 0%, #263870 40%, #8b9cd8 100%);
+  
 }
 
 
@@ -762,6 +761,7 @@ header .menu {
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     position: relative;
+    margin-left: 10px;
     top: 4px;
   }
 
@@ -1159,6 +1159,15 @@ button:hover .wave {
 /* downloadddddddddddddddddddddddddddddddddddddddddddddddddddd */
 
 
+.footer img{
+   width: 100%;
+    height: 266%;
+    object-fit: cover;
+    position: absolute;
+    overflow: hidden;
+    bottom: -6%;
+    right: 0px;
+}
 
 
 
@@ -1181,15 +1190,6 @@ button:hover .wave {
     top: 73%;
 }
 
-.footer img{
-   width: 100%;
-    height: 266%;
-    object-fit: cover;
-    position: absolute;
-    overflow: hidden;
-    bottom: -6%;
-    right: 0px;
-}
 .footer-top-row {
   width: 100%;
   display: flex;
@@ -1276,10 +1276,12 @@ button:hover .wave {
   text-decoration: none;
   transition: color 0.3s;
 }
-
 .footer-column ul li a:hover {
   color: #fff;
+  filter: brightness(120%);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
+
 
 .footer-links-bottom {
   display: flex;
