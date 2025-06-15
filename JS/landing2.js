@@ -162,7 +162,23 @@ wrapper.addEventListener("wheel", function (e) {
 
 
 
+// ********************
+// *****************
+// نكرر الصور داخل التراك ده بس مرة واحدة بس
+const cartoonTrack = document.querySelector('.cartoon-slider-track');
+cartoonTrack.innerHTML += cartoonTrack.innerHTML;
 
+// نوقف سلايدر الكرتون ده عند الهوفر فقط على عناصره
+const cartoonItems = document.querySelectorAll('.slider-item');
+
+cartoonItems.forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    cartoonTrack.style.animationPlayState = 'paused';
+  });
+  item.addEventListener('mouseleave', () => {
+    cartoonTrack.style.animationPlayState = 'running';
+  });
+});
 
 
 

@@ -349,7 +349,7 @@ header .menu {
   width: 100%;
   height: 300vh;
   position: relative;
-  background: black;
+  background: linear-gradient(180deg, #250233, #2d073f 40%, #3a004f 80%);
   display: flex;
   margin-top: -50;
 }
@@ -617,13 +617,12 @@ header .menu {
     z-index: 50;
     align-items: center;
     justify-content: center;
-    display: flex
-;
+    display: flex;
 }
 
 .horizontal-wrapper {
     display: flex;
-    animation: scroll-left 30s linear infinite;
+
     gap: 20px;
     overflow: hidden;
     width: max-content ;
@@ -648,7 +647,7 @@ header .menu {
     flex-direction: column;
     cursor: pointer;
     background-color: #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
     position: relative;
     text-align: left; 
 }
@@ -662,26 +661,22 @@ header .menu {
    top:0;
 }
 
-.slider-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 250px; 
-  color: #1f1616; 
-  text-align: left;
-  padding-bottom: 3px;
-  padding-right:135px;
-}
-
 .slider-item p {
   background-color: #fff;
     color: #110e0e;
     font-size: 14px;
     text-align: center;
-    padding: 0px;
+    padding-top: 173px;
     margin: 0;
     height: 40%; 
     border-radius: 0 0 10px 10px;
     width:100%;
+}
+.cartoon-name {
+  font-size: 1.4em;   
+  font-weight: bold; 
+  font-family: 'Comic Sans MS', cursive; 
+  color: #d3521b;    
 }
 
 
@@ -689,15 +684,24 @@ header .menu {
     transform: scale(1.1); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
 }
-.slider-item img :hover {
-    transform: scale(1.1); 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+ 
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
-.horizontal-wrapper {
-    display: flex;
-    gap: 20px;
-    animation: scroll-left 40s linear infinite;
-    align-items: center;
+.cartoon-slider-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll-left 75s linear infinite;
+  animation-play-state: running;
+  width: max-content;
+
 }
 
 
@@ -705,7 +709,7 @@ header .menu {
 
 
 
-
+/* download sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
 
 
 
@@ -1293,14 +1297,10 @@ button:hover .wave {
   transition: color 0.3s;
   margin-top: 120px;
 }
-
 .footer-links-bottom a:hover {
-
   color: #fff;
-
-  color: #fff;
-
 }
+
 
 
 
