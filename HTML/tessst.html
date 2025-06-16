@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>مجلة المشاهير</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      direction: rtl;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #444;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    .date {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    nav {
+      background-color: #2a2a2a;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-bottom: 1px solid #444;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #444;
+      border-radius: 5px;
+    }
+
+    .trending-bar {
+      background-color: #3a3a3a;
+      padding: 10px;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .trending-bar span {
+      margin-left: 15px;
+      color: #ffc107;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .article {
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .article h2, .article h3 {
+      color: #ffcc00;
+    }
+
+    .article img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .double-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 15px;
+      color: #aaa;
+      margin-top: 40px;
+      border-top: 1px solid #444;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .double-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>مجلة المشاهير</h1>
+    <div class="date">الاثنين ١٦ يونيو ٢٠٢٥</div>
+  </header>
+
+  
+
+  <div class="trending-bar">
+    <span>🔥 إليسا تعود بألبوم جديد</span>
+    <span>🎬 فيلم الأكشن الأكثر مشاهدة في 2025</span>
+    <span>💔 خلاف بين نجمين على السوشيال ميديا</span>
+    <span>👑 نجمة الأسبوع: منى زكي</span>
+  </div>
+
+  <main>
+
+    <!-- Sidebar Left -->
+    <aside class="article">
+      <h3>أخبار سريعة</h3>
+      <p>🔸 إعلان مفاجئ من مطربة شهيرة حول زواجها السري.</p>
+      <p>🔸 افتتاح مهرجان كان وسط حضور عالمي.</p>
+      <p>🔸 نجم كوميدي يفاجئ جمهوره بإطلالة جديدة.</p>
+    </aside>
+
+    <!-- Main Article -->
+    <section class="article">
+      <h2>المقال الرئيسي</h2>
+      <img src="../adventuretimeposter.jpg" alt="صورة رئيسية">
+      <p>تستعد الكاتبتان بيت وجوان لإنتاج فيلم مثير عن حياة الممثلة الشهيرة فيفيان لي. الفيلم سيكشف الكثير من الجوانب الخفية في حياتها المهنية والشخصية، وسيتضمن مشاهد نادرة لم تُعرض من قبل.</p>
+    </section>
+
+    <!-- Sidebar Right -->
+    <aside class="article">
+      <h3>مقالات مميزة</h3>
+      <p>🎤 تحليل: لماذا يحب الجمهور الأغاني القديمة؟</p>
+      <p>📽️ كيف تغيرت السينما خلال العقد الأخير؟</p>
+      <p>💡 رأي: هل فقد الفن طابعه الحقيقي؟</p>
+    </aside>
+
+  </main>
+
+  <!-- Extra Sections -->
+  <section class="double-grid" style="padding: 0 20px 40px 20px;">
+    <div class="article">
+      <h3>🎬 قسم الأفلام</h3>
+      <img src="../adventuretimeposter.jpg" alt="فيلم">
+      <p>فيلم "ظل المدينة" يتصدر شباك التذاكر ويحقق إيرادات قياسية في أول أسبوع من عرضه.</p>
+    </div>
+    <div class="article">
+      <h3>🎤 قسم المقابلات</h3>
+      <img src="../adventuretimeposter.jpg" alt="مقابلة">
+      <p>لقاء خاص مع الفنانة سارة علي حول تجربتها في أول بطولة مطلقة لها في الدراما الرمضانية.</p>
+    </div>
+    <div class="article">
+      <h3>🧠 مقالات رأي</h3>
+      <img src="../adventuretimeposter.jpg" alt="رأي">
+      <p>هل الشهرة أصبحت لعنة أم نعمة؟ مقال يناقش التأثير النفسي لحياة المشاهير على المدى البعيد.</p>
+    </div>
+    <div class="article">
+      <h3>📸 خلف الكواليس</h3>
+      <img src="../adventuretimeposter.jpg" alt="كواليس">
+      <p>صور حصرية من كواليس تصوير الموسم الجديد من برنامج "ذا فويس".</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 مجلة المشاهير - جميع الحقوق محفوظة
+  </footer>
+
+</body>
+</html>
