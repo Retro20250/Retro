@@ -728,22 +728,12 @@
         </div>
     </section>
     <script>
-<<<<<<< HEAD
-        function filterItems(category) {
-            const allItems = document.querySelectorAll('.grid-container > div');
-
-            allItems.forEach(item => {
-                const itemContent = item.querySelector('div');
-                if (category === 'all' || itemContent.classList.contains(category)) {
-                    item.style.display = 'block';
-=======
         function filterItems(category) { // Function to filter items based on category
             const allItems = document.querySelectorAll('.grid-container > div'); // btgeeb kol el items elly fe class grid-container
             allItems.forEach(item => { // btlf 3la wa7d wa7 fe el allitems
                 const itemContent = item.querySelector('div'); // bndwar 3la awl div fe el item (ymkn ykon feh class bta3 el category)
                 if (category === 'all' || itemContent.classList.contains(category)) { // lw e5tar all AW el itemContent feh class bta3 el category
                     item.style.display = 'block'; // b3d kda yban el item
->>>>>>> ff117a596c3a2a4024dd218895b7da5d2fb7579a
                 } else {
                     item.style.display = 'none'; // lw la ykhfy el item
                 }
@@ -753,25 +743,13 @@
             });
             document.getElementById(category).classList.add('active'); // b3d kda y5li el button elly e5tarnah active
         }
-<<<<<<< HEAD
-
-        // Initialize with all items showing
-        document.addEventListener('DOMContentLoaded', function () {
-            filterItems('all');
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-=======
-        document.addEventListener('DOMContentLoaded', function() {  // awl ma el saf7a t7ml, y3ml el function filterItems
+        document.addEventListener('DOMContentLoaded', function () {  // awl ma el saf7a t7ml, y3ml el function filterItems
             filterItems('all'); // y3ml filter 3la kol el items 
-            
+
             const observer = new IntersectionObserver((entries) => {  // create observer 3shan yshoof el items elly m3ana fe el saf7a
                 entries.forEach(entry => { //bylf 3la kol item el observer shayfo
                     if (entry.isIntersecting) { // lw el item fe el saf7a
                         entry.target.classList.add('visible'); // y5li el item visible
->>>>>>> ff117a596c3a2a4024dd218895b7da5d2fb7579a
                     }
                 });
             }, {
