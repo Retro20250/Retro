@@ -12,11 +12,6 @@ menuButton.addEventListener('click', () => {
 
 
 
-
-
-
-
-
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
@@ -65,23 +60,6 @@ thum.forEach((thumbnail, index) => {
 });
 
 
-/* 000000000000000000000000000000000000000 */
-/* 000000000000000000000000000000000000000 */
-/* 000000000000000000000000000000000000000 */
-
-
-
-
-
-/* 000000000000000000000000000000000000000 */
-/* 000000000000000000000000000000000000000 */
-/* 000000000000000000000000000000000000000 */
-
-
-
-/* 2222222222222222222222*/
-
-
 
 let cards = document.querySelectorAll(".image-card");
 let stackArea = document.querySelector(".stack-area");
@@ -118,15 +96,6 @@ window.addEventListener("scroll", () => {
   rotateCards();
 });
 
-/*0000000000000000000 */
-/*0000000000000000000 */
-/*0000000000000000000 */
-/*0000000000000000000 */
-
-
-/* 000000000000000000000000000000000000000 */
-/* 000000000000000000000000000000000000000 */
-/* 000000000000000000000000000000000000000 */
 
 
 const wrapper = document.getElementById("sliderWrapper");
