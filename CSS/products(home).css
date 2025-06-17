@@ -53,11 +53,12 @@ header .menu {
 .menu a {
     color: white;
     text-decoration: none;
-    transition: color 0.5s ease;
+    transition: 0.5s ease;
 }
 
 .menu a:hover {
-    color: #000000;
+    text-decoration: underline;
+    color: #f09433;
 }
 
 .menu-container {
@@ -85,31 +86,31 @@ header .menu {
 
 .menu-button:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+
 }
 
 .menu-button i {
     font-size: 20px;
 }
 
-/* القائمة المنسدلة */
+
 .dropdown-content {
     display: none;
     position: absolute;
     top: 60px;
     right: -34px;
     background: rgba(0, 0, 0, 0.5);
-    /* خلفية شفافة */
+
     border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
     z-index: 999;
     overflow: hidden;
     transform-origin: top right;
     transform: scale(0.5) translateY(-20px);
     transition: transform 0.3s ease, opacity 0.2s ease;
     opacity: 0;
-    width: 142px;
-    height: 148px;
+    width: 150px;
+    height: 200px;
 
 }
 
@@ -120,14 +121,26 @@ header .menu {
 }
 
 .dropdown-content a {
+    position: relative;
     color: #fff;
     padding: 10px 15px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: #fff;
+
     padding: 10px 0 5px 30px;
 }
+
+
+
+.dropdown-content a:hover {
+    background: rgba(102, 66, 19, 0.633);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+}
+
 
 
 :root {
@@ -161,7 +174,7 @@ header .menu {
     right: 15%;
     width: 400px;
     height: 400px;
-    background: linear-gradient(45deg, #33ccff, #3366ff);
+    background: linear-gradient(45deg, #7d0196, #6d0077);
     animation: float 25s infinite alternate-reverse ease-in-out;
 }
 
@@ -170,7 +183,7 @@ header .menu {
     left: 50%;
     width: 600px;
     height: 600px;
-    background: linear-gradient(45deg, #cc33ff, #3366ff);
+    background: linear-gradient(45deg, #a103d6, #6d0077);
     transform: translate(-50%, -50%);
     opacity: 0.1;
     animation: pulse 15s infinite alternate ease-in-out;
