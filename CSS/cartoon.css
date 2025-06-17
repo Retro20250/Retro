@@ -83,7 +83,7 @@ header .menu {
 }
 
 .menu a:hover {
-    color: #000000;
+    color: #ffaf03;
 }
 
 .menu-container {
@@ -249,11 +249,11 @@ body {
 }
 
 .rating-text strong {
-  color: #4db8ff;
+  color: #46cad1;
 }
 
 .watchlist-btn {
-  background-color: #7E5CAD;
+  background-color: #df9868;
   color: black;
   border: none;
   padding: 12px 20px;
@@ -269,7 +269,7 @@ body {
 }
 
 .watchlist-btn:hover {
-  background-color: #ac90d4;
+  background-color: #eeb48e;
 }
 
 .watchlist-btn i {
@@ -325,7 +325,7 @@ h2 {
 }
 
 .all-block {
-  background: #31234a;
+  background: #8b3a3a;
   background-size: 400% 400%;
   animation: moving-background 15s ease infinite;
   border-radius: 15px;
@@ -355,7 +355,7 @@ h2 {
   height: 440px;
   overflow: hidden;
   border-radius: 15px;
-  border: 3px solid #415a77;
+  border: 3px solid #282623;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -398,7 +398,7 @@ h2 {
 .twobuttons-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   max-width: 420px;
   margin-top: 60px;
   padding-right: 40px;
@@ -411,7 +411,7 @@ h2 {
 }
 
 .custom-button {
-  background-color: #7E5CAD;
+  background-color: #df9868;
   color: white;
   padding: 10px 12px;
   text-decoration: none;
@@ -421,14 +421,14 @@ h2 {
   border-radius: 19px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, transform 0.2s ease;
-  height: 69px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .custom-button:hover {
-  background-color: #ac90d4;
+  background-color: #eeb48e;
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -494,7 +494,7 @@ h2 {
 
 .trivia-box {
   background-color: #282623;
-  border-left: 8px solid #ac90d4;
+  border-left: 8px solid #eeb48e;
   border-radius: 5px;
   padding: 10px;
   width: 76.9%;
@@ -503,7 +503,7 @@ h2 {
 }
 
 .trivia-box h3 {
-  color: #b69dd8;
+  color: #df9868;
   font-size: 28px;
   margin-bottom: 15px;
   text-align: center;
@@ -861,7 +861,7 @@ h2 {
  }
 
  .footer-column ul li a:hover {
-   color: #7E5CAD;
+   color: #d07864;
    transform: translateX(5px);
    transition: all 0.3s ease;
    text-decoration: none;
@@ -895,7 +895,7 @@ h2 {
  }
 
  .footer-links-bottom a:hover {
-   color: #7E5CAD;
+   color: #46cad1;
    text-decoration: none;
  }
 
