@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ِAbout</title>
   <link rel="stylesheet" href="../CSS/About.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -12,22 +15,34 @@
 
   <header>
 
-    <i class="fa-brands fa-space-awesome"></i>
-
-    <div class="logo">
-  <a href="../HTML/landing2.html">Y2K</a>
-</div>
-    <ul class="menu">
-      <li><a href="../HTML/login&signup.html">Log in</a></li>
-      <li><a href="../HTML/login&signup.html" >Sign </a></li>
-      <li><a href="contact-us.html">Contact us</a></li>
-    </ul>
+        <i class="fa-brands fa-space-awesome"></i>
 
 
-     
- 
 
-  </header>
+        <div class="logo">Y2K</div>
+        <ul class="menu">
+            <li><a href="../HTML/login&signup.html" class="login-link">Log in</a></li>
+            <li><a href="../HTML/About.html" class="register-link">About us</a></li>
+            <li><a href="../HTML/contact-us.html">Contact us</a></li>
+        </ul>
+        <div class="menu-container">
+            <button class="menu-button">
+                <i class='bx bx-menu'></i>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div class="dropdown-content" id="dropdown">
+                <a href="cartoon(home).html"><i class='bx bx-ghost'></i> Cartoons</a>
+                <a href="articles.html"><i class='bx bx-book-bookmark'></i> Articles</a>
+                <a href="products(home).html"><i class='bx bxs-shopping-bag'></i> Products</a>
+                <a href="online-games.html"><i class='bx bx-joystick'></i> Online Games</a>
+                <a href="../All Download/Home/Home.html"><i class='bx bx-download'></i> Offline Games</a>
+
+            </div>
+        </div>
+
+    </header>
+
 
 
 
@@ -58,7 +73,8 @@ Do you remember waking up early just to catch your favorite cartoon? Or spending
 
 Welcome to Y2K — your ultimate nostalgia zone.
  </p>
-      <button>Explore the Nostalgia</button>
+     <a href="landing2.html"> <button> Explore the Nostalgia </button> </a> 
+      
     </div>
   </section>
 
@@ -139,9 +155,6 @@ Let’s rewind time together 💛</p>
 
   </section>
   </section>
-
-</body>
-</html>
 <script>
     function openModal(imageSrc) { //function btstqbl el image elly el user 3ml 3leha click
     const modal = document.getElementById("imageModal"); //bgeeb el element elly esmo imagemodal mn el html elly hwa el modal
@@ -154,3 +167,7 @@ Let’s rewind time together 💛</p>
         modal.style.display = "none"; //b3ml display le el modal 3la enno none b5feh y3ny
     }
 </script>
+
+  <script src="../JS/header.js"></script>
+</body>
+</html>

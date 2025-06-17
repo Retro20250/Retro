@@ -5,37 +5,56 @@
   <title>Contact Us</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="../CSS/contact-us.css">
 
   </style>
 </head>
 <body>
-  <header>
-    
-     <i class="fa-brands fa-space-awesome"></i>
-  
-    <div class="logo">
-      <a href="../HTML/landing2.html">Y2K</a>
-    </div>
-    <ul class="menu">
-      <li><a href="../HTML/login&signup.html" class="login-link">Log in</a></li>
-      <li><a href="../HTML/login&signup.html" class="register-link">Sign </a></li>
-      
-    </ul>
-    
-  </header>
+   <header>
+
+        <i class="fa-brands fa-space-awesome"></i>
+
+
+
+        <div class="logo">Y2K</div>
+        <ul class="menu">
+            <li><a href="../HTML/login&signup.html" class="login-link">Log in</a></li>
+            <li><a href="../HTML/About.html" class="register-link">About us</a></li>
+            <li><a href="../HTML/contact-us.html">Contact us</a></li>
+        </ul>
+        <div class="menu-container">
+            <button class="menu-button">
+                <i class='bx bx-menu'></i>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div class="dropdown-content" id="dropdown">
+                <a href="cartoon(home).html"><i class='bx bx-ghost'></i> Cartoons</a>
+                <a href="articles.html"><i class='bx bx-book-bookmark'></i> Articles</a>
+                <a href="products(home).html"><i class='bx bxs-shopping-bag'></i> Products</a>
+                <a href="online-games.html"><i class='bx bx-joystick'></i> Online Games</a>
+                <a href="../All Download/Home/Home.html"><i class='bx bx-download'></i> Offline Games</a>
+
+            </div>
+        </div>
+
+    </header>
+
+
   <div class="container">
     
-    <h2>READY TO WORK WITH US</h2>
-    <p>Contact us for all your questions and opinions</p>
+    <h2>Got something to say? We’re all ears!</h2>
+    <p>Your feedback matters. Please fill out the form below to get in touch with us.</p>
     <form>
       <div class="row">
-        <input type="text" placeholder="First Name *" required>
-        <input type="text" placeholder="Last Name *" required>
+        <input class="form" type="text" placeholder="First Name *" required>
+        <input class="form" type="text" placeholder="Last Name *" required>
       </div>
-      <input type="email" placeholder="Email Address *" required>
-      <input type="text" placeholder="Phone Number (Optional)">
-      <select required>
+      <input class="form" type="email" placeholder="Email Address *" required>
+      <input class="form" type="text" placeholder="Phone Number (Optional)">
+      <select class="form" required>
         <option value="">Country / Region *</option>
         <option>Egypt</option>
         <option>Saudi Arabia</option>
@@ -59,16 +78,20 @@
         <option>Comoros</option>
       </select>
       
-      <input type="text" placeholder="Subject (Optional)">
-      <textarea placeholder="Note about your order, e.g. special note for delivery"></textarea>
+      <textarea class="notes" placeholder= "Leave a note about your feedback, e.g. suggestions, comments, or anything you'd like us to know."></textarea>
+     <label class="checkbox-label">
+      <input type="checkbox">
+      I want to receive news and updates once in a while.
+    </label>
 
-      <label>
-        <input type="checkbox">
-        I want to receive news and updates once in a while. By submitting, I agree to the 
-        <a href="#">Terms & Conditions</a>.
-      </label>
+    <p class="terms-text">
+      By submitting, I agree to the 
+      <a href="#" style="color: lightblue;">Terms & Conditions</a>.
+    </p>
 
-      <button type="submit">SEND MESSAGE</button>
+    <div class="submit-container">
+      <button type="submit">Submit</button>
+    </div>
     </form>
 
     <div class="contact-info">
@@ -85,7 +108,6 @@
   </div>
 
 
-
+<script src="../JS/header.js"></script>
 </body>
 </html>
-``` 
