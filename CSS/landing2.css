@@ -77,11 +77,11 @@ header .menu {
 .menu a {
   color: white;
   text-decoration: none;
-  transition: color 0.5s ease;
 }
 
 .menu a:hover {
-  color: #000000;
+  color: #ffaf03;
+
 }
 
 .menu-container {
