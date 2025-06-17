@@ -22,3 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     //bn7dd kol el elements ely lehom class (animate-on-scroll) 3lshan yra2bhom wahda wahda
 });
+const menuButton = document.querySelector('.menu-button');
+const dropdownContent = document.querySelector('.dropdown-content');
+
+menuButton.addEventListener('click', () => {
+    if (dropdownContent.classList.contains('show')) {
+        dropdownContent.classList.remove('show');
+    } else {
+        dropdownContent.classList.add('show');
+    }
+}); /* في برضو toglo ممكن تستخدمها */ 

@@ -222,8 +222,9 @@ h3 {
 }
 
 .submit {
-    width: 100%;
+    width: 90%;
     height: 60px;
+    margin-left: 20px;
     background: var(--pc);
     background: #080227;
     border: none;
