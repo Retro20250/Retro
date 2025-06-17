@@ -507,7 +507,7 @@ h2 {
 }
 
 .footer-column ul li a:hover {
-    color: #ffaf03;
+   color:#91a6f0;
     transform: translateX(5px);
     transition: all 0.3s ease;
     text-decoration: none;
@@ -541,7 +541,7 @@ h2 {
 }
 
 .footer-links-bottom a:hover {
-    color: #ffaf03;
+    color:#91a6f0;
     text-decoration: none;
 }
 

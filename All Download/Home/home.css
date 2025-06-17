@@ -176,7 +176,7 @@ h1 {
 hr {
   border: none;
   height: 2px;
-  background-color: #ffaf03;
+  background-color:#8597d8;
 }
 .game-row {
     display: flex;
@@ -579,7 +579,7 @@ hr {
 }
 
 .footer-column ul li a:hover {
-    color: #ffaf03;
+    color:#91a6f0;
     transform: translateX(5px);
     transition: all 0.3s ease;
     text-decoration: none;
@@ -613,7 +613,7 @@ hr {
 }
 
 .footer-links-bottom a:hover {
-    color: #ffaf03;
+   color:#91a6f0;
     text-decoration: none;
 }
 
