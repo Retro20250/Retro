@@ -233,7 +233,7 @@ h1 {
 
 .big-btn a {
 
-  background-color: #ffaf03;
+  background-color:rgb(96, 123, 221);
   color: white;
   height: 30px;
   text-decoration: none;
@@ -244,7 +244,7 @@ h1 {
 
 .copy-btn a {
 
-  background-color: #ffaf03;
+  background-color:#3c61e5;
   color: white;
   height: 30px;
   text-decoration: none;
@@ -266,7 +266,7 @@ h1 {
 hr {
   border: none;
   height: 2px;
-  background-color: #ffaf03;
+  background-color: #a8bdf1;
 }
 
 #about {
