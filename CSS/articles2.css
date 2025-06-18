@@ -1,0 +1,31 @@
+body { margin: 0; padding: 0; font-family: 'Georgia', serif; background-color: #f1e1c1; color: #2b1c07; }
+
+.newspaper { width: 90%; margin: auto; background: #f8e9cc; padding: 20px; border: 1px solid #b29b7d; box-shadow: 5px 5px 10px #ccc; }
+
+.header { text-align: center; border-bottom: 3px double #000; margin-bottom: 20px; }
+
+.header h1 { font-size: 3em; letter-spacing: 2px; display: flex; justify-content: center; align-items: center; gap: 10px; }
+
+.header h2 { font-size: 1.2em; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px; margin-top: 10px; }
+
+.main-content { display: flex; gap: 20px; }
+
+.column { flex: 1; }
+
+img.circle { border-radius: 50%; width: 100px; float: left; margin-right: 10px; }
+
+.box { background: #4d2c0c; color: #fff8dc; padding: 10px; margin-bottom: 20px; border: 2px solid #000; }
+
+.caption { font-style: italic; font-size: 0.9em; text-align: center; }
+
+.fashion { display: flex; margin-top: 30px; border-top: 1px dashed #000; padding-top: 20px; gap: 20px; }
+
+.fashion img { max-width: 150px; }
+
+.subhead { font-weight: bold; font-size: 0.9em; }
+
+.author { font-style: italic; font-size: 0.8em; }
+
+h3, h4 { text-transform: uppercase; font-size: 1.2em; margin: 10px 0 5px; }
+
+p { line-height: 1.5em; font-size: 0.95em; }
