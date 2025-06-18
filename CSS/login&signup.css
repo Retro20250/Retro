@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -13,6 +12,7 @@ body {
     background-color: black;
     background-size: cover;
     background-position: center;
+    font-family: "Poppins", "Arial", sans-serif;
 }
 
 .background {

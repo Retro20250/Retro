@@ -1,142 +1,142 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  body {
-    background-color: #f9f9f9;
-    color: #222;
-    line-height: 1.6;
-    padding: 100px;
-    background-image: url(../materials/foooooter.jpg);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-  
-  
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  padding: 100px;
+  background-image: url(../materials/foooooter.jpg);
+
+  font-family: "Poppins", "Arial", sans-serif;
+
   background-size: cover;
   height: auto;
-  }
+}
 
 
-  
+
 header {
-    width: 1200px;
-    max-width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    padding: 20px 40px;
+  width: 1200px;
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px 40px;
 }
 
 header i {
-    position: absolute;
-    left: 1%;
-    font-size: 22px;
-    color: #ffaf03;
+  position: absolute;
+  left: 1%;
+  font-size: 22px;
+  color: #ffaf03;
 }
 
 header .logo {
-    font-weight: bold;
-    font-size: 25px;
-    color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  color: #fff;
 }
 
 header .menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-weight: 500;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 500;
 }
 
 .menu a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.5s ease;
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease;
 }
 
 .menu a:hover {
-    color: #ffaf03;
+  color: #ffaf03;
 }
 
 .menu-container {
-    position: relative;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-button {
-    background: transparent;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: transparent;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 
 }
 
 .menu-button i {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: -34px;
-    background: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: -34px;
+  background: rgba(0, 0, 0, 0.5);
 
-    border-radius: 8px;
+  border-radius: 8px;
 
-    z-index: 999;
-    overflow: hidden;
-    transform-origin: top right;
-    transform: scale(0.5) translateY(-20px);
-    transition: transform 0.3s ease, opacity 0.2s ease;
-    opacity: 0;
-    width: 160px;
-    height: 200px;
+  z-index: 999;
+  overflow: hidden;
+  transform-origin: top right;
+  transform: scale(0.5) translateY(-20px);
+  transition: transform 0.3s ease, opacity 0.2s ease;
+  opacity: 0;
+  width: 160px;
+  height: 200px;
 
 }
 
 .dropdown-content.show {
-    display: block;
-    transform: scale(1) translateY(0);
-    opacity: 1;
+  display: block;
+  transform: scale(1) translateY(0);
+  opacity: 1;
 }
 
 .dropdown-content a {
-      position: relative;
-    color: #fff;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-  
-    padding: 10px 0 5px 30px;
-}  
+  position: relative;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  padding: 10px 0 5px 30px;
+}
 
 
 
@@ -152,232 +152,205 @@ header .menu {
 /*********************************/
 
 
-  .kolo{
-    background-color: aquamarine;
-        width: 900px;
-    margin: 0 auto;
-    padding: 80px 20px;
-    background-color: #2b2b3c;
-    border-radius: 20px;
-    position: relative;
-    top: 8%;
-  }
-  
-  .hero {
-    background: linear-gradient(to right, #e0ffe6, #e3f2fd);
-    padding: 30px;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 30px;
-  }
-  
-  .hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-  
-  .hero span {
-    color: green;
-  }
+.kolo {
+  background-color: aquamarine;
+  width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  background-color: #2b2b3c;
+  border-radius: 20px;
+  position: relative;
+  top: 8%;
+}
 
-  
-  .stats {
-    display: flex;
-    justify-content: space-around;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    text-align: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .about {
-    display: flex;
-    background: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    flex-wrap: wrap;
-  }
-  
-  .about .image {
-    flex: 1;
-    min-width: 300px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    margin-right: 20px;
-    border-radius: 10px;
-  }
-  
-  .about .text {
-    flex: 2;
-    min-width: 250px;
-  }
-  
-  .about button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: green;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .features {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-  
-  .feature {
-    background: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    flex: 1;
-    min-width: 250px;
-  }
-  
-  .mission {
-      display: flex
-;
-    background: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    flex-wrap: wrap;
+.hero {
+  background: linear-gradient(to right, #e0ffe6, #e3f2fd);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
 
-  }
-  
-  .mission-image  img{
-  
-  }
-  
-  .history {
-    display: flex;
-    background: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero span {
+  color: green;
+}
+
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about {
+  display: flex;
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.about .image {
+  flex: 1;
+  min-width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.about .text {
+  flex: 2;
+  min-width: 250px;
+}
+
+.about button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.mission {
+  display: flex;
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  flex-wrap: wrap;
+
+}
+
+.mission-image img {}
+
+.history {
+  display: flex;
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
   flex-direction: column;
 
-  }
-  
-  .history ul {
-    list-style-type: none;
-  }
-  
-  .history li {
-    padding: 5px 0;
-  }
-  
-  .team {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  .team h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .team-members {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 20px;
-    padding: 20px; 
-    box-sizing: border-box; 
+}
+
+.history ul {
+  list-style-type: none;
+}
+
+.history li {
+  padding: 5px 0;
+}
+
+.team {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.team h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .member {
-    width: 150px; 
-    height: 220px; 
-    overflow: hidden; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-    transition: transform 0.3s ease;
-    border-radius: 5px;
+  width: 150px;
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
 }
 
 .member:hover {
-    transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 
 .member img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    cursor: pointer;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 
 .modal {
-    display: none; 
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8); 
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 80%;
-    max-height: 80%;
-    border-radius: 10px;
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
 }
 
 .close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
