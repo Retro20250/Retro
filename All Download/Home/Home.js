@@ -1,5 +1,4 @@
-window.onload = function () {
-  alert("Welcome to the Offline Games Section! 🎮");
+
   
   const menuButton = document.querySelector('.menu-button');
   const dropdown = document.getElementById("dropdown");
@@ -22,7 +21,7 @@ window.onload = function () {
       }, { once: true });
     }
   });
-};
+
 
 function toggleMenu() {
   const menu = document.getElementById("dropdown");

@@ -164,8 +164,9 @@ h1 {
   padding-bottom: 0px;
   justify-content: center;
   display: flex;
-  margin-bottom: 80px;
-  margin-top: 50px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  font-size: 45px;
 
   text-shadow: 0px 0px 5px #3c61e5, 0px 0px 5px #3c61e5;
 }
