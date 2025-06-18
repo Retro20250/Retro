@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 
 }
 
@@ -31,121 +30,121 @@ body::-webkit-scrollbar {
 
 
 header {
-    width: 1200px;
-    max-width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    padding: 20px 40px;
+  width: 1200px;
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px 40px;
 }
 
 header i {
-    position: absolute;
-    left: 1%;
-    font-size: 22px;
-    color: #ffaf03;
+  position: absolute;
+  left: 1%;
+  font-size: 22px;
+  color: #ffaf03;
 }
 
 header .logo {
-    font-weight: bold;
-    font-size: 25px;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 header .menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-weight: 500;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 500;
 }
 
 .menu a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.5s ease;
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease;
 }
 
 .menu a:hover {
-    color: #ffaf03;
+  color: #ffaf03;
 }
 
 .menu-container {
-    position: relative;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-button {
-    background: transparent;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: transparent;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 
 }
 
 .menu-button i {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: -34px;
-    background: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: -34px;
+  background: rgba(0, 0, 0, 0.5);
 
-    border-radius: 8px;
+  border-radius: 8px;
 
-    z-index: 999;
-    overflow: hidden;
-    transform-origin: top right;
-    transform: scale(0.5) translateY(-20px);
-    transition: transform 0.3s ease, opacity 0.2s ease;
-    opacity: 0;
-    width: 160px;
-    height: 180px;
+  z-index: 999;
+  overflow: hidden;
+  transform-origin: top right;
+  transform: scale(0.5) translateY(-20px);
+  transition: transform 0.3s ease, opacity 0.2s ease;
+  opacity: 0;
+  width: 150px;
+  height: 200px;
 
 }
 
 .dropdown-content.show {
-    display: block;
-    transform: scale(1) translateY(0);
-    opacity: 1;
+  display: block;
+  transform: scale(1) translateY(0);
+  opacity: 1;
 }
 
 .dropdown-content a {
-      position: relative;
-    color: #fff;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-  
-    padding: 10px 0 5px 30px;
-}  
+  position: relative;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  padding: 10px 0 5px 30px;
+}
 
 
 
@@ -167,11 +166,11 @@ h1 {
   margin-bottom: 60px;
   margin-top: 60px;
   font-size: 45px;
-
+  color:#f1d1f3;
   text-shadow: 0px 0px 5px #3c61e5, 0px 0px 5px #3c61e5;
 }
 
-h1:hover{
+h1:hover {
   transform: scale(1.1);
   transition: 0.7s ease;
 

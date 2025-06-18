@@ -99,7 +99,12 @@
     <hr>
     <section class="product-section" data-id="2">
         <h2 class="product-section-title">More Products</h2>
-
+        <div class="product-image-controls">
+            <button class="product-nav-button product-left" onclick="showPrevImages(2)"
+                onmouseover="highlightButton(this)" onmouseout="resetButton(this)">&lt;</button>
+            <button class="product-nav-button product-right highlighted" onclick="showNextImages(2)"
+                onmouseover="highlightButton(this)" onmouseout="resetButton(this)">&gt;</button>
+        </div>
 
         <div class="product-image-slider">
             <div class="product-image-row" id="product-row1-2">
