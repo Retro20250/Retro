@@ -775,7 +775,7 @@ header .menu {
 .text {
   flex: 1;
   text-align: left;
-  padding: 20px;
+  padding: 40px;
 
 }
 
@@ -812,7 +812,7 @@ header .menu {
   overflow: hidden;
   transition: 0.3s;
   top: 68%;
-  right: 49.5%;
+  right: 48.5%;
   z-index: 55;
 
 
@@ -834,40 +834,6 @@ header .menu {
   scrollbar-width: none;
 }
 
-
-
-
-
-.slider-buttons {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 10;
-  display: flex;
-  gap: 20px;
-  text-align: center;
-  display: none;
-
-}
-
-.slider-buttons button {
-  background-color: rgba(253, 192, 249, 0.932);
-  color: rgb(26, 22, 31);
-  border: none;
-  font-size: 2rem;
-  border-radius: 50%;
-  cursor: pointer;
-  width: 33px;
-  height: 35px;
-  display: none;
-}
-
-
-.slider-buttons button:hover {
-  background-color: rgba(247, 196, 255, 0.8);
-  transform: scale(1.1);
-  transition: transform 0.8s ease, background-color 0.4s ease;
-}
 
 
 
