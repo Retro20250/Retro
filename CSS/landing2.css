@@ -459,7 +459,7 @@ header .menu {
   display: flex;
   position: relative;
   justify-content: center;
-  background-color: #eb7680;
+  background-color:#B2C5B5;
   align-items: center;
 }
 
@@ -510,7 +510,7 @@ header .menu {
 
 .colom {
   width: 45%;
-  background-color: #496b5a;
+  background-color: #1a5b6b;
   border-radius: 10px;
   padding: 15px;
   box-shadow: 17px 20px 4px rgba(0, 0, 0, 0.1);
