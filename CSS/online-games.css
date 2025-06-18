@@ -1,8 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Arial", sans-serif;
 
 }
 
@@ -18,58 +18,56 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
-  
+
 }
 
 header {
- width: 1200px;
-  max-width: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  padding: 20px 40px;
-
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px 40px;
 }
 
 header i {
-  position: absolute;
-  left: 12%;
-  font-size: 22px;
-  color: #ffaf03;
+    position: absolute;
+    left: 1%;
+    font-size: 22px;
+    color: #ffaf03;
 }
 
 header .logo {
-  font-weight: bold;
-  font-size: 25px;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 header .menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  font-weight: 500;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 500;
 }
 
 .menu a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.5s ease;
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s ease;
 }
 
 .menu a:hover {
-  color: #000000;
+    color: #ffaf03;
 }
 
-
-/* زر القائمة */
 .menu-container {
     position: relative;
     z-index: 1000;
@@ -79,8 +77,8 @@ header .menu {
 }
 
 .menu-button {
-    background: transparent; 
-    color: #506955;
+    background: transparent;
+    color: #fff;
     width: 50px;
     height: 50px;
     border: none;
@@ -90,36 +88,36 @@ header .menu {
     align-items: center;
     justify-content: center;
     text-align: center;
-
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-button:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+
 }
 
 .menu-button i {
     font-size: 20px;
 }
 
-/* القائمة المنسدلة */
+
 .dropdown-content {
     display: none;
     position: absolute;
     top: 60px;
     right: -34px;
-    background: rgba(0, 0, 0, 0.5); /* خلفية شفافة */
+    background: rgba(0, 0, 0, 0.5);
+
     border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
     z-index: 999;
     overflow: hidden;
     transform-origin: top right;
     transform: scale(0.5) translateY(-20px);
     transition: transform 0.3s ease, opacity 0.2s ease;
     opacity: 0;
-    width: 142px;
-    height: 148px;
+    width: 160px;
+    height: 200px;
 
 }
 
@@ -130,674 +128,755 @@ header .menu {
 }
 
 .dropdown-content a {
+      position: relative;
     color: #fff;
     padding: 10px 15px;
     text-decoration: none;
     display: flex;
     align-items: center;
-        color: #fff;
+  
     padding: 10px 0 5px 30px;
-    text-decoration: none;
-    display: flex
-;
-    align-items: center;
+}  
+
+
+
+.dropdown-content a:hover {
+  background: rgba(102, 66, 19, 0.633);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
 }
 
-  .games-cards{
-    flex-wrap: wrap;
-    display: flex;
-    margin: 5px;
-    justify-content: center;
-    align-items: flex-start;
-
-  }
-
-  h1{
-      justify-content: center;
-    font-weight: 800;
-    display: flex
-;
-    color: rgb(96, 124, 103);
-    margin-bottom: 85px;
-    font-family: "Roboto", sans-serif;
-    margin-top: 92px
-
-
-  }
-
-  .game1{
-    display: flex;
-    justify-content:left;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  .game1 img{
-    width: 405px;
-    flex: 90%;
-  }
-  .game1:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .column{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-  }
-
-
-  .game2{
-    display: flex;
-    justify-content:left;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 10px;
-
-
-  }
-  .game2 img{
-    width: 200px;
-    flex: 75%;
-  }
-  .game2:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-   .game3{
-    width: 200px;
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game3 img{
-    width: 205px;
-   }
-   .game3:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game4{
-    display: flex;
-    justify-content:left;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-
-   .game4:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-  .game4 img{
-    width: 256px;
-    flex: 75%;
-  }
-  .game5{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game5 img{
-    width: 173px;
-   }
-   .game5:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
- 
-  .game6{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game6 img{
-    width: 180px;
-   }
-   .game6:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game7{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game7 img{
-    width: 180px;
-   }
-   .game7:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .games-cards2{
-    flex-wrap: wrap;
-    display: flex;
-    margin: 5px;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .game8{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game8 img{
-    width: 200px;
-   }
-   .game8:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game9{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game9 img{
-    width: 200px;
-   }
-   .game9:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game10{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game10 img{
-    width: 200px;
-   }
-   .game10:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game11{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game11 img{
-    width: 200px;
-   }
-   .game11:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game12{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game12 img{
-    width: 180px;
-   }
-   .game12:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game13{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game13 img{
-    width: 115px;
-   }
-   .game13:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game14{
-    display: flex;
-    margin-right: 5px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game14 img{
-    width: 170px;
-    height: 110px;
-   }
-   .game14:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .games-cards3{
-    flex-wrap: wrap;
-    display: flex;
-    margin-top: 10px ;
-    margin-bottom: 10px ;
-    justify-content: center;
-    align-items: flex-start;
-
-  }
-
-  .game15{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game15 img{
-    width: 200px;
-   }
-   .game15:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game16{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game16 img{
-    width: 200px;
-   }
-   .game16:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game17{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game17 img{
-    width: 200px;
-    height: 152px;
-   }
-   .game17:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game18{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game18 img{
-    width: 230px;
-   }
-   .game18:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game19{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game19 img{
-    width: 230px;
-    height: 147px;
-   }
-   .game19:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-  .game20{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game20 img{
-    width: 200px;
-    height: 123px;
-   }
-   .game20:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-  .game21{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game21 img{
-    width: 200px;
-    height: 146px;
-   }
-   .game21:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-  .game22{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game22 img{
-    width: 218px;
-   }
-   .game22:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game23{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game23 img{
-    width: 220px;
-    height: 145px;
-   }
-   .game23:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-  .game24{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game24 img{
-    width: 220px;
-    height:275px;
-   }
-   .game24:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game-cards4{
-    flex-wrap: wrap;
-    display: flex;
-    margin: 5px;
-    justify-content: center;
-    align-items: flex-start;
-
-  }
-  .game25{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: center;
-    border-radius: 10px;
-   }
-   .game25 img{
-    width: 150px;
-    height: 145px;
-   }
-   .game25:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .games-cards5{
-    flex-wrap: wrap;
-    display: flex;
-    margin: 5px;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .game26{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game26 img{
-    width: 180px;
-    height:200px;
-   }
-   .game26:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-  .game27{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game27 img{
-    width: 115px;
-    height: 200px;
-   }
-   .game27:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  .game28{
-    display: flex;
-    margin-right: 5px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game28 img{
-    width: 170px;
-    height: 200px;
-   }
-   .game28:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-  }
-  .game29{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game29 img{
-    width: 200px;
-    height: 280px;
-   }
-   .game29:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  
-  .game30{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game30 img{
-    width: 200px;
-    height: 120px;
-   }
-   .game30:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-  .game31{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game31 img{
-    width: 200px;
-    height: 280px;
-   }
-   .game31:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-  .game32{
-    display: flex;
-    margin-right: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: left;
-    border-radius: 10px;
-   }
-   .game32 img{
-    width: 220px;
-    height: 130px;
-   }
-   .game32:hover{
-    transform: scale(1.03);
-    transition: 0.7s ease;
-
-  }
-
-  /* footer sectionnnnnnn */
+
+/*************************************/
+
+
+.games-cards {
+  flex-wrap: wrap;
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+h1 {
+  justify-content: center;
+  font-weight: 800;
+  font-size: 50px;
+  display: flex;
+  color: rgb(134, 166, 142);
+  margin-bottom: 60px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 160px;
+  text-shadow: 0px 0px 5px rgb(53, 50, 50) , 0px 0px 5px rgb(53, 50, 50);
+
+
+}
+h1:hover{
+  transform: scale(1.1);
+  transition: 0.7s ease;
+}
+.game1 {
+  display: flex;
+  justify-content: left;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.game1 img {
+  width: 405px;
+  flex: 90%;
+}
+
+.game1:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+
+.game2 {
+  display: flex;
+  justify-content: left;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+
+
+}
+
+.game2 img {
+  width: 200px;
+  flex: 75%;
+}
+
+.game2:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game3 {
+  width: 200px;
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game3 img {
+  width: 205px;
+}
+
+.game3:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game4 {
+  display: flex;
+  justify-content: left;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.game4:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game4 img {
+  width: 256px;
+  flex: 75%;
+}
+
+.game5 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game5 img {
+  width: 173px;
+}
+
+.game5:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game6 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game6 img {
+  width: 180px;
+}
+
+.game6:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game7 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game7 img {
+  width: 180px;
+}
+
+.game7:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.games-cards2 {
+  flex-wrap: wrap;
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.game8 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game8 img {
+  width: 200px;
+}
+
+.game8:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game9 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game9 img {
+  width: 200px;
+}
+
+.game9:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game10 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game10 img {
+  width: 200px;
+}
+
+.game10:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game11 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game11 img {
+  width: 200px;
+}
+
+.game11:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game12 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game12 img {
+  width: 180px;
+}
+
+.game12:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game13 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game13 img {
+  width: 115px;
+}
+
+.game13:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game14 {
+  display: flex;
+  margin-right: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game14 img {
+  width: 170px;
+  height: 110px;
+}
+
+.game14:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.games-cards3 {
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.game15 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game15 img {
+  width: 200px;
+}
+
+.game15:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game16 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game16 img {
+  width: 200px;
+}
+
+.game16:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game17 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game17 img {
+  width: 200px;
+  height: 152px;
+}
+
+.game17:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game18 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game18 img {
+  width: 230px;
+}
+
+.game18:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game19 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game19 img {
+  width: 230px;
+  height: 147px;
+}
+
+.game19:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game20 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game20 img {
+  width: 200px;
+  height: 123px;
+}
+
+.game20:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game21 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game21 img {
+  width: 200px;
+  height: 146px;
+}
+
+.game21:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game22 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game22 img {
+  width: 218px;
+}
+
+.game22:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game23 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game23 img {
+  width: 220px;
+  height: 145px;
+}
+
+.game23:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game24 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game24 img {
+  width: 220px;
+  height: 275px;
+}
+
+.game24:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game-cards4 {
+  flex-wrap: wrap;
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.game25 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.game25 img {
+  width: 150px;
+  height: 145px;
+}
+
+.game25:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.games-cards5 {
+  flex-wrap: wrap;
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.game26 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game26 img {
+  width: 180px;
+  height: 200px;
+}
+
+.game26:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game27 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game27 img {
+  width: 115px;
+  height: 200px;
+}
+
+.game27:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game28 {
+  display: flex;
+  margin-right: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game28 img {
+  width: 170px;
+  height: 200px;
+}
+
+.game28:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+}
+
+.game29 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game29 img {
+  width: 200px;
+  height: 280px;
+}
+
+.game29:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+
+.game30 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game30 img {
+  width: 200px;
+  height: 120px;
+}
+
+.game30:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game31 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game31 img {
+  width: 200px;
+  height: 280px;
+}
+
+.game31:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+.game32 {
+  display: flex;
+  margin-right: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.game32 img {
+  width: 220px;
+  height: 130px;
+}
+
+.game32:hover {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+
+}
+
+/* footer sectionnnnnnn */
 .footer {
   background-color: #1b1b1b;
+  margin-top: 80px;
   padding: 20px 40px;
   width: 100vw;
-    background-color: #1b1b1b;
-    padding: 20px 40px;
-    width: 100vw;
-    position: relative;
-    top: 60%;
+  position: relative;
+  overflow: hidden;
 }
 
-.footer img{
-   width: 100%;
-    height: 266%;
-    object-fit: cover;
-    position: absolute;
-    overflow: hidden;
-    bottom: -6%;
-    right: 0px;
-}
 .footer-top-row {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
 }
-
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
 }
 
 .contact-us {
@@ -811,7 +890,10 @@ header .menu {
   display: flex;
   gap: 20px;
   margin-top: -85px;
+  position: relative;
+  z-index: 2;
 }
+
 .social-icon {
   display: flex;
   align-items: center;
@@ -819,25 +901,68 @@ header .menu {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: black;   
-  color: white;             
-  border: 1.5px solid #444; 
+  background-color: black;
+  color: white;
+  border: 1.5px solid #444;
   text-decoration: none;
   transition: filter 0.3s ease, box-shadow 0.3s ease;
   margin-top: 50px;
   margin-bottom: -30px;
 }
 
-.social-icon:hover {
-  filter: brightness(120%);  
-  box-shadow: 0 4px 10px rgba(200, 200, 200, 0.6);
+#facebook:hover {
+  filter: brightness(120%);
+  box-shadow: 0 4px 10px rgba(16, 37, 223, 0.801);
+  background-color: #1431b4;
 }
+
+#instagram:hover {
+  filter: brightness(120%);
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+  box-shadow: 0 4px 10px #cc2366;
+}
+
+#twitter:hover {
+  filter: brightness(120%);
+  box-shadow: 0 4px 10px rgba(117, 126, 126, 0.801);
+  background-color: #171718;
+}
+
+#discord:hover {
+  filter: brightness(120%);
+  box-shadow: 0 4px 10px #723cf0;
+  background-color: #723cf0;
+}
+
+#youtube:hover {
+  filter: brightness(120%);
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.801);
+  background-color: #ff0000;
+}
+
 
 .footer-line {
   width: 100%;
   height: 1px;
   background-color: #555;
   margin: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-img {
+  width: 100%;
+  height: 266%;
+  object-fit: fill;
+  position: absolute;
+  bottom: 25px;
+  right: 0px;
+  left: 58%;
+  z-index: 1;
 }
 
 .footer-sections {
@@ -846,6 +971,17 @@ header .menu {
   gap: 70px;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  margin-right: 590px;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .footer-column h3 {
@@ -868,11 +1004,25 @@ header .menu {
 .footer-column ul li a {
   color: #ccc;
   text-decoration: none;
+  display: inline-block;
+  /* Needed for transform to work */
+  transition: color 0.3s ease, transform 0.3s ease;
   transition: color 0.3s;
 }
 
 .footer-column ul li a:hover {
-  color: #fff;
+  color: rgb(134, 166, 142);
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-links-container {
+  margin-right: 50px;
+  position: relative;
+  z-index: 3;
+  /* Higher than the image */
+  width: 100%;
 }
 
 .footer-links-bottom {
@@ -881,44 +1031,41 @@ header .menu {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 40px;
+  position: relative;
+  z-index: 3;
+  /* Higher than the image */
 }
 
 .footer-links-bottom a {
-  margin-top: 100px;
   color: #999;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s;
-  margin-top: 120px;
+  padding: 5px 10px;
 }
 
 .footer-links-bottom a:hover {
-
-  color: #fff;
-
-  color: #fff;
-
+  color: rgb(134, 166, 142);
+  text-decoration: none;
 }
 
-  .show-on-scroll {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.6s ease-out;
-  }
-  
-  .show-on-scroll.visible {
-    opacity: 1;
-    transform: none;
-  }
-  
- 
-  
-  
- 
- 
- 
- 
- 
- 
- 
- 
+.social-icon-container {
+  margin-right: 60px;
+  padding-top: 30px;
+}
+
+.logo-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.show-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.show-on-scroll.visible {
+  opacity: 1;
+  transform: none;
+}

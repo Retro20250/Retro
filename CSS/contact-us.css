@@ -30,58 +30,134 @@ body::-webkit-scrollbar {
 
 
 header {
-  background-color: #000000;
-  width: 100%;
-  max-width: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  padding: 20px 40px;
-  height: 80px;
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px 40px;
 }
 
 header i {
-  position: absolute;
-  left: 1%;
-  font-size: 22px;
-  color: #ffaf03;
-  padding-left: 100px;
+    position: absolute;
+    left: 1%;
+    font-size: 22px;
+    color: #ffaf03;
 }
 
 header .logo {
-  font-weight: bold;
-  font-size: 25px;
-  padding-left: 100px;
+    font-weight: bold;
+    font-size: 25px;
 }
-.logo a {
-  text-decoration: none; 
-  color: inherit; 
-  font-weight: bold; 
-  font-size: inherit; 
-}
+
 header .menu {
-  display: flex; 
-  gap: 20px; 
-  margin-right: 50px; 
-  list-style: none; /
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 500;
 }
 
-header .menu li {
-  display: inline-block; 
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s ease;
 }
 
-header .menu a {
-  text-decoration: none; 
-  color: #fff; 
-  font-size: 16px;
-  font-weight: bold; 
+.menu a:hover {
+    color: #ffaf03;
 }
+
+.menu-container {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-button {
+    background: transparent;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-button:hover {
+    transform: scale(1.1);
+
+}
+
+.menu-button i {
+    font-size: 20px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: -34px;
+    background: rgba(0, 0, 0, 0.5);
+
+    border-radius: 8px;
+
+    z-index: 999;
+    overflow: hidden;
+    transform-origin: top right;
+    transform: scale(0.5) translateY(-20px);
+    transition: transform 0.3s ease, opacity 0.2s ease;
+    opacity: 0;
+    width: 160px;
+    height: 200px;
+
+}
+
+.dropdown-content.show {
+    display: block;
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+.dropdown-content a {
+      position: relative;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  
+    padding: 10px 0 5px 30px;
+}  
+
+
+
+.dropdown-content a:hover {
+  background: rgba(102, 66, 19, 0.633);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+}
+ 
+
+/**************************************************/
 
 
   .container {
@@ -108,13 +184,15 @@ header .menu a {
     color: var(--dc);
   }
 
-  form input, form select, form textarea {
+  
+  .form{
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
+  
 
   form .row {
     display: flex;
@@ -125,27 +203,21 @@ header .menu a {
     flex: 1;
   }
 
-  form button {
-
-    border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    background: linear-gradient(45deg, #1c3366, #b55aea);
-color: #ffffff;
-  }
-
-  form button:hover {
-    background-color: var(--gh);
-  }
-
   form label {
     display: block;
     margin-top: 10px;
     font-size: 0.95em;
   }
+
+  .notes {
+    height: 120px;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
 
   form a {
     color: var(--sc);
@@ -185,6 +257,50 @@ color: #ffffff;
 .six{
   margin-top: 50px;
 }
+.checkbox-label {
+  display: block;
+  margin-top: 0px;
+  font-size: 0.95em;
+  color: #eee;
+  line-height: 1.6;
+}
+
+.checkbox-label input {
+  margin-right: 8px;
+  transform: scale(1.1);
+}
+
+/* نص الشروط بخط أصغر */
+.terms-text {
+  font-size: 0.8em;
+  color: #ccc;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+/* سنتر زرار السبميت */
+.submit-container {
+  text-align: center;
+}
+
+.submit-container button {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background: linear-gradient(45deg, #1c3366, #b55aea);
+  color: #ffffff;
+  height: 50px;
+  width: 150px;
+}
+
+.submit-container button:hover {
+  transform: translateY(-3px) scale(1.05);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 
 
 

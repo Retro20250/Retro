@@ -46,12 +46,28 @@
 
         <div class="logo">Y2K</div>
         <ul class="menu">
-            <li><a href="../HTML/login&signup.html" class="login-link">Log in</a></li>
-            <li><a href="../HTML/login&signup.html" class="register-link">Sign </a></li>
-            <li><a href="ظظظظ">Contact us</a></li>
+            <li><a href="../../HTML/login&signup.html" class="login-link">Log in</a></li>
+            <li><a href="../../HTML/About.html" class="register-link">About us</a></li>
+            <li><a href="../../HTML/contact-us.html">Contact us</a></li>
         </ul>
+        <div class="menu-container">
+            <button class="menu-button">
+                <i class='bx bx-menu'></i>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div class="dropdown-content" id="dropdown">
+                <a href="../../HTML/cartoon(home).html"><i class='bx bx-ghost'></i> Cartoons</a>
+                <a href="../../HTML/articles.html"><i class='bx bx-book-bookmark'></i> Articles</a>
+                <a href="../../HTML/products.html"><i class='bx bxs-shopping-bag'></i> Products</a>
+                <a href="../../HTML/online-games.html"><i class='bx bx-joystick'></i> Online Games</a>
+                <a href="../Home/Home.html"><i class='bx bx-download'></i> Offline Games</a>
+
+            </div>
+        </div>
+
     </header>
-    <hr>
+
     <h1>
 
         Chicken Invaders (لعبة الفراخ) </h1>
@@ -108,29 +124,42 @@
             <div class="footer-content">
                 <div class="footer-top-row">
                     <div class="contact-us">Contact Us</div>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <div class="social-icon-container">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/" class="social-icon" id="facebook" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/" class="social-icon" id="instagram" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/" class="social-icon" id="twitter" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                                </svg></a>
+                            <a href="https://discord.com/" class="social-icon" id="discord" target="_blank"><i
+                                    class="fab fa-discord"></i></a>
+                            <a href="https://youtube.com/" class="social-icon" id="youtube" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-line">
+                    <div class="footer-img"><img src="../../HTML/footer.png" alt="footer"></div>
+                </div>
+
+                <div class="footer-section">
+                    <div class="footer-column">
+                        <h3>site navigation</h3>
+                        <ul>
+                            <li><a href="../../HTML/cartoon(home).html">Cartoon</a></li>
+                            <li><a href="../../All Download/Home/Home.html">download games</a></li>
+                            <li><a href="../../HTML/online-games.html">Online games</a></li>
+                            <li><a href="../../HTML/articles.html">Articles</a></li>
+                            <li><a href="../../HTML/products(home).html">products</a></li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="footer-line"></div>
-
-
-
-                <div class="footer-column">
-                    <h3>site navigation</h3>
-                    <ul>
-                        <li><a href="#">Cartoon</a></li>
-                        <li><a href="#">download games</a></li>
-                        <li><a href="#">Online games</a></li>
-                        <li><a href="#">Articles</a></li>
-                        <li><a href="#">products</a></li>
-                    </ul>
-                </div>
                 <div class="footer-sections">
                     <div class="footer-column">
                         <h3>Sources</h3>
@@ -149,14 +178,13 @@
                             <li><a href="#">FAQs</a></li>
                         </ul>
                     </div>
-
-
                 </div>
-
-                <div class="footer-links-bottom">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Contact Support</a>
+                <div class="footer-links-container">
+                    <div class="footer-links-bottom">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Contact Support</a>
+                    </div>
                 </div>
 
             </div>

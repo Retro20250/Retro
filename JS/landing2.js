@@ -7,7 +7,7 @@ menuButton.addEventListener('click', () => {
   } else {
     dropdownContent.classList.add('show');
   }
-}); /* في برضو toglo ممكن تستخدمها */
+}); /* في برضو toglo ممكن تستخدمها */ 
 
 
 
