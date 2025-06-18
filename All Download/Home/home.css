@@ -161,11 +161,20 @@ header .menu {
 /*hoooomeeeee*/
 h1 {
   padding-top: 100px;
-  padding-left: 130px;
   padding-bottom: 0px;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 80px;
+  margin-top: 50px;
+
   text-shadow: 0px 0px 5px #3c61e5, 0px 0px 5px #3c61e5;
 }
 
+h1:hover{
+  transform: scale(1.1);
+  transition: 0.7s ease;
+
+}
 
 
 .game-row {
