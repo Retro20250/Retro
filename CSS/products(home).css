@@ -57,7 +57,6 @@ header .menu {
 }
 
 .menu a:hover {
-    text-decoration: underline;
     color: #f09433;
 }
 
@@ -223,7 +222,7 @@ h1 {
     text-align: center;
     margin: 30px 0 15px;
     color: #fff;
-    text-shadow: 0 0 5px #ffaf03, 0 0 5px #ffaf03;
+    text-shadow: 0 0 10px #5e309e, 0 0 5px #5e309e;
     font-family: "Roboto", sans-serif;
     position: relative;
     display: inline-block;
@@ -525,7 +524,7 @@ h1 {
 }
 
 .footer-column ul li a:hover {
-    color: #ffaf03;
+    color: #723cf0;
     transform: translateX(5px);
     transition: all 0.3s ease;
     text-decoration: none;
@@ -559,7 +558,7 @@ h1 {
 }
 
 .footer-links-bottom a:hover {
-    color: #ffaf03;
+    color: #723cf0;
     text-decoration: none;
 }
 
