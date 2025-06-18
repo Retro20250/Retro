@@ -206,6 +206,7 @@ h1 {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+  margin-top: 68px;
   padding: 10px;
   height: 120%;
   width: 30%;
@@ -434,6 +435,7 @@ h2 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
   box-shadow: 0 4px 10px #cc2366;
 }
+
 
 #twitter:hover {
   filter: brightness(120%);

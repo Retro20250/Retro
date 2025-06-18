@@ -1,14 +1,44 @@
-window.onload = function () { //lma el saf7a t5ls t7meel kol haga , nfz el function
-  alert("Welcome to the Offline Games Section! 🎮"); // el function elly httnfz = alert feh el gomla dy
-};
-document.getElementById("sm-btn").addEventListener("click", function () {
-  // lma el user ydos 3la button whose id is sm-btn
-  document.getElementById("popup").style.display = "block";
-  // yft7 el element elly el id bta3o popup 3n tareeq el style changing el display l block
-});
-const menuButton = document.querySelector('.menu-button');
-const dropdownContent = document.querySelector('.dropdown-content');
+window.onload = function () {
+  alert("Welcome to the Offline Games Section! 🎮");
+  
+  const menuButton = document.querySelector('.menu-button');
+  const dropdown = document.getElementById("dropdown");
 
-menuButton.addEventListener('click', () => {
-  dropdownContent.classList.toggle('show'); // إضافة أو إزالة الكلاس "show"
-});
+  menuButton.addEventListener("click", function (e) {
+    e.stopPropagation(); // يمنع إن الكليك يتسبب في غلق المينيو على طول
+    toggleMenu();
+  });
+
+  document.addEventListener('click', function(e) {
+    if (dropdown.classList.contains("show") &&
+        !menuButton.contains(e.target) &&
+        !dropdown.contains(e.target)) {
+      dropdown.classList.remove("show");
+      dropdown.addEventListener('transitionend', function handler() {
+        if (!dropdown.classList.contains("show")) {
+          dropdown.style.display = "none";
+        }
+        dropdown.removeEventListener('transitionend', handler);
+      }, { once: true });
+    }
+  });
+};
+
+function toggleMenu() {
+  const menu = document.getElementById("dropdown");
+  const isShowing = menu.classList.contains("show");
+
+  if (!isShowing) {
+    menu.style.display = "block";
+    void menu.offsetWidth; // trigger reflow
+    menu.classList.add("show");
+  } else {
+    menu.classList.remove("show");
+    menu.addEventListener('transitionend', function handler() {
+      if (!menu.classList.contains("show")) {
+        menu.style.display = "none";
+      }
+      menu.removeEventListener('transitionend', handler);
+    }, { once: true });
+  }
+}
