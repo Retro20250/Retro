@@ -72,7 +72,6 @@ header .menu {
 }
 
 .menu a:hover {
-  text-decoration: underline;
   color: #f09433;
 }
 
@@ -219,7 +218,7 @@ h2 {
   display: inline-block;
   letter-spacing: 2px;
   text-transform: uppercase;
-  text-shadow: 0 0 5px #ffaf03, 0 0 5px #ffaf03;
+  text-shadow: 0 0 10px #5e309e, 0 0 5px #5e309e;
 }
 
 
@@ -258,7 +257,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: var(--pc);
+  background: #b36ace;
   border-radius: 12px;
   box-sizing: border-box;
   transform-style: preserve-3d;
@@ -351,14 +350,14 @@ h2 {
 .submit {
   width: 70%;
   height: 60px;
-  background: var(--pc);
+  background: #b36ace;
   border: none;
   border-radius: 12px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: 0.3s;
-  box-shadow: 0 6px 12px rgba(255, 175, 3, 0.3);
+  box-shadow: 0 6px 12px #b36ace;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -399,7 +398,7 @@ h2 {
 
 .submit:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 15px rgba(255, 175, 3, 0.5);
+  box-shadow: 0 8px 15px #5e309e;
 }
 
 .submit:hover .wave {
@@ -409,7 +408,7 @@ h2 {
 hr {
   border: none;
   height: 1px;
-  background: linear-gradient(to right, transparent, var(--pc), transparent);
+  background: linear-gradient(to right, transparent, #5e309e, transparent);
   margin: 20px 40px;
 }
 
@@ -431,7 +430,7 @@ hr {
   display: inline-block;
   letter-spacing: 2px;
   text-transform: uppercase;
-  text-shadow: 0 0 5px #ffaf03, 0 0 5px #ffaf03;
+  text-shadow: 0 0 10px #5e309e, 0 0 5px #5e309e;
 }
 
 .product-image-controls {
@@ -445,9 +444,9 @@ hr {
 .product-nav-button {
   width: 36px;
   height: 36px;
-  background-color: rgba(255, 175, 3, 0.2);
-  color: var(--pc);
-  border: 1px solid var(--pc);
+  background-color: rgba(252, 125, 245, 0.2);
+  color: #b36ace;
+  border: 1px solid #b36ace;
   border-radius: 50%;
   font-size: 18px;
   font-weight: bold;
@@ -459,12 +458,12 @@ hr {
 }
 
 .product-nav-button:hover {
-  background-color: rgba(255, 175, 3, 0.3);
+  background-color: rgba(252, 125, 245, 0.2);
   transform: scale(1.1);
 }
 
 .product-nav-button.highlighted {
-  background-color: var(--pc);
+  background-color: #b36ace;
   color: #000;
 }
 
@@ -509,7 +508,7 @@ hr {
 .product-image-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  border-color: var(--pc);
+  border-color: #b36ace;
 }
 
 .product-image-container {
@@ -740,7 +739,7 @@ hr {
 }
 
 .footer-column ul li a:hover {
-  color: #ffaf03;
+  color: #5e309e;
   transform: translateX(5px);
   transition: all 0.3s ease;
   text-decoration: none;
@@ -774,7 +773,7 @@ hr {
 }
 
 .footer-links-bottom a:hover {
-  color: #ffaf03;
+  color: #5e309e;
   text-decoration: none;
 }
 
