@@ -769,7 +769,7 @@ header .menu {
 }
 
 .horizontal-scroll {
-  background-image: url('../materials/ززززززز.jpg'); /* حطي المسار الصحيح للصورة */
+  background-image: url('../materials/دد.jpg'); /* حطي المسار الصحيح للصورة */
   background-size: cover;       
   background-position: cover;  
   background-repeat: no-repeat; 
@@ -788,13 +788,13 @@ header .menu {
 .text h2 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #235c12;
+  color: #59336a;
 }
 
 .text p {
 
   font-size: 1.4rem;
-  color: #cfe1d6;
+  color: #ddd9ee;
   line-height: 1.6;
   max-width: 580px;
   /* أو القيمة المناسبة */

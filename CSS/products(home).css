@@ -28,6 +28,14 @@ header {
     padding: 20px 40px;
 }
 
+
+a.logo {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ 
 header i {
     position: absolute;
     left: 1%;
