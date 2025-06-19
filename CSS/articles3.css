@@ -3,12 +3,15 @@
 *{ box-sizing: border-box; margin: 0; padding: 0; }
 
 
-body { font-family: 'Times New Roman', serif; background-image: url('wallbooks.jpg'); color: #3e2c17; padding: 20px;
-font-size: 1em; }
+body { font-family: Poppins, serif;
+   background-image: url('wallbooks.jpg');
+  color: #3e2c17;
+  font-size: 1em; }
 
 .newspaper { max-width: 3000px; margin-top:50px ; margin-bottom: 50px; background-color: #fdf7ed; border: 3px solid #3e2c17; padding: 20px; }
 
 header {
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -18,28 +21,35 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 20px 40px;
-    background-color: #0000008a;
-    width: 1550px;
-    height: 70px;
+    padding: 0px 40px;
+    background: rgba(0, 0, 0, 0.4);
 }
+
 
 header i {
     position: absolute;
-    left: 1%;
+    left: 3%;
     font-size: 22px;
     color: #ffaf03;
 }
 
 header .logo {
+  position: absolute;
+    left: 4.8%;
     font-weight: bold;
     font-size: 25px;
-    color: #ffaf03;
+    color: #fff;
+}
+
+header .middle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 header .menu {
     padding: 0;
-    margin: 0;
+    margin:  0;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -63,6 +73,7 @@ header .menu {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
 }
 
 .menu-button {
@@ -96,7 +107,9 @@ header .menu {
     top: 60px;
     right: -34px;
     background: rgba(0, 0, 0, 0.5);
+
     border-radius: 8px;
+
     z-index: 999;
     overflow: hidden;
     transform-origin: top right;
@@ -105,6 +118,7 @@ header .menu {
     opacity: 0;
     width: 160px;
     height: 200px;
+
 }
 
 .dropdown-content.show {
@@ -114,19 +128,20 @@ header .menu {
 }
 
 .dropdown-content a {
-    position: relative;
+      position: relative;
     color: #fff;
     padding: 10px 15px;
     text-decoration: none;
     display: flex;
     align-items: center;
+  
     padding: 10px 0 5px 30px;
 }  
 
 
 
 .dropdown-content a:hover {
-  background: rgba(255, 196, 119, 0.633);
+  background: rgba(102, 66, 19, 0.633);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -184,6 +199,16 @@ p { font-size: 1em; margin-bottom: 10px; line-height: 1.4em; }
 .groupimg{
   width:100%;
 }
+.paragraph {
+  font-size: 1em;
+  line-height: 1.6em;
+  margin-top: 15px;
+  margin-left: 150px;
+  margin-right: 0px;
+  width: 650px;
+  text-align: justify;
+  direction: rtl;
+}
 /* Responsive Design */ @media (max-width: 992px) { .main-content { flex-direction: column; } .column { max-width: 100%; } .fashion { flex-direction: column; align-items: center; text-align: center; } .fashion img { margin-bottom: 10px; } }
 
 /* Prevent right overflow */ body, html { overflow-x: hidden; }
@@ -224,6 +249,7 @@ p { font-size: 1em; margin-bottom: 10px; line-height: 1.4em; }
    flex-wrap: wrap;
    position: relative;
    z-index: 2;
+   color: #fff;
  }
 
  .contact-us {
@@ -231,6 +257,7 @@ p { font-size: 1em; margin-bottom: 10px; line-height: 1.4em; }
    font-weight: bold;
    font-family: serif;
    text-transform: uppercase;
+   color: #fff;
  }
 
  .social-icons {
@@ -347,7 +374,7 @@ p { font-size: 1em; margin-bottom: 10px; line-height: 1.4em; }
  }
 
  .footer-column ul li a:hover {
-   color: #7E5CAD;
+   color: beige;
    transform: translateX(5px);
    transition: all 0.3s ease;
    text-decoration: none;
@@ -381,7 +408,7 @@ p { font-size: 1em; margin-bottom: 10px; line-height: 1.4em; }
  }
 
  .footer-links-bottom a:hover {
-   color: #7E5CAD;
+   color: beige;
    text-decoration: none;
  }
 
