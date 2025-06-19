@@ -793,7 +793,7 @@ header .menu {
 }
 
 .bg5 {
-  background-image: url('../images/bg5.jpg');
+  background-image: url('../materials/باك\ موتو2.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -859,11 +859,11 @@ header .menu {
 }
 
 .bg5 .text h2 {
-  color: #FF69B4; /* وردي */
+  color: #e4a82f; /* وردي */
 }
 
 .bg5 .text p {
-  color: #ffeef5;
+  color: #fcf7c9;
 }
 
 
