@@ -50,10 +50,14 @@ header i {
     color: #ffaf03;
 }
 
-header .logo {
+a.logo {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
     font-weight: bold;
     font-size: 25px;
 }
+
 
 header .menu {
     padding: 0;
