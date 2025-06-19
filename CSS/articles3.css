@@ -8,8 +8,16 @@ body { font-family: Poppins, serif;
   color: #3e2c17;
   font-size: 1em; }
 
-.newspaper { max-width: 3000px; margin-top:50px ; margin-bottom: 50px; background-color: #fdf7ed; border: 3px solid #3e2c17; padding: 20px; }
-
+.newspaper { max-width: 2500px;
+   margin-top:50px ;
+    margin-bottom: 50px;
+     background-color: #fdf7ed;
+      border: 3px solid #3e2c17;
+       padding: 20px 40px;
+       margin-right: 20px;
+        margin-left: 20px;
+         position: relative; }
+ 
 header {
     width: 100%;
     margin: auto;
