@@ -230,7 +230,7 @@ h1{
     float: right;
 }
 p{
-  font-size: 1.5em;
+  font-size: 20px;
   margin-bottom: 30px;
 }
 .one-in-row {
@@ -250,9 +250,9 @@ p{
   font-size: 40px;
 }
 .see-more {
-  padding: 10px 20px;
-  background-color:#eb7680;
-  color:#010101;
+  padding: 3.5px 0px;
+  background-color:#225f81;
+  color:#fff;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.5s;
@@ -260,7 +260,8 @@ p{
   overflow: hidden;
   border: none;
   margin:10px;
-  width: 100%;
+  width: 80%;
+  margin-left: 30px;
 }
 
 .btn4 {
@@ -272,7 +273,7 @@ p{
 }
 
 .see-more:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 .wave {
@@ -337,6 +338,7 @@ button:hover .wave {
    flex-wrap: wrap;
    position: relative;
    z-index: 2;
+   color: #fff;
  }
 
  .contact-us {
@@ -344,6 +346,7 @@ button:hover .wave {
    font-weight: bold;
    font-family: serif;
    text-transform: uppercase;
+   color: #fff;
  }
 
  .social-icons {
@@ -460,7 +463,7 @@ button:hover .wave {
  }
 
  .footer-column ul li a:hover {
-   color: #7E5CAD;
+   color: #afc3b3;
    transform: translateX(5px);
    transition: all 0.3s ease;
    text-decoration: none;
@@ -486,7 +489,7 @@ button:hover .wave {
  }
 
  .footer-links-bottom a {
-   color: #999;
+   color: #ccc;
    text-decoration: none;
    font-size: 14px;
    transition: color 0.3s;
@@ -494,7 +497,7 @@ button:hover .wave {
  }
 
  .footer-links-bottom a:hover {
-   color: #7E5CAD;
+   color: #afc3b3;
    text-decoration: none;
  }
 

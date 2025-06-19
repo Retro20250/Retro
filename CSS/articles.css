@@ -205,7 +205,7 @@ section{
 .card {
   background-color: #00000069;
   margin: 0 20px 20px 20px;
-  width: 100%;
+  width: 95%;
   box-sizing: border-box;
   box-shadow: 0 5px 20px rgba(69, 68, 68, 0.322);
   border-radius: 10px;
@@ -218,18 +218,17 @@ section{
 }
 
 .card:hover {
-  transform: translateX(0) scale(1.07);
+  transform: translateX(0) scale(1.03);
   transition: 0.7s ease;
 }
 
 .info h3 {
-  font-size: 4em;
+  font-size: 45px;
 }
 
 .info p {
   margin-bottom: 30px;
-  font-size: 1.5em;
-  padding: 30px;
+  font-size: 18px;
 }
 
 .hidden {
@@ -465,7 +464,7 @@ button:hover .wave {
  }
 
  .footer-column ul li a:hover {
-   color: #9ec5a6;
+   color: #afc3b3;
    transform: translateX(5px);
    transition: all 0.3s ease;
    text-decoration: none;
@@ -499,7 +498,7 @@ button:hover .wave {
  }
 
  .footer-links-bottom a:hover {
-   color: #9ec5a6;
+   color: #afc3b3;
    text-decoration: none;
  }
 
