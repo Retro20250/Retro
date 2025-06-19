@@ -186,7 +186,7 @@ section{
 .main h2 {
   font-size: 2em;
   font-weight: 500;
-  color: #eb7680;
+  color: #9ec5a6;
 }
 
 .main h3 {
@@ -245,8 +245,8 @@ section{
 
 .see-more {
   padding: 10px 20px;
-  background-color: #eb7680;
-  color: #010101;
+  background-color: #225f81;
+  color: #ffffff;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.5s;
@@ -300,12 +300,16 @@ button:hover .wave {
   top: 50%;
 }
 
+/* Updated Footer Section */
 .footer {
    background-color: #1b1b1b;
    padding: 20px 40px;
    width: 100vw;
    position: relative;
    overflow: hidden;
+   margin-left: -50px;
+   margin-top: -50px;
+   margin-bottom: -100px;
  }
 
  .footer-img {
@@ -336,6 +340,7 @@ button:hover .wave {
    flex-wrap: wrap;
    position: relative;
    z-index: 2;
+   color: #fff;
  }
 
  .contact-us {
@@ -343,6 +348,7 @@ button:hover .wave {
    font-weight: bold;
    font-family: serif;
    text-transform: uppercase;
+   color: #fff;
  }
 
  .social-icons {
@@ -459,7 +465,7 @@ button:hover .wave {
  }
 
  .footer-column ul li a:hover {
-   color: #d07864;
+   color: #9ec5a6;
    transform: translateX(5px);
    transition: all 0.3s ease;
    text-decoration: none;
@@ -493,7 +499,7 @@ button:hover .wave {
  }
 
  .footer-links-bottom a:hover {
-   color: #46cad1;
+   color: #9ec5a6;
    text-decoration: none;
  }
 
@@ -506,51 +512,3 @@ button:hover .wave {
    color: #fff;
    text-decoration: none;
  }
-
-.footer-column ul li a:hover {
-  color: #ffaf03;
-  transform: translateX(5px);
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.footer-links-container {
-  margin-right: 50px;
-  position: relative;
-  z-index: 3;
-  /* Higher than the image */
-  width: 100%;
-}
-
-.footer-links-bottom {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 40px;
-  position: relative;
-  z-index: 3;
-  /* Higher than the image */
-}
-
-.footer-links-bottom a {
-  color: #999;
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s;
-  padding: 5px 10px;
-}
-
-.footer-links-bottom a:hover {
-  color: #ffaf03;
-  text-decoration: none;
-}
-
-.social-icon-container {
-  margin-right: 60px;
-  padding-top: 30px;
-}
-
-.logo-link {
-  color: #fff;
-}
