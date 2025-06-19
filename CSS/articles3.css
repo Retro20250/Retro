@@ -132,7 +132,9 @@ header .menu {
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 5px;
 }
-.main-content { display: flex; flex-wrap: wrap; gap: 20px; }
+.main-content { display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px; }
 
 .column { flex: 1; min-width: 280px; max-width: 32%; }
 
@@ -163,6 +165,10 @@ p { font-size: 0.95em; margin-bottom: 10px; line-height: 1.4em; }
 .column-captain{
   flex:0.7;
 }
+ .column-captain ul li {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
 .column-train{
   flex:1.15;
 }
