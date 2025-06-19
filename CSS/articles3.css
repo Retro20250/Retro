@@ -3,7 +3,7 @@
 *{ box-sizing: border-box; margin: 0; padding: 0; }
 
 
-body { font-family: 'Times New Roman', serif; background-image: url('cartoonwallpaper.jpg'); color: #3e2c17; padding: 20px;
+body { font-family: 'Times New Roman', serif; background-image: url('wallbooks.jpg'); color: #3e2c17; padding: 20px;
 font-size: 1em; }
 
 .newspaper { max-width: 3000px; margin-top:50px ; margin-bottom: 50px; background-color: #fdf7ed; border: 3px solid #3e2c17; padding: 20px; }
@@ -114,7 +114,7 @@ header .menu {
 }
 
 .dropdown-content a {
-      position: relative;
+    position: relative;
     color: #fff;
     padding: 10px 15px;
     text-decoration: none;
@@ -140,7 +140,7 @@ header .menu {
 
 .circle { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; display: block; margin: auto; }
 
-.column img { max-width: 100%; height: auto; display: block; margin: 10px auto; }
+.column-train img { max-width: 100%; height: auto; display: block; margin: 10px auto; }
 
 .caption { font-style: italic; text-align: center; font-size: 0.9em; }
 
@@ -150,7 +150,7 @@ h3, h4 { margin-top: 10px; font-size: 1.2em; text-align: center; }
 
 .author { font-style: italic; font-size: 0.9em; margin-bottom: 5px; }
 
-p { font-size: 0.95em; margin-bottom: 10px; line-height: 1.4em; }
+p { font-size: 1em; margin-bottom: 10px; line-height: 1.4em; }
 
 .box { border: 2px solid #3e2c17; padding: 20px; margin-bottom: 20px; background-color:beige;  }
 
