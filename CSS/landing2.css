@@ -768,6 +768,12 @@ header .menu {
   top: 4px;
 }
 
+.horizontal-scroll {
+  background-image: url('../materials/ززززززز.jpg'); /* حطي المسار الصحيح للصورة */
+  background-size: cover;       
+  background-position: cover;  
+  background-repeat: no-repeat; 
+}
 
 
 
@@ -782,13 +788,13 @@ header .menu {
 .text h2 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #f1d1f3;
+  color: #235c12;
 }
 
 .text p {
 
   font-size: 1.4rem;
-  color: #f1d1f3;
+  color: #cfe1d6;
   line-height: 1.6;
   max-width: 580px;
   /* أو القيمة المناسبة */
@@ -811,7 +817,7 @@ header .menu {
   overflow: hidden;
   transition: 0.3s;
   top: 68%;
-  right: 42.5%;
+  right: 48.5%;
   z-index: 55;
 
 
