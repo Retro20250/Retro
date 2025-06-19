@@ -198,6 +198,11 @@ p { font-size: 1em; margin-bottom: 10px; line-height: 1.4em; }
 .fashion{
   flex:1.15;
 }
+.box ul li {
+  margin-bottom: 2px; /* المسافة بين النكت */
+  font-size: 1.1rem; /* لو حابة يكبر شوية */
+  line-height: 1.4;
+}
 
 .groupimg{
   width:100%;

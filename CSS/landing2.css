@@ -768,11 +768,34 @@ header .menu {
   top: 4px;
 }
 
-.horizontal-scroll {
-  background-image: url('../materials/دد.jpg'); /* حطي المسار الصحيح للصورة */
-  background-size: cover;       
-  background-position: cover;  
-  background-repeat: no-repeat; 
+.bg1 {
+  background-image: url('../materials/دد.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg2 {
+  background-image: url('../materials/ززززززز.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg3 {
+  background-image: url('../materials/طب\ ما\ بك\ داونلود3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg4 {
+  background-image: url('../materials/زومبي\ اديت.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg5 {
+  background-image: url('../materials/باك\ موتو2.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -795,7 +818,7 @@ header .menu {
 
   font-size: 1.4rem;
   color: #ddd9ee;
-  line-height: 1.6;
+  line-height: 1.5;
   max-width: 580px;
   /* أو القيمة المناسبة */
   word-wrap: break-word;
@@ -803,6 +826,45 @@ header .menu {
   overflow: hidden;
 }
 
+.bg1 .text h2 {
+  color: #77257a; /* دهب */
+}
+
+.bg1 .text p {
+  color: #ead0f0; /* أبيض */
+}
+
+.bg2 .text h2 {
+  color: #bba213; /* أحمر طوبي */
+}
+
+.bg2 .text p {
+  color: #d2cca6fb; /* رمادي فاتح */
+}
+
+.bg3 .text h2 {
+  color: #a49658; /* تركواز */
+}
+
+.bg3 .text p {
+  color: #e3e4b9;
+}
+
+.bg4 .text h2 {
+  color: #89b5b0; /* أخضر ليموني */
+}
+
+.bg4 .text p {
+  color: #c5dedc;
+}
+
+.bg5 .text h2 {
+  color: #e4a82f; /* وردي */
+}
+
+.bg5 .text p {
+  color: #fcf7c9;
+}
 
 
 .submittttt {
