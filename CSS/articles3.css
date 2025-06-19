@@ -194,6 +194,16 @@ p { font-size: 1em; margin-bottom: 10px; line-height: 1.4em; }
 .groupimg{
   width:100%;
 }
+.paragraph {
+  font-size: 1em;
+  line-height: 1.6em;
+  margin-top: 15px;
+  margin-left: 150px;
+  margin-right: 0px;
+  width: 650px;
+  text-align: justify;
+  direction: rtl;
+}
 /* Responsive Design */ @media (max-width: 992px) { .main-content { flex-direction: column; } .column { max-width: 100%; } .fashion { flex-direction: column; align-items: center; text-align: center; } .fashion img { margin-bottom: 10px; } }
 
 /* Prevent right overflow */ body, html { overflow-x: hidden; }
