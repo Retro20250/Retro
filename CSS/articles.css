@@ -1,6 +1,6 @@
 body {
             margin: 0;
-            font-family: Arial, sans-serif;
+              font-family: 'Retro Boldy', sans-serif;
             background-image: url('wallbooks.jpg');
             background-size: cover;
             background-position: center;
@@ -190,16 +190,21 @@ section{
 }
 
 .main h2 {
-  font-size: 2em;
+  font-size: 50px;
   font-weight: 500;
-  color: #9ec5a6;
+  color: #cdebd3;
+font-family: 'DM Serif Display', serif;
+  letter-spacing: 2px;
+font-weight: 700;
 }
 
 .main h3 {
-  color: #ffffff;
-  font-size: 3em;
-  margin-top: 20px;
+  color: #cdebd3;
+  font-size: 25px;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  
 }
 
 .content {
@@ -230,6 +235,9 @@ section{
 
 .info h3 {
   font-size: 45px;
+  font-family: 'DM Serif Display', serif;
+  
+  
 }
 
 .info p {

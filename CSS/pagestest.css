@@ -196,6 +196,8 @@ header .menu {
 h1{
   padding: 0 28px;
   margin-top: 80px;
+  font-size: 40px;
+  font-family: 'DM Serif Display', serif;
 }
 .image {
   flex: 1;
