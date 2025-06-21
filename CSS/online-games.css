@@ -1024,7 +1024,7 @@ header .menu {
 }
 
 .footer-column ul li a:hover {
-  color: rgb(134, 166, 142);
+  color: #e0c263;
   transform: translateX(5px);
   transition: all 0.3s ease;
   text-decoration: none;
@@ -1058,7 +1058,7 @@ header .menu {
 }
 
 .footer-links-bottom a:hover {
-  color: rgb(134, 166, 142);
+  color: #e0c263;
   text-decoration: none;
 }
 

@@ -13,6 +13,7 @@
   --gh: #E07A5F
 }
 
+
 body {
   font-family: Poppins;
   margin: 0;
@@ -222,16 +223,17 @@ header .menu {
 }
 
 h2 {
-  font-size: 3em;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  position: relative;
-  display: inline-block;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px #5e309e, 0 0 5px #5e309e;
+  font-size: 3.2em;
+    text-align: center;
+    margin: 30px 0 15px;
+    color: #fff;
+    text-shadow: 0 0 10px #5e309e, 0 0 5px #5e309e;
+     font-family: poppins;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 
@@ -240,7 +242,7 @@ h2 {
 #p3,
 #p4 {
   margin: 12px 0;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 400;
   line-height: 1.6;
 }
@@ -434,8 +436,8 @@ hr {
 
 .product-section-title {
   color: #fff;
-  top: 15px;
-  left: 130px;
+  margin-left: -630px;
+  top: 21.5px;
   font-size: 2em;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
