@@ -145,6 +145,3 @@ cartoonItems.forEach(item => {
 
 
 
-
-
-

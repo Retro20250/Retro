@@ -713,6 +713,7 @@ header .menu {
 
 
 
+
 .slider-wrapper {
   display: flex;
   height: 100%;
@@ -720,14 +721,14 @@ header .menu {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  /* أخفي البار بتاع السكرول */
+ 
   scrollbar-width: none;
-  /* Firefox */
+
 }
 
 .slider-wrapper::-webkit-scrollbar {
   display: none;
-  /* Chrome + Safari */
+
 }
 
 .slide {
@@ -739,7 +740,7 @@ header .menu {
   justify-content: center;
   padding: 40px;
   overflow: visible;
-
+  position: relative;
 }
 
 
@@ -767,32 +768,33 @@ header .menu {
   top: 4px;
 }
 
+
 .bg1 {
-  background-image: url('../materials/دد.jpg');
+  background-image: url('materials/دد.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .bg2 {
-  background-image: url('../materials/ززززززز.jpg');
+  background-image: url('materials/ززززززز.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .bg3 {
-  background-image: url('../materials/طب\ ما\ بك\ داونلود3.jpg');
+  background-image: url('materials/طب\ ما\ بك\ داونلود3.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .bg4 {
-  background-image: url('../materials/زومبي\ اديت.jpg');
+  background-image: url('materials/زومبي\ اديت.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .bg5 {
-  background-image: url('../materials/باك\ موتو2.jpg');
+  background-image: url('materials/باك\ موتو2.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -883,6 +885,7 @@ header .menu {
 
 
 }
+
 
 .submittttt:hover {
   box-shadow: 6px 6px 0 #000000;
@@ -1122,7 +1125,7 @@ header .menu {
   position: absolute;
   width: 100%;
   height: 50%;
-  background: url(../HTML/wave.svg);
+  background: url(HTML/wave.svg);
   background-size: 200% 100%;
   top: 100%;
   left: 0;
@@ -1201,7 +1204,7 @@ button:hover .wave {
 /* downloadddddddddddddddddddddddddddddddddddddddddddddddddddd */
 
 .six {
-  background-image: url(../materials/ffffffff.jpeg);
+  background-image: url(materials/ffffffff.jpeg);
   background-size: cover;
   height: 180vh;
 }
