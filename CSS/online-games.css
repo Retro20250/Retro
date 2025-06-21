@@ -190,678 +190,603 @@ header .menu {
   transform: scale(1.1);
 }
 
-
-.game1 {
-  display: flex;
-  justify-content: left;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.game1 img {
-  width: 405px;
-  flex: 90%;
-}
-
-.game1:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-}
-
-
-.game2 {
-  display: flex;
-  justify-content: left;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  border-radius: 10px;
-
-
-}
-
-.game2 img {
-  width: 200px;
-  flex: 75%;
-}
-
-.game2:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game3 {
-  width: 200px;
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game3 img {
-  width: 205px;
-}
-
-.game3:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game4 {
-  display: flex;
-  justify-content: left;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.game4:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game4 img {
-  width: 256px;
-  flex: 75%;
-}
-
-.game5 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game5 img {
-  width: 173px;
-}
-
-.game5:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game6 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game6 img {
-  width: 180px;
-}
-
-.game6:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game7 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game7 img {
-  width: 180px;
-}
-
-.game7:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.games-cards2 {
-  flex-wrap: wrap;
-  display: flex;
-  margin: 5px;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.game8 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game8 img {
-  width: 200px;
-}
-
-.game8:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game9 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game9 img {
-  width: 200px;
-}
-
-.game9:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game10 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game10 img {
-  width: 200px;
-}
-
-.game10:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game11 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game11 img {
-  width: 200px;
-}
-
-.game11:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game12 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game12 img {
-  width: 180px;
-}
-
-.game12:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game13 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game13 img {
-  width: 115px;
-}
-
-.game13:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game14 {
-  display: flex;
-  margin-right: 5px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game14 img {
-  width: 170px;
-  height: 110px;
-}
-
-.game14:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.games-cards3 {
-  flex-wrap: wrap;
-  display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  justify-content: center;
-  align-items: flex-start;
-
-}
-
-.game15 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game15 img {
-  width: 200px;
-}
-
-.game15:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game16 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game16 img {
-  width: 200px;
-}
-
-.game16:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game17 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game17 img {
-  width: 200px;
-  height: 152px;
-}
-
-.game17:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game18 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game18 img {
-  width: 230px;
-}
-
-.game18:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game19 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game19 img {
-  width: 230px;
-  height: 147px;
-}
-
-.game19:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game20 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game20 img {
-  width: 200px;
-  height: 123px;
-}
-
-.game20:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game21 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game21 img {
-  width: 200px;
-  height: 146px;
-}
-
-.game21:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game22 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game22 img {
-  width: 218px;
-}
-
-.game22:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game23 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game23 img {
-  width: 220px;
-  height: 145px;
-}
-
-.game23:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game24 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game24 img {
-  width: 220px;
-  height: 275px;
-}
-
-.game24:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game-cards4 {
-  flex-wrap: wrap;
-  display: flex;
-  margin: 5px;
-  justify-content: center;
-  align-items: flex-start;
-
-}
-
-.game25 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: center;
-  border-radius: 10px;
-}
-
-.game25 img {
-  width: 150px;
-  height: 145px;
-}
-
-.game25:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.games-cards5 {
-  flex-wrap: wrap;
-  display: flex;
-  margin: 5px;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.game26 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game26 img {
-  width: 180px;
-  height: 200px;
-}
-
-.game26:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game27 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game27 img {
-  width: 115px;
-  height: 200px;
-}
-
-.game27:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game28 {
-  display: flex;
-  margin-right: 5px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game28 img {
-  width: 170px;
-  height: 200px;
-}
-
-.game28:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-}
-
-.game29 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game29 img {
-  width: 200px;
-  height: 280px;
-}
-
-.game29:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-
-.game30 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game30 img {
-  width: 200px;
-  height: 120px;
-}
-
-.game30:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game31 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game31 img {
-  width: 200px;
-  height: 280px;
-}
-
-.game31:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
-
-.game32 {
-  display: flex;
-  margin-right: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: left;
-  border-radius: 10px;
-}
-
-.game32 img {
-  width: 220px;
-  height: 130px;
-}
-
-.game32:hover {
-  transform: scale(1.03);
-  transition: 0.7s ease;
-
-}
+  .game1{
+    display: flex;
+    justify-content:left;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .game1 img{
+    width: 405px;
+    flex: 90%;
+  }
+  .game1:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+
+  .game2{
+    display: flex;
+    justify-content:left;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+
+
+  }
+  .game2 img{
+    width: 200px;
+    flex: 75%;
+  }
+  .game2:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+   .game3{
+    width: 200px;
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game3 img{
+    width: 205px;
+   }
+   .game3:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game4{
+    display: flex;
+    justify-content:left;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+   .game4:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game4 img{
+    width: 256px;
+    flex: 75%;
+  }
+  .game5{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game5 img{
+    width: 173px;
+   }
+   .game5:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+ 
+  .game6{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game6 img{
+    width: 180px;
+   }
+   .game6:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game7{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game7 img{
+    width: 180px;
+   }
+   .game7:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .games-cards2{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .game8{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game8 img{
+    width: 200px;
+   }
+   .game8:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game9{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game9 img{
+    width: 200px;
+   }
+   .game9:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game10{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game10 img{
+    width: 200px;
+   }
+   .game10:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game11{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game11 img{
+    width: 200px;
+   }
+   .game11:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game12{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game12 img{
+    width: 180px;
+   }
+   .game12:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game13{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game13 img{
+    width: 115px;
+   }
+   .game13:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game14{
+    display: flex;
+    margin-right: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game14 img{
+    width: 170px;
+    height: 110px;
+   }
+   .game14:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .games-cards3{
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+
+  .game15{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game15 img{
+    width: 200px;
+   }
+   .game15:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game16{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game16 img{
+    width: 200px;
+   }
+   .game16:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game17{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game17 img{
+    width: 200px;
+    height: 152px;
+   }
+   .game17:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game18{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game18 img{
+    width: 230px;
+   }
+   .game18:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game19{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game19 img{
+    width: 230px;
+    height: 147px;
+   }
+   .game19:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game20{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game20 img{
+    width: 200px;
+    height: 123px;
+   }
+   .game20:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game21{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game21 img{
+    width: 200px;
+    height: 146px;
+   }
+   .game21:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game22{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game22 img{
+    width: 218px;
+   }
+   .game22:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game23{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game23 img{
+    width: 220px;
+    height: 145px;
+   }
+   .game23:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game24{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game24 img{
+    width: 220px;
+    height:275px;
+   }
+   .game24:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game-cards4{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+  .game25{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 10px;
+   }
+   .game25 img{
+    width: 150px;
+    height: 145px;
+   }
+   .game25:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .games-cards5{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .game26{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game26 img{
+    width: 180px;
+    height:200px;
+   }
+   .game26:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game27{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game27 img{
+    width: 115px;
+    height: 200px;
+   }
+   .game27:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  .game28{
+    display: flex;
+    margin-right: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game28 img{
+    width: 170px;
+    height: 200px;
+   }
+   .game28:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+  }
+  .game29{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game29 img{
+    width: 200px;
+    height: 280px;
+   }
+   .game29:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+
+  
+  .game30{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game30 img{
+    width: 200px;
+    height: 120px;
+   }
+   .game30:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game31{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game31 img{
+    width: 200px;
+    height: 280px;
+   }
+   .game31:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
+  .game32{
+    display: flex;
+    margin-right: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: left;
+    border-radius: 10px;
+   }
+   .game32 img{
+    width: 220px;
+    height: 130px;
+   }
+   .game32:hover{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+
+  }
 
 /* footer sectionnnnnnn */
 .footer {
@@ -1082,14 +1007,15 @@ header .menu {
   opacity: 1;
   transform: none;
 }
-/* Existing CSS remains the same until the media queries */
 
-/* ==================== */
-/* RESPONSIVE DESIGN */
-/* ==================== */
 
-/* For tablets and smaller desktops */
-@media (max-width: 1024px) {
+
+
+
+
+
+/*********************************************  MEDIA QUERIES heeeaaaaaddderrrrrrrr ****************************************************/
+@media (min-width: 768px) and (max-width: 1024px) {
   body {
     padding: 60px;
   }
@@ -1141,51 +1067,10 @@ header .menu {
     font-size: 15px;
     right: 20px;
   }
-  .game-title {
-    max-width: 40%;
-    margin: 70px auto 25px auto;
-  }
-  
-  .game1 img { width: 300px; height: auto; }
-  .game2 img, .game3 img, .game8 img, .game9 img,
-  .game10 img, .game11 img, .game15 img, .game16 img {
-    width: 160px; height: auto;
-  }
-  .game4 img { width: 200px; height: auto; }
-  .game5 img, .game6 img, .game7 img, .game12 img, .game26 img {
-    width: 140px; height: auto;
-  }
-  .game13 img { width: 100px; height: auto; }
-  .game14 img { width: 140px; height: 100px; object-fit: cover; }
-  .game17 img { width: 160px; height: 120px; object-fit: cover; }
-  .game18 img, .game19 img { width: 170px; height: auto; }
-  .game20 img { width: 160px; height: 110px; object-fit: cover; }
-  .game21 img { width: 160px; height: 120px; object-fit: cover; }
-  .game22 img { width: 170px; height: auto; }
-  .game23 img { width: 170px; height: 120px; object-fit: cover; }
-  .game24 img { width: 170px; height: 230px; object-fit: cover; }
-  .game25 img { width: 130px; height: 120px; object-fit: cover; }
-  .game27 img { width: 100px; height: 170px; object-fit: cover; }
-  .game28 img { width: 140px; height: 170px; object-fit: cover; }
-  .game29 img, .game31 img { width: 160px; height: 230px; object-fit: cover; }
-  .game30 img { width: 160px; height: 110px; object-fit: cover; }
-  .game32 img { width: 170px; height: 110px; object-fit: cover; }
 }
-  
-  .footer-img {
-    left: 50%;
-    height: 250%;
-  }
-  
-  .footer-sections {
-    gap: 50px;
-    margin-right: 450px;
-  }
 
-
-/* For small tablets */
 @media (max-width: 768px) {
-  body {
+   body {
     padding: 20px;
   }
 
@@ -1242,76 +1127,147 @@ header .menu {
     font-size: 14px;
     right: 10px;
   }
-  
-  .game-title {
-    max-width: 50%;
-    margin: 60px auto 20px auto;
-  }
-  
-  .game1 img { width: 260px; height: auto; }
-  .game2 img, .game3 img, .game8 img, .game9 img,
-  .game10 img, .game11 img, .game15 img, .game16 img {
-    width: 130px; height: auto;
-  }
-  .game4 img { width: 170px; height: auto; }
-  .game5 img, .game6 img, .game7 img, .game12 img, .game26 img {
-    width: 120px; height: auto;
-  }
-  .game13 img { width: 80px; height: auto; }
-  .game14 img { width: 120px; height: 90px; object-fit: cover; }
-  .game17 img { width: 135px; height: 105px; object-fit: cover; }
-  .game18 img, .game19 img { width: 150px; height: auto; }
-  .game20 img { width: 135px; height: 100px; object-fit: cover; }
-  .game21 img { width: 135px; height: 105px; object-fit: cover; }
-  .game22 img { width: 145px; height: auto; }
-  .game23 img { width: 145px; height: 110px; object-fit: cover; }
-  .game24 img { width: 145px; height: 190px; object-fit: cover; }
-  .game25 img { width: 105px; height: 100px; object-fit: cover; }
-  .game27 img { width: 85px; height: 140px; object-fit: cover; }
-  .game28 img { width: 120px; height: 140px; object-fit: cover; }
-  .game29 img, .game31 img { width: 140px; height: 200px; object-fit: cover; }
-  .game30 img { width: 140px; height: 100px; object-fit: cover; }
-  .game32 img { width: 145px; height: 90px; object-fit: cover; }
 }
-  
-  .footer {
-    padding: 15px 30px;
-  }
-  
-  .contact-us {
-    font-size: 18px;
-  }
-  
-  .social-icons {
-    gap: 15px;
-  }
-  
-  .social-icon {
-    width: 40px;
-    height: 40px;
-    margin-top: 45px;
-  }
-  
-  .footer-img {
-    left: -5%;
-    height: 200%;
-    margin-bottom: -250px;
-  }
-  
+
+
+
+
+
+/*********************************************  MEDIA QUERIES foooootttteeeeerrrrrr ****************************************************/
+/* ========= RESPONSIVE FOOTER ========== */
+
+@media (max-width: 1024px) {
   .footer-sections {
-    gap: 40px;
-    margin-right: 350px;
+    flex-direction: column;
+    margin-right: 0;
+    align-items: flex-start; /* بدل center */
+    text-align: left; /* بدل center */
   }
+
   
-  .footer-column h3 {
+
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: flex-start; /* بدل center */
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start; /* بدل center */
+    gap: 20px;
+    text-align: left;
+  }
+    
+  
+
+  .footer-sections {
+    gap: 50px;
+    margin-right: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 10px;
+  }
+
+  .contact-us {
     font-size: 16px;
   }
-  
-  .footer-column ul li a {
-    font-size: 13px;
+
+  .social-icons {
+    gap: 10px;
+    flex-wrap: wrap;
   }
-  
-  .footer-links-bottom a {
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    margin-top: 30px;
+  }
+
+
+  .footer-sections {
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 0;
+  }
+
+  .footer-column h3 {
+    font-size: 15px;
+  }
+
+  .footer-column ul li a {
     font-size: 12px;
   }
 
+  .footer-links-bottom a {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  .footer-column h3 {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .footer-column ul li a {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .footer-links-bottom {
+    flex-direction: row; /*  العرض */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    text-align: left;
+  }
+
+  .footer-links-bottom a {
+    font-size: 11px;
+    text-align: left;
+    width: auto; /* علشان ما يبقاش كل لينك واخد سطر */
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    z-index: 0;
+    margin-bottom: -350px;
+    transition: all 0.3s ease;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-img {
+    max-height: 150px;
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 60px;         /* صغر العرض */
+    height: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .footer-img {
+    display: block;
+    position: absolute;
+    left: -40%;
+    transform: translateX(-50%);
+    z-index: 0;
+    margin-top: 40px;
+  }
+}
