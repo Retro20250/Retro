@@ -46,7 +46,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
     const email = document.getElementById("mail").value;
     const password = document.getElementById("pass").value;
     if (email && password) {
-        window.location.href = "landing2.html";
+        window.location.href = "index.html";
     } else {
         alert("Please fill in all fields");
     }
@@ -58,7 +58,7 @@ document.getElementById("register-btn").addEventListener("click", function () {
     const genderFemale = document.getElementById("female").checked;
     const genderMale = document.getElementById("male").checked;
     if (username && email && password && (genderFemale || genderMale)) {
-        window.location.href = "landing2.html";
+        window.location.href = "index.html";
     } else {
         alert("Please fill in all fields");
     }

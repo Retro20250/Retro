@@ -313,73 +313,74 @@ h3 {
     accent-color: #0c35a5;
     margin-right: 3px 3px;
 }
+
 @media (max-width: 1024px) {
-  .container {
-    width: 95%;
-    height: 480px;
-    margin-top: 40px;
-  }
+    .container {
+        width: 100%;
+        height: 500px;
+        margin-top: 40px;
+    }
 
-  .content {
-    width: 55%;
-    background-position: center;
-  }
+    .content {
+        width: 50%;
+        background-position: center;
+    }
 
-  .logreg-box {
-    width: 45%;
-  }
+    .logreg-box {
+        width: 50%;
+    }
 
-  .form-box h2 {
-    font-size: 26px;
-  }
+    .form-box h2 {
+        font-size: 19px;
+    }
 
-  .form-box .input-box {
-    width: 90%;
-    margin: 20px auto;
-  }
+    .form-box .input-box {
+        width: 80%;
+        margin: 20px auto;
+    }
 
-  .input-box input {
-    font-size: 14px;
-    margin: 10px 8px;
-  }
+    .input-box input {
+        font-size: 14px;
+        margin: 10px 8px;
+    }
 
-  .input-box label {
-    font-size: 14px;
-  }
+    .input-box label {
+        font-size: 14px;
+    }
 
-  .input-box .icon {
-    font-size: 13px;
-    top: 10px;
-  }
+    .input-box .icon {
+        font-size: 13px;
+        top: 10px;
+    }
 
-  .submit {
-    width: 90%;
-    height: 48px;
-    margin-left: 5%;
-  }
+    .submit {
+        width: 90%;
+        height: 48px;
+        margin-left: 5%;
+    }
 
-  .btn {
-    font-size: 15px;
-  }
+    .btn {
+        font-size: 15px;
+    }
 
-  .form-box .remember,
-  .form-box .gender {
-    font-size: 0.8em;
-    margin: 10px 25px;
-    gap: 10px;
-  }
+    .form-box .remember,
+    .form-box .gender {
+        font-size: 0.8em;
+        margin: 10px 25px;
+        gap: 10px;
+    }
 
-  .login-register {
-    font-size: 0.8em;
-    margin: 15px 0;
-  }
+    .login-register {
+        font-size: 0.8em;
+        margin: 15px 0;
+    }
 
-  h3 {
-    font-size: 1.2em;
-    padding-top: 380px;
-  }
+    h3 {
+        font-size: 1.2em;
+        padding-top: 350px;
+    }
 
-  .background {
-    filter: blur(6px);
-  }
+    .background {
+        filter: blur(6px);
+    }
 }
