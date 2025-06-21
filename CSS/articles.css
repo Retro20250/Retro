@@ -6,7 +6,7 @@ body {
             background-position: center;
             position: relative;
             min-height: 100vh;
-            font-family: Poppins;
+            font-family: 'Poppins';
             color: #eee;
             overflow-y: scroll;
             overflow-x: hidden;
@@ -192,18 +192,19 @@ section{
 .main h2 {
   font-size: 50px;
   font-weight: 500;
-  color: #cdebd3;
-font-family: 'DM Serif Display', serif;
+  color: #FFF2E0;
+font-family: 'Veteran Typewriter', serif;;
   letter-spacing: 2px;
 font-weight: 700;
 }
 
 .main h3 {
-  color: #cdebd3;
+  color: #FFF2E0;
   font-size: 25px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 6px;
+  font-family: "Veteran Typewriter", serif;
   
 }
 
@@ -235,7 +236,8 @@ font-weight: 700;
 
 .info h3 {
   font-size: 45px;
-  font-family: 'DM Serif Display', serif;
+  font-family: "Veteran Typewriter", serif;
+  color: #FFF2E0;
   
   
 }
@@ -243,6 +245,7 @@ font-weight: 700;
 .info p {
   margin-bottom: 30px;
   font-size: 18px;
+  color: #FFF2E0;
 }
 
 .hidden {
@@ -478,7 +481,7 @@ button:hover .wave {
  }
 
  .footer-column ul li a:hover {
-   color: #afc3b3;
+   color: #FFF2E0;
    transform: translateX(5px);
    transition: all 0.3s ease;
    text-decoration: none;
@@ -512,7 +515,7 @@ button:hover .wave {
  }
 
  .footer-links-bottom a:hover {
-   color: #afc3b3;
+   color: #FFF2E0;
    text-decoration: none;
  }
 

@@ -500,7 +500,7 @@ button:hover .wave {
  }
 
  .footer-column ul li a:hover {
-   color: #afc3b3;
+   color: #FFF2E0;
    transform: translateX(5px);
    transition: all 0.3s ease;
    text-decoration: none;
@@ -534,7 +534,7 @@ button:hover .wave {
  }
 
  .footer-links-bottom a:hover {
-   color: #afc3b3;
+   color: #FFF2E0;
    text-decoration: none;
  }
 
