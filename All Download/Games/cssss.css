@@ -175,12 +175,19 @@ header .menu {
 
 
 /*gameeeeeeeeeeeeeeeee*/
+
 h1 {
   padding-top: 100px;
   padding-left: 100px;
   padding-bottom: 0px;
-  text-shadow: 0px 0px 5px #3c61e5, 0px 0px 5px #3c61e5;
+  text-shadow: 0px 0px 5px #5c7fff, 0px 0px 5px #5c7fff; 
+  font-family: 'Jersey 10', sans-serif;
+    letter-spacing: 3.3px;
+  font-size: 60px; 
+
 }
+
+
 
 .cont {
   display: flex;
@@ -237,11 +244,13 @@ h1 {
 
 .btn2 {
 
-  color: #fff;
+  color:#d7d9e4;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   text-decoration: none;
   text-align: center;
+  font-family: 'Jersey 10', sans-serif;
+    letter-spacing: 3px;
 }
 
 .copy-btn {

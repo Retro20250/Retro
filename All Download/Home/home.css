@@ -176,16 +176,19 @@ h1 {
   padding-bottom: 0px;
   justify-content: center;
   display: flex;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   margin-top: 60px;
-  font-size: 45px;
-  color:#f1d1f3;
+  font-size: 65px;
+  color:#d7d9e4;
+  transition: 0.7s ease;
   text-shadow: 0px 0px 5px #3c61e5, 0px 0px 5px #3c61e5;
+   font-family: 'Jersey 10', sans-serif;
+    letter-spacing: 3.3px;
 }
 
 h1:hover {
   transform: scale(1.1);
-  transition: 0.7s ease;
+  
 
 }
 

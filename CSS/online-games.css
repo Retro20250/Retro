@@ -9,7 +9,7 @@
 body {
   font-family: Poppins;
   margin: 0;
-  background-color: #010101;
+  background-color: #121119;
   color: #eee;
   overflow-y: scroll;
   /* تخلي التمرير شغال */
@@ -174,20 +174,23 @@ header .menu {
 
 }
 
-h1 {
-  justify-content: center;
-  font-size: 50px;
-  display: flex;
-  color: rgb(134, 166, 142);
-  margin-bottom: 60px;
-  font-family: "Jersey 10", sans-serif;
-  margin-top: 160px;
-  text-shadow: 0px 0px 5px rgb(53, 50, 50) , 0px 0px 5px rgb(53, 50, 50);
+.game-title {
+  display: block;
+  margin: 80px auto 30px auto;
+  align-items: center;
+  max-width: 33%;
+  height: auto;
+  transition: transform 0.7s ease;
+  outline: none;
+  border: none;
 }
-h1:hover{
+
+
+.game-title:hover {
   transform: scale(1.1);
-  transition: 0.7s ease;
 }
+
+
 .game1 {
   display: flex;
   justify-content: left;
