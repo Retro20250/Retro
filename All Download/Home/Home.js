@@ -23,21 +23,44 @@
   });
 
 
-function toggleMenu() {
-  const menu = document.getElementById("dropdown");
-  const isShowing = menu.classList.contains("show");
 
-  if (!isShowing) {
-    menu.style.display = "block";
-    void menu.offsetWidth; // trigger reflow
-    menu.classList.add("show");
-  } else {
-    menu.classList.remove("show");
-    menu.addEventListener('transitionend', function handler() {
-      if (!menu.classList.contains("show")) {
-        menu.style.display = "none";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".game-card");
+    cards.forEach((card, index) => {
+      card.style.animationDelay = `${index * 0.1}s`; // تأخير بسيط لكل واحدة
+    });
+  });
+
+
+  document.getElementById("randomBtn").addEventListener("click", () => {
+    const cards = document.querySelectorAll(".game-card");
+
+    // شيل أي تأثيرات قديمة
+    cards.forEach(card => {
+      card.classList.remove("highlighted");
+      card.classList.remove("blurred");
+    });
+
+    const randomIndex = Math.floor(Math.random() * cards.length);
+    const selectedCard = cards[randomIndex];
+
+    // سكرول للكرت المختار
+    selectedCard.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    // ضيف الكلاسات المطلوبة
+    selectedCard.classList.add("highlighted");
+    cards.forEach(card => {
+      if (card !== selectedCard) {
+        card.classList.add("blurred");
       }
-      menu.removeEventListener('transitionend', handler);
-    }, { once: true });
-  }
-}
+    });
+
+    // بعد 2 ثانية، رجّع كل حاجة
+    setTimeout(() => {
+      selectedCard.classList.remove("highlighted");
+      cards.forEach(card => card.classList.remove("blurred"));
+    }, 2000);
+  });
+
+
