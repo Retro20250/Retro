@@ -146,8 +146,8 @@ Let’s rewind time together 💛</p>
         <div class="member">
             <img src="HTML/images/sarah.jpg" alt="Sarah" class="member-img" onclick="openModal('HTML/images/sarah.jpg')">
         </div>
-  <div id="imageModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
+  <div id="imageModal" class="modal" onclick="closeModal(event)">
+    <span class="close" onclick="closeModal(event)">&times;</span>
     <img class="modal-content" id="modalImage">
 </div>
       </div>  
@@ -158,13 +158,16 @@ Let’s rewind time together 💛</p>
     function openModal(imageSrc) { //function btstqbl el image elly el user 3ml 3leha click
     const modal = document.getElementById("imageModal"); //bgeeb el element elly esmo imagemodal mn el html elly hwa el modal
     const modalImage = document.getElementById("modalImage"); //bgeeb el element elly feh el image elly hwa el modalImage
-     modal.style.display = "block";  //b3ml display le el modal 3la enno block
+     modal.style.display = "flex";  //b3ml display le el modal 3la enno block
      modalImage.src = imageSrc; //b7ot el src bta3 el image elly feh el modal
     }
-    function closeModal() { //function ms2ola 3n el close el modal
+    function closeModal(event) { //function ms2ola 3n el close el modal
         const modal = document.getElementById("imageModal"); 
+        const modalImage = document.getElementById("modalImage");
+        if (event.target === modal || event.target.classList.contains('close')) {
         modal.style.display = "none"; //b3ml display le el modal 3la enno none b5feh y3ny
     }
+  }
 </script>
 
   <script src="JS/header.js"></script>
