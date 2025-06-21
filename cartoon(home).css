@@ -1,7 +1,7 @@
  body {
    margin: 0;
    font-family: Arial, sans-serif;
-   background-image: url('cartoonwallpaper.jpg');
+   background-image: url('CSS/cartoonwallpaper.jpg');
    background-size: cover;
    background-position: center;
    position: relative;
@@ -320,15 +320,15 @@ header .menu {
 
  /* Position each wave below the button initially */
  .waveblue {
-   background: url(waveblue.png);
+   background: url(CSS/waveblue.png);
  }
 
  .wavewhite {
-   background: url(wave.png);
+   background: url(CSS/wave.png);
  }
 
  .wavepink {
-   background: url(wavepink.png);
+   background: url(CSS/wavepink.png);
  }
 
  /* Hover effects */
