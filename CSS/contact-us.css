@@ -330,6 +330,7 @@ form a:hover {
     left: 6%;
     top: 9px;
   }
+  
 
   header i {
     font-size: 20px;
@@ -369,63 +370,67 @@ form a:hover {
     right: 20px;
   }
 }
-
 @media (max-width: 768px) {
-   body {
-    padding: 20px;
-  }
-
- header {
-    height: 10px; /* تقليل ارتفاع الهيدر */
-    padding: 5px 10px;
-    gap: 10px;
-  }
-
-  header .logo {
-    font-size: 18px; /* تصغير حجم اللوجو */
-    left: 9%; /* تقريب اللوجو من الأيقونة */
-    top: 10px;
+  /* ⬆️ الهيدر أكبر شوية */
+  header {
+    height: 70px;
+    padding: 10px 20px;
   }
 
   header i {
-    font-size: 18px; /* تصغير الأيقونة */
-    left: 5%;
-    top: 15px;
+    font-size: 22px;
+    top: 22px;
+  }
+
+  header .logo {
+    font-size: 22px;
+    top: 20px;
   }
 
   header .middle {
-    position: absolute;
-    left: 60%;
-    transform: translateX(-50%);
-    top: 10px;
-    width: 100%;
-  }
-
-  header .menu {
-    gap: 12px;
-    font-size: 14px;
-    margin-right: 60px;
+    top: 22px;
   }
 
   .menu-container {
-    margin-right: 20px;
-    margin-top: 23px;
+    top: 20px;
   }
 
   .menu-button {
-    width: 36px;
-    height: 36px;
+    width: 45px;
+    height: 45px;
   }
 
   .menu-button i {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .dropdown-content {
-    width: 140px;
-    height: auto;
-    top: 50px;
-    font-size: 14px;
-    right: 10px;
+    top: 65px;
+  }
+
+  /* ⬆️ تكبير عناصر الفورم */
+  .form,
+  .notes {
+    font-size: 1px;
+    padding: 14px;
+  }
+
+  .form::placeholder,
+  .notes::placeholder {
+    font-size: 15px;
+  }
+
+  .checkbox-label {
+    font-size: 1em;
+  }
+
+  .terms-text {
+    font-size: 0.85em;
+  }
+
+  .submit-container button {
+    width: 170px;
+    height: 55px;
+    font-size: 16px;
   }
 }

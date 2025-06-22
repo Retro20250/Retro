@@ -6,18 +6,18 @@
 }
 
 body {
-  background-color: #f9f9f9;
-  color: #222;
-  line-height: 1.6;
-  padding: 100px;
+  margin: 0;
+  background-color: #010101;
+  color: #010101;
+  overflow-y: scroll;
+  overflow-x: hidden;
   background-image: url(../materials/foooooter.jpg);
 
   font-family: "Poppins", "Arial", sans-serif;
 
   background-size: cover;
-  height: auto;
+  height: 230vh;
 }
-
 
 
 header {
@@ -50,7 +50,7 @@ header .logo {
     font-weight: bold;
     font-size: 25px;
     color: #fff;
-    top: 10px;
+    top: 15px;
 }
 
 header .middle{
@@ -370,19 +370,18 @@ header .menu {
 }
 /* ✅ موبايل */
 @media (max-width: 768px) {
-  body {
-    padding: 20px;
+  body{
+    color: #010101;
   }
-
  header {
-    height: 10px; /* تقليل ارتفاع الهيدر */
+    height: 50px; /* تقليل ارتفاع الهيدر */
     padding: 5px 10px;
     gap: 10px;
   }
 
   header .logo {
     font-size: 18px; /* تصغير حجم اللوجو */
-    left: 9%; /* تقريب اللوجو من الأيقونة */
+    left: 11%; /* تقريب اللوجو من الأيقونة */
     top: 10px;
   }
 
@@ -418,12 +417,13 @@ header .menu {
 
   .menu-button i {
     font-size: 16px;
+    margin-top: -20px;
   }
 
   .dropdown-content {
     width: 140px;
     height: auto;
-    top: 50px;
+    top: 35px;
     font-size: 14px;
     right: 10px;
   }
@@ -450,6 +450,14 @@ header .menu {
     height: 180px;
   }
 
+  .about .text h2{
+    font-size: 30px;
+  }
+  .about .text p{
+   width: 88%;
+  }
+
+
   .team-members {
     flex-direction: column;
     align-items: center;
@@ -458,6 +466,9 @@ header .menu {
   .member {
     width: 80%;
   }
+  .member img{
+    height: 100%;
+  }
 }
 
 
@@ -465,6 +476,7 @@ header .menu {
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
     padding: 60px;
+    color: #010101;
   }
 
   header {
