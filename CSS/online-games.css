@@ -161,6 +161,120 @@ header .menu {
   border-radius: 5px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding: 60px;
+  }
+  header {
+    height: 60px;
+    padding: 8px 25px;
+  }
+
+  header .logo {
+    font-size: 22px;
+    left: 6%;
+    top: 9px;
+  }
+
+  header i {
+    font-size: 20px;
+    left: 3%;
+    top: 16px;
+  }
+
+  header .middle {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 12px;
+  }
+
+  header .menu {
+    font-size: 15px;
+    gap: 18px;
+    margin-right: 60px;
+  }
+
+  .menu-container {
+    margin-right: 40px;
+  }
+
+  .menu-button {
+    width: 44px;
+    height: 44px;
+  }
+
+  .menu-button i {
+    font-size: 18px;
+  }
+
+  .dropdown-content {
+    width: 150px;
+    top: 60px;
+    font-size: 15px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+   body {
+    padding: 20px;
+  }
+
+ header {
+    height: 10px; /* تقليل ارتفاع الهيدر */
+    padding: 5px 10px;
+    gap: 10px;
+  }
+
+  header .logo {
+    font-size: 18px; /* تصغير حجم اللوجو */
+    left: 9%; /* تقريب اللوجو من الأيقونة */
+    top: 10px;
+  }
+
+  header i {
+    font-size: 18px; /* تصغير الأيقونة */
+    left: 5%;
+    top: 15px;
+  }
+
+  header .middle {
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+    top: 10px;
+    width: 100%;
+  }
+
+  header .menu {
+    gap: 12px;
+    font-size: 14px;
+    margin-right: 60px;
+  }
+
+  .menu-container {
+    margin-right: 20px;
+    margin-top: 23px;
+  }
+
+  .menu-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .menu-button i {
+    font-size: 16px;
+  }
+
+  .dropdown-content {
+    width: 140px;
+    height: auto;
+    top: 50px;
+    font-size: 14px;
+    right: 10px;
+  }
+}
+
 
 /*************************************/
 
