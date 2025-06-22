@@ -330,12 +330,54 @@ form a:hover {
     left: 6%;
     top: 9px;
   }
+
   
+  /* --- لوجو Y2K --- */
+header .logo {
+  font-size: 40px !important;
+  font-weight: 800;
+  margin-left: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+/* --- عناصر المينيو الرئيسية (Log in, About us, Contact us) --- */
+.menu a {
+  font-size: 27px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+/* --- قائمة الدروب داون كلها --- */
+.dropdown-content a {
+  font-size: 25px;
+  color: #fff;
+  padding-left: 45px;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+
+/* --- آيكونات الدروب داون جنب النصوص --- */
+.dropdown-content a i {
+  margin-right: 10px;
+  margin-top: 20px;
+  font-size: 35px;
+  color: #ffaf03;
+}
+
 
   header i {
-    font-size: 20px;
+    font-size: 45px;
     left: 3%;
-    top: 16px;
+    top: 12px;
   }
 
   header .middle {
@@ -360,55 +402,19 @@ form a:hover {
   }
 
   .menu-button i {
-    font-size: 18px;
+    font-size: 40px;
   }
+
+
 
   .dropdown-content {
-    width: 150px;
+    width: 250px;
+    height: 400px;
     top: 60px;
-    font-size: 15px;
-    right: 20px;
-  }
-}
-@media (max-width: 768px) {
-  /* ⬆️ الهيدر أكبر شوية */
-  header {
-    height: 70px;
-    padding: 10px 20px;
-  }
-
-  header i {
-    font-size: 22px;
-    top: 22px;
-  }
-
-  header .logo {
-    font-size: 22px;
-    top: 20px;
-  }
-
-  header .middle {
-    top: 22px;
-  }
-
-  .menu-container {
-    top: 20px;
-  }
-
-  .menu-button {
-    width: 45px;
-    height: 45px;
-  }
-
-  .menu-button i {
     font-size: 20px;
   }
 
-  .dropdown-content {
-    top: 65px;
-  }
-
-  /* ⬆️ تكبير عناصر الفورم */
+   
   .form,
   .notes {
     font-size: 1px;
@@ -433,4 +439,6 @@ form a:hover {
     height: 55px;
     font-size: 16px;
   }
+
 }
+
