@@ -172,35 +172,24 @@ header .menu {
 
 
 /*hoooomeeeee*/
+
+
 h1 {
-    padding-top: 65px;
-    padding-bottom: 0px;
-    justify-content: center;
-    display: flex;
-    margin-bottom: 50px;
-    margin-top: 60px;
-    font-size: 65px;
-    color: #d7d9e4;
-    transition: 0.7s ease;
+    margin-left: 80px;
+    padding-bottom: 10px;
     text-shadow: 0px 0px 5px #3c61e5, 0px 0px 5px #3c61e5;
     font-family: 'Jersey 10', sans-serif;
-    letter-spacing: 3.3px;
-}
-
-h1:hover {
-    transform: scale(1.1);
-}
-
-.container {
-    gap: 20px;
+    letter-spacing: 3px;
+    font-size: 40px;
 }
 
 .item {
     position: relative;
     width: 100%;
     height: 300px;
-    pointer-events: none;
     margin-bottom: 30px;
+    margin-top: 150px;
+    pointer-events: auto;
 }
 
 .item-text {
@@ -209,17 +198,34 @@ h1:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 100px;
-
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-weight: 600;
-    text-transform: uppercase;
+}
+
+h2 {
+    margin-top: 150px;
+
+    margin-left: 80px;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 5px #3c61e5, 0px 0px 5px #3c61e5;
+    font-family: 'Jersey 10', sans-serif;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+
+.info {
+
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 10px;
+
 }
 
 .item-img {
     position: absolute;
-    width: 500px;
+    width: 350px;
     height: 300px;
     top: 50%;
     left: 50%;
@@ -231,12 +237,114 @@ h1:hover {
 img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
+}
+
+.big-btn {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    gap: 10px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 50px;
+    cursor: pointer;
+
+
+}
+
+.btn2 {
+
+    color: #d7d9e4;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Jersey 10', sans-serif;
+    letter-spacing: 3px;
+}
+
+.big-btn a {
+    margin-top: 10px;
+    background-color: rgb(96, 123, 221);
+    color: white;
+    height: 80px;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.fancy-button {
+    position: relative;
+    z-index: 100000;
+    width: 400px;
+    height: 100%;
+    background: #282623;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.fancy-button .btn2 {
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+
+
+}
+
+/* Wave */
+.fancy-button .wavewhite {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    background: url(../../HTML/wave.svg);
+    background-size: 200% 100%;
+    animation: wave 2s linear infinite;
+    transition: 0.7s;
+    opacity: 0.7;
+    top: 100%;
+    pointer-events: none;
+    /* 🛠️ ده اللي بيحل المشكلة */
+}
+
+
+.fancy-button:hover {
+    transform: translateY(-4px);
+}
+
+.fancy-button:hover .wavewhite {
+    top: 50%;
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 200%;
+    }
 }
 
 @media(max-width:900px) {
+    h2 {
+        font-size: 15px;
+        margin-left: 0px;
+    }
+
     .item-text {
-        font-size: 30px;
+        font-size: 10px;
 
     }
 
