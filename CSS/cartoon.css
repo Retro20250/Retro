@@ -594,6 +594,7 @@ h2 {
 
 .cartoon-image-slider {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -930,3 +931,469 @@ h2 {
    color: #fff;
    text-decoration: none;
  }
+ /* ========== RESPONSIVE DESIGN ========== */
+
+/* موبايلات صغيرة */
+@media (max-width: 576px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  header {
+    padding: 0 15px;
+    height: 50px;
+  }
+
+  header i {
+    font-size: 18px;
+    left: 2%;
+  }
+
+  header .logo {
+    font-size: 18px;
+    top: 14px;
+    left: 10%;
+    transform: translateX(-50%);
+  }
+  header .middle {
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%);
+    top: 15px;
+    width: 60%;
+  }
+  header .menu {
+    gap: 12px;
+    font-size: 15px;
+    margin-right: 60px;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-container {
+    position: absolute;
+    right: 40px;
+    top: 9px;
+    margin: 0;
+  }
+
+  .menu-button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .menu-button i {
+    font-size: 16px;
+  }
+
+  .dropdown-content {
+    width: 140px;
+    top: 45px;
+    font-size: 13px;
+    right: 10px;
+    height: 160px;
+  }
+
+  .text-content {
+    left: 20px;
+    right: 20px;
+    bottom: 100px;
+    max-width: 90%;
+  }
+
+  .text-content h1 {
+    font-size: 28px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+  }
+
+  .cartoon-card {
+    width: 90%;
+  }
+
+  .clip1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-and-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .twobuttons-container {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .trivia-box {
+    width: 90%;
+  }
+
+  .characters-section {
+    justify-content: center;
+  }
+
+  .cartoon-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+
+  .cartoon-section-title {
+    padding-left: 0;
+  }
+
+  .cartoon-see-more {
+    position: static;
+    margin-top: 15px;
+  }
+
+  .character-card {
+    width: 30%;
+  }
+
+  .watchlist-btn {
+    padding: 10px;
+    font-size: 11px;
+  }
+@media (max-width: 576px) {
+  .cartoon-image-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* هنا نخليهم في النص */
+    padding: 0 10px;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .cartoon-image-row {
+    flex-wrap: wrap;
+    justify-content: center; /* نخليهم وسط السطر */
+    gap: 10px;
+  }
+
+  .cartoon-image-card {
+    width: calc(50% - 10px);
+    height: 200px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+
+  .cartoon-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* تخلي الصورة تملى الكرت بدون تشويه */
+  }
+
+  .info-cartoon {
+    font-size: 6px;
+    padding: 5px;
+  }
+
+  .info-cartoon .name {
+    font-size: 12px;
+  }
+
+  .info-cartoon .channel {
+    font-size: 10px;
+  }
+
+  .info-cartoon .des {
+    font-size: 8px;
+  }
+}
+
+}
+@media (max-width: 576px) {
+  .cartoon-image-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+    gap: 10px;
+    right: 10px;
+    width: 100%;
+  }
+
+  .cartoon-image-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .cartoon-image-card {
+    width: calc(50% - 10px);
+    height: 200px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* تأكد إن الكونتينر واخد 100% */
+  .cartoon-image-container,
+  .image-overlay {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ده أهم جزء */
+  .cartoon-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* تملى الكرت بدون تشويه */
+    display: block;
+  }
+
+  .info-cartoon {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .info-cartoon .name {
+    font-size: 18px;
+  }
+
+  .info-cartoon .channel {
+    font-size: 20px;
+  }
+
+  .info-cartoon .des {
+    font-size: 15px;
+  }
+}
+
+
+/* تابلتات */
+@media (min-width: 577px) and (max-width: 991px) {
+  header {
+    padding: 0 25px;
+    height: 55px;
+  }
+
+  header .logo {
+    font-size: 20px;
+  }
+
+  .menu {
+    gap: 15px;
+    margin-right: 50px;
+  }
+
+  .text-content {
+    left: 40px;
+    bottom: 110px;
+    max-width: 90%;
+  }
+
+  .text-content h1 {
+    font-size: 36px;
+  }
+
+  .text-content p {
+    font-size: 18px;
+  }
+
+  .clip1 {
+    width: 100%;
+  }
+
+  .info-and-buttons {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .twobuttons-container {
+    width: 100%;
+  }
+
+  .trivia-box {
+    width: 90%;
+  }
+
+  .footer-sections {
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 0;
+  }
+
+  .cartoon-image-card {
+    width: 45%;
+  }
+
+  .character-card {
+    width: 25%;
+  }
+}
+
+/* شاشات لابتوب متوسطة */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .menu {
+    gap: 15px;
+    margin-right: 50px;
+  }
+
+  .text-content h1 {
+    font-size: 42px;
+  }
+
+  .text-content p {
+    font-size: 18px;
+  }
+
+  .clip1 {
+    width: 45%;
+  }
+
+  .twobuttons-container {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .character-card {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-sections {
+    flex-direction: column;
+    margin-right: 0;
+    align-items: flex-start; /* بدل center */
+    text-align: left; /* بدل center */
+  }
+
+  
+
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: flex-start; /* بدل center */
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start; /* بدل center */
+    gap: 20px;
+    text-align: left;
+  }
+    
+  
+
+  .footer-sections {
+    gap: 50px;
+    margin-right: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 10px;
+  }
+
+  .contact-us {
+    font-size: 16px;
+  }
+
+  .social-icons {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    margin-top: 30px;
+  }
+
+
+  .footer-sections {
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 0;
+  }
+
+  .footer-column h3 {
+    font-size: 15px;
+  }
+
+  .footer-column ul li a {
+    font-size: 12px;
+  }
+
+  .footer-links-bottom a {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  .footer-column h3 {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .footer-column ul li a {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .footer-links-bottom {
+    flex-direction: row; /*  العرض */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    text-align: left;
+  }
+
+  .footer-links-bottom a {
+    font-size: 11px;
+    text-align: left;
+    width: auto; /* علشان ما يبقاش كل لينك واخد سطر */
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    z-index: 0;
+    margin-bottom: -350px;
+    transition: all 0.3s ease;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-img {
+    max-height: 150px;
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 60px;         /* صغر العرض */
+    height: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .footer-img {
+    display: block;
+    position: absolute;
+    left: -40%;
+    transform: translateX(-50%);
+    z-index: 0;
+    margin-top: 40px;
+  }
+}

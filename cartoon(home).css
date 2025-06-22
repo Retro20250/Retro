@@ -711,20 +711,25 @@ header .menu {
 }
 
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
    body {
     padding: 0px;
   }
 
  header {
-    height: 10px; /* تقليل ارتفاع الهيدر */
+    height: 40px; /* تقليل ارتفاع الهيدر */
     padding: 5px 10px;
     gap: 10px;
   }
 
   header .logo {
     font-size: 18px; /* تصغير حجم اللوجو */
-    left: 9%; /* تقريب اللوجو من الأيقونة */
-    top: 10px;
+    left: 10%; /* تقريب اللوجو من الأيقونة */
+    top: 12px;
   }
 
   header i {
@@ -735,9 +740,9 @@ header .menu {
 
   header .middle {
     position: absolute;
-    left: 60%;
+    left: 55%;
     transform: translateX(-50%);
-    top: 10px;
+    top: 13px;
     width: 100%;
   }
 
@@ -749,7 +754,7 @@ header .menu {
 
   .menu-container {
     margin-right: 20px;
-    margin-top: 23px;
+    margin-bottom: 10px;
     margin-left: 300px;
   }
 
