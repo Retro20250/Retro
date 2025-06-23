@@ -1466,7 +1466,7 @@ button:hover .wave {
   display: flex;
   position: relative;
   justify-content: center;
-  background-color: #2a222b;
+  background-color: #826186db;
   align-items: center;
 }
 
@@ -1879,7 +1879,8 @@ button:hover .wave {
   text-decoration: none;
 }
 
-@media (max-width: 1024px) {
+
+ @media (max-width: 1024px) {
   .footer-sections {
     flex-direction: column;
     margin-right: 0;
@@ -2014,3 +2015,4 @@ button:hover .wave {
     margin-top: 40px;
   }
 }
+
