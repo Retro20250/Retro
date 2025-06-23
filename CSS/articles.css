@@ -647,6 +647,7 @@ button:hover .wave {
   .see-more {
     font-size: 13px;
     margin: 20px auto;
+    margin-left:48px;
   }
 }
   
