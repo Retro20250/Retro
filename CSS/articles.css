@@ -261,7 +261,7 @@ font-weight: 700;
 
 .see-more {
   padding: 10px 20px;
-  background-color: #225f81;
+  background-color: #f15d69;
   color: #ffffff;
   border-radius: 5px;
   cursor: pointer;
@@ -535,6 +535,7 @@ button:hover .wave {
 
 
 /* resssssspooooonssiiiiiveeeeeee */
+
 @media (max-width: 480px) {
   html, body {
     overflow-x: hidden;
