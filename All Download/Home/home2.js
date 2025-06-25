@@ -48,24 +48,3 @@ function animate() {
 }
 
 animate();
-const menuButton = document.querySelector('.menu-button');
-const dropdown = document.getElementById("dropdown");
-
-menuButton.addEventListener("click", function (e) {
-    e.stopPropagation(); // يمنع إن الكليك يتسبب في غلق المينيو على طول
-    toggleMenu();
-});
-
-document.addEventListener('click', function (e) {
-    if (dropdown.classList.contains("show") &&
-        !menuButton.contains(e.target) &&
-        !dropdown.contains(e.target)) {
-        dropdown.classList.remove("show");
-        dropdown.addEventListener('transitionend', function handler() {
-            if (!dropdown.classList.contains("show")) {
-                dropdown.style.display = "none";
-            }
-            dropdown.removeEventListener('transitionend', handler);
-        }, { once: true });
-    }
-});
