@@ -1281,7 +1281,7 @@ header .menu {
   padding: 40px 50px;
   text-align: center;
   position: relative;
-  margin-bottom: 270px;
+  margin-bottom: 290px;
   left: -21%;
   height: 72%;
 
@@ -1406,7 +1406,7 @@ header .menu {
   top: 100%;
   right: 19%;
   z-index: 55;
-  margin-top: 150px;
+  margin-top: 90px;
 }
 
 
@@ -1473,21 +1473,22 @@ button:hover .wave {
   position: relative;
   justify-content: center;
 
- 
   background-size: cover;
-
   background-color: #c8a78b;
 
   align-items: center;
 }
+
+
 .sora {
-    background: url(materials/tttttttttttttt.jpg) no-repeat center center;
+   
     position: absolute;
-    height: 150%;
+    height: 130%;
     width: 102%;
     top: 0px;
-      background-size: fill;
+   background-size: cover;
 }
+
 .online2-r {
   position: relative;
   height: 100vh;
