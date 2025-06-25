@@ -1334,7 +1334,7 @@ header .menu {
   align-items: stretch;
   /* العناصر تبقى ليها نفس الارتفاع */
   gap: 20px;
-  top: -45px;
+  top: 45px;
 }
 
 .game-card {
