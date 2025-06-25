@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 
 }
 
@@ -15,9 +14,7 @@
 
 body {
     font-family: "Poppins", "Arial", sans-serif;
-    background: #000000;
-    width: 100%;
-    height: 200%;
+    background: url(background.jpg);
     color: #eee;
     overflow-y: scroll;
     /* تخلي التمرير شغال */
@@ -172,35 +169,24 @@ header .menu {
 
 
 /*hoooomeeeee*/
+
+
 h1 {
-    padding-top: 65px;
-    padding-bottom: 0px;
-    justify-content: center;
-    display: flex;
-    margin-bottom: 50px;
-    margin-top: 60px;
-    font-size: 65px;
-    color: #d7d9e4;
-    transition: 0.7s ease;
+    margin-left: 20px;
+    padding-bottom: 10px;
     text-shadow: 0px 0px 5px #3c61e5, 0px 0px 5px #3c61e5;
     font-family: 'Jersey 10', sans-serif;
-    letter-spacing: 3.3px;
-}
-
-h1:hover {
-    transform: scale(1.1);
-}
-
-.container {
-    gap: 20px;
+    letter-spacing: 3px;
+    font-size: 40px;
 }
 
 .item {
     position: relative;
     width: 100%;
     height: 300px;
-    pointer-events: none;
-    margin-bottom: 30px;
+    /* margin-bottom: 100px; */
+    margin-top: 150px;
+    pointer-events: auto;
 }
 
 .item-text {
@@ -209,17 +195,22 @@ h1:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 100px;
-
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-weight: 600;
-    text-transform: uppercase;
+}
+
+.info {
+
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 10px;
+
 }
 
 .item-img {
     position: absolute;
-    width: 500px;
+    width: 350px;
     height: 300px;
     top: 50%;
     left: 50%;
@@ -231,12 +222,321 @@ h1:hover {
 img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
+}
+
+.big-btn {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    gap: 10px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 50px;
+    cursor: pointer;
+
+
+}
+
+.btn2 {
+
+    color: #d7d9e4;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Jersey 10', sans-serif;
+    letter-spacing: 3px;
+}
+
+.big-btn a {
+    margin-top: 10px;
+    background-color: rgb(96, 123, 221);
+    color: white;
+    height: 80px;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.fancy-button {
+    position: relative;
+    z-index: 100000;
+    width: 400px;
+    height: 100%;
+    background: #282623;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.fancy-button .btn2 {
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+
+
+}
+
+/* Wave */
+.fancy-button .wavewhite {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    background: url(../../HTML/wave.svg);
+    background-size: 200% 100%;
+    animation: wave 2s linear infinite;
+    transition: 0.7s;
+    opacity: 0.7;
+    top: 100%;
+    pointer-events: none;
+    /* 🛠️ ده اللي بيحل المشكلة */
+}
+
+
+.fancy-button:hover {
+    transform: translateY(-4px);
+}
+
+.fancy-button:hover .wavewhite {
+    top: 50%;
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 200%;
+    }
+}
+
+.footer {
+    background-color: #1b1b1b;
+    padding: 20px 40px;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-top-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-us {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: serif;
+    text-transform: uppercase;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: -85px;
+    position: relative;
+    z-index: 2;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    border: 1.5px solid #444;
+    text-decoration: none;
+    transition: filter 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 50px;
+    margin-bottom: -30px;
+}
+
+#facebook:hover {
+    filter: brightness(120%);
+    box-shadow: 0 4px 10px rgba(16, 37, 223, 0.801);
+    background-color: #1431b4;
+}
+
+#instagram:hover {
+    filter: brightness(120%);
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    box-shadow: 0 4px 10px #cc2366;
+}
+
+#twitter:hover {
+    filter: brightness(120%);
+    box-shadow: 0 4px 10px rgba(117, 126, 126, 0.801);
+    background-color: #171718;
+}
+
+#discord:hover {
+    filter: brightness(120%);
+    box-shadow: 0 4px 10px #723cf0;
+    background-color: #723cf0;
+}
+
+#youtube:hover {
+    filter: brightness(120%);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.801);
+    background-color: #ff0000;
+}
+
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: #555;
+    margin: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+    left: 58%;
+    z-index: 1;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-right: 590px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    display: inline-block;
+    /* Needed for transform to work */
+    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #91a6f0;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-links-container {
+    margin-right: 50px;
+    position: relative;
+    z-index: 3;
+    /* Higher than the image */
+    width: 100%;
+}
+
+.footer-links-bottom {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+    z-index: 3;
+    /* Higher than the image */
+}
+
+.footer-links-bottom a {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+    padding: 5px 10px;
+}
+
+.footer-links-bottom a:hover {
+    color: #91a6f0;
+    text-decoration: none;
+}
+
+.social-icon-container {
+    margin-right: 60px;
+    padding-top: 30px;
+}
+
+.logo-link {
+    color: #fff;
+    text-decoration: none;
 }
 
 @media(max-width:900px) {
+    h2 {
+        font-size: 15px;
+        margin-left: 0px;
+    }
+
     .item-text {
-        font-size: 30px;
+        font-size: 10px;
 
     }
 

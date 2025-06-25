@@ -1017,7 +1017,7 @@ header .menu {
 }
 
 .bg3 {
-  background-image: url('materials/طب\ ما\ بك\ داونلود3.jpg');
+  background-image: url('materials/بيس\ باككك3.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -1079,11 +1079,11 @@ header .menu {
 }
 
 .bg3 .text h2 {
-  color: #a49658; /* تركواز */
+  color: #f6faff; /* تركواز */
 }
 
 .bg3 .text p {
-  color: #e3e4b9;
+  color: #e3edf6;
 }
 
 .bg4 .text h2 {
@@ -1471,8 +1471,12 @@ button:hover .wave {
   display: flex;
   position: relative;
   justify-content: center;
+<<<<<<< HEAD
  
   background-size: cover;
+=======
+  background-color: #c8a78b;
+>>>>>>> cdf2dad5586421a60730e6fe82e31350ff68f0cd
   align-items: center;
 }
 .sora {
@@ -1892,7 +1896,8 @@ button:hover .wave {
   text-decoration: none;
 }
 
-@media (max-width: 1024px) {
+
+ @media (max-width: 1024px) {
   .footer-sections {
     flex-direction: column;
     margin-right: 0;
@@ -2027,3 +2032,4 @@ button:hover .wave {
     margin-top: 40px;
   }
 }
+

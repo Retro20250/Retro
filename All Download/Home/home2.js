@@ -16,37 +16,56 @@ function setScale() {
         const distanceFromCenter = Math.abs(viewportHeight / 2 - itemCenter);
         const progress = distanceFromCenter / (viewportHeight / 2);
 
-        const adjustedProgress = Math.pow(progress, 2); // Squaring the progress for a smoother effect
+        const adjustedProgress = Math.pow(progress, 2);
 
-        let scale = 1 - adjustedProgress * 0.5; // Scale down to a minimum of 0.5
-        scale = Math.max(0, Math.min(scale, 1)); // Ensure scale is between 0 and 1
+        let scale = 1 - adjustedProgress * 0.5;
+        scale = Math.max(0, Math.min(scale, 1));
         gsap.to(img, { scale: scale, duration: 0.1 });
     });
 }
 setScale();
 
-window.addEventListener("scroll", setScale);
+window.addEventListener("scroll", () => {
+    scrollY = window.scrollY;
+});
 
 let scrollY = 0;
-let oldScrollY = 0;
 let roundedScrollY = 0;
 const lerpAmount = 0.1;
 
 function lerp(start, end, t) {
-    return start * (1 - t) + end * i;
+    return start * (1 - t) + end * t;
 }
+
 function animate() {
     requestAnimationFrame(animate);
-
     roundedScrollY = lerp(roundedScrollY, scrollY, lerpAmount);
 
     document.querySelector(".container").style.transform =
         `translate3d(0, ${-roundedScrollY}px, 0)`;
+
     setScale();
 }
 
-windows.addEventListener("scroll", (e) => {
-    scrollY = window.scrollY;
+animate();
+const menuButton = document.querySelector('.menu-button');
+const dropdown = document.getElementById("dropdown");
+
+menuButton.addEventListener("click", function (e) {
+    e.stopPropagation(); // يمنع إن الكليك يتسبب في غلق المينيو على طول
+    toggleMenu();
 });
 
-animate();
+document.addEventListener('click', function (e) {
+    if (dropdown.classList.contains("show") &&
+        !menuButton.contains(e.target) &&
+        !dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+        dropdown.addEventListener('transitionend', function handler() {
+            if (!dropdown.classList.contains("show")) {
+                dropdown.style.display = "none";
+            }
+            dropdown.removeEventListener('transitionend', handler);
+        }, { once: true });
+    }
+});
