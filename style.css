@@ -1264,6 +1264,10 @@ header .menu {
 
 /* online sectionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
 
+
+
+
+
 .game-online {
   position: relative;
   align-items: center;
@@ -1278,8 +1282,9 @@ header .menu {
   text-align: center;
   position: relative;
   margin-bottom: 70px;
-  left: -1.5%;
+  left: -19%;
   height: 72%;
+
 
 }
 
@@ -1329,7 +1334,7 @@ header .menu {
   align-items: stretch;
   /* العناصر تبقى ليها نفس الارتفاع */
   gap: 20px;
-
+  top: -45px;
 }
 
 .game-card {
@@ -1466,10 +1471,18 @@ button:hover .wave {
   display: flex;
   position: relative;
   justify-content: center;
-  background-color: #2a222b;
+ 
+  background-size: cover;
   align-items: center;
 }
+.sora {
+    background: url(materials/tttttttttttttt.jpg) no-repeat center center;
+    position: absolute;
+    height: 150%;
+    width: 102%;
+    top: -100px;
 
+}
 .online2-r {
   position: relative;
   height: 100vh;
