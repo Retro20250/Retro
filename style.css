@@ -1276,13 +1276,13 @@ header .menu {
 }
 
 .game-section {
-  width: 107vh;
+  width: 110vh;
   margin: 50px 0;
   padding: 40px 50px;
   text-align: center;
   position: relative;
-  margin-bottom: 70px;
-  left: -19%;
+  margin-bottom: 290px;
+  left: -21%;
   height: 72%;
 
 
@@ -1406,6 +1406,7 @@ header .menu {
   top: 100%;
   right: 19%;
   z-index: 55;
+  margin-top: 90px;
 }
 
 
@@ -1471,22 +1472,23 @@ button:hover .wave {
   display: flex;
   position: relative;
   justify-content: center;
-<<<<<<< HEAD
- 
+
   background-size: cover;
-=======
   background-color: #c8a78b;
->>>>>>> cdf2dad5586421a60730e6fe82e31350ff68f0cd
+
   align-items: center;
 }
-.sora {
-    background: url(materials/tttttttttttttt.jpg) no-repeat center center;
-    position: absolute;
-    height: 150%;
-    width: 102%;
-    top: -100px;
 
+
+.sora {
+   
+    position: absolute;
+    height: 130%;
+    width: 102%;
+    top: 0px;
+   background-size: cover;
 }
+
 .online2-r {
   position: relative;
   height: 100vh;
